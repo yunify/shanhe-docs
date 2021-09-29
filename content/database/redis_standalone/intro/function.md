@@ -2,7 +2,6 @@
 title: "功能特性"
 description: 本小节主要介绍 Redis Standalone 功能特性。 
 keywords: redis standalone 功能特性
-data: 2021-05-14T00:38:25+09:00
 weight: 1
 collapsible: false
 draft: false
@@ -31,8 +30,8 @@ draft: false
 
 **各个版本支持的节点伸缩数：**
   
-- Redis 5.0.3 - QingCloud 1.2.2 版本支持单节点、双节点和三节点的节点伸缩[已下线]。
-- Redis 5.0.8 - QingCloud 3.0.0 版本支持单节点、三节点以及最高支持九节点的节点伸缩，可以满足您大量读的需求。
+- Redis 5.0.3 - ShanHe 1.2.2 版本支持单节点、双节点和三节点的节点伸缩[已下线]。
+- Redis 5.0.8 - ShanHe 3.0.0 版本支持单节点、三节点以及最高支持九节点的节点伸缩，可以满足您大量读的需求。
   
 - 其他版本支持单节点和三节点的节点伸缩。
   
@@ -40,6 +39,3 @@ draft: false
 
   无需额外配置，可以立即部署一个 **Redis** 服务。
   
-## 同城多活
-
-`Redis 5.0.6 - QingCloud 2.1.1` 和 `Redis 5.0.7 - QingCloud 2.2.0` 版本支持同城多活，在 `北京3区` 部署 app 的用户可以选择同城多活，来实现业务容灾。

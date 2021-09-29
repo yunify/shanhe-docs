@@ -2,7 +2,6 @@
 title: "服务功能"
 description: 本小节主要介绍 Redis Standalone 服务功能。 
 keywords: redis standalone 服务功能
-data: 2021-05-14T00:38:25+09:00
 weight: 15
 collapsible: false
 draft: false
@@ -60,7 +59,7 @@ draft: false
 - **REPLICAOF**
 - **KEYS**
 
-为兼容 Redis 5.0.3 - QingCloud 1.2.2 之前的版本，该版本默认开启了如下命令，升级集群的用户依旧保持开启该命令，我们强烈建议新建集群的用户禁用掉该命令，该命令的误操作，会对数据造成不可恢复的丢失：
+为兼容 Redis 5.0.3 - ShanHe 1.2.2 之前的版本，该版本默认开启了如下命令，升级集群的用户依旧保持开启该命令，我们强烈建议新建集群的用户禁用掉该命令，该命令的误操作，会对数据造成不可恢复的丢失：
 
 - **FLUSHDB**
 - **FLUSHALL**

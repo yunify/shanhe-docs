@@ -1,16 +1,15 @@
 ---
 title: "Redis Cluster Paas文档"
-description: 本小节主要介绍 Redis Cluster 数据迁移。 
+description:  redis cluster 文档
 keywords: redis cluster 数据迁移,
-data: 2021-05-14T00:38:25+09:00
 weight: 1
 collapsible: false
-draft: false
+draft: true
 ---
 
 
 
-青云QingCloud Redis 集群提供原生的开源 Redis 3.x，除了继续支持以前的一主多从外，还支持多主多从，每个主所在分片（shard) 平均分摊 16384 个 slots， 增加或删除主节点系统会自动平衡 slots (因为需要迁移数据，时间会有点长)。并且集群支持 HA， 即当某个主节点异常，从节点会自动切换成主节点。
+云数据库 Redis 集群提供原生的开源 Redis 3.x，除了继续支持以前的一主多从外，还支持多主多从，每个主所在分片（shard) 平均分摊 16384 个 slots， 增加或删除主节点系统会自动平衡 slots (因为需要迁移数据，时间会有点长)。并且集群支持 HA， 即当某个主节点异常，从节点会自动切换成主节点。
 
 ## 创建
 
@@ -213,7 +212,7 @@ Redis 3.x　提供了一个从 Redis Cluster (包括 2.8.17 版本) 迁移数据
 
 ### 从 Redis 2.8.17 迁移数据到 Redis 3.0.5
 
-青云QingCloud  Redis 服务也支持从版本 Redis Cluster 之间数据迁移，具体参见[迁移](#guide-redis-cluster-migration)， 您也可以用 slaveof-host 的方式同步数据，详情请参见 [slaveof-host 迁移](#guide-redis-migration)。
+云数据库 Redis 支持从版本 Redis Cluster 之间数据迁移，具体参见[迁移](#guide-redis-cluster-migration)， 您也可以用 slaveof-host 的方式同步数据，详情请参见 [slaveof-host 迁移](#guide-redis-migration)。
 
 ## 升级
 
@@ -229,7 +228,7 @@ Redis 集群的监控提供 Redis Standalone 完全一样的监控信息，详�
 
 ## 图形化操作
 
-青云QingCloud Redis Cluster 提供了集群的图形化展示，方便用户更直观的查看集群状态和进行各项操作。
+云数据库 Redis Cluster 提供了集群的图形化展示，方便用户更直观的查看集群状态和进行各项操作。
 
 支持以下功能：
 

@@ -1,5 +1,5 @@
 ---
-title: "键值数据库 Redis Cluster"
+title: "云数据库 Redis"
 linkTitle: "Redis Cluster"
 weight: 08
 collapsible: true
@@ -7,7 +7,7 @@ type: "product"
 
 section1:
   title: Redis Cluster
-  vice_title: Redis 是一个使用ANSI C编写的开源、支持网络、基于内存、可选持久性的键值对存储数据库。Redis Cluster on QingCloud AppCenter 基于原生的 Redis 提供了 Redis Cluster 的 APP，能够在 AppCenter 进行一键部署。
+  vice_title: Redis 是一个使用ANSI C编写的开源、支持网络、基于内存、可选持久性的键值对存储数据库。云数据库 Redis 基于原生的 Redis 提供了 Redis Cluster 的 APP，能够在 AppCenter 进行一键部署。
 
 Section2:
   title: 用户指南
@@ -25,7 +25,7 @@ Section2:
       url: "quickstart/quick_start/"
 
     - title: 操作指南
-      content: 学习上手管理和使用 Redis Cluster 集群
+      content: 学习上手管理和使用 Redis Cluster
       url: "manual/cluster_info/"
 
     - title: 最佳实践
@@ -50,7 +50,7 @@ section3:
 section4:
   children:
     - title: 了解
-      content: 什么是 Redis Cluster
+      content: 什么是云数据库 Redis
       vice_title: 了解的第一步
       children:
         - title: 产品简介
@@ -60,10 +60,10 @@ section4:
       content: 学习如何创建、管理、使用 Redis Cluster 集群
       vice_title: 上手的第一步
       children: 
-        - title: 创建 Redis Cluster
+        - title: 创建 Redis Cluster 实例
           url: "quickstart/quick_start/"
 
-        - title: Redis Cluster 集群信息
+        - title: Redis Cluster 实例信息
           url: "manual/cluster_info/"
 
         - title: Redis Cluster 服务功能

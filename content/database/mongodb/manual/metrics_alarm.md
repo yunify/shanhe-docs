@@ -1,8 +1,7 @@
 ---
 title: "监控指标与告警"
-description: 本小节主要介绍管理 QingCloud MongoDB 监控指标与告警。 
+description: 本小节主要介绍管理 MongoDB 监控指标与告警。 
 keywords: mongodb 监控指标,监控告警 
-data: 2021-05-14T00:38:25+09:00
 weight: 60
 collapsible: false
 draft: false
@@ -26,7 +25,7 @@ draft: false
 
 - MongoDB 连接数
 
-**MongoDB 4.0.3 QingCloud 1.4.0**_** 及以上版本新增以下监控项。
+**MongoDB 4.0.3 - ShanHe 1.3.0**以上版本新增以下监控项。
 
 - WIREDTIGER 内存状态
 
