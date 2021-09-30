@@ -35,19 +35,11 @@ draft: false
 
    上传成功后可通过访问 http://$ES_IP/analysis/synonym.txt 来查看同义词文件。
 
-   > **说明**：
-   >
-   > `ELK 5.6.16 - QingCloud 1.5.0` 之前的版本需要重启集群中的 Elasticsearch 节点使词典生效，待集群恢复 `green` 状态（可通过以下命令查看状态，等待 `status` 字段变为 `green` ）：
-   >
-   > ```bash
-   > curl $ES_IP:9200/_cluster/health?pretty
-   > ```
-
 3. 进行同义词搜索测试。使用如下 bash 脚本测试同义词搜索功能：
 
    ```bash
    INDEX=synonym-test
-   MAPPING_TYPE=_doc      # ELK 6.8.0 - QingCloud 2.1.0 以前版本请去掉开头的下划线，即：doc
+   MAPPING_TYPE=_doc     
    
    # 创建 索引
    curl -H "Content-Type: application/json" -XPUT http://$ES_IP:9200/$INDEX -d'
@@ -134,9 +126,8 @@ draft: false
 
 4. 查看同义词搜索结果。如下图所示，搜索结果包含"西红柿"和"番茄"的所有文档。
 
-   ![synonym_result](../../images/synonym_result.png)
+   ![synonym_result](../../_images/synonym_result.png)
 
    > **说明**：
    >
-   > QingStor 对象存储为用户提供了云端可无限扩展的通用数据存储服务，具有安全可靠、简单易用、高性能、低成本等特点。 用户可以将数据、日志、静态资源等多种文件类型，通过多种方式上传至 QingStor 对象存储中，以满足日常数据存储、归档、分析等需求。为了更好的满足用户的需求，青云提供了Elasticsearch、Logstash 等与 QingStor 对象存储的集成功能。
-
+   > 对象存储为用户提供了云端可无限扩展的通用数据存储服务，具有安全可靠、简单易用、高性能、低成本等特点。 用户可以将数据、日志、静态资源等多种文件类型，通过多种方式上传至对象存储中，以满足日常数据存储、归档、分析等需求。为了更好的满足用户的需求，青云提供了Elasticsearch、Logstash 等与对象存储的集成功能。

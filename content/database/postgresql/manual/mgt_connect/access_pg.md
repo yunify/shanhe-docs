@@ -17,7 +17,7 @@ PostgreSQL 可通过 psql 命令行客户端直接连接，还可以使用图形
 
 ## 前提条件
 
-- 已获取 QingCloud 管理控制台登录账号和密码，且已获取集群操作权限。
+- 已获取管理控制台登录账号和密码，且已获取集群操作权限。
 - 已创建 PostgreSQL 集群，且集群状态为**活跃**。
 - 已在服务器安装数据库客户端。
 
@@ -46,20 +46,16 @@ psql -U <userName> -h <port> -d <serverName>
 |:----|:----|:----|
 |-U           |数据库用户账号名。<br>新建数据库默认账号名 `pguser`。      | pguser |
 |-h          |数据库节点的 IP 或者双节点集群的 VIP。                 |192.168.100.0|
-|-d          |数据库名称。 <br>新建数据库默认名称 `qingcloud`。            | qingcloud |
-|密码          |数据库用户密码。<br>新建数据库默认账号密码`qingcloud1234`              | qingcloud1234 |
+|-d          |数据库名称。 <br>新建数据库默认名称 `shanhe`。            | shanhe |
+|密码          |数据库用户密码。<br>新建数据库默认账号密码`shanhe1234`              | shanhe1234 |
 
 连接示例:
 
 1. 输入如下命令，并输入密码，访问目标数据库。
    
    ```bash
-    psql -U qingcloud -h 192.168.100.246 -d qingcloud
+    psql -U shanhe -h 192.168.100.246 -d shanhe
    ```
 
 2. 执行命令`\l`，查看当前 PostgreSQL 数据库信息。
-
-回显如下：
-
-![访问 PG 数据库](../../../_images/pglogin.png)  
   

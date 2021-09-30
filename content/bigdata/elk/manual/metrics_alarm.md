@@ -9,14 +9,14 @@ draft: false
 
 ## Elasticsearch 集群监控
 
-为了帮助用户更好的管理和维护 ELK 集群，我们提供了针对 Elasticsearch 集群的监控指标，可通过点击任意 Elasticsearch 节点右侧的监控按钮来查看。
+为了帮助用户更好的管理和维护 ELK 集群，提供了针对 Elasticsearch 集群的监控指标，可通过点击任意 Elasticsearch 节点右侧的监控按钮来查看。
 
-![elk_monitor1](../../images/elk_monitor1.png)
+![elk_monitor1](../../_images/elk_monitor1.png)
 
-![elk_monitor2](../../images/elk_monitor2.png)
+![elk_monitor2](../../_images/elk_monitor2.png)
 
-![elk_monitor3](../../images/elk_monitor3.png)
+![elk_monitor3](../../_images/elk_monitor3.png)
 
 ## 告警
 
-我们提供了资源和 Elasticsearch 集群级别的告警服务，包括 CPU 使用率、内存使用率、硬盘使用率、JVM 堆占用等。
+提供了资源和 Elasticsearch 集群级别的告警服务，包括 CPU 使用率、内存使用率、硬盘使用率、JVM 堆占用等。

@@ -32,14 +32,6 @@ draft: false
    /usr/share/logstash/bin/logstash-plugin install --no-verify
    ```
 
-   > **说明**：
-   >
-   > `ELK 5.5.1 - QingCloud 1.2.0` 及以前版本请使用如下命令：
-   >
-   > ```bash
-   > sudo docker exec -it $(docker ps -q) logstash-plugin install --no-verify
-   > ```
-
 5. 在集群详情页面，切换到参数配置页面，选择 Logstash 节点，修改 `output_conf_content` 配置项为如下，点击保存。
 
    ```ruby
@@ -65,7 +57,7 @@ draft: false
 7. 参考 [Logstash 基本用法](#ls-intro) 发送一条数据：
 
    ```bash
-   curl -d "qingcloud" $LS_IP:9700
+   curl -d "shanhe" $LS_IP:9700
    ```
 
    如成功，则 influxdb 中将新增一条 point ，说明插件配置生效，如发现 influxdb 中没有新增 point ，请查看 logstash 日志，位置为 `/data/logstash/logs/logstash-plain.log`。

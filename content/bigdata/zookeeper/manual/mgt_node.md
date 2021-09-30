@@ -1,13 +1,13 @@
 ---
 title: "节点管理"
-description: 本小节主要介绍如何管理 QingCloud ZooKeeper 集群节点。 
+description: 本小节主要介绍如何管理 ZooKeeper 集群节点。 
 keywords: ZooKeeper 在线伸缩,节点管理
 weight: 15
 collapsible: false
 draft: false
 ---
 
-目前 QingCloud ZooKeeper 支持创建 ZooKeeper 的参与者节点，参与者节点是指参与投票选举的节点，包括 Leader、Follower、单节点 Standalone 三种服务模式。为了确保集群可以正常工作，通常需要保证有足够多的参与者节点，这样当某个或某几个节点坏掉以后，参与者的数量 （Quorum） 还可以保证选举出 Leader 。
+目前 ZooKeeper 支持创建 ZooKeeper 的参与者节点，参与者节点是指参与投票选举的节点，包括 Leader、Follower、单节点 Standalone 三种服务模式。为了确保集群可以正常工作，通常需要保证有足够多的参与者节点，这样当某个或某几个节点坏掉以后，参与者的数量 （Quorum） 还可以保证选举出 Leader 。
 
 > **注意**
 > 
@@ -33,8 +33,8 @@ draft: false
 
 当 ZooKeeper 需增加节点以适应客户端逐步增多带来的压力时，可以在 AppCenter 管理控制台增加 ZooKeeper 节点。
 
-1. 录 QingCloud 管理控制台。
-2. 选择**产品与服务** > **大数据服务** > **ZooKeeper 服务**，进入集群管理页面。
+1. 登录管理控制台。
+2. 选择**产品与服务** > **大数据服务** > **大数据服务 ZooKeeper**，进入集群管理页面。
 3. 选择目标集群，点击目标集群 ID，进入集群详情页面。
 4. 在**节点**页签，点击**新增节点**，弹出节点配置窗口。
 
@@ -65,9 +65,6 @@ draft: false
    > 删除节点数只能为偶数，建议每次删除两个。若需删除更多个节点，需等到上一次节点删除后才能删除下一次节点，否则将导致数据会丢失。
 
 2. 点击**删除**，弹出节点删除确认窗口。
-
-   <img src="../../_images/delete_node.png" alt="删除节点" style="zoom:50%;" />
-
 3. 点击**确认**，返回节点列表页面。
 
    待集群状态切换为**活跃**，即节点删除完毕。

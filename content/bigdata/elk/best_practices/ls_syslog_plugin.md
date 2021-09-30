@@ -37,5 +37,4 @@ Logstash 预置了 logstash-input-syslog 插件，通过此插件可在 Logstash
 
 4. 测试插件是否如预期工作，在浏览器中访问 Kibana 节点提供的 Web 界面`(http://<Kibana节点IP>:5601)`，默认进入配置索引模式界面，如图，直接点击 Create 即可，点击左侧的 Discover 菜单项，显示近期接收到的日志，说明插件配置生效。
 
-   ![ls-syslog-result](../../images/ls-syslog-result.png)
-
+   ![ls-syslog-result](../../_images/ls-syslog-result.png)

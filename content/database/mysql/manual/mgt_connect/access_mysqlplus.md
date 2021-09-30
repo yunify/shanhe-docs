@@ -15,7 +15,7 @@ MySQL Plus 支持通过内网地址和外网地址连接数据库，推荐使用
 
 ## 前提条件
 
-- 已获取 QingCloud 管理工作台登录账号和密码，且已获取集群操作权限。
+- 已获取管理工作台登录账号和密码，且已获取集群操作权限。
 - 已创建 MySQL Plus 集群，且集群状态为**活跃**。
 - 已在服务器安装 MySQL 客户端。
 
@@ -26,8 +26,8 @@ MySQL Plus 支持通过内网地址和外网地址连接数据库，推荐使用
 
 ### 获取连接信息
 
-1. 登录 QingCloud 管理控制台。
-2. 选择**产品与服务** > **数据库与缓存** > **关系型数据库 MySQL Plus**，进入集群管理页面。
+1. 登录管理控制台。
+2. 选择**产品与服务** > **数据库与缓存** > **云数据库 MySQL Plus**，进入集群管理页面。
 3. 选择目标集群，点击目标集群 ID，进入集群详情页面。
 4. 在**连接信息**模块，获取内网或外网地址。
    
@@ -53,7 +53,7 @@ mysql -h <mysqlServerName> -P <port> -u <userName> -p -D <databaseName> -ssl-ca=
 
 |<span style="display:inline-block;width:80px">选项</span> |<span style="display:inline-block;width:240px">说明</span>|<span style="display:inline-block;width:280px">示例</span> |
 |:----|:----|:----|
-|-h           |数据库内网或外网连接地址。       |<li>192.168.00.00<li>gz-cdb-xx123xx.mysql.qingcloud.link|
+|-h           |数据库内网或外网连接地址。       |<li>192.168.00.00<li>gz-cdb-xx123xx.mysql.shanhe.link|
 |-P          |数据库端口号。                 |3306|
 |-u          |用户账号名称。                |test_mysql|
 |-p          |用户账号密码。<li> 为保障密码安全，`-p`一般空密码。在执行命令后输入密码，回车即可。<li>若需填写该参数，`-p`与密码之间不能有空格。            |test_mysql|
@@ -63,7 +63,7 @@ mysql -h <mysqlServerName> -P <port> -u <userName> -p -D <databaseName> -ssl-ca=
 通过外网地址连接数据库，回显示例：
    
 ```shell
-$ mysql -h gz-cdb-xx123xx.mysql.qingcloud.link -P <3306> -u test_mysql -p
+$ mysql -h gz-cdb-xx123xx.mysql.shanhe.link -P <3306> -u test_mysql -p
 Enter password：
 Welcome to the MySQL monitor.   Commands end with ; or \g.
 Your MySQL connection id is 20

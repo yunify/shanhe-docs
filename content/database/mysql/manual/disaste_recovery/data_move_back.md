@@ -23,15 +23,15 @@ draft: false
 
 ## 前提条件
 
-- 已获取 QingCloud 管理控制台登录账号和密码，且已获取集群操作权限。
+- 已获取管理控制台登录账号和密码，且已获取集群操作权限。
 - 已**源集群**和**灾备集群**集群状态均为**活跃**。
 - **源集群**与**灾备集群**均修改如下配置参数为目标值：`connect_timeout=30` 、`max_allowed_packets=1G` 、`slave_pending_jobs_size_max=1G` 、 `interactive_timeout=3600` 、 `wait_timeout=3600` 、 `net_read_timeout=1800`、`net_write_timeout=1800`
 
 ## 操作步骤
 
-1. 登录 QingCloud 管理控制台。
+1. 登录管理控制台。
 
-2. 选择**产品与服务** > **数据库与缓存** > **关系型数据库 MySQL Plus**，进入集群管理页面。
+2. 选择**产品与服务** > **数据库与缓存** > **云数据库 MySQL Plus**，进入集群管理页面。
 
 3. 在**源集群**[开启灾备](../disaster_recovery)。
 
@@ -41,9 +41,6 @@ draft: false
 
    1. 点击**源集群** ID，进入集群详情页面。
    2. 在**基本属性**区域，展开操作操作栏，点击**提升灾备**，弹出集群提升确认窗口。
-
-      <img src="../../../_images/switch_dr.png" alt="提升灾备" style="zoom:50%;" />
-
    3. 确认信息无误后，点击**提交**。
 
 6. 在**源集群**，设置[开关只读](../../node_lifecycle/read_only_node)，设置只读为**关闭**。

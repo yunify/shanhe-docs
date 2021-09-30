@@ -1,5 +1,5 @@
 ---
-title: "关系型数据库 PostgreSQL"
+title: "云数据库 PostgreSQL"
 linkTitle: "PostgreSQL"
 weight: 02
 collapsible: true
@@ -7,7 +7,7 @@ type: "product"
 
 section1:
   title: PostgreSQL
-  vice_title: PostgreSQL 是业界最先进的开源数据库系统。
+  vice_title: 云数据库 PostgreSQL 是业界最先进的开源数据库系统。
 
 Section2:
   title: 用户指南

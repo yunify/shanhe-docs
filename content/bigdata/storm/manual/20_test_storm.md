@@ -11,7 +11,7 @@ Storm 创建完成之后可以测试其可用性，由于 Storm 客户端节点�
 
 用户名：root，密码：storm
 
-> **注意：**
+> **注意**
 >
 > 测试需创建 Storm 客户端 节点，如创建集群时未创建该类型节点，可通过 新增节点 增加该节点。
 
@@ -80,7 +80,7 @@ ReachTopology 基于 Storm 可实时计算 Twitter 网站上任意 URL 的 Reach
 然后 Topology 成功提交运行后，接着创建用于发送 RPC 请求的客户端,为此，需创建一个基于 Maven 的 Java 工程，添加 storm-core 依赖包并创建 TestReachTopology 类, 该测试代码如下所示。
 
 ```
-package com.qingcloud;
+package com.shanhe ;
 
 import org.apache.storm.utils.DRPCClient;
 import org.apache.storm.utils.Utils;
@@ -107,10 +107,10 @@ public class TestReachTopology {
 用于测试的 jar 包已经打好放在客户端节点了，可以执行如下命令,该命令中 “i-9hhwul25” 为 master 节点的 leader 角色， 参数请使用的是任意一个 master 节点 host,可以直接在客户端节点 host 文件中找到。
 
 ```
-java -cp /opt/storm/examples/storm-drpc-client/storm-example-1.1-SNAPSHOT.jar com.qingcloud.TestReachTopology i-9hhwul25
+java -cp /opt/storm/examples/storm-drpc-client/storm-example-1.1-SNAPSHOT.jar com.shanhe.TestReachTopology i-9hhwul25
 ```
 
-> **注意：**
+> **注意**
 >
 > 官方这个测试用例较为复杂，需要请求 master 节点的 leader 角色，可以在 Storm UI 上查看到 leaer 角色的 host，当删除 leader 后，需要重新测试此流程。
 

@@ -9,16 +9,11 @@ draft: false
 
 本小节为用户呈现了中文日志从 Logstash 导入到 Elasticsearch，再通过 Kibana 进行搜索的完整的过程。
 
-> **说明**：
+> **说明**
 >
-> 从版本 `ELK 5.6.16 - QingCloud 1.5.0` 起已内置用于指定 ik 分词器的模板文件，用户可以直接使用（在 Logstash 节点的 /data/elasticsearch/dicts 目录下）。
+> 已内置用于指定 ik 分词器的模板文件，用户可以直接使用（在 Logstash 节点的 /data/elasticsearch/dicts 目录下）。
 >
-> 如果是以前的版本，需要事先把 [模板文件](logstash.json) 下载到 Logstash 节点的 `/data/elasticserach/dicts/` 目录下再进行后面的操作，否则 Logstash 会因找不到模板文件而无法启动（可以直接登录到节点下载，也可以通过如下命令上传，注意 URL 最后的 `/` 不能省略：
->
-> ```bash
-> curl -sL https://docs.qingcloud.com/product/big_data/elk/logstash.json |
-> curl -F "file=@-;filename=logstash.json" $LS_IP/dicts/
-> ```
+> 如果是以前的版本，需要事先把 [模板文件](logstash.json) 下载到 Logstash 节点的 `/data/elasticserach/dicts/` 目录下再进行后面的操作，否则 Logstash 会因找不到模板文件而无法启动（可以直接登录到节点下载，也可以通过如下命令上传，注意 URL 最后的 `/` 不能省略。
 
 ## 操作步骤
 
@@ -35,12 +30,13 @@ template => "/data/elasticsearch/dicts/logstash.json"
 
 2. 重启 Logstash 节点：在集群列表页面右键点击您的 ELK 集群，点击重启，选择 Logstash 节点，点击提交，此时 Logstash 节点将会重启。
 
-3. 待 Logstash 重启完成后，向 Logstash 发送数据：
+3. 待 Logstash 重启完成后，向 Logstash 发送数据。
 
 ```bash
-curl -d "中国驻洛杉矶领事馆遭亚裔男子枪击 嫌犯已自首" $LS_IP:9700
+curl -d "shanhe123" $LS_IP:9700
 ```
 
 4. 参照 [Kibana 基本用法](#kibana-intro) 在浏览器中访问 Kibana 节点并配置 index pattern，然后点击左侧的 `Discover` 菜单项，显示近期接收到的日志，在搜索栏中输入“中国”，点击右侧的“搜索”按钮。如图，“中国”被高亮显示并且中间没有空格分隔，测试成功。
 
- ![search_result](../../images/search_result.png) 
+ ![search_result](../../_images/search_result.png)
+ 

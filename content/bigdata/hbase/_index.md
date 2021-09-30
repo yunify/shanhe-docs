@@ -1,5 +1,5 @@
 ---
-title: "HBase 服务"
+title: "大数据服务 HBase"
 linkTitle: "HBase"
 weight: 40
 collapsible: true
@@ -7,7 +7,7 @@ type: "product"
 
 section1:
   title: HBase
-  vice_title: HBase 是一个开源的、分布式的、数据多版本的，列式存储的 NoSQL 数据库。
+  vice_title: 大数据服务 HBase 是一个开源的、分布式的、数据多版本的，列式存储的 NoSQL 数据库。
 
 Section2:
   title: 用户指南
@@ -29,7 +29,7 @@ Section2:
       url: "quickstart/create_cluster/"
 
     - title: 操作指南
-      content: 学习上手如何管理 HBase 集群，以及如何使用 HBase 提供的相关服务等。
+      content: 学习上手管理 HBase 集群。
       url: "manual/cluster_info/"
 
 section3:
