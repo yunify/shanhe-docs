@@ -11,7 +11,9 @@ draft: false
 
 点击控制台顶部导航 **用户头像** > **子账户**。
 
-![](../../_images/user-verify-entry.png)
+![indep_quota](../../_images/indep_quota.png)
+
+
 
 ## 开启独立配额
 
@@ -19,11 +21,11 @@ draft: false
 
 进入详情页后，点击 **配额** 页签。当子账户还没有独立配额时，您会看到如下页面：
 
-![子账户未开启独立配额](../../_images/indep-quota-disabled.png)
+![indep-quota-disabled](../../_images/indep-quota-disabled.png)
 
 如您想给这个子账户分配独立配额，请点击 **设置独立配额** 按钮。 点击按钮之后，页面里出现一个分配表单，您可以在这里填写分配资源的数量。
 
-![填写资源数量](../../_images/indep-quota-grant.png)
+![indep-quota-grant](../../_images/indep-quota-grant.png)
 
 > **说明**
 >
