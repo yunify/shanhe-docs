@@ -48,9 +48,9 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeRDBParameters
+https://api.shanhe.com/iaas/?action=DescribeRDBParameters
 &rdbs.1=rdb-azjolu1b
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 

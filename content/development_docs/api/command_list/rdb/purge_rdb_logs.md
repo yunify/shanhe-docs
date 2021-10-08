@@ -33,12 +33,12 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=CopyRDBInstanceFilesToFTP
+https://api.shanhe.com/iaas/?action=CopyRDBInstanceFilesToFTP
 &rdb=rdb-1j6omffs
 &rdb_instance=rmi-h266tljl
 &log_type=binary_log
 &before_file=mysql-bin.000005
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 

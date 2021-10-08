@@ -41,9 +41,9 @@ weight: 12
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeInstanceTypes
+https://api.shanhe.com/iaas/?action=DescribeInstanceTypes
 &instance_types.1=c1m1
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 
@@ -60,7 +60,7 @@ _Example Response_:
       "description":"",
       "instance_type_name":"1核1G",
       "instance_type_id":"c1m1",
-      "zone_id":"pek3a",
+      "zone_id":"jn1a",
       "memory_current":1024
     }
   ],

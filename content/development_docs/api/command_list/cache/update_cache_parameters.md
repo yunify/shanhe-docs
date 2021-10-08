@@ -30,7 +30,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=UpdateCacheParameters
+https://api.shanhe.com/iaas/?action=UpdateCacheParameters
 &cache_parameter_group=cpg-oxzc6vtd
 &parameters.0.cache_parameter_name=slowlog-log-slower-than
 &parameters.0.cache_parameter_value=500

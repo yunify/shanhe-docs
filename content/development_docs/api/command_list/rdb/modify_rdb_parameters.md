@@ -31,11 +31,11 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeRDBParameters
+https://api.shanhe.com/iaas/?action=DescribeRDBParameters
 &rdb=rdb-uccrvnve
 &parameters.0.long_query_time=2
 &parameters.1.back_log=1024
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 

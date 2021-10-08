@@ -31,10 +31,10 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=AttachNics
+https://api.shanhe.com/iaas/?action=AttachNics
 &nics.1="52:54:00:00:12:34"
 &instance_id=i-12345678,
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 

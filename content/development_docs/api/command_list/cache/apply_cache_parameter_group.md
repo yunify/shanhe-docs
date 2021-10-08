@@ -35,10 +35,10 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=ApplyCacheParameterGroup
+https://api.shanhe.com/iaas/?action=ApplyCacheParameterGroup
 &cache_parameter_group=cpg-p56ld3nr
 &caches.1=c-55dwkqew
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 

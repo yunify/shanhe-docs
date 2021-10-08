@@ -31,7 +31,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=DeleteSparks
+https://api.shanhe.com/iaas/?action=DeleteSparks
 &sparks.0=sk-5r22wf7v
 &COMMON_PARAMS
 ```

@@ -31,10 +31,10 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=RDBsJoinVxnet
+https://api.shanhe.com/iaas/?action=RDBsJoinVxnet
 &rdbs.1=rdb-y76ik96v
 &vxnet=vxnet-fpfvd5q
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 

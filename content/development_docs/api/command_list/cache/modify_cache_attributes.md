@@ -32,10 +32,10 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=ModifyCacheAttributes
+https://api.shanhe.com/iaas/?action=ModifyCacheAttributes
 &cache=c-55dwkqew
 &cache_name=sample
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 

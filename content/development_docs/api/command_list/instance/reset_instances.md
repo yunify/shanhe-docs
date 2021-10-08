@@ -35,9 +35,9 @@ weight: 8
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=ResetInstances
+https://api.shanhe.com/iaas/?action=ResetInstances
 &instances.1=i-rtyv0968
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 

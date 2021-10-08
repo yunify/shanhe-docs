@@ -56,7 +56,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=GetMonitor
+https://api.shanhe.com/iaas/?action=GetMonitor
 &resource=i-1234abcd
 &meters.1=cpu
 &meters.2=if-52%3A54%3Af4%3A98%3A5d%3Af3
@@ -64,7 +64,7 @@ https://api.qingcloud.com/iaas/?action=GetMonitor
 &start_time==2014-02-09T21%3A47%3A00.820Z
 &end_time=2014-02-10T03%3A47%3A00.820Z
 &step=5m
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 

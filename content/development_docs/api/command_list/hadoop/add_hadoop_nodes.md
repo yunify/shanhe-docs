@@ -35,7 +35,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=AddHadoopNodes
+https://api.shanhe.com/iaas/?action=AddHadoopNodes
 &hadoop=hdp-aki0ug64
 &node_count=2
 &private_ips.0.private_ips=192.168.200.30,192.168.200.31

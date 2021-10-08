@@ -40,7 +40,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeCacheParameters
+https://api.shanhe.com/iaas/?action=DescribeCacheParameters
 &cache_parameter_group=cpg-oxzc6vtd
 &COMMON_PARAMS
 ```

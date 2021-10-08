@@ -8,7 +8,7 @@ draft: false
 
 ## 命令自动补全
 
-qingcloud-cli 包含命令自动补全功能 (目前不支持 Windows 系统)。
+shanhe-cli 包含命令自动补全功能 (目前不支持 Windows 系统)。
 
 如果补全功能没有自动生效，请手动激活一下:
 
@@ -19,47 +19,47 @@ $ source ~/.bashrc
 如果还不行，则输入 complete 命令:
 
 ```
-$ complete -C qingcloud_completer qingcloud
+$ complete -C shanhe_completer shanhe
 ```
 
 并可将这条命令加到你的启动脚本中 (如 ~/.bash_profile) 方便以后使用。
 
 ## 新手指南
 
-使用 qingcloud-cli 必需一个配置文件，配置你自己的 qy_access_key_id 和 qy_secret_access_key 以及 zone 。比如:
+使用 shanhe-cli 必需一个配置文件，配置你自己的 qy_access_key_id 和 qy_secret_access_key 以及 zone 。比如:
 
 ```
-qy_access_key_id: 'QINGCLOUDACCESSKEYID'
-qy_secret_access_key: 'QINGCLOUDSECRETACCESSKEYEXAMPLE'
-zone: 'pek3'
+qy_access_key_id: 'shanheACCESSKEYID'
+qy_secret_access_key: 'shanheSECRETACCESSKEYEXAMPLE'
+zone: 'jn1'
 ```
 
-access key 可在 [青云控制台](https://console.qingcloud.com/access_keys/) 申请。zone 是你的资源所在的节点，可在控制台切换节点的地方查看，如 pek3, gd2, ap2a 等。
+access key 可在 [山河控制台](https://console.shanhe.com/access_keys/) 申请。zone 是你的资源所在的节点，可在控制台切换节点的地方查看，如 jn1, gd2, ap2a 等。
 
-配置文件默认放在 ~/.qingcloud/config.yaml ，也可在每次执行命令时以参数 -f /path/to/config 方式来指定，例如:
-
-```
-qingcloud iaas describe-instances -f '/root/qingcloud_config.yaml'
-```
-
-如果只是输入 qingcloud 并回车，会列出所有支持的命令， 每个命令都有帮助文档，可以通过 -h 参数打印出来，如:
+配置文件默认放在 ~/.shanhe/config.yaml ，也可在每次执行命令时以参数 -f /path/to/config 方式来指定，例如:
 
 ```
-qingcloud iaas run-instances -h
+shanhe iaas describe-instances -f '/root/shanhe_config.yaml'
+```
+
+如果只是输入 shanhe 并回车，会列出所有支持的命令， 每个命令都有帮助文档，可以通过 -h 参数打印出来，如:
+
+```
+shanhe iaas run-instances -h
 ```
 
 ## 输入参数
 
-qingcloud-cli 的参数只有 int 和 string 类型。如果参数支持传递列表，则多个值之间以 _英文逗号_ ”,” 分隔。如:
+shanhe-cli 的参数只有 int 和 string 类型。如果参数支持传递列表，则多个值之间以 _英文逗号_ ”,” 分隔。如:
 
 ```
-qingcloud iaas describe-keypairs -k 'kp-bn2n77ow,kp-b2ivaf15' -L 2
+shanhe iaas describe-keypairs -k 'kp-bn2n77ow,kp-b2ivaf15' -L 2
 ```
 
 有时参数需要是 JSON 格式的字符串，如:
 
 ```
-qingcloud iaas add-router-statics -r rtr-ba2nbge6 -s '[{"static_type":1,"val1":"80","val2":"192.168.99.2","val3":"8000"}]'
+shanhe iaas add-router-statics -r rtr-ba2nbge6 -s '[{"static_type":1,"val1":"80","val2":"192.168.99.2","val3":"8000"}]'
 ```
 
 ## 命令输出

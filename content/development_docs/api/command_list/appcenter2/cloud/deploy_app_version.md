@@ -39,7 +39,7 @@ draft: false
 
 **Example**
 
-以应用[Tomcat Cluster](https://appcenter.qingcloud.com/apps/app-jwq1fzqo/Tomcat%20Cluster%20on%20QingCloud)为例，请使用[DescribeAppVersions](../describe_app_versions/)来查看应用的`config.json`和`cluster.json.mustache`配置文件，以此来确定conf的具体值。通过[DescribeAppVersions](../describe_app_versions/)获得的 **Tomcat Cluster** 应用的 `config.json` 配置文件如下。我们需要注意每项的范围(`range`值)，确保我们传递的值都在`config.json`定义的`range`中；还需要注意其中 `required` 属性为 `true` 的项，这些是我们必须向后端传递的值
+以应用[Tomcat Cluster](https://appcenter.shanhe.com/apps/app-jwq1fzqo/Tomcat%20Cluster%20on%20shanhe)为例，请使用[DescribeAppVersions](../describe_app_versions/)来查看应用的`config.json`和`cluster.json.mustache`配置文件，以此来确定conf的具体值。通过[DescribeAppVersions](../describe_app_versions/)获得的 **Tomcat Cluster** 应用的 `config.json` 配置文件如下。我们需要注意每项的范围(`range`值)，确保我们传递的值都在`config.json`定义的`range`中；还需要注意其中 `required` 属性为 `true` 的项，这些是我们必须向后端传递的值
 
 ```json
 {
@@ -339,13 +339,13 @@ draft: false
                 {
                     "key": "war_source",
                     "label": "How to get WAR file",
-                    "description": "Choose a way to upload WAR to Tomcat server, the default way is using Tomcat manager UI or command, the other option is QingStor. Note: Tomcat manager could only deploy WAR to single node, we monitor that deployment and copy the deployed WAR file to watched folder of Tomcat FarmWarDeployer, which will distribute this file to other nodes",
+                    "description": "Choose a way to upload WAR to Tomcat server, the default way is using Tomcat manager UI or command, the other option is 对象存储服务OIS. Note: Tomcat manager could only deploy WAR to single node, we monitor that deployment and copy the deployed WAR file to watched folder of Tomcat FarmWarDeployer, which will distribute this file to other nodes",
                     "type": "string",
                     "changeable": true,
                     "default": "tomcat_manager",
                     "range": [
                         "tomcat_manager",
-                        "qingstor"
+                        "对象存储服务OIS"
                     ],
                     "required": "yes"
                 },
@@ -381,9 +381,9 @@ draft: false
                     "description": "Zone of bucket for web application(WAR) deployment, leave empty if you chooose to use Tomcat Manager",
                     "type": "string",
                     "changeable": true,
-                    "default": "pek3a",
+                    "default": "jn1a",
                     "range": [
-                        "pek3a",
+                        "jn1a",
                         "sh1a"
                     ],
                     "required": "no"
@@ -495,7 +495,7 @@ draft: false
         "java_opts": "",
         "redis_db_num": "0",
         "access_key_id": "",
-        "zone": "pek3a",
+        "zone": "jn1a",
         "bucket": "",
         "war_name": "",
         "mysql_db_name": "mysql",
@@ -531,11 +531,11 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?
+https://api.shanhe.com/iaas/?
 action=DeployAppVersion
-conf=%7B%22cluster%22%3A%7B%22name%22%3A%22Tomcat_Cluster%22%2C%22description%22%3A%22%22%2C%22tomcat_nodes%22%3A%7B%22loadbalancer%22%3A%5B%7B%22listener%22%3A%22lbl-wdplf9gh%22%2C%22port%22%3A8080%2C%22policy%22%3A%22%22%7D%5D%2C%22cpu%22%3A1%2C%22memory%22%3A2048%2C%22instance_class%22%3A0%2C%22count%22%3A2%2C%22volume_size%22%3A10%7D%2C%22log_node%22%3A%7B%22cpu%22%3A1%2C%22memory%22%3A2048%2C%22instance_class%22%3A0%2C%22volume_size%22%3A10%7D%2C%22vxnet%22%3A%22vxnet-iuy3lnd%22%2C%22global_uuid%22%3A%2293242219542648944%22%7D%2C%22version%22%3A%22appv-gva21mw0%22%2C%22env%22%3A%7B%22tomcat_user%22%3A%22qingAdmin%22%2C%22tomcat_pwd%22%3A%22qing0pwd%22%2C%22tomcat_encoding%22%3A%22UTF-8%22%2C%22tomcat_log_level%22%3A%22INFO%22%2C%22threadpool_maxThreads%22%3A%22200%22%2C%22threadpool_minSpareThreads%22%3A%2225%22%2C%22threadpool_maxIdleTime%22%3A%2260000%22%2C%22war_source%22%3A%22tomcat_manager%22%2C%22tomcat_log_packages%22%3A%22%22%2C%22java_opts%22%3A%22%22%2C%22redis_db_num%22%3A%220%22%2C%22access_key_id%22%3A%22%22%2C%22zone%22%3A%22pek3a%22%2C%22bucket%22%3A%22%22%2C%22war_name%22%3A%22%22%2C%22mysql_db_name%22%3A%22mysql%22%2C%22jdbc_dsname%22%3A%22TestDB%22%2C%22jdbc_maxActive%22%3A%22100%22%2C%22jdbc_maxIdle%22%3A%2230%22%2C%22jdbc_maxWait%22%3A%2230000%22%7D%7D
+conf=%7B%22cluster%22%3A%7B%22name%22%3A%22Tomcat_Cluster%22%2C%22description%22%3A%22%22%2C%22tomcat_nodes%22%3A%7B%22loadbalancer%22%3A%5B%7B%22listener%22%3A%22lbl-wdplf9gh%22%2C%22port%22%3A8080%2C%22policy%22%3A%22%22%7D%5D%2C%22cpu%22%3A1%2C%22memory%22%3A2048%2C%22instance_class%22%3A0%2C%22count%22%3A2%2C%22volume_size%22%3A10%7D%2C%22log_node%22%3A%7B%22cpu%22%3A1%2C%22memory%22%3A2048%2C%22instance_class%22%3A0%2C%22volume_size%22%3A10%7D%2C%22vxnet%22%3A%22vxnet-iuy3lnd%22%2C%22global_uuid%22%3A%2293242219542648944%22%7D%2C%22version%22%3A%22appv-gva21mw0%22%2C%22env%22%3A%7B%22tomcat_user%22%3A%22qingAdmin%22%2C%22tomcat_pwd%22%3A%22qing0pwd%22%2C%22tomcat_encoding%22%3A%22UTF-8%22%2C%22tomcat_log_level%22%3A%22INFO%22%2C%22threadpool_maxThreads%22%3A%22200%22%2C%22threadpool_minSpareThreads%22%3A%2225%22%2C%22threadpool_maxIdleTime%22%3A%2260000%22%2C%22war_source%22%3A%22tomcat_manager%22%2C%22tomcat_log_packages%22%3A%22%22%2C%22java_opts%22%3A%22%22%2C%22redis_db_num%22%3A%220%22%2C%22access_key_id%22%3A%22%22%2C%22zone%22%3A%22jn1a%22%2C%22bucket%22%3A%22%22%2C%22war_name%22%3A%22%22%2C%22mysql_db_name%22%3A%22mysql%22%2C%22jdbc_dsname%22%3A%22TestDB%22%2C%22jdbc_maxActive%22%3A%22100%22%2C%22jdbc_maxIdle%22%3A%2230%22%2C%22jdbc_maxWait%22%3A%2230000%22%7D%7D
 &version_id=appv-gva21mw0
-&zone=pek3a
+&zone=jn1a
 &COMMOM_PARAMS
 ```
 

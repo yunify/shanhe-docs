@@ -34,10 +34,10 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=CreateMongoFromSnapshot
+https://api.shanhe.com/iaas/?action=CreateMongoFromSnapshot
 &vxnet=vxnet-dls87x2
 &mongo_type=1
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 

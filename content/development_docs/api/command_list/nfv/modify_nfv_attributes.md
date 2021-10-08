@@ -35,9 +35,9 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=ModifyNFVAttributes
+https://api.shanhe.com/iaas/?action=ModifyNFVAttributes
 &nfv=nfv-1234abcd
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 

@@ -31,10 +31,10 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=CeaseRDBInstance
+https://api.shanhe.com/iaas/?action=CeaseRDBInstance
 &rdb=rdb-y76ik96v
 &rdb_instance=rmi-5v9hz8h9
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 

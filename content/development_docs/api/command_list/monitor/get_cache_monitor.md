@@ -50,7 +50,7 @@ draft: false
     > 
     > 
 
-    2.Memcached 缓存服务的监控数据为：
+    2.存储服务Memcached 缓存服务的监控数据为：
 
     > 
     > 
@@ -65,13 +65,13 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=GetCacheMonitor
+https://api.shanhe.com/iaas/?action=GetCacheMonitor
 &resource=cn-5ry0ma0j
 &meters.1=stats
 &start_time==2015-05-01T10%3A39%3A40.091Z
 &end_time=2015-05-01T16%3A39%3A40.091Z
 &step=5m
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 
@@ -107,13 +107,13 @@ _Example Response_:
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=GetCacheMonitor
+https://api.shanhe.com/iaas/?action=GetCacheMonitor
 &resource=cn-5ry0ma0j
 &meters.1=traffic
 &start_time==2015-05-01T16%3A00%3A40.091Z
 &end_time=2015-05-01T16%3A39%3A40.091Z
 &step=5m
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 

@@ -33,10 +33,10 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=ModifyMongoAttributes
+https://api.shanhe.com/iaas/?action=ModifyMongoAttributes
 &mongo=mongo-yaz6hmu8
 &auto_backup_time=16
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 

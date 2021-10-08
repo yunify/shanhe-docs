@@ -29,10 +29,10 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DetachKeyPairs
+https://api.shanhe.com/iaas/?action=DetachKeyPairs
 &keypairs.1=kp-12djpg8q
 &instances.1=i-12345678,
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 

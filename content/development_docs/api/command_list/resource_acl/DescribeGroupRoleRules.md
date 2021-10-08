@@ -28,7 +28,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeGroupRoleRules
+https://api.shanhe.com/iaas/?action=DescribeGroupRoleRules
 &group_roles.1=gr-tirat7zw
 &status.1=enabled
 &COMMON_PARAMS

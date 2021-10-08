@@ -31,10 +31,10 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=RemoveMongoInstances
+https://api.shanhe.com/iaas/?action=RemoveMongoInstances
 &mongo=mongo-3eykbc5x
 &mongo_instances.1=mi-ka2nbtxz
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 

@@ -35,10 +35,10 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=ModifyBorderStaticAttributes
+https://api.shanhe.com/iaas/?action=ModifyBorderStaticAttributes
 &disabled=1
 &border_static=bdrs-c8zo9kra
-&zone=pek3
+&zone=jn1
 &COMMON_PARAMS
 ```
 

@@ -15,7 +15,7 @@ draft: false
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
 | s2_server | String | 共享存储服务器ID | Yes |
-| export_name | String | 共享存储目标名称，或IQN<br/>也可以输入短名，QingCloud会自动帮你补全IQN。<br/>NFS类型，需要以/mnt/开头定义目录名称，SMB类型，只输入名称，不能包含路径。 | Yes |
+| export_name | String | 共享存储目标名称，或IQN<br/>也可以输入短名，shanhe会自动帮你补全IQN。<br/>NFS类型，需要以/mnt/开头定义目录名称，SMB类型，只输入名称，不能包含路径。 | Yes |
 | target_type | String | 共享存储目标类型，类型：ISCSI（vsan），NFS 和 SMB（vnas） | Yes |
 | description | String | 共享存储目标描述 | No |
 | volumes.n | String | 添加硬盘作为backstore | No |
@@ -39,12 +39,12 @@ _Example Request_:
 ```
 创建vsan服务类型的共享目录
 
-https://api.qingcloud.com/iaas/?action=CreateS2SharedTarget
+https://api.shanhe.com/iaas/?action=CreateS2SharedTarget
 &s2_server=s2-lxqjtu3l
 &export_name=demo
 &target_type=ISCSI
 &description=demo_descritpion
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 
@@ -63,13 +63,13 @@ _Example Request_:
 ```
 创建vnas服务类型的共享目录（SMB)
 
-https://api.qingcloud.com/iaas/?action=CreateS2SharedTarget
+https://api.shanhe.com/iaas/?action=CreateS2SharedTarget
 &s2_server=s2-lxqjtu3l
 &export_name=smbtest
 &target_type=SMB
 &s2_group=s2g-1a1212sa
 &description=demo_descritpion
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 

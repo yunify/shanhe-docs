@@ -33,10 +33,10 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=ModifyAlarmPolicyAttributes
+https://api.shanhe.com/iaas/?action=ModifyAlarmPolicyAttributes
 &alarm_policy=alarm_policy-axbkmf21
 &alarm_policy_name=sample
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 

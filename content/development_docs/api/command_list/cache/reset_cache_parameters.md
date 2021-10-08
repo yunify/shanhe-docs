@@ -29,7 +29,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=ResetCacheParameters
+https://api.shanhe.com/iaas/?action=ResetCacheParameters
 &cache_parameter_group=cpg-oxzc6vtd
 &COMMON_PARAMS
 ```

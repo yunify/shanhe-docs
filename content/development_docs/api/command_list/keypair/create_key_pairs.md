@@ -43,10 +43,10 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=CreateKeyPair
+https://api.shanhe.com/iaas/?action=CreateKeyPair
 &mode=system
 &keypair_name=demo_kp
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 
@@ -64,11 +64,11 @@ _Example Response_:
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=CreateKeyPair
+https://api.shanhe.com/iaas/?action=CreateKeyPair
 &mode=user
 &keypair_name=demo_kp
 &public_key=ssh-rsa%20AAAAB3...
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 

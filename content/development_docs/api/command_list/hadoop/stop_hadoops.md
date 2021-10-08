@@ -30,9 +30,9 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=StopHadoops
+https://api.shanhe.com/iaas/?action=StopHadoops
 &hadoops.1=hdp-mndwkqew
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 

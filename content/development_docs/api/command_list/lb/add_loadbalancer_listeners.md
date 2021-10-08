@@ -42,7 +42,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=AddLoadBalancerListeners
+https://api.shanhem/iaas/?action=AddLoadBalancerListeners
 &loadbalancer=lb-1234abcd
 &listeners.1.listener_port=80
 &listeners.1.listener_protocol=tcp

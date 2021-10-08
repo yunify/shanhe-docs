@@ -30,9 +30,9 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DeleteCaches
+https://api.shanhe.com/iaas/?action=DeleteCaches
 &caches.1=c-55dwkqew
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 

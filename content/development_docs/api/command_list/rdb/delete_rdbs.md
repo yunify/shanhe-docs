@@ -30,9 +30,9 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=DeleteRDBs
+https://api.shanhe.com/iaas/?action=DeleteRDBs
 &rdbs.1=rdb-y76ik96v
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 

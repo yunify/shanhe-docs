@@ -30,9 +30,9 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=StartRDBs
+https://api.shanhe.com/iaas/?action=StartRDBs
 &rdbs.1=rdb-y76ik96v
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 

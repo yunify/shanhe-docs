@@ -38,11 +38,11 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=JoinRouter
+https://api.shanhe.com/iaas/?action=JoinRouter
 &vxnet=vxnet-rzg2llb
 &router=rtr-xt37nm9j
 &ip_network=192.168.1.0/24
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 

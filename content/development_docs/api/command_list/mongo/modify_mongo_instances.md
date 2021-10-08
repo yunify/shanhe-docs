@@ -31,10 +31,10 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=ModifyMongoInstances
+https://api.shanhe.com/iaas/?action=ModifyMongoInstances
 &mongo=mongo-66varrpz
 &private_ips.0.mi-y5kxxvem=192.168.160.33
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 

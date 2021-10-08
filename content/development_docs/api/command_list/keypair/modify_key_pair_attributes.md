@@ -33,10 +33,10 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=ModifyKeyPairAttributes
+https://api.shanhe.com/iaas/?action=ModifyKeyPairAttributes
 &keypair=kp-rtyv0968
 &keypair_name=sample
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 

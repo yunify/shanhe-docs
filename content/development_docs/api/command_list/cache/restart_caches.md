@@ -34,9 +34,9 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=RestartCaches
+https://api.shanhe.com/iaas/?action=RestartCaches
 &caches.1=c-55dwkqew
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 

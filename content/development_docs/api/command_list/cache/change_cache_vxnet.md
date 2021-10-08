@@ -33,12 +33,12 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=ChangeCacheVxnet
+https://api.shanhe.com/iaas/?action=ChangeCacheVxnet
 &cache=c-55dwkqew
 &vxnet=vxnet-fbmcjfa
 &private_ips.0.cache_node_id=cn-kcoh9zui
 &private_ips.0.private_ip=192.168.10.21
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 

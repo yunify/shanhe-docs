@@ -32,9 +32,9 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=ReleaseEips
+https://api.shanhe.com/iaas/?action=ReleaseEips
 &eips.1=eip-uydrnlax
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 

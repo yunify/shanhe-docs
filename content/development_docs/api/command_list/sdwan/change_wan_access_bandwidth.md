@@ -35,11 +35,11 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=ChangeWanAccessBandwidth
+https://api.shanhe.com/iaas/?action=ChangeWanAccessBandwidth
 &wan_access=wacc-fub9b1eo
 &bandwidth_type=elastic
 &bandwidth=1
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 

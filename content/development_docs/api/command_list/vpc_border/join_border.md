@@ -34,12 +34,12 @@ VXNET 加入边界路由器。
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=JoinBorder
+https://api.shanhe.com/iaas/?action=JoinBorder
 &border=irt-2zevtm67
 &vxnets.1=vxnet-gonkgpv
 &border_private_ips.0.vxnet_id=vxnet-gonkgpv
 &border_private_ips.0.border_private_ip=192.168.0.254
-&zone=pek3
+&zone=jn1
 &COMMON_PARAMS
 ```
 
