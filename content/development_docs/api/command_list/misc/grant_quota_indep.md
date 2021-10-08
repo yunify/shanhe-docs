@@ -54,7 +54,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=GrantQuotaIndep
+https://api.shanhe.com/iaas/?action=GrantQuotaIndep
 &user=usr-P9P3grKr
 &zone=test
 &volume=10

@@ -4,9 +4,9 @@ description:
 draft: false
 ---
 
-青云给云服务器定义了几种经典配置
+山河给云服务器定义了几种经典配置
 
- **北京 3 区 - A ( pek3a )** **雅加达区**
+ **北京 3 区 - A ( jn1a )** **雅加达区**
 
 | Instance Type | CPU | Memory | Description |
 | --- | --- | --- | --- |
@@ -22,7 +22,7 @@ draft: false
 
 `S1 系列`云服务器为基础型云服务器，`E1 系列`云服务器为企业型云服务器，可以在下列可用区选购
 
-**广东 2 区 ( gd2 )**  **北京 3 区 ( pek3 )** **上海 1 区-A ( sh1a )** **亚太 2 区-A ( ap2a )** **雅加达区**
+**广东 2 区 ( gd2 )**  **北京 3 区 ( jn1 )** **上海 1 区-A ( sh1a )** **亚太 2 区-A ( ap2a )** **雅加达区**
 
 
 | Instance Type | CPU | Memory | Description |
@@ -68,7 +68,7 @@ draft: false
 
 `P1 系列`云服务器为专业增强型云服务器，可以在下列可用区选购
 
-**北京 3 区 - B ( pek3b )** **北京 3 区 - C ( pek3c )**
+**北京 3 区 - B ( jn1b )** **北京 3 区 - C ( jn1c )**
 
 | Instance Type | CPU | Memory | Description |
 | --- | --- | --- | --- |
@@ -102,7 +102,7 @@ draft: false
 
 `E2 系列`云服务器为企业型 ( E2 ) 云服务器，可以在下列可用区选购
 
-**广东 2 区 ( gd2 )**  **北京 3 区 ( pek3 )** **上海 1 区 ( sh1 )**  **雅加达区 (ap3a)**
+**广东 2 区 ( gd2 )**  **北京 3 区 ( jn1 )** **上海 1 区 ( sh1 )**  **雅加达区 (ap3a)**
 
 | Instance Type | CPU | Memory | Description |
 | --- | --- | --- | --- |
@@ -154,9 +154,9 @@ draft: false
 |e2.8xlarge.r8 |32核    |256G    |10 Gbps    |
 
 
-青云弹性裸金属服务器可用配置
+山河弹性裸金属服务器可用配置
 
-**北京 3 区 ( pek3 )**:
+**北京 3 区 ( jn1 )**:
 
 | Instance Type | CPU | Memory | Description |
 | --- | --- | --- | --- |

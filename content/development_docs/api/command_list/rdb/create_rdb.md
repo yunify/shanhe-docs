@@ -40,12 +40,12 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=CreateRDB
+https://api.shanhe.com/iaas/?action=CreateRDB
 &vxnet=vxnet-iwotxwf
 &rdb_username=foobar
 &rdb_password=Passw0rd
 &rdb_type=3
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 

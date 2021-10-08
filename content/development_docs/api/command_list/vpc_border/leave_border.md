@@ -34,10 +34,10 @@ VXNET 离开边界路由器。
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=LeaveBorder
+https://api.shanhe.com/iaas/?action=LeaveBorder
 &border=irt-2zevtm67
 &vxnets.0=vxnet-gonkgpv
-&zone=pek3
+&zone=jn1
 &COMMON_PARAMS
 ```
 

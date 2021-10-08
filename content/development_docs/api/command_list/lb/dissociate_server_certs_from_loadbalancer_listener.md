@@ -30,10 +30,10 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DissociateServerCertsFromLBListener
+https://api.shanhe.com/iaas/?action=DissociateServerCertsFromLBListener
 &server_certificates.1=sc-1234abcd
 &loadbalancer_listener=lbl-xsfe0u8d
-&zone=pek3
+&zone=jn1
 &COMMON_PARAMS
 ```
 

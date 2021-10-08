@@ -30,9 +30,9 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=DeleteVpcBorders
+https://api.shanhe.com/iaas/?action=DeleteVpcBorders
 &vpc_borders.0=irt-2zevtm67
-&zone=pek3
+&zone=jn1
 &COMMON_PARAMS
 ```
 

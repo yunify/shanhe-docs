@@ -32,11 +32,11 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=ChangeMongoVxnet
+https://api.shanhe.com/iaas/?action=ChangeMongoVxnet
 &mongo=mongo-uja5twny
 &vxnet=vxnet-f7xdd5b
 &private_ips=[{"replica":"192.168.199.66", "priority0":"192.168.199.77"}]
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 

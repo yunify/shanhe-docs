@@ -33,7 +33,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=ModifyLoadBalancerPolicyAttributes
+https://api.shanhe.com/iaas/?action=ModifyLoadBalancerPolicyAttributes
 &loadbalancer_policy=lbp-1234abcd
 &operator=and
 &COMMON_PARAMS

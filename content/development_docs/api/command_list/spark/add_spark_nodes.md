@@ -35,7 +35,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=AddSparkNodes
+https://api.shanhe.com/iaas/?action=AddSparkNodes
 &spark=sk-aki0ug64
 &node_count=2
 &private_ips.0.private_ips=192.168.200.30,192.168.200.31

@@ -33,10 +33,10 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=ResizeVolumes
+https://api.shanhem/iaas/?action=ResizeVolumes
 &volumes.1=vol-r4jnbhui
 &size=50
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 

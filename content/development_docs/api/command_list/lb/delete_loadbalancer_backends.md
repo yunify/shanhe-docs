@@ -30,10 +30,10 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DeleteLoadBalancerBackends
+https://api.shanhe.com/iaas/?action=DeleteLoadBalancerBackends
 &loadbalancer_backends.1=lbb-1234abcd
 &loadbalancer_backends.2=lbb-5678hjkl
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 
@@ -46,6 +46,6 @@ _Example Response_:
     "lbb-1234abcd",
     "lbb-5678hjkl"
   ],
-  "zone":"pek3a"
+  "zone":"jn1a"
 }
 ```

@@ -39,7 +39,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=CreateCacheFromSnapshot
+https://api.shanhe.com/iaas/?action=CreateCacheFromSnapshot
 &snapshot=ss-6pzcu9cc
 &vxnet=vxnet-fbmcjfa
 &node_count=2

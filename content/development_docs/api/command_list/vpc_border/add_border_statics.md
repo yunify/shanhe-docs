@@ -38,7 +38,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=AddBorderStatics
+https://api.shanhe.com/iaas/?action=AddBorderStatics
 &border=irt-2zevtm67
 &statics.0.border_static_name=r0
 &statics.0.static_type=0
@@ -47,7 +47,7 @@ https://api.qingcloud.com/iaas/?action=AddBorderStatics
 &statics.0.val2=rtr-e5m6sr20
 &statics.0.val3=0
 &statics.0.vpc=rtr-e5m6sr20
-&zone=pek3
+&zone=jn1
 &COMMON_PARAMS
 ```
 

@@ -35,11 +35,11 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=JoinVxnet
+https://api.shanhe.com/iaas/?action=JoinVxnet
 &vxnet=vxnet-q8f2bu7
 &instances.1=i-opv1n2brh
 &instances.2=i-m163jcqw1
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 

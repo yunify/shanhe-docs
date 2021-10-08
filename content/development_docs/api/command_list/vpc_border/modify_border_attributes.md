@@ -32,10 +32,10 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=ModifyBorderAttributes
+https://api.shanhe.com/iaas/?action=ModifyBorderAttributes
 &border=irt-2zevtm67
 &border_name=ABC
-&zone=pek3
+&zone=jn1
 &COMMON_PARAMS
 ```
 

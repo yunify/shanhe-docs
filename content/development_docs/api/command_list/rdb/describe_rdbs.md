@@ -62,9 +62,9 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeRDBs
+https://api.shanhe.com/iaas/?action=DescribeRDBs
 &rdbs.1=rdb-wsiqcwia
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 
@@ -78,7 +78,7 @@ _Example Response_:
     {
       "rdb_id":"rdb-wsiqcwia",
       "auto_backup_time":99,
-      "console_id":"qingcloud",
+      "console_id":"shanhe",
       "create_time":"2014-09-17T15:24:26Z",
       "alarm_status":"",
       "owner":"usr-cT9nUFvT",

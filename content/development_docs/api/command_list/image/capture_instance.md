@@ -35,9 +35,9 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=CaptureInstance
+https://api.shanhe.com/iaas/?action=CaptureInstance
 &instance=i-n3nju2rh
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 

@@ -31,10 +31,10 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=CreateTempRDBInstanceFromSnapshot
+https://api.shanhe.com/iaas/?action=CreateTempRDBInstanceFromSnapshot
 &rdb=rdb-y76ik96v
 &snapshot=ss-k2onax29
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 

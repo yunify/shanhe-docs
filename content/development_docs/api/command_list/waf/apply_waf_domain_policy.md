@@ -30,9 +30,9 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=ApplyWAFDomainPolicy
+https://api.shanhe.com/iaas/?action=ApplyWAFDomainPolicy
 &domain_policy=wafdp-uv6qtfm5
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 

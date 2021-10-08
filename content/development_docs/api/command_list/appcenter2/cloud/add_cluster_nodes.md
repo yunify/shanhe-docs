@@ -33,18 +33,18 @@ draft: false
 
 **Example**
 
-以应用[ZooKeeper](https://appcenter.qingcloud.com/apps/app-tg3lbp0a/ZooKeeper%20on%20QingCloud)为例，则
+以应用[ZooKeeper](https://appcenter.shanhe.com/apps/app-tg3lbp0a/ZooKeeper%20on%20shanhe)为例，则
 
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=AddClusterNodes
+https://api.shanhe.com/iaas/?action=AddClusterNodes
 &cluster=cl-q1witcdk
 &node_count=2
 &node_name=
 &node_role=
 &resource_conf=
-&zone=pek3b
+&zone=jn1b
 &COMMON_PARAMS
 ```
 

@@ -29,9 +29,9 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?&action=CeaseClusters
+https://api.shanhe.com/iaas/?&action=CeaseClusters
 &clusters.1=cl-2gi2b3oc
-&zone=pek3b
+&zone=jn1b
 &COMMON_PARAMS
 ```
 

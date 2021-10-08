@@ -46,9 +46,9 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeMongoNodes
+https://api.shanhe.com/iaas/?action=DescribeMongoNodes
 &mongos.1=mongo-k9zmsesv
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 
@@ -66,7 +66,7 @@ _Example Response_:
       "transition_status":"",
       "controller":"self",
       "primary":false,
-      "console_id":"qingcloud",
+      "console_id":"shanhe",
       "instance_id":"i-3urz105i",
       "mongo_role":"priority0",
       "root_user_id":"usr-cTQiMLu8",
@@ -86,7 +86,7 @@ _Example Response_:
       "transition_status":"",
       "controller":"self",
       "primary":true,
-      "console_id":"qingcloud",
+      "console_id":"shanhe",
       "instance_id":"i-qnyzcx56",
       "mongo_role":"replica",
       "root_user_id":"usr-cTQiMLu8",

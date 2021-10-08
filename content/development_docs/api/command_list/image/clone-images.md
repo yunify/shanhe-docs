@@ -31,11 +31,11 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=CloneImages
+https://api.shanhe.com/iaas/?action=CloneImages
 &image=img-rtyv0968
 &count=1
 &image_name=clone
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 

@@ -101,13 +101,13 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=GetLoadBalancerMonitor
+https://api.shanhe.com/iaas/?action=GetLoadBalancerMonitor
 &resource=lbl-1234abcd
 &meters.1=request
 &start_time==2014-02-09T21%3A47%3A00.820Z
 &end_time=2014-02-10T03%3A47%3A00.820Z
 &step=5m
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 
@@ -143,13 +143,13 @@ _Example Response_:
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=GetLoadBalancerMonitor
+https://api.shanhe.com/iaas/?action=GetLoadBalancerMonitor
 &resource=lbl-1234abcd
 &meters.1=request
 &start_time==2014-02-09T21%3A47%3A00.820Z
 &end_time=2014-02-10T03%3A47%3A00.820Z
 &step=5m
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 

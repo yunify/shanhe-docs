@@ -32,10 +32,10 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DissociateS2AccountGroup
+https://api.shanhe.com/iaas/?action=DissociateS2AccountGroup
 &s2_groups.1=s2g-5xmpse7o
 &s2_accounts.1=s2a-3f181hmo
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 

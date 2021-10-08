@@ -31,7 +31,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=AssociateEipsToNFV
+https://api.shanhe.com/iaas/?action=AssociateEipsToNFV
 &nfv=nfv-1234abcd
 &eips.1=eip-1234abcd
 &COMMON_PARAMS

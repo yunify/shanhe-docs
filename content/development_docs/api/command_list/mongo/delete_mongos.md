@@ -30,9 +30,9 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=DeleteMongos
+https://api.shanhe.com/iaas/?action=DeleteMongos
 &mongos.1=mongo-kc3mw87t
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 

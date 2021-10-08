@@ -26,14 +26,14 @@ draft: false
 
 **Example**
 
-以应用[ZooKeeper](https://appcenter.qingcloud.com/apps/app-tg3lbp0a/ZooKeeper%20on%20QingCloud)为例
+以应用[ZooKeeper](https://appcenter.shanhe.com/apps/app-tg3lbp0a/ZooKeeper%20on%20shanhe)为例
 
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?&action=StartClusters
+https://api.shanhe.com/iaas/?&action=StartClusters
 &clusters.1=cl-q1witcdk
-&zone=pek3b
+&zone=jn1b
 &COMMON_PARAMS
 ```
 

@@ -36,10 +36,10 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeSparks
+https://api.shanhe.com/iaas/?action=DescribeSparks
 &sparks.0=sk-5r22wf7v
 &verbose=1
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 

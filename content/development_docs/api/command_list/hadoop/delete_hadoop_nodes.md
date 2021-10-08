@@ -10,7 +10,7 @@ draft: false
 
 警告
 
-该删除操作为不可逆操作，节点被删除之后不能被恢复，一次只能删除一个节点，并且必须等到上个节点删除后且 decommission 结束才能删除下一个节点，详情见 [Hadoop 弹性伸缩](https://docs.qingcloud.com/product/big_data/hadoop.html#id6)。
+该删除操作为不可逆操作，节点被删除之后不能被恢复，一次只能删除一个节点，并且必须等到上个节点删除后且 decommission 结束才能删除下一个节点，详情见 [Hadoop 弹性伸缩](https://docs.shanhe.com/product/big_data/hadoop.html#id6)。
 
 **Request Parameters**
 
@@ -35,7 +35,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=DeleteHadoopNodes
+https://api.shanhe.com/iaas/?action=DeleteHadoopNodes
 &hadoop=hdp-aki0ug64
 &hadoop_nodes.0=hdpn-a06ryhba
 &hadoop_nodes.1=hdpn-gkhdplr8z

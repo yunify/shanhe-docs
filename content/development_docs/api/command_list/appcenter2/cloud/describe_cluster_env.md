@@ -28,15 +28,15 @@ draft: false
 
 **Example**
 
-以应用[Redis Cluster](https://appcenter.qingcloud.com/apps/app-jwq1fzqo/Tomcat%20Cluster%20on%20QingCloud)为例，获取应用部署集群的环境变量
+以应用[云数据库Redis Cluster](https://appcenter.shanhe.com/apps/app-jwq1fzqo/Tomcat%20Cluster%20on%20shanhe)为例，获取应用部署集群的环境变量
 
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?
+https://api.shanhe.com/iaas/?
 &action=DescribeClusterEnvironment
 &cluster_id=cl-2gi2b3oc
-&zone=pek3b
+&zone=jn1b
 &COMMON_PARAMS
 ```
 

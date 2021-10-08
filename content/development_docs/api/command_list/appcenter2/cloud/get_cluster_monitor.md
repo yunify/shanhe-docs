@@ -45,18 +45,18 @@ draft: false
 
 **Example**
 
-以应用[ZooKeeper](https://appcenter.qingcloud.com/apps/app-tg3lbp0a/ZooKeeper%20on%20QingCloud)为例
+以应用[ZooKeeper](https://appcenter.shanhe.com/apps/app-tg3lbp0a/ZooKeeper%20on%20shanhe)为例
 
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=GetClusterMonitor
+https://api.shanhe.com/iaas/?action=GetClusterMonitor
 &end_time=2018-03-04T07%3A44%3A06.159Z
 &meters.1=stats
 &resource=cln-veb7g8nx
 &start_time=2018-03-03T07%3A44%3A06.159Z
 &step=5m
-&zone=pek3b
+&zone=jn1b
 &COMMON_PARAMS
 ```
 

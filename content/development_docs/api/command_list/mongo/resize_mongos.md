@@ -32,11 +32,11 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=ResizeMongos
+https://api.shanhe.com/iaas/?action=ResizeMongos
 &mongos.1=mongo-9ues6uda
 &mongo_type=2
 &storage_size=20
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 

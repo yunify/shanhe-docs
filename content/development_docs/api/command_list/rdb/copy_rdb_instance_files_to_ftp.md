@@ -31,10 +31,10 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=CopyRDBInstanceFilesToFTP
+https://api.shanhe.com/iaas/?action=CopyRDBInstanceFilesToFTP
 &rdb_instance=rmi-h266tljl
 &files.1=mysql-bin.000001
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 

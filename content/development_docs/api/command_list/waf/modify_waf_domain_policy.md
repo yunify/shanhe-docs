@@ -25,12 +25,12 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=ModifyWAFDomainPolicyAttributes
+https://api.shanhe.com/iaas/?action=ModifyWAFDomainPolicyAttributes
 &domain_policy=wafdp-5yzj3c39
 &domain_policy_name=test
 &domain_name=*.yunify.com
 &affect_mode=0
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 

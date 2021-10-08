@@ -33,7 +33,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=DeleteCacheParameterGroups
+https://api.shanhe.com/iaas/?action=DeleteCacheParameterGroups
 &cache_parameter_groups.0=cpg-qe67xfad
 &COMMON_PARAMS
 ```
