@@ -9,7 +9,7 @@ collapsible: true
 
 对象存储服务（Object Storage）提供了一个在线文件存储和访问平台，您可以将数据、日志、静态分发资源等多种文件类型，通过控制台或 Object Storage API 传到一个 Bucket 中，以供 HTTP 访问或数据分析使用。
 
-本文档描述在青云控制台上创建、使用和管理对象存储 Bucket，如果您是开发者，还可以通过 Object Storage API 或 SDK 来管理 Bucket，请参考：[对象存储 API 文档](../api/overview/)
+本文档描述在山河控制台上创建、使用和管理对象存储 Bucket，如果您是开发者，还可以通过 Object Storage API 或 SDK 来管理 Bucket，请参考：[对象存储 API 文档](../api/overview/)
 
 以下是文档涉及的主要概念：
 

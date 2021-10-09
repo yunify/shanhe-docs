@@ -7,7 +7,7 @@ weight: 2
 collapsible: false
 ---
 
-wp-qingstor 是一个 QingStor 对象存储服务 WordPress 插件，支持定时备份，自动同步媒体库。
+wp-qingstor 是一个 对象存储服务OIS WordPress 插件，支持定时备份，自动同步媒体库。
 
 该插件已在 GitHub 开源，下文为简要使用文档。该开源插件链接地址：[https://github.com/yunify/wp-qingstor](https://github.com/yunify/wp-qingstor)。
 
@@ -22,7 +22,7 @@ wp-qingstor 是一个 QingStor 对象存储服务 WordPress 插件，支持定�
 
 ## 快速开始
 
-使用插件之前请先在[青云控制台](https://console.qingcloud.com/access_keys/)创建 Access Key，Secret Key 和一个用于 WrodPress 的 Bucket。
+使用插件之前请先在[山河控制台](https://console.shanhe.com/access_keys/)创建 Access Key，Secret Key 和一个用于 WrodPress 的 Bucket。
 
 wp-qingstor 的基本配置项如下，查看更多可用选项可访问 GitHub 项目页面进行查阅。
 

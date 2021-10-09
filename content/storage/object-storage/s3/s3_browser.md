@@ -14,17 +14,17 @@ weight: 39
 
 ![s3-browser-1](/storage/object-storage/_images/s3-browser-1.png)
 
-### 2.获取青云的api秘钥
+### 2.获取山河的API秘钥
 
 2.1右上角账户-API秘钥
 
-![s3-browser-2](/storage/object-storage/_images/s3-browser-2.png)
+![s3-browser-2](/storage/object-storage/_images/s3-browser-2-sh.png)
 
-![s3-browser-3](/storage/object-storage/_images/s3-browser-3.png)
+![s3-browser-3](/storage/object-storage/_images/s3-browser-3-sh.png)
 
 2.2获取AK/SK
 
-![s3-browser-4](/storage/object-storage/_images/s3-browser-4.png)
+![s3-browser-4](/storage/object-storage/_images/s3-browser-4-sh.png)
 
 2.3点击下载后打开excel文件，记录AK/SK
 
