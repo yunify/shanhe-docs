@@ -24,7 +24,7 @@ weight: 3
 
 ### 创建 Bucket 存储空间
 
-1. 打开 Console 控制台，进入**产品与服务** > **存储服务** > **对象存储**页面（对象存储已在 山河计算平台 和 齐鲁工大计算平台 开放）
+1. 打开控制台，进入**产品与服务** > **存储服务** > **对象存储**页面（对象存储已在 山河计算平台 和 齐鲁工大计算平台 开放）
 1. 选择创建 Bucket
 1. 在对话框中输入 Bucket 名称，点击提交
 
@@ -32,7 +32,7 @@ weight: 3
 
 ### 创建 Access Key
 
-1. 打开 Console 控制台，进入**产品与服务** > **访问与授权** > **API密钥**页面
+1. 打开控制台，进入**产品与服务** > **访问与授权** > **API密钥**页面
 1. 点击**创建** > **提交**
 
 ![app_2](../_images/app_2.png)
@@ -109,7 +109,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 }
 ```
 
-为了让大家能集中精力学习 QingStor SDK，而不是花费时间来研究 UI，关于例子中用到的页面大概讲解一下。
+为了让大家能集中精力学习 OIS SDK，而不是花费时间来研究 UI，关于例子中用到的页面大概讲解一下。
 
 Main.storyboard UI结构图：
 
@@ -117,7 +117,7 @@ Main.storyboard UI结构图：
 
 例子并不复杂，使用一个 BucketListController 显示当前的 Bucket 列表，一个 ObjectListController 显示 Bucket 下面的对象列表。
 
-打开 BucketListController，在 viewDidLoad 方法里面初始化我们的 QingStor 服务
+打开 BucketListController，在 viewDidLoad 方法里面初始化我们的 OIS 服务
 
 ```swift
 fileprivate var qsService: QingStor!
@@ -131,7 +131,7 @@ override func viewDidLoad() {
 }
 ```
 
-为了灵活使用，除了上述那种初始化 QingStor 服务的方法之外，SDK 也支持在服务初始化的时候传入配置信息，首先修改 Config.plist 内容如下
+为了灵活使用，除了上述那种初始化 OIS 服务的方法之外，SDK 也支持在服务初始化的时候传入配置信息，首先修改 Config.plist 内容如下
 
 ```plist
 
@@ -295,9 +295,9 @@ key 值是存储的文件名，以后对应的删除下载操作，都需要传�
 
 ## 开发者实现签名服务器
 
-上文中介绍的使用 SDK 调用 QingStor，适用于 bucket 被个人用户所拥有的情况。如果 bucket 为 App 开发者所拥有，由于需要将签名密钥内置到客户端程序中，会带来安全方面的隐患。为了保证签名密钥的安全，开发者可以根据 QingStor 签名方法，自己搭建并实现一个签名服务器。用于签名的密钥只需要在服务端保存，客户端不需要拿到，从而避免了认证信息泄漏的隐患。
+上文中介绍的使用 SDK 调用 OIS，适用于 bucket 被个人用户所拥有的情况。如果 bucket 为 App 开发者所拥有，由于需要将签名密钥内置到客户端程序中，会带来安全方面的隐患。为了保证签名密钥的安全，开发者可以根据 OIS 签名方法，自己搭建并实现一个签名服务器。用于签名的密钥只需要在服务端保存，客户端不需要拿到，从而避免了认证信息泄漏的隐患。
 
-QingStor 官方提供了一个签名服务器的 [样例](https://github.com/yunify/qingstor-demo-auth-server) 供 App 开发者参考。网页端使用 JavaScript SDK 配合签名服务器进行上传可以参考官方提供的 [Demo 项目](https://github.com/yunify/qingstor-sdk-js-demo)
+OIS 官方提供了一个签名服务器的 [样例](https://github.com/yunify/qingstor-demo-auth-server) 供 App 开发者参考。网页端使用 JavaScript SDK 配合签名服务器进行上传可以参考官方提供的 [Demo 项目](https://github.com/yunify/qingstor-sdk-js-demo)
 
 如果要自己开发签名服务，需要注意：
 
