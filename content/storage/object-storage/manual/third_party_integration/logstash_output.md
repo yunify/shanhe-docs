@@ -21,7 +21,7 @@ Logstash Output QingStor 是一个 Logstash 的 Output 插件，它可以对接 
 
 ## 快速开始
 
-使用插件之前请先在 [山河控制台](https://console.shanhe.com/access_keys/) 申请 Access Key 。
+使用插件之前请先在 [控制台](https://console.shanhe.com/access_keys/) 申请 Access Key 。
 
 Logstash Output QingStor 的基本配置项如下，查看更多可用选项可访问 GitHub 项目页面进行查阅。
 
