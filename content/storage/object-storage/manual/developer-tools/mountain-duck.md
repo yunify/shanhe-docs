@@ -39,7 +39,7 @@ Mountain Duck 通过登录操作挂载 OIS 中的 Bucket，挂载成功后即可
 
 ![](login_step2.png)
 
-其中 `access_key_id` 和 `secret_access_key` 可在[山河控制台](https://console.shanhe.com/access_keys/)申请。
+其中 `access_key_id` 和 `secret_access_key` 可在[控制台](https://console.shanhe.com/access_keys/)申请。
 
 ### 设置菜单
 
