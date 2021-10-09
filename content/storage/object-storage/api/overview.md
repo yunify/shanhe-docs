@@ -6,15 +6,15 @@ draft: false
 weight: 1
 ---
 
-青云对象存储服务(QingCloud Object Storage Service，亦称QingStor)旨在为用户提供 稳定可靠，安全易用，空间无限的云存储服务。可存储任意类型，任意数量，任意大小 (单个对象最大至50T)的非结构化数据。本指南将介绍如何使用青云对象存储服务的API。
+山河对象存储服务(shanhe Object Storage Service，亦称对象存储服务OIS)旨在为用户提供 稳定可靠，安全易用，空间无限的云存储服务。可存储任意类型，任意数量，任意大小 (单个对象最大至50T)的非结构化数据。本指南将介绍如何使用山河对象存储服务的API。
 
 ## 总览
-青云对象存储服务的 API 符合 REST (Representational State Transfer) 风格所定义的 语义，通过 URL 指定想要访问的资源，使用标准的 HTTP 方法(GET, PUT, DELETE, HEAD, POST, OPTIONS)定义对资源的操作方式。
+山河对象存储服务的 API 符合 REST (Representational State Transfer) 风格所定义的 语义，通过 URL 指定想要访问的资源，使用标准的 HTTP 方法(GET, PUT, DELETE, HEAD, POST, OPTIONS)定义对资源的操作方式。
 
 ## 基本概念
 
 ### Location (or Zone)
-区域。和青云QingCloud一样，青云对象存储服务支持多区域部署。您可以在不同区域创建 存储空间(Bucket)。
+区域。和山河一样，山河对象存储服务支持多区域部署。您可以在不同区域创建 存储空间(Bucket)。
 
 ### Service
 对象存储服务的顶层命名空间，在该命名空间下，每一个用户可以创建多个存储空间 (Bucket)。存储空间名称在该命名空间下全局唯一。
@@ -43,15 +43,12 @@ Object 命名规范:
 
 每个 Object 的访问地址有如下两种风格:
 
-- Virtual-host Style - `http://<bucket_name>.<zone_id>.qingstor.com/`
-- Path Style - `http://<zone_id>.qingstor.com/<bucket_name>/`
+- Virtual-host Style - `http://<bucket_name>.<zone_id>.is.shanhe.com/`
+- Path Style - `http://<zone_id>.is.shanhe.com/<bucket_name>/`
 
 其中 `<zone_id>` 代表存储空间创建时选择的区域，目前对象存储开放的区域有：
 
 |Name|Zone ID|URL Example|
 |-|-|-|
-|北京3区-A|pek3a|`http://mybucket1.pek3a.qingstor.com/myobject`|
-|上海1区-A|sh1a|`http://mybucket2.sh1a.qingstor.com/myobject`|
-|北京3区-B|pek3B| `http://mybucket3.pek3b.qingstor.com/myobject`|
-|广东2区|gd2|`http://mybucket4.gd2.qingstor.com/myobject`|
-|雅加达区|ap3|`http://mybucket5.ap3.qingstor.com/myobject`|
+|济南1区-A|jn1a|`http://mybucket1.jn1.is.shanhe.com/myobject`|
+

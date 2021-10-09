@@ -3,13 +3,13 @@ title: "Cpp SDK 快速指南"
 ---
 
 
-在开始使用 SDK 之前，请确认您已经了解 [青云 QingStor 对象存储基本概念](https://docs.qingcloud.com/qingstor/api/common/overview.html) ，如 Zone，Service，Bucket，Object 等。
+在开始使用 SDK 之前，请确认您已经了解 [山河对象存储基本概念](https://docs.qingcloud.com/qingstor/api/common/overview.html) ，如 Zone，Service，Bucket，Object 等。
 
 ## 准备工作
 
 ## 快速开始
 
-使用 SDK 之前请先在 [青云控制台](https://console.qingcloud.com/access_keys/) 申请 access key 。
+使用 SDK 之前请先在 [控制台](https://console.shanhe.com/access_keys/) 申请 access key 。
 
 ### 配置文件
 
@@ -20,7 +20,7 @@ title: "Cpp SDK 快速指南"
 ```yaml
     access_key_id: 'ACCESS_KEY_ID_EXAMPLE'
     secret_access_key: 'SECRET_ACCESS_KEY_EXAMPLE'
-    host: 'qingstor.com'
+    host: 'is.shanhe.com'
     port: 443
     protocol: 'https'
     connection_retries: 3
@@ -72,7 +72,7 @@ title: "Cpp SDK 快速指南"
     qsConfig.timeout_period = 10;
 
     // 在私有云环境中,你可以指定实际配置的 host 地址 和服务端口
-    // 访问 QingStor 公有云服务, 通常无需更改 host 地址 和服务端口.
+    // 访问山河公有云服务, 通常无需更改 host 地址 和服务端口.
     qsConfig.host = "api.private.com";
     qsConfig.port = 4433;
 
@@ -372,9 +372,9 @@ Buckets。
 
 ### 获取 Bucket 的访问控制列表
 
-QingStor 对象存储支持存储空间访问控制列表 (Bucket ACL),
+山河对象存储支持存储空间访问控制列表 (Bucket ACL),
 为存储空间级别的访问控制，用户可将存储空间的读、写、或读写权限开放给单个或多个
-QingCloud 用户。下面我们将会演示如何通过 API 接口来获取和设置 Bucket
+山河用户。下面我们将会演示如何通过 API 接口来获取和设置 Bucket
 ACL。
 
 ``` c
@@ -432,6 +432,6 @@ ACL。
 
 ### 更多操作
 
-所有的 API 调用接口均与上面的示例相似，您可以访问 [青云 QingStor 对象存储
+所有的 API 调用接口均与上面的示例相似，您可以访问 [山河对象存储
 API 文档](https://docs.qingcloud.com/qingstor/api/index.html)
 来了解更多讯息。

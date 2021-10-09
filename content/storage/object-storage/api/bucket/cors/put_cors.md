@@ -21,7 +21,7 @@ weight: 3
 
 ```http
 PUT /?cors HTTP/1.1
-Host: <bucket-name>.<zone-id>.qingstor.com
+Host: <bucket-name>.<zone-id>.is.shanhe.com
 Date: <date>
 Authorization: <authorization-string>
 
@@ -85,7 +85,7 @@ Json 消息体
 
 ```http
 PUT /?cors HTTP/1.1
-Host: mybucket.pek3a.qingstor.com
+Host: mybucket.jn1.is.shanhe.com
 Date: Sun, 16 Aug 2015 09:05:00 GMT
 Authorization: authorization string
 
@@ -93,7 +93,7 @@ Authorization: authorization string
     "resp_vary": "enable",
     "cors_rules": [
         {
-            "allowed_origin": "http://*.qingcloud.com",
+            "allowed_origin": "http://*.shanhe.com",
             "allowed_methods": [
                 "PUT",
                 "GET",

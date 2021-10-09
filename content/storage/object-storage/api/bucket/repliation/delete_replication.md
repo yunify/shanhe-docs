@@ -19,7 +19,7 @@ weight: 3
 
 ```http
 DELETE /?replication HTTP/1.1
-Host: <bucket-name>.<zone_id>.qingstor.com
+Host: <bucket-name>.<zone_id>.is.shanhe.com
 Date: <date>
 Authorization: <authorization-string>
 ```
@@ -46,7 +46,7 @@ Authorization: <authorization-string>
 
 ```http
 DELETE /?replication HTTP/1.1
-Host: mybucket.pek3a.qingstor.com
+Host: mybucket.jn1.is.shanhe.com
 Date: Mon, 1 Oct 2018 15:04:01 GMT
 Authorization: authorization string
 ```

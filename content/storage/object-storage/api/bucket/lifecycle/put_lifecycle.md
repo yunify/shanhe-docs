@@ -12,7 +12,7 @@ weight: 2
 创建或更新 Bucket Lifecycle 设置，lifecycle 是存储空间的子资源（subresource），
 只有存储空间所有者才能设置。
 
-QingStor 对象存储会按照用户所设置的生命周期规则，定期对所匹配的 Object 执行相应的操作。
+对象存储会按照用户所设置的生命周期规则，定期对所匹配的 Object 执行相应的操作。
 目前支持的操作有: 删除对象 (Expiration),
 取消未完成的分段上传 (Abort Incomplete Multipart Uploads), 变更存储级别 (Transition)。
 
@@ -28,7 +28,7 @@ QingStor 对象存储会按照用户所设置的生命周期规则，定期对�
 
 ```http
 PUT /?lifecycle HTTP/1.1
-Host: <bucket-name>.pek3a.qingstor.com
+Host: <bucket-name>.jn1.is.shanhe.com
 Date: <date>
 Authorization: <authorization-string>
 
@@ -125,7 +125,7 @@ Json 消息体
 
 ```http
 PUT /?lifecycle HTTP/1.1
-Host: example.pek3a.qingstor.com
+Host: example.jn1.is.shanhe.com
 Date: Sun, 16 Aug 2015 09:05:00 GMT
 Content-Length: 66
 Authorization: authorization string

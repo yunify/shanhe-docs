@@ -19,7 +19,7 @@ weight: 2
 
 ```http
 GET /?notification HTTP/1.1
-Host: <bucket-name>.<zone_id>.qingstor.com
+Host: <bucket-name>.<zone_id>.is.shanhe.com
 Date: <date>
 Authorization: <authorization-string>
 ```
@@ -64,7 +64,7 @@ Authorization: <authorization-string>
 
 ```http
 GET /?notification HTTP/1.1
-Host: mybucket.pek3a.qingstor.com
+Host: mybucket.jn1.is.shanhe.com
 Date: Sun, 16 Aug 2015 09:05:00 GMT
 Authorization: authorization string
 ```

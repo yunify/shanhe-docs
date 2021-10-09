@@ -17,7 +17,7 @@ weight: 3
 
 ```http
 POST /<object-name>?upload_id=<upload-id> HTTP/1.1
-Host: <bucket-name>.pek3a.qingstor.com
+Host: <bucket-name>.jn1.is.shanhe.com
 Date: <date>
 Authorization: <authorization-string>
 ```
@@ -71,7 +71,7 @@ part_number 不一定需要连续，但需要递增。允许在最终合并的�
 
 ```http
 POST /large-object?upload_id=4d26b37a469230619604ecdc0e314782 HTTP/1.1
-Host: mybucket.<zone-id>.qingstor.com
+Host: mybucket.<zone-id>.is.shanhe.com
 Date: Sun, 16 Aug 2015 13:25:10 GMT
 Authorization: authorization string
 ETag: "0c2f573d81194064b129e940edcefe9b"

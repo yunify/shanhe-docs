@@ -19,7 +19,7 @@ weight: 3
 
 ```http
 GET /?replication HTTP/1.1
-Host: <bucket-name>.<zone_id>.qingstor.com
+Host: <bucket-name>.<zone_id>.is.shanhe.com
 Date: <date>
 Authorization: <authorization-string>
 ```
@@ -57,7 +57,7 @@ GET Bucket Replication 的 Response Elements 包括两部分:
 
 ```http
 GET /?replication HTTP/1.1
-Host: my-bucket.pek3a.qingstor.com
+Host: my-bucket.jn1.is.shanhe.com
 Date: Mon, 1 Oct 2018 15:04:01 GMT
 Authorization: authorization string
 ```

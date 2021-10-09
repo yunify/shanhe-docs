@@ -9,9 +9,9 @@ weight: 2
 
 # PUT Bucket Notification
 
-设置 QingStor 存储空间的事件通知及处理的策略。
+设置对象存储服务OIS存储空间的事件通知及处理的策略。
 
-Bucket Notificaiton 提供了一种机制，使得当某些指定的事件在 QingStor 中发生时，触发通知或者事件处理。
+Bucket Notificaiton 提供了一种机制，使得当某些指定的事件在对象存储服务OIS中发生时，触发通知或者事件处理。
 
 获取 Bucket Notification 请参见 [GET Bucket Notification](../get_notification/) 。
 
@@ -23,7 +23,7 @@ Bucket Notificaiton 提供了一种机制，使得当某些指定的事件在 Qi
 
 ```http
 PUT /?notification HTTP/1.1
-Host: <bucket-name>.pek3a.qingstor.com
+Host: <bucket-name>.jn1.is.shanhe.com
 Date: <date>
 Authorization: <authorization-string>
 {
@@ -55,7 +55,7 @@ Json 消息体
 | id | String | 通知配置的标识 | Yes |
 | event_types | Array | 事件的类型，每当该类型的事件被触发时，发出通知。<br> 目前支持的类型为: <br> - "create_object": 创建对象完成 <br> - "delete_object": 删除对象完成 <br> - "abort_multipart": 终止分段上传 <br> - "complete_multipart": 完成分段上传 | Yes |
 | object_filters | List or String | 对象名匹配规则(glob patterns) | no |
-| cloudfunc | String | 事件处理云服务，接收通知中触发的事件并进行处理。目前支持: <br> - tupu-porn: [图谱鉴黄服务](../../../../manual/data_process/tupu_porn/) <br> - notifier: 通知服务, 将 QingStor 事件推送到 notify_url <br> - image: [图片基本处理服务](../../../../manual/data_process/image_process/)| Yes |
+| cloudfunc | String | 事件处理云服务，接收通知中触发的事件并进行处理。目前支持: <br> - tupu-porn: [图谱鉴黄服务](../../../../manual/data_process/tupu_porn/) <br> - notifier: 通知服务, 将对象存储服务OIS事件推送到 notify_url <br> - image: [图片基本处理服务](../../../../manual/data_process/image_process/)| Yes |
 | cloudfunc_args | Object | 提供给 cloudfunc 的自定义参数 | No |
 | notify_url | String | 通知事件处理结果的 url ，当事件处理完成后，会将处理结果以 POST 方式向 notify_url 请求。如果 POST 超时，将会重试，超时时间是 5s， 重试间隔为 1s。| No |
 
@@ -97,7 +97,7 @@ Json 消息体
 
 ```http
 PUT /?notification HTTP/1.1
-Host: <bucket-name>.pek3a.qingstor.com
+Host: <bucket-name>.jn1.is.shanhe.com
 Date: <date>
 Authorization: <authorization-string>
 Content-Length: 125

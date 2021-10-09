@@ -29,7 +29,7 @@ QingStor Ruby SDK 已在 GitHub 开源，下文为简要使用文档。更多详
 
 ## 快速开始
 
-使用 SDK 之前请先在 [青云控制台](https://console.qingcloud.com/access_keys/) 申请 access key 。
+使用 SDK 之前请先在 [控制台](https://console.shanhe.com/access_keys/) 申请 access key 。
 
 ### 初始化服务
 
