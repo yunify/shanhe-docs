@@ -13,7 +13,7 @@ qsftpd 已在 GitHub 开源，更多详情可参见 [https://github.com/qingstor
 
 ## 准备工作
 
-使用 qsftpd 之前需要创建 Bucket，并获取一对 API 密钥，API 密钥可以在 [山河控制台](https://console.shanhe.com/access_keys/) 申请。
+使用 qsftpd 之前需要创建 Bucket，并获取一对 API 密钥，API 密钥可以在 [控制台](https://console.shanhe.com/access_keys/) 申请。
 
 ## 下载安装
 
