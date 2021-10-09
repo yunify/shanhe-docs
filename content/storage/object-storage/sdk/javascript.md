@@ -118,7 +118,7 @@ node -r esm index.js
 
 ### 请求签名
 
-发往 QingStor 对象存储的请求需要使用 Access Key 和 Secret Key 对请求签名，请前往 [山河控制台 Console](https://console.shanhe.com/access_keys/) 创建和下载。下载到的密钥文件格式如下，请妥善保存你的密钥:
+发往 QingStor 对象存储的请求需要使用 Access Key 和 Secret Key 对请求签名，请前往 [控制台 Console](https://console.shanhe.com/access_keys/) 创建和下载。下载到的密钥文件格式如下，请妥善保存你的密钥:
 
 ```
 access_key_id: 'ACCESS_KEY_ID_EXAMPLE'
