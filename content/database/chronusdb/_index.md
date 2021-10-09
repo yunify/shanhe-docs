@@ -1,5 +1,5 @@
 ---
-title: "时序数据库 ChronusDB"
+title: "云数据库 ChronusDB"
 linkTitle: "ChronusDB"
 weight: 05
 collapsible: true
