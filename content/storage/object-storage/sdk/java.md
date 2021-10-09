@@ -22,7 +22,7 @@ SDK 示例请参见 [SDK Example](https://github.com/qingstor/qingstor-sdk-java/
 
 ## 快速开始
 
-使用 SDK 之前请先在 [山河控制台](https://console.shanhe.com/access_keys/) 申请 access key 。
+使用 SDK 之前请先在 [控制台](https://console.shanhe.com/access_keys/) 申请 access key 。
 
 ### 安装
 
