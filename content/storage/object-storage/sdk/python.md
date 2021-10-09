@@ -21,7 +21,7 @@ Python SDK 使用 [Snips](https://github.com/yunify/snips) 工具生成，
 > pip install ois-sdk
 ```
 
-使用 SDK 之前请先在 [山河控制台](https://console.shanhe.com/access_keys/) 申请 access key 。
+使用 SDK 之前请先在 [控制台](https://console.shanhe.com/access_keys/) 申请 access key 。
 
 ## 初始化服务
 
