@@ -10,7 +10,7 @@ title: "C SDK 快速指南"
 
 ## 快速开始
 
-使用 SDK 之前请先在 [山河控制台](https://console.qingcloud.com/access_keys/) 申请 access key 。
+使用 SDK 之前请先在 [控制台](https://console.qingcloud.com/access_keys/) 申请 access key 。
 
 ### 配置文件
 
