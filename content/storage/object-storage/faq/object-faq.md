@@ -81,7 +81,7 @@ qsctl 支持使用 `--force` 参数来进行强制覆盖。
 
 ## 从哪里获取对象存储的 Access Key ？
 
-Access Key 可以在 [青云控制台](https://console.qingcloud.com/access_keys/) 申请。
+Access Key 可以在 [控制台](https://console.shanhe.com/access_keys/) 申请。
 
 更详细内容请参考文档 [API 指南–签名验证](/storage/object-storage/api/signature) 。
 
