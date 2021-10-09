@@ -48,7 +48,7 @@ weight: 1
 
 > 得到密钥的用户，可以以密钥拥有者的身份访问对象存储服务OIS ，所以密钥中的 Secret Access Key 部分需要对外保密
 >
-> 申请 Access Key 请在 shanhe 控制台左侧导航栏，依次找到 GLOBAL -> API 密钥 -> 创建
+> 申请 Access Key 请在控制台左侧导航栏，依次找到 GLOBAL -> API 密钥 -> 创建
 
 ## 请求头签名
 
@@ -218,7 +218,7 @@ Date: Mon, 14 Nov 2016 14:05:00 GMT
 
 | Parameter | Description | Example |
 | --- | --- | --- |
-| access_key_id | 在 shanhe 控制台申请的 Access Key ID | PLLZOBTTZXGBNOWUFHZZ |
+| access_key_id | 在控制台申请的 Access Key ID | PLLZOBTTZXGBNOWUFHZZ |
 | expires | 签名过期时间，该时间为 Unix Time (也称为 Epoch Time), 表示方法是自历元(1970-01-01 00:00, The Epoch) 之后的秒数, 类型为整数。在过期时间之后到达的请求将被对象存储服务 OIS 拒绝 | 1479107162 |
 | signature | 对签名串 string_to_sign 经过 HMAC-SHA256 加密后，再使用 Base64 编码，最后使用 URI 编码后的结果 | tuXu/KcggHWPAfEmraUHDwEUdiIPSXVRsO%2BT2rxomBQ%3D |
 
