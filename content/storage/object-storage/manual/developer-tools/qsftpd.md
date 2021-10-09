@@ -7,13 +7,13 @@ collapsible: false
 weight: 18
 ---
 
-qsftpd 是一个将 QingStor 对象存储作为存储后端的 FTP Server，用户通过简单的配置，即可通过 FTP 协议使用对象存储服务。
+qsftpd 是一个将 对象存储服务OIS 作为存储后端的 FTP Server，用户通过简单的配置，即可通过 FTP 协议使用对象存储服务。
 
 qsftpd 已在 GitHub 开源，更多详情可参见 [https://github.com/qingstor/qsftpd](https://github.com/qingstor/qsftpd)。
 
 ## 准备工作
 
-使用 qsftpd 之前需要创建 Bucket，并获取一对 API 密钥，API 密钥可以在 [青云控制台](https://console.qingcloud.com/access_keys/) 申请。
+使用 qsftpd 之前需要创建 Bucket，并获取一对 API 密钥，API 密钥可以在 [控制台](https://console.shanhe.com/access_keys/) 申请。
 
 ## 下载安装
 
@@ -21,9 +21,9 @@ qsftpd 支持 Linux、macOS 和 Windows 操作系统，可访问 GitHub 项目�
 
 最新版本下载链接如下：
 
-- [qsftpd-latest-darwin_amd64.tar.gz](https://pek3a.qingstor.com/releases-qs/qsftpd/qsftpd-latest-darwin_amd64.tar.gz)
-- [qsftpd-latest-linux_amd64.tar.gz](https://pek3a.qingstor.com/releases-qs/qsftpd/qsftpd-latest-linux_amd64.tar.gz)
-- [qsftpd-latest-windows_amd64.tar.gz](https://pek3a.qingstor.com/releases-qs/qsftpd/qsftpd-latest-windows_amd64.tar.gz)
+- [qsftpd-latest-darwin_amd64.tar.gz](https://releases.qingstor.dev/)
+- [qsftpd-latest-linux_amd64.tar.gz](https://releases.qingstor.dev/)
+- [qsftpd-latest-windows_amd64.tar.gz](https://releases.qingstor.dev/)
 
 ## 选项列表
 
@@ -42,18 +42,18 @@ qsftpd 支持 Linux、macOS 和 Windows 操作系统，可访问 GitHub 项目�
 qsftpd 的配置文件默认配置文件如下，可根据需要进行配置: (模板可以[查看](https://github.com/qingstor/qsftpd/blob/master/qsftpd.yaml.example))
 
 ```yaml
-# 设置 QingStor 对象存储服务
+# 设置 对象存储服务OIS
 qingstor:
   access_key_id: access_key_id_example
   secret_access_key: secret_access_key_example
-  host: qingstor.com
+  host: is.shanhe.com
   port: 443
   protocol: https
   log_level: warn
 
 # 填写需要使用的 Bucket
 bucket_name: bucket_name_example
-zone: pek3a
+zone: jn1
 
 # FTP Server 配置，如监听的端口号和最大连接数
 listen_host: 127.0.0.1

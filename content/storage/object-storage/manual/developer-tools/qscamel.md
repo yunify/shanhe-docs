@@ -21,7 +21,7 @@ qscamel 是一个用于在不同的端点 (Endpoint) 中高效迁移数据的工
 
   - 符合 POSIX 标准的文件系统 _(local fs, nfs, s3fs 等)_
   - 本地文件列表
-  - [QingStor](https://www.qingcloud.com/products/qingstor)
+  - [OIS](https://www.shanhe.com/products/67)
   - [Aliyun OSS](https://www.aliyun.com/product/oss)
   - [Google Cloud Storage](https://cloud.google.com/storage/)
   - [Qiniu](https://www.qiniu.com/)
@@ -58,7 +58,7 @@ destination:
 qscamel run example-task -t example-task.yaml
 ```
 
-坐下来喝杯茶，你将会看到所有在 `/path/to/source` 目录下的文件都会被迁移到 QingStor 的 Bucket `example_bucket` 的 `/path/to/destination` 前缀下。
+坐下来喝杯茶，你将会看到所有在 `/path/to/source` 目录下的文件都会被迁移到 OIS 的 Bucket `example_bucket` 的 `/path/to/destination` 前缀下。
 
 可以通过 `qscamel -h` 或者 `qscamel --help` 来了解更多使用上的细节，并且阅读下面的文档。
 

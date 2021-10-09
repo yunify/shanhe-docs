@@ -7,13 +7,13 @@ collapsible: true
 weight: 21
 ---
 
-QingStor™ 对象存储提供了多种命令行和 GUI 工具，便于用户高效操作、管理对象存储资源，迁移数据到对象存储。
+OIS™ 对象存储提供了多种命令行和 GUI 工具，便于用户高效操作、管理对象存储资源，迁移数据到对象存储。
 
 ## qsctl 
 
 [文档](./qsctl)
 
-青云对象存储服务的高级命令行工具
+山河对象存储服务的高级命令行工具
 
 ## qscamel 
 
@@ -25,7 +25,7 @@ QingStor™ 对象存储提供了多种命令行和 GUI 工具，便于用户高
 
 [文档](./qsftpd)
 
-使用 Qingstor Bucket 提供 FTP 服务
+使用 OIS Bucket 提供 FTP 服务
 
 ## Mountain Duck
 
