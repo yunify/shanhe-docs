@@ -3,15 +3,15 @@ title: "GET Service"
 ---
 
 
-获取请求者名下的所有存储空间 (Bucket) 列表。 不支持匿名请求，请先注册青云账号并创建 Access Key 后才能调用此 API 。
+获取请求者名下的所有存储空间 (Bucket) 列表。 不支持匿名请求，请先注册山河账号并创建 Access Key 后才能调用此 API 。
 
-> 请求可以发向对象存储服务的 global endpoint (qingstor.com) 列出所有区域的 Bucket; 也可以发向某个区域的 zone endpoint (如 pek3.qingstor.com), 列出特定区域的 Bucket
+> 请求可以发向对象存储服务的 global endpoint (is.shanhe.com) 列出所有区域的 Bucket; 也可以发向某个区域的 zone endpoint (如 jn1.is.shanhe.com), 列出特定区域的 Bucket
 
 ## Request Syntax
 
 ```http
 GET / HTTP/1.1
-Host: qingstor.com
+Host: is.shanhe.com
 Date: <date>
 Authorization: <authorization-string>
 ```
@@ -62,7 +62,7 @@ Authorization: <authorization-string>
 
 ```http
 GET / HTTP/1.1
-Host: qingstor.com
+Host: is.shanhe.com
 Date: Sun, 16 Aug 2015 09:05:00 GMT
 Authorization: authorization string
 ```
@@ -83,13 +83,13 @@ x-qs-request-id: aa08cf7a43f611e5886952542e6ce14b
     {
       "name": "mybucket",
       "location": "pek3a",
-      "url": "https://mybucket.pek3a.qingstor.com",
+      "url": "https://mybucket.jn1.is.shanhe.com",
       "created": "2015-07-11T04:45:57Z"
     },
     {
       "name": "myphotos",
       "location": "pek3a",
-      "url": "https://myphotos.pek3a.qingstor.com",
+      "url": "https://myphotos.jn1.is.shanhe.com",
       "created": "2015-07-12T09:40:32Z"
     }
   ]

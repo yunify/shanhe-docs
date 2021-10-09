@@ -118,7 +118,7 @@ node -r esm index.js
 
 ### 请求签名
 
-发往 QingStor 对象存储的请求需要使用 Access Key 和 Secret Key 对请求签名，请前往 [青云控制台 Console](https://console.qingcloud.com/access_keys/) 创建和下载。下载到的密钥文件格式如下，请妥善保存你的密钥:
+发往 QingStor 对象存储的请求需要使用 Access Key 和 Secret Key 对请求签名，请前往 [山河控制台 Console](https://console.shanhe.com/access_keys/) 创建和下载。下载到的密钥文件格式如下，请妥善保存你的密钥:
 
 ```
 access_key_id: 'ACCESS_KEY_ID_EXAMPLE'
@@ -182,13 +182,13 @@ function listBuckets() {
     //     {
     //       "name": "mybucket",
     //       "location": "pek3a",
-    //       "url": "https://mybucket.pek3a.qingstor.com",
+    //       "url": "https://mybucket.jn1a.is.shanhe.com",
     //       "created": "2015-07-11T04:45:57Z"
     //     },
     //     {
     //       "name": "myphotos",
     //       "location": "pek3a",
-    //       "url": "https://myphotos.pek3a.qingstor.com",
+    //       "url": "https://myphotos.jn1a.is.shanhe.com",
     //       "created": "2015-07-12T09:40:32Z"
     //     }
     //   ]

@@ -18,7 +18,7 @@ weight: 2
 
 ```http
 DELETE /?cname HTTP/1.1
-Host: <bucket-name>.pek3a.qingstor.com
+Host: <bucket-name>.jn1.is.shanhe.com
 Date: <date>
 Authorization: <authorization-string>
 
@@ -53,7 +53,7 @@ Json 消息体
 
 ```http
 DELETE /?cname HTTP/1.1
-Host: mybucket.pek3a.qingstor.com
+Host: mybucket.jn1.is.shanhe.com
 Date: Sun, 16 Aug 2015 09:05:00 GMT
 Content-Length: 30
 Authorization: authorization string

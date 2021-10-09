@@ -3,16 +3,16 @@ title: "List Locations"
 ---
 
 
-获取 QingStor 的所有(部署区域) 列表。
+获取 shanhe 的所有(部署区域) 列表。
 支持匿名请求。
 
-> **请求只能发向对象存储服务的 global 地址，也就是 `qingstor.com`。**
+> **请求只能发向对象存储服务的 global 地址，也就是 `is.shanhe.com`。**
 
 ## Request Syntax
 
 ```http
 GET /?location&lang=zh-cn HTTP/1.1
-Host: qingstor.com
+Host: is.shanhe.com
 ```
 
 ## Request Headers
@@ -42,13 +42,13 @@ Json 消息体
 | locations | List | 返回 location 列表，每个 location 是键为 id, name, endpoint 及其相应的值的字典。|
 | id | String | location id。 |
 | name | String | location name相应语言（取决于lang参数）的翻译。|
-| endpoint | String | location endpoint, 如 location id 为 pek3a 的 endpoint 是 pek3a.qingstor.com。 |
+| endpoint | String | location endpoint, 如 location id 为 pek3a 的 endpoint 是 jn1.is.shanhe.com。 |
 
 **Examples**
 
 ```http
 GET /?location&lang=zh-cn HTTP/1.1
-Host: qingstor.com
+Host: is.shanhe.com
 ```
 
 ```http
@@ -62,12 +62,12 @@ x-qs-request-id: dc05ee1cb7ea11e7b8da5254dda2bdf5
 {
     "locations": [
         {
-            "endpoint": "pek3a.qingstor.com",
+            "endpoint": "jn1.is.shanhe.com",
             "id": "pek3a",
             "name": "\u5317\u4eac3\u533a"
         },
         {
-            "endpoint": "sh1a.qingstor.com",
+            "endpoint": "sh1a.is.shanhe.com",
             "id": "sh1a",
             "name": "\u4e0a\u6d771\u533a"
         }

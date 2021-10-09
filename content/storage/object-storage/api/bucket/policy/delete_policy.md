@@ -4,7 +4,7 @@ title: "DELETE Bucket Policy"
 
 # DELETE Bucket Policy
 
-删除存储空间的访问策略，Policy 是存储空间的子资源(subresource)，只有存储空间所 有者才能删除。
+删除存储空间的访问策略，Policy 是存储空间的子资源(subresource)，只有存储空间所有者才能删除。
 
 获取 Policy 请参见 [GET Bucket Policy](../get_policy) 。
 
@@ -14,7 +14,7 @@ title: "DELETE Bucket Policy"
 
 ```http
 DELETE /?policy HTTP/1.1
-Host: <bucket-name>.<zone-id>.qingstor.com
+Host: <bucket-name>.<zone-id>.is.shanhe.com
 Date: <date>
 Authorization: <authorization-string>
 ```
@@ -41,7 +41,7 @@ Authorization: <authorization-string>
 
 ```http
 DELETE /?policy HTTP/1.1
-Host: mybucket.pek3a.qingstor.com
+Host: mybucket.jn1.is.shanhe.com
 Date: Sun, 16 Aug 2015 09:05:00 GMT
 Authorization: authorization string
 ```

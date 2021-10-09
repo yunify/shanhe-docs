@@ -11,7 +11,7 @@ weight: 3
 
 创建或更新 Bucket Logging 设置，只有存储空间所有者才能设置。
 
-开启 Bucket 日志功能后，QingStor 对象存储会保存 Bucket 的访问日志，按照固定的规则，
+开启 Bucket 日志功能后，对象存储服务 OIS 会保存 Bucket 的访问日志，按照固定的规则，
 并以小时为单位上传至用户指定的 Bucket 的中。
 
 获取 Bucket Logging 请参见 [GET Bucket Logging](../get_logging) 。
@@ -22,7 +22,7 @@ weight: 3
 
 ```http
 PUT /?logging HTTP/1.1
-Host: <source-bucket-name>.pek3a.qingstor.com
+Host: <source-bucket-name>.jn1.is.shanhe.com
 Date: <date>
 Authorization: <authorization-string>
 {
@@ -68,7 +68,7 @@ Json 消息体
 
 ```http
 PUT /?logging HTTP/1.1
-Host: <source-bucket-name>.pek3a.qingstor.com
+Host: <source-bucket-name>.jn1.is.shanhe.com
 Date: <date>
 Content-Length: 66
 Authorization: authorization string

@@ -18,7 +18,7 @@ weight: 1
 适用于大部分的场景，如运行在服务器端的应用程序向对象程序发起访问请求。应用程序需要配置 access key。
 为了防止签名请求被恶意用户拦截重放，保证用户数据安全，所以我们设置了
 15分钟之后签名串失效的机制。所以您需要将系统时间需要通过 NTP 校准到网络时间。
-如果您是运行在青云 IAAS 平台上的虚拟机，系统会自动同步标准时间。
+如果您是运行在山河 IAAS 平台上的虚拟机，系统会自动同步标准时间。
 
 * **请求参数签名**
 
@@ -34,8 +34,8 @@ weight: 1
 
 由于移动端应用的特点，将 access key 随 APP 分发会带来安全问题。所以我们提供了签名服务解决方案，具体请参考 [移动 App 接入方案](../../beat-practices/app_integration/)。
 
-移动客户端每次上传下载文件之前，由服务端验证了用户身份之后，签名服务根据特定的 Qingstor API 调用参数，生成头签名或参数签名，返回给客户端；
-客户端使用该签名来直接跟Qingstor进行交互。
+移动客户端每次上传下载文件之前，由服务端验证了用户身份之后，签名服务根据特定的对象存储服务OIS  API 调用参数，生成头签名或参数签名，返回给客户端；
+客户端使用该签名来直接跟对象存储服务OIS 进行交互。
 
 [Javascript SDK](../../sdk/javascript/) (适用于Ajax类型的应用)、[Java SDK](../../sdk/java/) (适用 Android 平台) 均支持构造 API 请求时应用服务端计算的签名串。
 
@@ -46,9 +46,9 @@ weight: 1
 
 对象存储通过使用对称加密的方法来验证请求者的身份。如果用户以个人身份请求对象存储服务，首先需要拥有一对密钥 (Access key)，密钥包括 `Access Key ID` 和 `Secret Access Key` ，其中 Secret Access Key 在签名的过程中需要用到。
 
-> 得到密钥的用户，可以以密钥拥有者的身份访问 QingStor，所以密钥中的 Secret Access Key 部分需要对外保密
+> 得到密钥的用户，可以以密钥拥有者的身份访问对象存储服务OIS ，所以密钥中的 Secret Access Key 部分需要对外保密
 >
-> 申请 Access Key 请在 QingCloud 控制台左侧导航栏，依次找到 GLOBAL -> API 密钥 -> 创建
+> 申请 Access Key 请在 shanhe 控制台左侧导航栏，依次找到 GLOBAL -> API 密钥 -> 创建
 
 ## 请求头签名
 
@@ -186,7 +186,7 @@ Authorization: QS PLLZOBTTZXGBNOWUFHZZ:tuXu/KcggHWPAfEmraUHDwEUdiIPSXVRsO+T2rxom
 
 ```
 GET /
-HOST: js-sdk-test.pek3a.qingstor.com
+HOST: js-sdk-test.jn1.is.shanhe.com
 x-qs-date:  Fri, 04 May 2018 16:37:00 GMT
 ```
 
@@ -202,15 +202,15 @@ x-qs-date:Fri, 04 May 2018 16:37:00 GMT\n
 
 ## 请求参数签名
 
-在一些使用场景中可能不便于设置请求头，比如使用浏览器重定向请求，或者给其它用户分享下载链接。QingStor 允许使用请求参数签名的方法，替代请求头签名。
+在一些使用场景中可能不便于设置请求头，比如使用浏览器重定向请求，或者给其它用户分享下载链接。对象存储服务 OIS 允许使用请求参数签名的方法，替代请求头签名。
 
-> 该方法需要设定请求过期时间 expires，QingStor 将拒绝处理超过该时间的请求
+> 该方法需要设定请求过期时间 expires，对象存储服务 OIS 将拒绝处理超过该时间的请求
 
 请求示例：
 
 ```
 GET /music.mp3?access_key_id=PLLZOBTTZXGBNOWUFHZZ&expires=1479107162&signature=tuXu/KcggHWPAfEmraUHDwEUdiIPSXVRsO%2BT2rxomBQ%3D
-Host: mybucket.pek3a.qingstor.com
+Host: mybucket.jn1.is.shanhe.com
 Date: Mon, 14 Nov 2016 14:05:00 GMT
 ```
 
@@ -218,8 +218,8 @@ Date: Mon, 14 Nov 2016 14:05:00 GMT
 
 | Parameter | Description | Example |
 | --- | --- | --- |
-| access_key_id | 在 QingCloud 控制台申请的 Access Key ID | PLLZOBTTZXGBNOWUFHZZ |
-| expires | 签名过期时间，该时间为 Unix Time (也称为 Epoch Time), 表示方法是自历元(1970-01-01 00:00, The Epoch) 之后的秒数, 类型为整数。在过期时间之后到达的请求将被 QingStor 拒绝 | 1479107162 |
+| access_key_id | 在 shanhe 控制台申请的 Access Key ID | PLLZOBTTZXGBNOWUFHZZ |
+| expires | 签名过期时间，该时间为 Unix Time (也称为 Epoch Time), 表示方法是自历元(1970-01-01 00:00, The Epoch) 之后的秒数, 类型为整数。在过期时间之后到达的请求将被对象存储服务 OIS 拒绝 | 1479107162 |
 | signature | 对签名串 string_to_sign 经过 HMAC-SHA256 加密后，再使用 Base64 编码，最后使用 URI 编码后的结果 | tuXu/KcggHWPAfEmraUHDwEUdiIPSXVRsO%2BT2rxomBQ%3D |
 
 相比于请求头签名方法，签名串 string_to_sign 的生成过程只有一点不同，即把 Date 替换为 Expires：

@@ -3,7 +3,7 @@ title: "C/C++ SDK"
 ---
 
 
-QingStor 对象存储的 C and C++ SDK 项目为 qingstor-sdk-cpp , 已在 GitHub 开源，本 SDK 使用 SDK 生成工具 [Snips](https://github.com/yunify/snips) 生成和维护，详细信息请参考其相关文档。
+山河对象存储的 C and C++ SDK 项目为 qingstor-sdk-cpp , 已在 GitHub 开源，本 SDK 使用 SDK 生成工具 [Snips](https://github.com/yunify/snips) 生成和维护，详细信息请参考其相关文档。
 
 下文为简要使用文档。更多详细信息请参见 [https://github.com/yunify/qingstor-sdk-cpp](https://github.com/yunify/qingstor-sdk-cpp)。
 

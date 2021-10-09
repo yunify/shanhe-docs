@@ -9,7 +9,7 @@ title: "GET Bucket Statistics"
 
 ```http
 GET /?stats HTTP/1.1
-Host: <bucket-name>.<zone-id>.qingstor.com
+Host: <bucket-name>.<zone-id>.is.shanhe.com
 Date: <date>
 Authorization: <authorization-string>
 ```
@@ -53,7 +53,7 @@ Authorization: <authorization-string>
 
 ```http
 GET /?stats HTTP/1.1
-Host: mybucket.pek3a.qingstor.com
+Host: mybucket.jn1.is.shanhe.com
 Date: Sun, 16 Aug 2015 09:05:00 GMT
 Authorization: authorization string
 ```
@@ -74,7 +74,7 @@ x-qs-request-id: aa08cf7a43f611e5886952542e6ce14b
     "status": "active",
     "name": "mybucket",
     "created": "2015-07-22T02:23:04.000Z",
-    "url": "mybucket.pek3a.qingstor.com",
+    "url": "mybucket.jn1.is.shanhe.com",
     "location": "pek3a",
     "storage_classes": {
         "STANDARD": {

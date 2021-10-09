@@ -3,7 +3,7 @@ title: "Java SDK"
 ---
 
 
-QingStor Java SDK 已在 GitHub 开源，下文为简要使用文档。更多详细信息请参见 [GitHub 项目页面](https://github.com/yunify/qingstor-sdk-java)，
+shanhe Java SDK 已在 GitHub 开源，下文为简要使用文档。更多详细信息请参见 [GitHub 项目页面](https://github.com/yunify/qingstor-sdk-java)，
 和[Java SDK API 文档](https://qingstor.github.io/qingstor-sdk-java/)。Java SDK 使用 [Snips](https://github.com/yunify/snips) 工具生成，
 各个调用的均与具体的 [Qingstor Restful API](https://docs.qingcloud.com/qingstor/api/) 对应，
 返回码、请求头、错误码等规定请参照具体 API 文档的描述。
@@ -22,7 +22,7 @@ SDK 示例请参见 [SDK Example](https://github.com/qingstor/qingstor-sdk-java/
 
 ## 快速开始
 
-使用 SDK 之前请先在 [青云控制台](https://console.qingcloud.com/access_keys/) 申请 access key 。
+使用 SDK 之前请先在 [山河控制台](https://console.shanhe.com/access_keys/) 申请 access key 。
 
 ### 安装
 
@@ -60,7 +60,7 @@ QingStor stor = new QingStor(env);
 
 上面代码初始化了一个 QingStor Service,
 其中用于创建 `stor` 对象的 `env` 承载了用户的认证信息及 SDK 配置,
-`stor` 对象用于操作 QingStor 对象存储服务，如调用 Service 级别的 API 或创建指定的 Bucket 对象来调用 Bucket 和 Object 级别的 API。
+`stor` 对象用于操作山河对象存储服务，如调用 Service 级别的 API 或创建指定的 Bucket 对象来调用 Bucket 和 Object 级别的 API。
 
 ### 获取账户下的 Bucket 列表
 

@@ -15,7 +15,7 @@ weight: 3
 
 ```http
 OPTIONS /<object-name> HTTP/1.1
-Host: <bucket-name>.pek3a.qingstor.com
+Host: <bucket-name>.jn1.is.shanhe.com
 Date: <date>
 Authorization: <authorization-string>
 Origin: Origin
