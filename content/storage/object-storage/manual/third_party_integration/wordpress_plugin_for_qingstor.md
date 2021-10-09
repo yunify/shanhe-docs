@@ -22,7 +22,7 @@ wp-qingstor 是一个 对象存储服务OIS WordPress 插件，支持定时备�
 
 ## 快速开始
 
-使用插件之前请先在[山河控制台](https://console.shanhe.com/access_keys/)创建 Access Key，Secret Key 和一个用于 WrodPress 的 Bucket。
+使用插件之前请先在[控制台](https://console.shanhe.com/access_keys/)创建 Access Key，Secret Key 和一个用于 WrodPress 的 Bucket。
 
 wp-qingstor 的基本配置项如下，查看更多可用选项可访问 GitHub 项目页面进行查阅。
 
