@@ -19,9 +19,7 @@ draft: false
 
    ```bash
    curl -F "file=@-;filename=mydict.dic" $LS_IP/dicts/ <<- EOF
-   青云
-   优帆科技
-   优帆
+   中国
    EOF
    ```
 
@@ -90,14 +88,10 @@ draft: false
    
    words="
    中国
-   青云
-   优帆科技
    "
    sleep 5; for word in $words; do query "$word"; done
    ```
 
-4. 查看中文分词结果，结果如下图红色部分所示即为成功。即"中国"、"青云"、"优帆科技"被当做固定的中文分词表示。
-
-   ![chinese_split](../../_images/chinese_split.png)
+4. 查看中文分词结果，即"中国"被当做固定的中文分词表示。
 
 5. 可根据实际需要随时更新用户自定义字典，Elasticsearch 会自动检测 HTTP 响应头中的 Last-Modified 和 ETag 的变化，来进行分词字典的热更新。
