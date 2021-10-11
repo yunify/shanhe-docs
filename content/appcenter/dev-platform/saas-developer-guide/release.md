@@ -9,13 +9,17 @@ weight: 4
 
 ### 创建应用
 
-首先登录应用管理平台，点击“应用”部分的“+”号按钮，开始创建第一个应用：
+首先登录应用管理平台，点击“全部应用”，进入全部应用列表页面。
 
 ![创建应用](/appcenter/dev-platform/saas-developer-guide/_image/create-saas-app.png)
 
-输入应用名称，应用类型选择“集成应用”， 点击创建应用。
+选择**创建应用** > **集成应用**。
 
 ![应用类型](/appcenter/dev-platform/saas-developer-guide/_image/saas-app-type.png)
+
+输入应用名称和应用描述， 点击**创建应用**。
+
+![应用类型](/appcenter/dev-platform/saas-developer-guide/_image/create-saas-app01.png)
 
 在【应用设置】页面输入应用的基本信息：
 
