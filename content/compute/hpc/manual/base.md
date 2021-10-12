@@ -12,7 +12,7 @@ weight: 1
 
 ## 创建/申请集群
 
-HPC 和 EHPC 是青云 QingCloud 提供的两种不同的高性能计算模式。您可以申请 HPC 的使用权限，或者创建一个新的EHPC集群。
+HPC 和 EHPC 是山河 shanhe 提供的两种不同的高性能计算模式。您可以申请 HPC 的使用权限，或者创建一个新的EHPC集群。
 
 ![](../_images/hpc_cluster0.png)
 

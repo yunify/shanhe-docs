@@ -1,9 +1,9 @@
 ---
 title: "人工智能"
-linkTitle: "人工智能文档"
+linkTitle: "Document"
 _build:
  render: false 
-weight: 14
+weight: 8
 collapsible: true
 icon: "/images/icons/index/product-icon-ai.svg"
 ---
