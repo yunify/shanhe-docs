@@ -11,8 +11,8 @@ enableToc: false
 
 本文案例为 MAC 客户端以证书的方式连接 OpenVPN。
 
-
 ## 操作步骤
+
 ### 1.执行以下命令安装 OpenVPN 客户端
 
 ```
@@ -24,6 +24,8 @@ brew install openvpn
 
 
 ### 2. OpenVPN 配置完成，将证书下载到本地，选择 MAC 证书下载。执行下面命令删除默认配置文件
+
+<img src="../homer/openvpn_building_22.png" width="80%" height="80%">
 
 ```
 rm /usr/local/etc/openvpn/*

@@ -32,9 +32,7 @@ apt-get install OpenVPN
 
 ![](../openvpn_building_linux/openvpn_building_linux_1.png)
 
-配置提交以后需要更新vpc才能生效，点击应用修改。
-
-![](../openvpn_building_linux/openvpn_building_linux_2.png)
+配置提交以后需要点击**应用修改**更新 vpc 才能生效。
 
 以上配置完成以后，需要配置安全组的策略，在vpc详情界面找到安全组，添加下行TCP 1194端口协议，并更新安全组。
 
