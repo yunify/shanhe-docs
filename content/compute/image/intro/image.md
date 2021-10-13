@@ -40,7 +40,7 @@ sudo apt-get update
 
 ## 山河提供的开源操作系统镜像模板
 
-系统镜像为官方提供的模板。 QingCloud 会提供主流的 Linux、Windows 模板，并根据上游厂商更新版本时及时制作新模板。
+系统镜像为官方提供的模板。 山河会提供主流的 Linux、Windows 模板，并根据上游厂商更新版本时及时制作新模板。
 
 * Linux 系列
  * arch201609x64a

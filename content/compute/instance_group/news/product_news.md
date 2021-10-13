@@ -5,8 +5,8 @@ collapsible: false
 
 product:
     - time: 2019-10-24 17:50:47
-      title: 山河 shanhe 推出安置策略组功能
-      content: 山河 shanhe 针对用户的特定场景，一切从用户的角度出发，如提高资源的可用性、业务连续性，有效降低用户成本，基于用户感知的应用出发，开发了针对主机（instance）的安置策略组的功能。
+      title: 山河推出安置策略组功能
+      content: 山河针对用户的特定场景，一切从用户的角度出发，如提高资源的可用性、业务连续性，有效降低用户成本，基于用户感知的应用出发，开发了针对主机（instance）的安置策略组的功能。
       url: /compute/instance_group/manual/instance_group
       tags:
       - 新功能
