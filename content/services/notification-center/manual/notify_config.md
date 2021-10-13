@@ -61,7 +61,7 @@ draft: false
 
 ### 操作步骤
 
-1. 登录[山河计算平台](https://console.shanhe.com/login)。
+1. 登录[管理控制台](https://console.shanhe.com/login)。
 2. 点击右上角的![](../../_images/notification-bell.png)图标，进入消息中心。
 3. 在左侧导航栏，选择 **消息接收管理** > **消息接收配置**。
 4. 配置消息接收方式。
@@ -74,7 +74,7 @@ draft: false
 
 ### 操作步骤
 
-1. 登录[山河计算平台](https://console.shanhe.com/login)。
+1. 登录[管理控制台](https://console.shanhe.com/login)。
 
 2. 点击右上角的![](../../_images/notification-bell.png)图标，进入消息中心。
 
