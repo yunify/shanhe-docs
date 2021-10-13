@@ -1,13 +1,13 @@
 ---
-title: "项目"
-linkTitle: "项目"
-weight: 1
+title: "资源管理"
+linkTitle: "资源管理"
+weight: 3
 collapsible: true
 type: "product"
 
 section1:
-  title: 项目
-  vice_title: 项目是基于“资源协作（Collaboration）”升级的功能，目的是帮助您分组管理、分享资源。 
+  title: 资源管理
+  vice_title: 资源管理包含项目管理、资源共享和配额管理，帮助用户进行资源用量规划和管理。 
 
 section2:
   title: 用户指南
@@ -17,7 +17,7 @@ section2:
       url: "intro"
 
     - title: 操作指南
-      content: 学习如何创建、查看及应用项目等。
+      content: 学习如何创建、查看、应用项目，使用资源共享以及管理配额等。
       url: "manual"
 
 
