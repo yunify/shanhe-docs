@@ -5,4 +5,5 @@ public/
 .vscode/
 debug.log
 .DS_Store
+content/.DS_Store
 .idea/

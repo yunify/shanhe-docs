@@ -33,9 +33,9 @@ weight: 5
     云服务器要加入的网络，包括基础网络、受管私有网络和自管私有网络。
 *   云服务器登录方式：
     密码登录 或 SSH 密钥登录（推荐 SSH 密钥登录，更安全）
-*   防火墙：
+*   安全组：
     云服务器使用的防火墙
-*   UserData：
+*   用户数据：
     即用户自定义数据，可让用户在创建云服务器时通过上传一些自定义的参数或脚本。更多请见 [User Data 指南](../../../../../compute/vm/manual/userdata/)
 
 ![](../_images/create-launch-configuration.png)
