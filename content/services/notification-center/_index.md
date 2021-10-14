@@ -20,7 +20,7 @@ Section2:
 
     - title: 操作指南
       content: 查看通知消息和配置通知列表。
-      url: "manual/notiify/"
+      url: "manual/notify/"
 
 section3:
   title: 开发者指南
