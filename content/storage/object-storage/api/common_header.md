@@ -95,7 +95,7 @@ http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.19
 
 ### Server
 
-Web服务器软件信息，固定为"QingStor"
+Web服务器软件信息，固定为"对象存储服务 OIS"
 
 http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.38
 

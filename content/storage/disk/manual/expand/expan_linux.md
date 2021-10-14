@@ -15,7 +15,7 @@ keyword: 山河
 
 2. 在硬盘列表右键点击需要扩容的硬盘，选择**扩容**，弹出**扩容硬盘**界面。
 
-   <img src="../../_images/expan_linux_1.png" alt="扩容硬盘" style="zoom:70%;" />
+   <img src="../../_images/expan_linux_disk.png" alt="扩容硬盘" style="zoom:70%;" />
 
 3. 拖动容量滑块或直接输入容量值，点击**提交**即可。
 

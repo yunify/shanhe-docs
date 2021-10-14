@@ -7,12 +7,12 @@ weight: 3
 >通过 goofys 将对象存储挂载到文件系统使用
 >项目地址：https://github.com/kahing/goofys
 
-## 创建对象存储（已有跳过）
-![image-20210523145927842](../_images/linux_uses_object_storage_as_a_local_disk.assets/image-20210523145927842.png)
+## 创建对象存储（已有可跳过该步骤）
+![linux_uses_1](../_images/linux_uses_object_storage_as_a_local_disk.assets/linux_uses_1.png)
 
 ## 申请 API 密钥
 
-![image-20210523150041285](../_images/linux_uses_object_storage_as_a_local_disk.assets/image-20210523150041285.png)
+![linux_uses_2](../_images/linux_uses_object_storage_as_a_local_disk.assets/linux_uses_2.png)
 
 ## 安装 goofys (以 Ubuntu 为例)
 ```

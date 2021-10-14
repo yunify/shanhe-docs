@@ -17,7 +17,7 @@ weight: 3
 
 ```http
 POST /<object-name>?uploads HTTP/1.1
-Host: <bucket-name>.<zone-id>.qingstor.com
+Host: <bucket-name>.<zone-id>.is.shanhe.com
 Date: <date>
 Authorization: <authorization-string>
 ```
@@ -32,7 +32,7 @@ Authorization: <authorization-string>
 
 对象加密，参见[加密请求头](../../../common/encryption/#加密请求头)
 
- 如果给对象附带支持的标准 HTTP 头或自定义元数据，参见[如何创建对象元数据](https://docs.qingcloud.com/qingstor/api/common/metadata#如何创建对象元数据)
+ 如果给对象附带支持的标准 HTTP 头或自定义元数据，参见[如何创建对象元数据](https://docs.shanhe.com/qingstor/api/common/metadata#如何创建对象元数据)
 
 | Header Name | Type | Description | Required |
 | --- | --- | --- | --- |
@@ -69,7 +69,7 @@ Authorization: <authorization-string>
 
 ```http
 POST /large-object?uploads HTTP/1.1
-Host: mybucket.pek3a.qingstor.com
+Host: mybucket.jn1.is.shanhe.com
 Date: Sun, 16 Aug 2015 13:25:10 GMT
 Authorization: authorization string
 ```

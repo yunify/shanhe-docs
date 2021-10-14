@@ -61,12 +61,12 @@ draft: false
 
 ### 操作步骤
 
-1. 登录[QingCloud 管理控制台](https://console.qingcloud.com/sh1a/nics/)。
+1. 登录[管理控制台](https://console.shanhe.com/login)。
 2. 点击右上角的![](../../_images/notification-bell.png)图标，进入消息中心。
 3. 在左侧导航栏，选择 **消息接收管理** > **消息接收配置**。
 4. 配置消息接收方式。
 
-<img src="../../_images/message_config.png" alt="message_config" style="zoom:22%;" />
+<img src="../../_images/message_config.png" alt="message_config" style="zoom:100%;" />
 
 ## 配置消息接收人
 
@@ -74,7 +74,7 @@ draft: false
 
 ### 操作步骤
 
-1. 登录[QingCloud 管理控制台](https://console.qingcloud.com/sh1a/nics/)。
+1. 登录[管理控制台](https://console.shanhe.com/login)。
 
 2. 点击右上角的![](../../_images/notification-bell.png)图标，进入消息中心。
 
@@ -86,11 +86,11 @@ draft: false
 
    1. 勾选一种或多种消息类型，点击页面下方的“添加接收人”。
 
-   <img src="../../_images/message_config_1.png" alt="message_config_1" style="zoom:34%;" />
+   <img src="../../_images/message_config_1.png" alt="message_config_1" style="zoom:100%;" />
 
    2. 勾选需要添加的接收人，点击“确定”。
 
-   <img src="../../_images/message_config_2.png" alt="message_config_2" style="zoom:33%;" />
+   <img src="../../_images/message_config_2.png" alt="message_config_2" style="zoom:100%;" />
 
    > 说明：您也可以点击**添加消息接收人**，添加并选择新的接收人。系统会自动发送验证信息到新添加的接收人的手机号和邮箱中，通过验证后，该接收人方可接收消息。您可以在“接收人管理”菜单下，管理添加的接收人。
 
@@ -98,11 +98,11 @@ draft: false
 
    1. 勾选一种或多种消息类型，点击页面下方的**移除消息接收人**。
 
-   <img src="../../_images/message_config_3.png" alt="message_config_3" style="zoom:33%;" />
+   <img src="../../_images/message_config_3.png" alt="message_config_3" style="zoom:100%;" />
 
    2. 至少选择一个接收人，点击**确定**。
 
-   <img src="../../_images/message_config_4.png" alt="message_config_4" style="zoom:33%;" />
+   <img src="../../_images/message_config_4.png" alt="message_config_4" style="zoom:100%;" />
 
    
 

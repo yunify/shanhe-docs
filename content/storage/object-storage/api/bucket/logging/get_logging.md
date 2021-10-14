@@ -19,7 +19,7 @@ weight: 3
 
 ```http
 GET /?logging HTTP/1.1
-Host: <source-bucket-name>.pek3a.qingstor.com
+Host: <source-bucket-name>.jn1.is.shanhe.com
 Date: <date>
 Authorization: <authorization-string>
 ```
@@ -59,7 +59,7 @@ Authorization: <authorization-string>
 
 ```http
 GET /?logging HTTP/1.1
-Host: <source-bucket-name>.pek3a.qingstor.com
+Host: <source-bucket-name>.jn1.is.shanhe.com
 Date: <date>
 Authorization: authorization string
 ```

@@ -11,7 +11,7 @@ weight: 3
 
 创建或更新 Bucket Replication 规则设置，replication 是存储空间的子资源（subresource), 只有存储空间所有者才能设置.
 
-QingStor 对象存储会按照用户所设置的 replication 规则, 在用户完成某些动作后对匹配规则的 Object 执行复制操作.
+对象存储服务 OIS 会按照用户所设置的 replication 规则, 在用户完成某些动作后对匹配规则的 Object 执行复制操作.
 
 目前会触发复制的动作:
 
@@ -33,7 +33,7 @@ QingStor 对象存储会按照用户所设置的 replication 规则, 在用户�
 
 ```http
 PUT /?replication HTTP/1.1
-Host: <bucket-name>.<zone-id>.qingstor.com
+Host: <bucket-name>.<zone-id>.is.shanhe.com
 Date: <date>
 Authorization: <authorization-string>
 ```
@@ -70,7 +70,7 @@ Authorization: <authorization-string>
 
 ```http
 PUT /?replication HTTP/1.1
-Host: my-bucket.pek3a.qingstor.com
+Host: my-bucket.jn1.is.shanhe.com
 Date: Mon, 1 Oct 2018 15:04:01 GMT
 Content-Length: 193
 Authorization: authorization string

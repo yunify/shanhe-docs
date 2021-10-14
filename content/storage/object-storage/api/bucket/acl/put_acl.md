@@ -11,7 +11,7 @@ title: "PUT Bucket ACL"
 
 ```http
 PUT /?acl HTTP/1.1
-Host: <bucket-name>.<zone-id>.qingstor.com
+Host: <bucket-name>.<zone-id>.is.shanhe.com
 Date: <date>
 Authorization: <authorization-string>
 
@@ -73,7 +73,7 @@ Json 消息体
 
 ```http
 PUT /?acl HTTP/1.1
-Host: mybucket.pek3a.qingstor.com
+Host: mybucket.jn1.is.shenhe.com
 Date: Sun, 16 Aug 2015 09:05:00 GMT
 Content-Length: 157
 Authorization: authorization string

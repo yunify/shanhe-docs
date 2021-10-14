@@ -22,7 +22,7 @@ weight: 3
 ```http
 PUT /<object-name> HTTP/1.1
 x-qs-copy-source: /source-bucket/source-object
-Host: <bucket-name>.<zone-id>.qingstor.com
+Host: <bucket-name>.<zone-id>.is.shanhe.com
 Date: <date>
 Authorization: <authorization-string>
 ```
@@ -74,7 +74,7 @@ Authorization: <authorization-string>
 
 ```http
 PUT /myphoto.jpg HTTP/1.1
-Host: mybucket.pek3a.qingstor.com
+Host: mybucket.jn1.is.shanhe.com
 Date: Sun, 16 Aug 2015 09:05:00 GMT
 x-qs-copy-source: /source-bucket/source-object
 Authorization: authorization string
