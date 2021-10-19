@@ -6,7 +6,7 @@ collapsible: true
 ---
 
 
-对象存储服务（Object Storage）提供了一个在线文件存储和访问平台，您可以将数据、日志、静态分发资源等多种文件类型，通过控制台或 Object Storage API 传到一个 Bucket 中，以供 HTTP 访问或数据分析使用。
+山河对象存储服务提供了一个在线文件存储和访问平台，您可以将数据、日志、静态分发资源等多种文件类型，通过管理控制台或 Object Storage API 传到一个 Bucket 中，以供 HTTP 访问或数据分析使用。
 
 本文档描述对象存储的最佳实践方式，以下是涉及的主要内容：
 
@@ -21,7 +21,7 @@ collapsible: true
     * [使用方法](backup/#id4)
 * [移动 App 接入方案](app_integration/)
     * [准备工作](app_integration/#id1)
-    * [使用 QingStor SDK](app_integration/#qingstor-sdk)
+    * [使用山河 SDK](app_integration/)
     * [开发者实现签名服务器](app_integration/#id2)
     * [表单 POST 上传](app_integration/#post)
     * [请求参数签名](app_integration/#id3)
