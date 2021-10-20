@@ -12,13 +12,13 @@ weight: 6
 
 ## 操作步骤
 
-1. 进入山河对象存储的主页面，选择待设置跨区域复制的 Bucket，点击 **右键** > **设置**：
+1. 进入山河对象存储的主页面，选择待设置日志归档的 Bucket，点击 **右键** > **设置**：
 
- ![](../../_images/set_bucket_logging1.png)
+ ![](/storage/object-storage/_images/set_bucket_acl1.png)
 
 2. 进入 Bucket 设置页面，点击 **日志**，根据页面信息，填写相关参数后，点击 **开启日志功能**：
 
- ![](../../_images/set_bucket_logging2.png)
+ ![](/storage/object-storage/_images/set_bucket_logging2.png)
 
  **说明：**
    - 目标 Bucket 和源 Bucket 必须属于同一个用户下的同一数据中心内，且目标 Bucket 必须处于正常状态。
@@ -27,7 +27,7 @@ weight: 6
 
 3. 开启日志功能后，页面显示如下：
 
- ![](../../_images/set_bucket_logging3.png)
+ ![](/storage/object-storage/_images/set_bucket_logging3.png)
 
  **说明：**
    - 如需修改用于存放日志的 Bucket，或日志文件命名的前缀，可在上图页面中直接修改后，点击 **应用修改** 即可。
@@ -87,7 +87,7 @@ weight: 6
 - 推荐设置前缀，避免用户 Object 名与日志文件命名冲突。
 - 如果日志量比较大，一个小时可能会有多个日志文件，则日志文件会按照 `OrderString` 唯一序列号区分。
 - 正常情况下，日志会以 Object 的形式延迟 1-2 小时归档至指定位置。
-- 开启该功能后，归档存储的日志文件会占用存储空间，故，QingStor 对象存储会对其所占存储进行收费。
+- 开启该功能后，归档存储的日志文件会占用存储空间，故，山河对象存储会对其所占存储进行收费。
 - 日志生成后，用户可以按照普通的 Object 来操作这些文件。
 
 

@@ -200,7 +200,7 @@ destination:
 ```
 
 **说明**
-- 该任务即为：将本地目录 `/path/to/source` 下的文件 copy 至 QingStor 对象存储的 `example_bucket` 下的 `/path/to/destination` 目录。
+- 该任务即为：将本地目录 `/path/to/source` 下的文件复制至山河对象存储的 `example_bucket` 下的 `/path/to/destination` 目录。
 - `access_key_id` 与 `secret_access_key` 可参考 [获取 Access Key](/storage/object-storage/api/practices/signature/#获取-access-key)。
 
 

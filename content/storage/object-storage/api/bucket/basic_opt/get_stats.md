@@ -62,7 +62,7 @@ Authorization: <authorization-string>
 
 ```http
 GET /?stats HTTP/1.1
-Host: mybucket.pek3a.shanhe.com
+Host: mybucket.jn2.is.shanhe.com
 Date: Sun, 16 Aug 2015 09:05:00 GMT
 Authorization: authorization string
 ```
@@ -83,8 +83,8 @@ x-qs-request-id: aa08cf7a43f611e5886952542e6ce14b
     "status": "active",
     "name": "mybucket",
     "created": "2015-07-22T02:23:04.000Z",
-    "url": "mybucket.pek3a.shanhe.com",
-    "location": "pek3a",
+    "url": "mybucket.jn2.is.shanhe.com",
+    "location": "jn2.is",
     "storage_classes": {
         "STANDARD": {
             "count": 5,

@@ -50,8 +50,8 @@ weight: 1
 
 | Name      | Zone ID | Domain Name | URL Example                                     |
 |-----------|---------|-|------------------------------------------------|
-| 山河       | jn1     |jn1.shanhe.com | https://mybucket1.jn1.shanhe.com/myobject|
-| 齐鲁工大    | jn2    | jn2.shanhe.com | https://mybucket2.jn1.shanhe.com/myobject  |
+| 山河       | jn1     |jn1.shanhe.com | https://mybucket1.jn1.is.shanhe.com/myobject|
+| 齐鲁工大    | jn2    | jn2.shanhe.com | https://mybucket2.jn1.is.shanhe.com/myobject  |
 
 ### Service
 山河对象存储的顶层命令空间。在该命名空间下，每一个用户可以创建多个 Bucket。

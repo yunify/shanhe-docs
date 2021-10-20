@@ -9,7 +9,6 @@ collapsible: true
 
 数据处理可以对存储在山河对象存储上的数据进行处理。
 
-- [图普科技鉴黄服务](tupu_porn/)
 - [图片处理](image_process/)
 
 

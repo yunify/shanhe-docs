@@ -50,7 +50,7 @@ weight: 2
 
 ## 访问控制
 山河对象存储提供多种安全功能用于维护数据的完整性，并有助于确保目标用户可以访问相应的资源。用户可通过如下方式控制资源的访问权限：
-- Bucket ACL：Bucket 访问控制列表。Bucket 的拥有者默认具备所有权限，用户根据需求，可配置公开读或公开写（即不附带认证信息的匿名访问），也可以针对特定青云用户来配置读写权限。
+- Bucket ACL：Bucket 访问控制列表。Bucket 的拥有者默认具备所有权限，用户根据需求，可配置公开读或公开写（即不附带认证信息的匿名访问），也可以针对特定山河用户来配置读写权限。
 - Bucket Policy：Bucket 策略。用户可通过设置 Bucket 策略，赋予其他用户相应 Bucket 及其 Object 的访问权限。Bucket 策略可以通过细致地指定 API 级别的控制，实现 Bucket ACL 和 Object ACL 所不能实现的一些功能，比如防盗链。
 - Bucket CORS：Bucket 的跨域资源共享策略。当用户利用 JavaScript AJAX 向山河对象存储发起的请求属于跨源请求时，默认情况下浏览器出于安全考虑，不允许调用不同域名下的资源，这种情况下需要为 Bucket 配置 CORS 规则。
 
@@ -119,13 +119,9 @@ weight: 2
 ## 对数据进行分析和处理
 山河对象存储支持图片处理与鉴黄。
 - 图片处理：对存储于山河对象存储中的图片执行不同的操作，如格式转换，裁剪，翻转，水印等。
-- 图普科技鉴黄服务：帮助用户判断存储在山河对象存储中的图片是否为色情。
-- 媒体转码服务：对存储在山河对象存储中的音视频进行转码计算，并将结果保存至 Bucket 中。
 
 **参考操作**：
   - [图片处理](/storage/object-storage/manual/console/data_process/image_process/)
-  - [图普科技鉴黄服务](/storage/object-storage/manual/console/data_process/tupu_porn/)
-  - [媒体转码](/storage/object-storage/manual/console/data_process/transfer/)
 
 ## 静态网站托管
 山河对象存储面向静态网页内容提供托管服务，对静态网站的文件存储、访问控制、 CDN 分发加速，以及安全保障等一站式解决方案。

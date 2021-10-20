@@ -7,7 +7,7 @@ collapsible: false
 weight: 16
 ---
 
-qsftpd 是山河对象存储提供的 FTP Server。用户通过简单的配置，即可通过 FTP 协议使用山河对象存储服务。该工具已在 GitHub 开源，更多详情可参见 [https://github.com/qingstor/qsftpd](https://github.com/qingstor/qsftpd)。
+qsftpd 是山河对象存储提供的 FTP Server。用户通过简单的配置，即可通过 FTP 协议使用山河对象存储服务。该工具已在 GitHub 开源，更多详情可参见 [GitHub 项目](https://github.com/qingstor/qsftpd)。
 
 ## 安装
 qsftpd 支持 Linux、macOS 和 Windows 操作系统。用户可访问 GitHub 项目的 [Releases](https://github.com/qingstor/qsftpd/releases) 页面查看和下载相应版本。

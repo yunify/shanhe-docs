@@ -291,13 +291,13 @@ bucketService.putObject(objectKey: key, input: input) { response, error in
 
 上文中介绍的使用 SDK 对接山河对象存储服务，适用于 Bucket 被个人用户所拥有的情况。如果 Bucket 为 App 开发者所拥有，由于需要将签名密钥内置到客户端程序中，会带来安全方面的隐患。为了保证签名密钥的安全，开发者可以根据山河对象存储签名方法，自己搭建并实现一个签名服务器。用于签名的密钥只需要在服务端保存，客户端不需要拿到，从而避免了认证信息泄漏的隐患。
 
-QingStor 对象存储提供了一个签名服务器的 [样例](https://github.com/yunify/qingstor-demo-auth-server) 供 App 开发者参考。网页端使用 JavaScript SDK 配合签名服务器进行上传可以参考官方提供的 [Demo 项目](https://github.com/yunify/qingstor-sdk-js-demo)。
+山河对象存储提供了一个签名服务器的 [样例](https://github.com/yunify/qingstor-demo-auth-server) 供 App 开发者参考。网页端使用 JavaScript SDK 配合签名服务器进行上传可以参考官方提供的 [Demo 项目](https://github.com/yunify/qingstor-sdk-js-demo)。
 
 ### 注意事项
 
 若用户需自己开发签名服务，需要注意：
 
-- 签名服务需要考虑 [JavaScript 客户端的特例](/storage/object-storage/api/signature/)
+- 签名服务需要考虑 [JavaScript 客户端的特例](/storage/object-storage/api/practices/signature/)
 
 - 签名服务需要把计算签名时所有的时间戳，返回给客户端，客户端根据这个时间戳设置 `Date` 头字段（一般客户端）或 `x-qs-date` 头字段（JavaScript客户端）
 
@@ -318,7 +318,7 @@ pip install -r requirements
 ```bash
 export ACCESS_KEY_ID="ACCESS_KEY_ID_EXAMPLE"
 export SECRET_ACCESS_KEY="SECRET_ACCESS_KEY_EXAMPLE"
-export ZONE="pek3a"
+export ZONE="jn2.is"
 ```
 
 其中 ZONE 可以在服务器端进行配置，也可以在每一次请求中指定。如果都没有的话，服务器将会抛出异常。
@@ -348,7 +348,7 @@ QS PLLZOBTTZXGBNOWUFHZZ:vIWg/qAxvXlcFRb9uzYmdIM9tiF6EuM6SC3i13yLzH8=
 ```http
 GET /mybucket/music.mp3 HTTP/1.1
 Authorization: QS PLLZOBTTZXGBNOWUFHZZ:vIWg/qAxvXlcFRb9uzYmdIM9tiF6EuM6SC3i13yLzH8=
-Host: pek3a.qingstor.com
+Host: jn2.is.qingstor.com
 Date: Mon, 14 Nov 2016 14:05:00 GMT
 ```
 

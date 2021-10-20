@@ -9,11 +9,11 @@ weight: 39
 
 ## 如何提高山河对象存储的 Bucket 配额？
 
-每个用户的默认 Bucket 配额为 2 个，用户可以通过提交工单申请提高 Bucket 配额。QingStor 对象存储不推荐单个用户创建太多的 Bucket。
+每个用户的默认 Bucket 配额为 2 个，用户可以通过提交工单申请提高 Bucket 配额。山河对象存储不推荐单个用户创建太多的 Bucket。
 
 ## 山河对象存储的 Bucket 有文件数量和类型的限制吗？
 
-QingStor 对象存储是面向海量非结构化数据的通用存储，没有针对文件数量和类型的限制。
+山河对象存储是面向海量非结构化数据的通用存储，没有针对文件数量和类型的限制。
 
 ## 如何同步本地目录到山河对象存储？
 
@@ -21,7 +21,7 @@ QingStor 对象存储是面向海量非结构化数据的通用存储，没有�
 
 ## 山河对象存储的 Bucket 是否可以创建文件夹？
 
-QingStor 对象存储的 Bucket 本质上是一个平级结构，但管理控制台界面会根据 `/` 来模拟文件系统的层级结构。如果使用 API 调用，可以使用 [GET Bucket API](/storage/object-storage/api/bucket/basic_opt/get/) ，通过 `prefix` 和 `delimiter` 参数来获取按照文件夹归类的文件列表。
+山河对象存储的 Bucket 本质上是一个平级结构，但管理控制台界面会根据 `/` 来模拟文件系统的层级结构。如果使用 API 调用，可以使用 [GET Bucket API](/storage/object-storage/api/bucket/basic_opt/get/) ，通过 `prefix` 和 `delimiter` 参数来获取按照文件夹归类的文件列表。
 
 ## 山河对象存储是否有针对文件夹操作的接口？
 
@@ -29,11 +29,11 @@ QingStor 对象存储的 Bucket 本质上是一个平级结构，但管理控制
 
 ## 山河对象存储是否有 API 请求频率限制？
 
-QingStor 对象存储不对 API 请求频率做限制。
+山河对象存储不对 API 请求频率做限制。
 
 ## 山河对象存储是否兼容 AWS S3 的上传工具？
 
-QingStor 对象存储兼容 AWS S3 的主要 API，用户可以直接使用 AWS S3 相关的上传工具上传数据到山河对象存储，兼容工具列表可以参考 [文档](/storage/object-storage/s3)。
+山河对象存储兼容 AWS S3 的主要 API，用户可以直接使用 AWS S3 相关的上传工具上传数据到山河对象存储，兼容工具列表可以参考 [文档](/storage/object-storage/s3)。
 
 ## qsctl 的同步操作为什么有时不会覆盖文件？
 
@@ -46,7 +46,7 @@ qsctl 在覆盖文件时的处理逻辑为：
 
 可以使用 PUT 方法上传，如果文件很大的话，还可以考虑使用 [分段上传 API](/storage/object-storage/api/object/multipart)。
 
-PUT 方法上传的 Object 允许最大 5GB；分段上传的 Object 最大可达 50TB，每个分段最大为 5GB。如果通过广域网上传，QingStor 对象存储建议几百兆以上大小的文件都使用分段上传。
+PUT 方法上传的 Object 允许最大 5GB；分段上传的 Object 最大可达 50TB，每个分段最大为 5GB。如果通过广域网上传，山河对象存储建议几百兆以上大小的文件都使用分段上传。
 
 ## 使用分段上传时，如果一个分段上传失败，可以只对这个分段断点续传吗？
 

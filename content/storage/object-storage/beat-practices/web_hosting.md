@@ -9,8 +9,6 @@ weight: 4
 
 静态网站托管（Bucket Web Hosting），是山河对象存储，面向静态网页内容（包含音频和视频等文件）提供的一种托管服务，是对静态网站的文件存储、访问控制、 CDN 分发加速，以及安全保障等一站式的解决方案。网页内容包含音频和视频等文件。可帮助用户快速构建并托管基于静态内容的网站，并提供高可靠与高可用的服务保障，大幅简化用户建站的操作流程，同时大幅降低网站的日常运营与维护成本。
 
-![](bucket_web_hosting.png)
-
 ## 主要优势
 
 ### 高可靠、高可用
@@ -50,12 +48,12 @@ weight: 4
 
 1. 设置 Bucket 为公开可读：
 
- ![](/storage/object-storage/beat-practices/_images/web_hosting1.png)
+ ![](/storage/object-storage/_images/web_hosting1.png)
 
 
-2. 将网站内容上传至 Bucket。
+2. 通过上传文件功能，将网站内容上传至 Bucket。
 
- ![](bucket_web_hosting_example_4.gif)
+ ![](/storage/object-storage/_images/web_hosting2.png)
 
 3. 推荐使用山河对象存储提供的命令行工具 qsctl 进行上传，使用方法可以参考 [qsctl 文档](/storage/object-storage/manual/tool/qsctl)。如使用 sync 命令上传整个网站，操作命令行为：
 
@@ -70,7 +68,7 @@ weight: 4
 
 ### 大型动态网站动静分离
 
-将静态内容单独拆分出来进行托管，是目前普遍的网站优化手段，QingStor 对象存储静态网站托管可帮助提升网站的整体运行效率，并降低使用成本。
+将静态内容单独拆分出来进行托管，是目前普遍的网站优化手段，山河对象存储静态网站托管可帮助提升网站的整体运行效率，并降低使用成本。
 
 - 降低 Web 服务器负载，静态文件访问负载全部通过 CDN
 - 通过对象存储可与山河大数据平台无缝集成，高效进行网站各项数据分析应用
@@ -82,7 +80,7 @@ weight: 4
 
 - 原有 Web 服务架构
 
-![](bucket_web_hosting_static_1.png)
+![](/storage/object-storage/_images/bucket_web_hosting_static_1.png)
 
 例如，有如上图的 Web 服务架构。客户端和浏览器通过统一的 Web 服务网关访问网页、多媒体文件、软件安装包、API 等，同时 API Server 还依赖数据库（如 MySQL）、缓存（如 Redis）、大数据平台（如 Hadoop、Spark 等）等其他后端服务。
 
@@ -90,7 +88,7 @@ weight: 4
 
 - 优化后 Web 服务架构
 
-![](bucket_web_hosting_static_2.png)
+![](/storage/object-storage/_images/bucket_web_hosting_static_2.png)
 
 优化过的 Web 服务架构如上图。引入山河对象存储之后，网页、多媒体文件、软件包等静态文件存储至 Bucket。Bucket 可以开启静态网站托管服务，同时也可以使用 CDN 来提高访问速度。客户端或浏览器只有访问 API 时才会请求 Web 服务网关，能够去除静态文件的负载压力。 API Server 可将非结构化数据统一存储至 Bucket。Web 应用的数据也可以定时打包备份至 Bucket，大数据平台也能够接触对象存储实现计算与数据存储分离。
 
@@ -98,11 +96,11 @@ weight: 4
 
 ## 对比传统部署方式
 
-![](bucket_web_hosting_traditional.png)
+![](/storage/object-storage/_images/bucket_web_hosting_traditional.png)
 
 网站的访问体验是站长以及开发者最关心的一点，通过上面小节的介绍，相比过去自主购买服务器并部署上线网站的标准流程（如上图），使用静态网站除了能够节省成本之外， 还帮助用户省去了面向服务器的所有繁杂的配置与部署操作，并且不需要考虑服务器的选型购买与维护更新。
 
-![](bucket_web_hosting_improved.png)
+![](/storage/object-storage/_images/bucket_web_hosting_improved.png)
 
 相比绝大多数类似服务，山河对象存储提供的静态网站托管整合了 CDN 加速服务，并支持对网站开启 HTTPS 证书认证，对用户的访问效率和访问安全提供了保证，使静态网站的上线发布和更新维护流程变的简单高效。如上图所示。
 

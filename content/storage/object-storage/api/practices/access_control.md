@@ -30,7 +30,7 @@ Bucket Policy 作为一种访问控制方式，其对山河对象存储资源的
 Bucket ACL 对于山河对象存储的资源访问控制粒度比起 Bucket Policy 和 Object ACL 要更大一些，使用起来也更加简单。其所授予被授权者的权限列表仅可为 READ (可读)，WRITE (可写)，或 FULL_CONTROL (可读写)。
 
 
-Bucket 拥有者默认就拥有该 Bucket 的所有权限。当然，用户可以另外配置 Bucket 的公开读或公开写，即不附带认证信息的匿名访问，也可以针对特定青云用户来配置该 Bucket 的读写权限。
+Bucket 拥有者默认就拥有该 Bucket 的所有权限。当然，用户可以另外配置 Bucket 的公开读或公开写，即不附带认证信息的匿名访问，也可以针对特定山河用户来配置该 Bucket 的读写权限。
 
 一般情况下通过山河对象存储的 [Console 界面](../../../manual/console/bucket_manage/access_control/#存储空间访问控制列表bucket-acl) 进行配置即可，也支持通过 [API](../../bucket/acl/) 来设置。
 

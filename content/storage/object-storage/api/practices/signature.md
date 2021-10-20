@@ -18,7 +18,7 @@ weight: 1
 
 该方式适用于大部分的场景，如运行在服务器端的应用程序向山河对象存储服务端发起访问请求。应用程序需配置 Access Key。为了防止签名请求被恶意用户拦截重放，从保证用户数据安全的角度出发，山河对象存储设置了 15 分钟之后签名串失效的机制。
 
-所以，用户需要将系统时间通过 NTP 校准到网络时间。若用户的服务器是运行在青云 IaaS 平台上的虚拟机，系统会自动同步标准时间。
+所以，用户需要将系统时间通过 NTP 校准到网络时间。若用户的服务器是运行在 IaaS 平台上的虚拟机，系统会自动同步标准时间。
 
 ### 请求参数签名
 
@@ -55,11 +55,11 @@ weight: 1
 
 2. 在 API 密钥主页面，点击 **创建**，按要求输入相关信息后，点击 **提交** 按钮：
 
-![](/storage/object-storage/beat-practices/_images/create_access_key.png)
+![](/storage/object-storage/_images/create_access_key.png)
 
 3. 在随后的对话框中下载密钥文件：
 
-![](/storage/object-storage/beat-practices/_images/down_access_key.png)
+![](/storage/object-storage/_images/down_access_key.png)
 
 4. 用文本查看 API 密钥信息：
 
@@ -223,7 +223,7 @@ Authorization: QS PLLZOBTTZXGBNOWUFHZZ:tuXu/KcggHWPAfEmraUHDwEUdiIPSXVRsO+T2rxom
 
 ```
 GET /
-HOST: js-sdk-test.pek3a.shanhe.com
+HOST: js-sdk-test.jn2.is.shanhe.com
 x-qs-date:  Fri, 04 May 2018 16:37:00 GMT
 ```
 
@@ -294,7 +294,7 @@ access_key_id=PLLZOBTTZXGBNOWUFHZZ&expires=1479107162&signature=tuXu/KcggHWPAfEm
 
 ```
 GET /music.mp3?access_key_id=PLLZOBTTZXGBNOWUFHZZ&expires=1479107162&signature=tuXu/KcggHWPAfEmraUHDwEUdiIPSXVRsO%2BT2rxomBQ%3D
-Host: mybucket.pek3a.shanhe.com
+Host: mybucket.jn2.is.shanhe.com
 Date: Mon, 14 Nov 2016 14:05:00 GMT
 ```
 

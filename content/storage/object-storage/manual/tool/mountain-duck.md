@@ -30,11 +30,11 @@ Mountain Duck 是 Windows 平台上用于挂载访问对象存储的第三方客
 
 1. 点击 **Mountain Duck -- > 新建链接**，如下图所示：
 
-![](../_images/mountain-duck1.png)
+![](/storage/object-storage/_images/mountain-duck1.png)
 
 2. 弹出新建链接对话框，根据提示信息输入相关字段，点击 **连接** 即可：
 
-![](../_images/mountain-duck2.png)
+![](/storage/object-storage/_images/mountain-duck2.png)
 
    **说明：**
    - 协议下拉框里，选择 `Amazon S3`，如上图所示。
@@ -44,7 +44,7 @@ Mountain Duck 是 Windows 平台上用于挂载访问对象存储的第三方客
 
 3. 成功挂载后，本地可直接查看山河对象存储的 Bucket，如下图所示：
 
-![](../_images/mountain-duck3.png)
+![](/storage/object-storage/_images/mountain-duck3.png)
 
    **说明：**
    - 成功挂载的山河对象存储 Bucket，可像本地磁盘一样进行操作。
@@ -53,7 +53,7 @@ Mountain Duck 是 Windows 平台上用于挂载访问对象存储的第三方客
 
 4. Mountain Duck 挂载成功后，用户可通过设置菜单对该工具进行相关操作设置。设置菜单如下图所示：
 
-![](../_images/mountain-duck4.png)
+![](/storage/object-storage/_images/mountain-duck4.png)
 
 
 ## 升级

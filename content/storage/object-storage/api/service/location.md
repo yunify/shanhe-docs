@@ -45,7 +45,7 @@ Host: is.shanhe.com
 | locations | List |  Location 列表|
 | id | String | `Location` 的健值，Location ID。 |
 | name | String | `Location` 的健值，根据请求参数 `lang` 指定语言的翻译。 |
-| endpoint | String | `Location` 的健值，Location Endpoint，如 Location ID 为 pek3a 的 Endpoint 是 pek3a.shanhe.com。 |
+| endpoint | String | `Location` 的健值，Location Endpoint，如 Location ID 为 jn2.is 的 Endpoint 是 jn2.is.shanhe.com。 |
 
 ## 错误码
 
@@ -74,7 +74,7 @@ x-qs-request-id: dc05ee1cb7ea11e7b8da5254dda2bdf5
     "locations": [
         {
             "endpoint": "jn1.is.shanhe.com",
-            "id": "pek3a",
+            "id": "jn2.is",
             "name": "\u5317\u4eac3\u533a"
         },
         {

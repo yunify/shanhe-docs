@@ -105,7 +105,7 @@ CONFIG_INOTIFY_USER=y
 2. 创建一个文件并等待五秒左右
 
    ```bash
-   $ echo "Hello, QingStor!" > /tmp/example/
+   $ echo "Hello, ShanHe!" > /tmp/example/
    ```
 
 3. 查看 “hello.txt” 是否在 Bucket “example-bucket” 中存在

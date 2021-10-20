@@ -7,7 +7,7 @@ weight: 1
 ---
 
 
-QingStor 对象存储推出了无缝数据迁移方案，帮助用户将业务数据从自建平台或者其他对象存储平台高效完整地迁移至山河对象存储服务。
+山河对象存储推出了无缝数据迁移方案，帮助用户将业务数据从自建平台或者其他对象存储平台高效完整地迁移至山河对象存储服务。
 
 本方案提供两种迁移方式：
 
@@ -18,19 +18,19 @@ QingStor 对象存储推出了无缝数据迁移方案，帮助用户将业务�
 
 ## 被动触发迁移 - 外部镜像
 
-对于已经设置了外部镜像的山河对象存储 的 Bucket，当请求的 Object 在 Bucket 中不存在时，山河对象存储服务端会把 Object Key 拼接在外部镜像源站后作为抓取的源链接，然后自动从源站抓取（回源），并写入到 Bucket 当中。在回源过程中，请求这个 Object 的客户端，有可能会下载到源站文件，也有可能收到重定向到源站相应路径的 302 请求。在回源完成后，客户端能够直接从山河对象存储的 Bucket 中获取这个 Object。QingStor 对象存储建议用户可先使用 [Head Object](/storage/object-storage/api/object/basic_opt/head/) 返回 200 成功来确认 Object 存在。
+对于已经设置了外部镜像的山河对象存储 的 Bucket，当请求的 Object 在 Bucket 中不存在时，山河对象存储服务端会把 Object Key 拼接在外部镜像源站后作为抓取的源链接，然后自动从源站抓取（回源），并写入到 Bucket 当中。在回源过程中，请求这个 Object 的客户端，有可能会下载到源站文件，也有可能收到重定向到源站相应路径的 302 请求。在回源完成后，客户端能够直接从山河对象存储的 Bucket 中获取这个 Object。山河对象存储建议用户可先使用 [Head Object](/storage/object-storage/api/object/basic_opt/head/) 返回 200 成功来确认 Object 存在。
 
 ![](bucket_external_mirror_diagram.png)
 
 
 下面结合示意图，说明外部镜像的工作原理: 
 
-假设用户的外部镜像源站为 `http://img.example.com`，在山河对象存储的 Bucket 的默认域名为 `http://bucketname.pek3a.qingstor.com`。
+假设用户的外部镜像源站为 `http://img.example.com`，在山河对象存储的 Bucket 的默认域名为 `http://bucketname.jn2.is.shanhe.com`。
 
 **示意图左侧为首次请求:**
 
-1. 用户发起获取 Object 的请求，如 `http://bucketname.pek3a.qingstor.com/blog.png`；
-2. Object 在山河对象存储的 Bucket 中不存在，且用户已经为该 Bucket 设置了外部镜像源站，此时，QingStor 对象存储服务端会将 Object Key `blog.png` 拼接到源站，生成源链接 `http://img.example.com/blog.png`；
+1. 用户发起获取 Object 的请求，如 `http://bucketname.jn2.is.shanhe.com/blog.png`；
+2. Object 在山河对象存储的 Bucket 中不存在，且用户已经为该 Bucket 设置了外部镜像源站，此时，山河对象存储服务端会将 Object Key `blog.png` 拼接到源站，生成源链接 `http://img.example.com/blog.png`；
 3. 山河对象存储服务端从该源链接抓取；
 4. 在抓取过程中，请求该 Object 的客户端，有可能会下载到源站文件，也有可能收到重定向到源站相应路径的 302 请求。
 
@@ -46,16 +46,16 @@ QingStor 对象存储推出了无缝数据迁移方案，帮助用户将业务�
 
 ## 用户主动迁移 - Fetch API
 
-如果需要迁移单个源站资源，可以使用 [PUT Object - Fetch](/storage/object-storage/api/object/basic_opt/fetch/) 接口。该接口通过请求头 `x-qs-fetch-source` 附带源链接。QingStor 对象存储会从该链接抓取资源，保存到指定的 Object 中， 并且在抓取时能够自动处理源链接服务器返回的 301/302/307 等重定向请求。该接口同步下载文件，完成后才会返回结果。
+如果需要迁移单个源站资源，可以使用 [PUT Object - Fetch](/storage/object-storage/api/object/basic_opt/fetch/) 接口。该接口通过请求头 `x-qs-fetch-source` 附带源链接。山河对象存储会从该链接抓取资源，保存到指定的 Object 中， 并且在抓取时能够自动处理源链接服务器返回的 301/302/307 等重定向请求。该接口同步下载文件，完成后才会返回结果。
 
-使用该接口，根据不同场景，QingStor 对象存储服务端会返回如下错误信息：
+使用该接口，根据不同场景，山河对象存储服务端会返回如下错误信息：
 - 409 ：fetch_in_process，表明同一时间相同源链接的 Fetch 请求正在进行，或者被动触发的外部镜像功能正在抓取该源链接对应的文件；
 - 404 ：object_not_exists，获取的 Object 不存在；
 - 503 ：upstream_failed，无法与 Fetch 请求的源链接或者外部镜像的源站建立链接，或源站服务器返回 200，3xx，404 范围之外的错误代码，或链接中断；
 - 其他错误码，可参考：[错误信息](/storage/object-storage/api/error_code/)
 
 
-当 Object 特别大或源站下载速度比较慢时，该 API 请求有可能会导致客户端 TCP 超时。针对这种情形，QingStor 对象存储建议用户可以先使用 [Head Object](/storage/object-storage/api/object/basic_opt/head/) 获取并比较源站文件和 Bucket 中 Object 的大小与时间戳，如果 Head Object 返回 404，客户端需重复调用一次 Fetch Object 接口； 请求若返回 409 则说明抓取已经开始。
+当 Object 特别大或源站下载速度比较慢时，该 API 请求有可能会导致客户端 TCP 超时。针对这种情形，山河对象存储建议用户可以先使用 [Head Object](/storage/object-storage/api/object/basic_opt/head/) 获取并比较源站文件和 Bucket 中 Object 的大小与时间戳，如果 Head Object 返回 404，客户端需重复调用一次 Fetch Object 接口； 请求若返回 409 则说明抓取已经开始。
 
 
 **备注：**

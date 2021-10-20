@@ -7,7 +7,7 @@ draft: false
 weight: 2
 ---
 
-用于判断一个 Bucket 是否存在，以及用户是否有权限访问这个 Bucket。匿名用户默认无法调用此 API，请先注册青云账户并 [申请 Access Key](/storage/object-storage/api/practices/signature/#获取-access-key)。
+用于判断一个 Bucket 是否存在，以及用户是否有权限访问这个 Bucket。匿名用户默认无法调用此 API，请先注册账户并 [申请 Access Key](/storage/object-storage/api/practices/signature/#获取-access-key)。
 
 ## 请求语法
 
@@ -48,7 +48,7 @@ Authorization: <authorization-string>
 
 ```http
 HEAD / HTTP/1.1
-Host: mybucket.pek3a.shanhe.com
+Host: mybucket.jn2.is.shanhe.com
 Date: Sun, 16 Aug 2015 09:05:00 GMT
 Authorization: authorization string
 ```

@@ -104,7 +104,7 @@ Authorization: <authorization-string>
 
 ```http
 GET /?delimiter=/&limit=4 HTTP/1.1
-Host: mybucket.pek3a.shanhe.com
+Host: mybucket.jn2.is.shanhe.com
 Date: Sun, 16 Aug 2015 09:05:00 GMT
 Authorization: authorization string
 ```

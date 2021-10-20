@@ -23,15 +23,15 @@ weight: 9
 ## 操作步骤
 1. 进入山河对象存储的主页面，选择待设置跨区域复制的 Bucket，点击 **右键** > **设置**：
 
- ![](../../_images/set_bucket_replication1.png)
+ ![](/storage/object-storage/_images/set_bucket_acl1.png)
 
 2. 进入 Bucket 设置页面，点击 **跨区域复制** > **添加复制规则**：
 
- ![](../../_images/set_bucket_replication2.png)
+ ![](/storage/object-storage/_images/set_bucket_replication2.png)
 
 3. 在弹出的 **添加规则** 对话框内，根据页面提示信息，填写相关参数后，点击 **提交** 按钮：
 
- ![](../../_images/set_bucket_replication3.png)
+ ![](/storage/object-storage/_images/set_bucket_replication3.png)
 
  **说明：**
    - **源 Bucket、目标 Bucket：** 指定跨区域复制的源 Bucket 与目标 Bucket。
@@ -42,9 +42,7 @@ weight: 9
    - **同步删除操作：** 在源 Bucket 删除文件时，目标 Bucket 文件也会被删除。默认为 `否`。开启后请谨慎操作，防止将文件删除后无法恢复。
    - **同步历史数据：** 将跨区域复制功能开启前就存在的文件也复制到目标 Bucket 上，默认为 `否`。
 
-4. 成功创建对跨域复制规则，列表显示：
-
- ![](../../_images/set_bucket_replication4.png)
+4. 成功创建的跨域复制规则，列表显示。
 
 ## 相关API
 

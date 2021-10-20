@@ -16,7 +16,7 @@ weight: 39
 
 ![s3-browser-1](/storage/object-storage/_images/s3-browser-1.png)
 
-## 获取青云的 API 秘钥
+## 获取山河的 API 秘钥
 
 操作步骤可参考 [获取 Access Key](/storage/object-storage/api/practices/signature/#获取-access-key)。
 

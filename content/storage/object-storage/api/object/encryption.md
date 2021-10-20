@@ -29,7 +29,7 @@ title: "数据加密"
 
 ### 加密请求头
 
-除 [公共请求头](/storage/object-storage/api/common_header/#请求头字段-request-header)。 外，用户还需在请求头中添加如下头字段，用以指定加密算法、密钥、以及密钥 MD5 值。山河对象存储根据该信息，对上传的 Object 进行加密。
+除 [公共请求头](/storage/object-storage/api/common_header/#请求头字段-request-header) 外，用户还需在请求头中添加如下头字段，用以指定加密算法、密钥、以及密钥 MD5 值。山河对象存储根据该信息，对上传的 Object 进行加密。
 
 | 头字段 | 类型 | 说明 |
 | --- | --- | --- |

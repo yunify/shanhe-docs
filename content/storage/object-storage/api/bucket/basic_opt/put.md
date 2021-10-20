@@ -8,7 +8,7 @@ weight: 1
 ---
 
 
-用于创建一个新的 Bucket。创建成功后，该 Bucket 的所有者就是 API 的调用者。匿名用户默认无法调用此 API，请先注册青云账户并 [申请 Access Key](/storage/object-storage/api/practices/signature/#获取-access-key)。
+用于创建一个新的 Bucket。创建成功后，该 Bucket 的所有者就是 API 的调用者。匿名用户默认无法调用此 API，请先注册账户并 [申请 Access Key](/storage/object-storage/api/practices/signature/#获取-access-key)。
 
 ## 请求语法
 
@@ -56,7 +56,7 @@ Authorization: <authorization-string>
 
 ```http
 PUT / HTTP/1.1
-Host: mybucket.pek3a.shanhe.com
+Host: mybucket.jn2.is.shanhe.com
 Date: Sun, 16 Aug 2015 09:05:00 GMT
 Authorization: authorization string
 ```

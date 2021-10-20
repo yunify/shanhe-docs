@@ -16,15 +16,15 @@ weight: 3
 
 1. 进入山河对象存储的主页面，点击待查看监控信息的 Bucket 名：
 
- ![](../../_images/bucket_monitor1.png)
+ ![](/storage/object-storage/_images/bucket_info1.png)
 
 2. 进入 Bucket 详情页面，点击 **监控** ，查看监控详细信息：
 
- ![](../../_images/bucket_monitor2.png)
+ ![](/storage/object-storage/_images/bucket_info6.png)
 
 3. 进入 Bucket 详情页面，点击 **消费记录** ，查看各资源的消费信息。Bucket 的计费项有 5 项，分别是：存储空间、外网出流量、外网进流量、zone内出流量、zone内进流量，即监控项中对应的内容，详细内容如下图：
 
- ![](../../_images/bucket_monitor3.png)
+ ![](/storage/object-storage/_images/bucket_info7.png)
 
 
 ## 监控项说明
@@ -48,11 +48,11 @@ weight: 3
      </tr>
      <tr>
         <td>zone内出流量</td>
-        <td>从与 Bucket 相同区域的青云平台其他资源下载 Bucket 文件所产生的流量。</td>
+        <td>从与 Bucket 相同区域的山河平台其他资源下载 Bucket 文件所产生的流量。</td>
      </tr>
      <tr>
         <td>zone内进流量</td>
-        <td>从与 Bucket 相同区域的青云平台其他资源上传文件至 Bucket 所产生的流量。</td>
+        <td>从与 Bucket 相同区域的山河平台其他资源上传文件至 Bucket 所产生的流量。</td>
      </tr>
      <tr>
         <td rowspan="1">低频存储流量</td>
@@ -70,11 +70,11 @@ weight: 3
      </tr>
      <tr>
         <td>zone内读请求</td>
-        <td>从与 Bucket 相同区域的青云平台其他资源调用该 Bucket 读相关的 API 的次数。</td>
+        <td>从与 Bucket 相同区域的山河平台其他资源调用该 Bucket 读相关的 API 的次数。</td>
      </tr>
      <tr>
         <td>zone内写请求</td>
-        <td>从与 Bucket 相同区域的青云平台其他资源调用该 Bucket 写相关的 API 的次数。</td>
+        <td>从与 Bucket 相同区域的山河平台其他资源调用该 Bucket 写相关的 API 的次数。</td>
      </tr>
      <tr>
         <td rowspan="4">低频存储API请求</td>
@@ -87,11 +87,11 @@ weight: 3
      </tr>
      <tr>
         <td>zone内读请求</td>
-        <td>从与 Bucket 相同区域的青云平台其他资源调用该 Bucket 读相关的 API 的次数。</td>
+        <td>从与 Bucket 相同区域的山河平台其他资源调用该 Bucket 读相关的 API 的次数。</td>
      </tr>
      <tr>
         <td>zone内写请求</td>
-        <td>从与 Bucket 相同区域的青云平台其他资源调用该 Bucket 写相关的 API 的次数。</td>
+        <td>从与 Bucket 相同区域的山河平台其他资源调用该 Bucket 写相关的 API 的次数。</td>
      </tr>
      <tr>
         <td>存储</td>

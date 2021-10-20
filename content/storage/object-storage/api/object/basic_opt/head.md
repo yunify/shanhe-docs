@@ -19,7 +19,7 @@ weight: 3
 
 ```http
 HEAD /<object-name> HTTP/1.1
-Host: <bucket-name>.pek3a.shanhe.com
+Host: <bucket-name>.jn2.is.shanhe.com
 Date: <date>
 Authorization: <authorization-string>
 Range: bytes=<byte-range>
@@ -78,7 +78,7 @@ Range: bytes=<byte-range>
 
 ```http
 HEAD /myphoto.jpg HTTP/1.1
-Host: mybucket.pek3a.shanhe.com
+Host: mybucket.jn2.is.shanhe.com
 Date: Sun, 16 Aug 2015 09:05:00 GMT
 Authorization: authorization string
 ```
