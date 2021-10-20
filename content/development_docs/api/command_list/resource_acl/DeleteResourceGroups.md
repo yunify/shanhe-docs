@@ -12,7 +12,7 @@ draft: false
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| resource_groups.n | String | 资源组ID | Yes |
+| resource_groups.n | String | 资源组 ID | Yes |
 
 [_公共参数_](../../../parameters/)
 

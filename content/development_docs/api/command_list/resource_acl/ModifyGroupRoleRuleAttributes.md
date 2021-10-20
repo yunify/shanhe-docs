@@ -12,7 +12,7 @@ draft: false
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| group_role_rule | String | 规则ID | Yes |
+| group_role_rule | String | 规则 ID | Yes |
 | description | String | 描述 | No |
 | policy | String | 策略，参考 AddGroupRoleRules 里的描述。 | No |
 

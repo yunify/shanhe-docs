@@ -12,8 +12,8 @@ draft: false
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| group_role | String | 角色ID | Yes |
-| policy | String | 策略，格式为 resource_type.`operation_type`。resource_type 可以为 “all” 或者是具体的资源类型；operation_type 可以为 “create” / “delete” / “describe” / “modify” / “all”. | Yes |
+| group_role | String | 角色 ID | Yes |
+| policy | String | 策略，格式为 resource_type.`operation_type`。resource_type 可以为 “all” 或者是具体的资源类型；operation_type 可以为 “create” / “delete” / “describe” / “modify” / “all”。 | Yes |
 | description | String | 规则描述 | No |
 
 [_公共参数_](../../../parameters/)

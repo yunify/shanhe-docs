@@ -12,8 +12,8 @@ draft: false
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| resource_groups.n | String | 查询特定的资源组 | No |
-| owner | String | 查询这个 owner 共享给自己的资源组 | No |
+| resource_groups.n | String | 查询特定的资源组。 | No |
+| owner | String | 查询这个 owner 共享给自己的资源组。 | No |
 
 [_公共参数_](../../../parameters/)
 

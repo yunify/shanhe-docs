@@ -12,8 +12,8 @@ draft: false
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| group_role_rules.n | String | 规则ID | No |
-| group_roles.n | String | 角色ID | No |
+| group_role_rules.n | String | 规则 ID | No |
+| group_roles.n | String | 角色 ID | No |
 
 [_公共参数_](../../../parameters/)
 
