@@ -41,4 +41,3 @@ weight: 3
 
 ![](../_images/hpc_job3.png)
 
-## 作业模版

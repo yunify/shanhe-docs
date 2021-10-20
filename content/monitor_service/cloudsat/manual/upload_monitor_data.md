@@ -17,7 +17,7 @@ draft: false
 
 **构造前url**:
 ```
-http://cloudsat.qingcloud.com/api/:zone/v1/custom/UploadMonitorData
+http://cloudsat.shanhe.com/api/:zone/v1/custom/UploadMonitorData
 ```
 注：构造完成之后请求url即最终UploadMonitorData接口请求url，url里面:zone，请根据具体分区信息填写，如上海1区sh1，文中其他地方类似。
 
@@ -32,19 +32,19 @@ access_key_id=CCDJRDKCCKZYTEXANZJD&action=DescribeUsers&signature_method=HmacSHA
 ```
 注：这部分请根据实际参数进行构造
 
-由于上面构造前url上传监控数据需要对请求进行验证，这里采用类似[青云API 请求中签名 ( signature )]( /development_docs/api/signature/) 的生成方法，构造验证请求串，拼接在上面构造前url后面。由于需要去iaas对用户信息进行确认，所以这里选择DescribeUsers这个action去构造签名信息。
+由于上面构造前url上传监控数据需要对请求进行验证，这里采用类似[山河API 请求中签名 ( signature )]( /development_docs/api/signature/) 的生成方法，构造验证请求串，拼接在上面构造前url后面。由于需要去iaas对用户信息进行确认，所以这里选择DescribeUsers这个action去构造签名信息。
 
 
 **最终构造完成之后请求url示例为**：
 ```
-http://cloudsat.qingcloud.com/api/:zone/v1/custom/UploadMonitorData?access_key_id=CCDJRDKCCKZYTEXANZJD&action=DescribeUsers&signature_method=HmacSHA256&signature_version=1&time_stamp=2020-12-23T13%3A32%3A34Z&version=1&zone=sh1&signature=sOdokWwvYJ80mM%2FxYbBTsgTgQl3iu%2F2WDXWjgKFPNNs%3D
+http://cloudsat.shanhe.com/api/:zone/v1/custom/UploadMonitorData?access_key_id=CCDJRDKCCKZYTEXANZJD&action=DescribeUsers&signature_method=HmacSHA256&signature_version=1&time_stamp=2020-12-23T13%3A32%3A34Z&version=1&zone=sh1&signature=sOdokWwvYJ80mM%2FxYbBTsgTgQl3iu%2F2WDXWjgKFPNNs%3D
 ```
 
 
 下面为在上海1区，完成构建验证请求串之后拼接生成的一个最终api请求url实例，请根据实际分区信息和构造的验证串拼接构造相应的最终api请求url
 
 ```
-http://cloudsat.qingcloud.com/api/sh1/v1/custom/UploadMonitorData?access_key_id=CCDJRDKCCKZYTEXANZJD&action=DescribeUsers&signature_method=HmacSHA256&signature_version=1&time_stamp=2020-12-23T13%3A32%3A34Z&version=1&zone=sh1&signature=sOdokWwvYJ80mM%2FxYbBTsgTgQl3iu%2F2WDXWjgKFPNNs%3D
+http://cloudsat.shanhe.com/api/sh1/v1/custom/UploadMonitorData?access_key_id=CCDJRDKCCKZYTEXANZJD&action=DescribeUsers&signature_method=HmacSHA256&signature_version=1&time_stamp=2020-12-23T13%3A32%3A34Z&version=1&zone=sh1&signature=sOdokWwvYJ80mM%2FxYbBTsgTgQl3iu%2F2WDXWjgKFPNNs%3D
 ```
 
 
@@ -56,7 +56,7 @@ http://cloudsat.qingcloud.com/api/sh1/v1/custom/UploadMonitorData?access_key_id=
 
 **请求url**：
 ```
-http://cloudsat.qingcloud.com/api/:zone/v1/custom/UploadMonitorData?access_key_id=QEJMCFROGCAPHUOAJMRN&action=DescribeUsers&signature_method=HmacSHA256&signature_version=1&time_stamp=2020-10-13T10%3A28%3A33Z&version=1&zone=test&signature=SO9ZufFb69Om21bK%2BH7Gs6f%2FuuDljHh41STgIX%3D
+http://cloudsat.shanhe.com/api/:zone/v1/custom/UploadMonitorData?access_key_id=QEJMCFROGCAPHUOAJMRN&action=DescribeUsers&signature_method=HmacSHA256&signature_version=1&time_stamp=2020-10-13T10%3A28%3A33Z&version=1&zone=test&signature=SO9ZufFb69Om21bK%2BH7Gs6f%2FuuDljHh41STgIX%3D
 ```
 注：请仔细阅读上文说明，根据实际情况构造验证请求串，拼接成最终api请求url并替换:zone信息。
 
@@ -70,7 +70,7 @@ table th:first-of-type {
 |参数名称	|  参数值	|  是否必须  | 示例| 备注|
 | :-: | :-: | :-: | :-: | :-: |
  | Content-Type |	application/json	|  是  | 'Content-Type': 'application/json' | 不可缺少|
- 
+
 
 **请求body格式例如**：
 ```
@@ -219,7 +219,7 @@ secret_access_key = 'SECRETACCESSKEY'
 ```
 注解
 
-实际使用过程中请替换成你自己的AccessKeyId，切换相应区间信息。签名验证可以参考[青云API 请求中签名 ( signature )]( /development_docs/api/signature/)，使用链接文档中数据签名结果如果和链接中的一致代表签名方法正确。
+实际使用过程中请替换成你自己的AccessKeyId，切换相应区间信息。签名验证可以参考[山河API 请求中签名 ( signature )]( /development_docs/api/signature/)，使用链接文档中数据签名结果如果和链接中的一致代表签名方法正确。
 
 签名步骤
 
@@ -513,7 +513,7 @@ func Verify(url string) int {
 
 func main() {
 	result := "access_key_id=CCDJRDKCCKZYTEXANZJD&action=DescribeUsers&signature_method=HmacSHA256&signature_version=1&time_stamp=2020-12-23T14%3A03%3A44Z&version=1&zone=sh1&signature=d6eMFDgO3E6wBqbbn2AydX%2BxQws7iD%2BtSgfGF6Lq7Uo%3D"
-	url := "https://api.qingcloud.com/iaas/" + "?" + result
+	url := "https://api.shanhe.com/iaas/" + "?" + result
 	fmt.Println(Verify(url))
 }
 ```
@@ -643,7 +643,7 @@ func main() {
 		}
 		var r ret
 
-		url := `http://cloudsat.qingcloud.com/api/sh1/v1/custom/UploadMonitorData?access_key_id=CCDJRDKCCKZYTEXANZJD&action=DescribeUsers&signature_method=HmacSHA256&signature_version=1&time_stamp=2020-12-23T09%3A52%3A10Z&version=1&zone=sh1&signature=vorfODyQzKD0v4En7y5mdwkvUe4OZGQcDdQU5xBSjio%3D`
+		url := `http://cloudsat.shanhe.com/api/sh1/v1/custom/UploadMonitorData?access_key_id=CCDJRDKCCKZYTEXANZJD&action=DescribeUsers&signature_method=HmacSHA256&signature_version=1&time_stamp=2020-12-23T09%3A52%3A10Z&version=1&zone=sh1&signature=vorfODyQzKD0v4En7y5mdwkvUe4OZGQcDdQU5xBSjio%3D`
 		err := HttpPostJson(url,p,r)
 		if err != nil {
 			fmt.Println(err)
@@ -693,8 +693,8 @@ class UploadMonitorData(object):
 
         self.time_stamp = datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
         self.time = datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")
-        self.url = "https://api.qingcloud.com/iaas/"
-        self.CloudSatUrl = "http://cloudsat.qingcloud.com/api/sh1/v1/custom/UploadMonitorData"
+        self.url = "https://api.shanhe.com/iaas/"
+        self.CloudSatUrl = "http://cloudsat.shanhe.com/api/sh1/v1/custom/UploadMonitorData"
         self.url_path = '/iaas/'
         self.methods = 'GET'
 

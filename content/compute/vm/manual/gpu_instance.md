@@ -4,7 +4,7 @@ description: test
 draft: false
 ---
 
-为了满足用户对高性能计算、视频处理或图形渲染的需求，青云特推出GPU云服务器给有需求的用户使用，用户可以在青云控制台上进行GPU云服务器的创建和使用。
+为了满足用户对高性能计算、视频处理或图形渲染的需求，山河特推出GPU云服务器给有需求的用户使用，用户可以在山河控制台上进行GPU云服务器的创建和使用。
 
 ## GPU云服务器特性：
 
@@ -18,12 +18,12 @@ draft: false
 
 ## Deep Learning App
 
-如果您的需求是深度学习，请优先选择 [AppCenter](https://appcenter.qingcloud.com/) 中的 [Deep Learning On QingCloud](https://appcenter.qingcloud.com/apps/app-ptor186d/Deep%20Learning%20On%20QingCloud) 应用。
+如果您的需求是深度学习，请优先选择 [AppCenter](https://appcenter.shanhe.com/) 中的 [Deep Learning On shanhe](https://appcenter.shanhe.com/apps/app-ptor186d/Deep%20Learning%20On%20shanhe) 应用。
 
-[Deep Learning On QingCloud](https://appcenter.qingcloud.com/apps/app-ptor186d/Deep%20Learning%20On%20QingCloud) 是一款预配置的深度学习开发环境，其上搭载了多款主流的深度学习框架，可以配合GPU资源加速计算，用于AI开发和模型训练，功能丰富，使用灵活。部署后即可使用，可以省去安装驱动、框架等步骤，提高工作效率。
+[Deep Learning On shanhe](https://appcenter.shanhe.com/apps/app-ptor186d/Deep%20Learning%20On%20shanhe) 是一款预配置的深度学习开发环境，其上搭载了多款主流的深度学习框架，可以配合GPU资源加速计算，用于AI开发和模型训练，功能丰富，使用灵活。部署后即可使用，可以省去安装驱动、框架等步骤，提高工作效率。
 
 创建Deep Learning App时可选择云服务器规格以及GPU数量，具体使用文档请参考：
-[https://docs.qingcloud.com/product/ai/deeplearning/](https://docs.qingcloud.com/product/ai/deeplearning/)
+[https://docs.shanhe.com/product/ai/deeplearning/](https://docs.shanhe.com/product/ai/deeplearning/)
 
 ## GPU云服务器使用步骤
 

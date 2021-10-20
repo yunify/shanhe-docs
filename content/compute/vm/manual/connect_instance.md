@@ -7,9 +7,9 @@ draft: false
 
 在连接实例前，请确保您的云服务器已经绑定了弹性公网 IP 或者采用NAT转发了相应的端口，并且您的`防火墙`放行了相应端口。
 ## 浏览器web连接
-### 登录 QingCloud 管理控制台
+### 登录管理控制台
 
-登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，选择**产品与服务** > **计算** > **云服务器**，进入域名列表页。
+登录管理控制台，选择**产品与服务** > **计算** > **云服务器**，进入域名列表页。
 
 ### 点击图标，打开VNC
 
@@ -23,22 +23,23 @@ draft: false
 
 ![](/compute/vm/manual/_images/web-vnc.png)
 
-如果云服务器不接受您的密码，您可以先关闭云服务器，然后[修改云服务器密码](https://docs.qingcloud.com/product/faq/#id7)。
+如果云服务器不接受您的密码，您可以先关闭云服务器，然后[修改云服务器密码](https://docs.shanhe.com/product/faq/#id7)。
 
 ## Linux云服务器
-如果您使用的是 Windows 操作系统，除了通过 QingCloud 控制台以外，您也可以通过软件连接至 Linux 云服务器，常见的软件有[PuTTY](https://www.putty.org/) ， [Xshell](https://www.netsarang.com/zh/xshell/)。
+如果您使用的是 Windows 操作系统，除了通过 山河 控制台以外，您也可以通过软件连接至 Linux 云服务器，常见的软件有[PuTTY](https://www.putty.org/) ， [Xshell](https://www.netsarang.com/zh/xshell/)。
 
-请注意，青云并不知道您的软件来源和用途，也不对其产生的任何的问题和纠纷负责。
+请注意，山河并不知道您的软件来源和用途，也不对其产生的任何的问题和纠纷负责。
 
 ### 通过用户名密码连接
->注解
-相较于密钥，通过用户名和密码连接更加的简单易用
+>**说明**
+>
+>相较于密钥，通过用户名和密码连接更加的简单易用
 
 #### 1. 配置好弹性 IP 和防火墙
 
-首先在连接云服务器之前，请确保您的云服务器已经绑定了弹性公网 IP，[防火墙放行](https://docsv3.qingcloud.com/security/security_group/manual/sg_setting/) TCP 22 端口。
+首先在连接云服务器之前，请确保您的云服务器已经绑定了弹性公网 IP，[防火墙放行](https://docsv3.山河.com/security/security_group/manual/sg_setting/) TCP 22 端口。
 
-登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，选择**产品与服务** > **计算** > **云服务器**，进入域名列表页。
+登录管理控制台，选择**产品与服务** > **计算** > **云服务器**，进入域名列表页。
 
 点击云服务器的 ID进入配置界面，在左侧选择**绑定资源** > **安全组** 查看防火墙设置。
 
@@ -61,12 +62,13 @@ draft: false
 ![](/compute/vm/manual/_images/putty-login.png)
 
 ### 通过 SSH 密钥连接
->注解
-相对于用户名密码方式，密钥方式拥有更强的安全性，也可以很大程度阻止暴力破解的发生。目前常用的密钥都是非对称性的加密方式，云服务器内置公钥，而用户则拥有私钥。由于采用非对称加密，入侵者试图通过公钥去破解私钥难度会远远超出密码的破解。
+>**说明**
+>
+>相对于用户名密码方式，密钥方式拥有更强的安全性，也可以很大程度阻止暴力破解的发生。目前常用的密钥都是非对称性的加密方式，云服务器内置公钥，而用户则拥有私钥。由于采用非对称加密，入侵者试图通过公钥去破解私钥难度会远远超出密码的破解。
 
 #### 1. 准备密钥
 
-登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，选择**产品与服务** > **计算** > **云服务器**，进入域名列表页。
+登录管理控制台，选择**产品与服务** > **计算** > **云服务器**，进入域名列表页。
 
 在左侧的**计算基础服务**导航栏，选择 **计算** > **SSH 密钥** 页面, 点击**创建**，创建SSH 密钥，您也可以使用自己原有的密钥。
 
@@ -84,7 +86,7 @@ draft: false
 
 #### 3. 配置好弹性 IP 和防火墙
 
-在连接云服务器之前，请确保您的云服务器已经绑定了弹性公网 IP，[防火墙放行](https://docsv3.qingcloud.com/security/security_group/manual/sg_setting/) TCP 22 端口。
+在连接云服务器之前，请确保您的云服务器已经绑定了弹性公网 IP，[防火墙放行](https://docsv3.山河.com/security/security_group/manual/sg_setting/) TCP 22 端口。
 
 #### 4. 将密钥转换为正确的格式
 
@@ -105,7 +107,7 @@ draft: false
 ![](/compute/vm/manual/_images/putty-session.png)
 
 ## Windows云服务器
-从安全考虑， QingCloud 上的 Windows 云服务器默认关闭了远程登录， 您首先需要通过浏览器 Web 方式登录到云服务器，并开启远程登录功能
+从安全考虑， 山河上的 Windows 云服务器默认关闭了远程登录， 您首先需要通过浏览器 Web 方式登录到云服务器，并开启远程登录功能
 
 ### 第一部分  Windows Server  开启远程登录
 
@@ -148,5 +150,6 @@ draft: false
 ![](/compute/vm/manual/_images/windows-connect-1.png)
 
 
->注解
-如果您已经尝试采用上述的步骤，仍然无法连接至您的云服务器。建议您提交工单，我们的工程师会尽快帮您解决问题。
+>**说明**
+>
+>如果您已经尝试采用上述的步骤，仍然无法连接至您的云服务器。建议您提交工单，我们的工程师会尽快帮您解决问题。
