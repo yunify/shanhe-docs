@@ -4,29 +4,30 @@ date: 2020-01-30T00:38:25+09:00
 description: Test description
 draft: false
 enableToc: false
-keyword: SSH, QingCloud,ssh密钥
+keyword: SSH, 山河,ssh密钥
 ---
 
 
 ## 通过 SSH 密钥连接云服务器
->注解
-相对于用户名密码方式，密钥方式拥有更强的安全性，也可以很大程度阻止暴力破解的发生。目前常用的密钥都是非对称性的加密方式，云服务器内置公钥，而用户则拥有私钥。由于采用非对称加密，入侵者试图通过公钥去破解私钥难度会远远超出密码的破解。
+>**说明**
+>
+>相对于用户名密码方式，密钥方式拥有更强的安全性，也可以很大程度阻止暴力破解的发生。目前常用的密钥都是非对称性的加密方式，云服务器内置公钥，而用户则拥有私钥。由于采用非对称加密，入侵者试图通过公钥去破解私钥难度会远远超出密码的破解。
 
 ### 1. 准备密钥
 
-首先，需要在 QingCloud 控制台创建密钥，您也可以使用自己原有的密钥。
+首先，需要在控制台创建密钥，您也可以使用自己原有的密钥。
 
-![](/compute/ssh/manual/_images/creat-sshkey.png)
+<img src="../_images/creat-sshkey.png" style="zoom:50%;" />
 
 ### 2. 云服务器加载上密钥
 
 您可以在创建云服务器时选择密钥
 
-![](/compute/ssh/manual/_images/creat-instance-key.png)
+<img src="../_images/creat-instance-key.png" style="zoom:30%;" />
 
 也可以给现有云服务器加载密钥,选择云服务器右键 - ssh 密钥 - 加载
 
-![](/compute/ssh/manual/_images/add-instance-key.png)
+<img src="../_images/add-instance-key.png" style="zoom:33%;" />
 
 ### 3. 配置好弹性 IP 和防火墙
 
@@ -50,7 +51,6 @@ keyword: SSH, QingCloud,ssh密钥
 
 ![](/compute/ssh/manual/_images/putty-session.png)
 
-
-
->注解
-如果您已经尝试采用上述的步骤，仍然无法连接至您的云服务器。建议您提交工单，我们的工程师会尽快帮您解决问题。
+>**注意**
+>
+>如果您已经尝试采用上述的步骤，仍然无法连接至您的云服务器。建议您提交工单，我们的工程师会尽快帮您解决问题。
