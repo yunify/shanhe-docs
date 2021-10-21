@@ -12,8 +12,8 @@ draft: false
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| user_group | String | 用户组ID | Yes |
-| user_group_name | String | 用户组名称。 | No |
+| user_group | String | 用户组 ID | Yes |
+| user_group_name | String | 用户组名称 | No |
 | description | String | 描述 | No |
 | status | String | 用户组状态 | No |
 

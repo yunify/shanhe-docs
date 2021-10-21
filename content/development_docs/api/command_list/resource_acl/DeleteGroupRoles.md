@@ -12,7 +12,7 @@ draft: false
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| group_roles.n | String | 角色ID | Yes |
+| group_roles.n | String | 角色 ID | Yes |
 
 [_公共参数_](../../../parameters/)
 

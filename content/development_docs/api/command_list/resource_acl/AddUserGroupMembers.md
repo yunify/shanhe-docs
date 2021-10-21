@@ -12,8 +12,8 @@ draft: false
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| user_group | String | 用户组ID | Yes |
-| users.n | String | 用户ID，或者是用户登录邮箱。 | Yes |
+| user_group | String | 用户组 ID | Yes |
+| users.n | String | 用户 ID，或者是用户登录邮箱。 | Yes |
 
 [_公共参数_](../../../parameters/)
 

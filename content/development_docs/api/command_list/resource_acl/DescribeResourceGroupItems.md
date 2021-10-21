@@ -13,13 +13,13 @@ draft: false
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
 | zone | String | zone ID | Yes |
-| resource_groups.n | String | 资源组ID | No |
-| resources.n | String | 资源ID，用于查询该资源所在的所有资源组 | No |
+| resource_groups.n | String | 资源组 ID | No |
+| resources.n | String | 资源 ID，用于查询该资源所在的所有资源组。 | No |
 | limit | Integer | 每次最多返回多少条数据。 | No |
-| offset | Integer | 数据偏移量, 默认为0 | No |
-| verbose | Integer | 是否返回冗长的信息, 若为1, 则返回云服务器相关其他资源的详细数据。 | No |
-| sort_key | String | 排序字段，默认为 create_time | No |
-| reverse | Integer | 0 为增序排列；1 为降序排列 | No |
+| offset | Integer | 数据偏移量，默认为 0。 | No |
+| verbose | Integer | 是否返回冗长的信息，若为 1，则返回云服务器相关其他资源的详细数据。 | No |
+| sort_key | String | 排序字段，默认为 create_time。 | No |
+| reverse | Integer | <li>0 为增序排列；<li>1 为降序排列。 | No |
 
 [_公共参数_](../../../parameters/)
 

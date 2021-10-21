@@ -12,9 +12,9 @@ draft: false
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| rur_set.n.resource_group | String | 资源组ID | Yes |
-| rur_set.n.user_group | String | 用户组ID | Yes |
-| rur_set.n.group_role | String | 角色ID | Yes |
+| rur_set.n.resource_group | String | 资源组 ID | Yes |
+| rur_set.n.user_group | String | 用户组 ID | Yes |
+| rur_set.n.group_role | String | 角色 ID | Yes |
 
 [_公共参数_](../../../parameters/)
 

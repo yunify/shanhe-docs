@@ -14,7 +14,7 @@ draft: false
 | --- | --- | --- | --- |
 | user_group_name | String | 用户组名称 | No |
 | description | String | 描述 | No |
-| count | Integer | 一次创建用户组的数量。默认是 1. | No |
+| count | Integer | 一次创建用户组的数量，默认是 1。 | No |
 
 [_公共参数_](../../../parameters/)
 

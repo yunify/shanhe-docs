@@ -12,7 +12,7 @@ draft: false
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| resource_group | String | 资源组ID | Yes |
+| resource_group | String | 资源组 ID | Yes |
 | resource_group_name | String | 资源组名称 | No |
 | description | String | 资源组描述 | No |
 

@@ -12,7 +12,7 @@ draft: false
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| user_groups.n | String | 要删除的用户组ID。 | Yes |
+| user_groups.n | String | 要删除的用户组 ID。 | Yes |
 
 [_公共参数_](../../../parameters/)
 

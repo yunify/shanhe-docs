@@ -16,9 +16,9 @@ draft: false
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| attachment_content | String | 为读取压缩包文件内容后的 Base64 编码流，编码前的最大尺寸为 2M | Yes |
+| attachment_content | String | 为读取压缩包文件内容后的 Base64 编码流，编码前的最大尺寸为 2M。 | Yes |
 | attachment_name | String | 文件名称 | No |
-| zone | String | 区域 ID，注意要小写 | Yes |
+| zone | String | 区域 ID，注意要小写。 | Yes |
 
 [_公共参数_](../../../parameters/)
 
@@ -27,8 +27,8 @@ draft: false
 | Name | Type | Description |
 | --- | --- | --- |
 | action | String | 响应动作 |
-| attachment_id | String | 上传至山河的压缩包 ID |
-| ret_code | Integer | 执行成功与否，0 表示成功，其他值则为错误代码 |
+| attachment_id | String | 上传至山河的压缩包 ID。 |
+| ret_code | Integer | 执行成功与否，0 表示成功，其他值则为错误代码。 |
 
 **Example**
 

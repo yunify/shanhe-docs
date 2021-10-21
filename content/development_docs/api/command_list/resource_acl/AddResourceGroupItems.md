@@ -13,7 +13,7 @@ draft: false
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
 | zone | String | zone ID | Yes |
-| resource_group | String | 资源组ID | Yes |
+| resource_group | String | 资源组 ID | Yes |
 | resources.n | String | 资源 ID | Yes |
 
 [_公共参数_](../../../parameters/)
