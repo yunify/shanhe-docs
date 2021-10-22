@@ -12,7 +12,7 @@ draft: false
 
 ## 操作步骤
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录[管理控制台](https://console.shanhe.com/login)。
 
 2. 在控制台导航栏中，选择**产品与服务** > **人工智能（AI）** > **Deep Learnling**，进入管理页面。
 
@@ -24,16 +24,20 @@ draft: false
 
    填写服务名称和描述，选择版本。
 
-4. 网络设置。
+4. 节点设置
+
+   ![](../../_images/node.png)
+
+6. 网络设置。
 
    ![](../../_images/dl_net_config..png)
 
    出于安全考虑，所有的集群都需要部署在私有网络中，选择自己创建的已连接路由器的私有网络中。
 
-5. 环境设置
+7. 环境设置
 
    <img src="../../_images/env_config.png" style="zoom:50%;" />
 
-6. 用户协议
+8. 用户协议
 
    <img src="../../_images/user.png" alt="user" style="zoom:50%;" />

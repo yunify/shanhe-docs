@@ -9,18 +9,15 @@ draft: false
 
 通过 AppCenter 集群管理控制台，您可以快速部署 Deep Learning 应用。本小节主要介绍如何快速部署 Deep Learning 应用。
 
-<video src="https://appcenter-docs.pek3a.qingstor.com/developer-guide/docs/videos/AppCenter2.0_Training_Fix.mp4" controls="controls">
-您的浏览器不支持 video 标签。
-</video>
 
 ## 前提条件
 
-- 已获取 QingCloud 管理控制台登录账号和密码。
+- 已获取管理控制台登录账号和密码。
 - 已创建 [VPC 网络](https://docsv3.qingcloud.com/network/vpc/manual/vpcnet/10_create_vpc/)和[私有网络](https://docsv3.qingcloud.com/network/vpc/manual/vxnet/05_create_vxnet/)，且私有网络已加入 VPC 网络。
 
 ## 操作步骤
 
-1. 登录 QingCloud 管理控制台。
+1. 登录[管理控制台](https://console.shanhe.com/login)。
 2. 在左上方的控制台导航栏中，选择**产品与服务** > **人工智能（AI）** > **Deep Learnling**，进入 Deep Learnling 集群管理页面。
 3. 点击**立即部署**，进入应用部署页面。
 4. 选择**区域**。
@@ -56,8 +53,6 @@ draft: false
 | 计费方式                                                   | 选择计费方式，可选择按**小时**/**月**/**年**或按**合约**计费。<li>合约有效期 ：选择按**合约**计费后，需选择合约可用周期。<li>（可选）自动续约 ：选择按**合约**计费后，在账户余额充足时，可选择周期自动续费，保障业务流畅。 |
 | 可用区                                                     | 目前可选择区域有`上海1区`、`广东2区`、`北京3区`。            |
 
-![基本参数配置](../../_images/base_step_1.png)
-
 ### 深度学习节点设置
 
 深度学习节点的资源配置，包括节点实例规格、磁盘大小和节点数量等。
@@ -79,7 +74,7 @@ draft: false
 |   节点 IP   |  配置节点 IP 地址。<li>默认为`自动分配`。<li> 选择`手动配置`需为各节点配置 IP。  |
 |   预留 IP      |   配置集群预留高可用 IP 地址。<li>默认为`自动分配`。<li>选择`手动配置`需为集群配置高可用写 IP。   |
 
-> **说明**：
+> **说明**
 > 
 > 配置的**私有网络部署方式**与***集群部署方式**必须一致，即选择的集群部署方式为`多可用区部署`，则该集群仅能选择`多可用区部署`的私有网络。
 
