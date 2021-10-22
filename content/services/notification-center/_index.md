@@ -51,7 +51,7 @@ section4:
       vice_title: 上手的第一步
       children: 
         - title: 查看通知消息和配置通知列表
-          url: "manual/operation/"
+          url: "manual/notify"
 
 
 ---
