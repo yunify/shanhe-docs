@@ -63,10 +63,6 @@ Topology 提交成功后，用户可以在 Storm UI 上看到 ExclamationTopolog
 /opt/storm/bin/storm kill ExclamationTopology
 ```
 
-执行结果如下图所示：
-
-![](../../_images/ExclamationTopology-Shell-Kill.png)
-
 ## 测试二：ReachTopology
 
 ReachTopology 基于 Storm 可实时计算 Twitter 网站上任意 URL 的 Reach 值，并通过 Storm 分布式 RPC 对外提供服务。
@@ -174,4 +170,4 @@ SlidingWindowTopology 展示了这两种窗口 API 的基本使用方法。
 
 例如：HBase、Kafka、Elasticsearch、Druid、Redis等。
 
-详情可以参考[Storm 官网](http://storm.apache.org/releases/1.1.2/index.html)中的 Integration With External Systems 和 Other Libraries。
+详情可以参考[Storm 官网](http://storm.apache.org/)中的 Integration With External Systems 和 Other Libraries。
