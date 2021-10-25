@@ -34,7 +34,7 @@ Section2:
 
     - title: 最佳实践
       content: 最佳实践
-      url: "/network/loadbalancer/best-practices/lb_border"
+      url: "/network/loadbalancer/best-practices/lb_natgw/"
 
     - title: 常见问题
       content: 常见问题

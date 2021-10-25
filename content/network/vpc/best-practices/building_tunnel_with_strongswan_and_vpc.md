@@ -32,7 +32,7 @@ weight: 5
 
 172.25.100.0/24<==>172.20.100.0/24
 
-### 1、jn1区的vm需要安装strongswan ，采用以下命令
+### 1、jn2区的vm需要安装strongswan ，采用以下命令
 
 ```
 sudo apt update
@@ -64,7 +64,7 @@ oCTYi71l0ZU7WcRgLYaspg==
 
 ### 4、jn2 vm的隧道环境配置参数
 
-#### <1、配置预共享秘钥
+#### 1、配置预共享秘钥
 
 ```
 root@i-y862i3l9:~# cat /etc/ipsec.secrets
@@ -76,10 +76,10 @@ root@i-y862i3l9:~# cat /etc/ipsec.secrets
 139.198.121.220 139.198.13.15 : PSK "oCTYi71l0ZU7WcRgLYaspg=="
 ```
 
-#### <2、配置 ipsec.conf的配置
+#### 2、配置 ipsec.conf的配置
 
 ```
-# defined by QingCloud
+# defined by shanhe
  
 version 2.0
 include /etc/ipsec.d/*.conf
@@ -101,7 +101,7 @@ conn %default
     dpdaction=restart
     #nat_traversal=yes
  
-conn toap2a
+conn tojn1
     authby=secret
     left=172.20.100.180
     leftid=139.198.13.15
@@ -120,14 +120,14 @@ https://www.strongswan.org/testing/testresults/ikev2/net2net-cert/moon.ipsec.con
 
 
 
-### 5、ap2a vpc的环境配置（vpc自身具备ipsec服务）
+### 5、jn1 vpc的环境配置（vpc自身具备ipsec服务）
 
 <img src="../homer/strongswan_01.png" width="60%" height="100%">
 
 ipsec.conf的配置如下
 
 ```
-# defined by QingCloud
+# defined by shanhe
  
 version 2.0
 include /etc/ipsec.d/*.conf

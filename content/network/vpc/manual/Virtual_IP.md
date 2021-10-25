@@ -27,13 +27,9 @@ VPC 网络提供了虚拟 IP 管理功能，用户创建虚拟 IP 后，将在�
 
 ![](../_images/vip_3.png)
 
-![](../_images/vip_4.png)
+<img src="../_images/vip_2.png" style="zoom:50%;" />
 
-![](../_images/vip_2.png)
-
-可以随时删除虚拟 IP 而不会影响网络转发，即便当前虚拟 IP 被占用
-
-![](../_images/vip_5.png) 
+可以随时删除虚拟 IP 而不会影响网络转发，即便当前虚拟 IP 被占用。
 
 ## 应用操作示例
 

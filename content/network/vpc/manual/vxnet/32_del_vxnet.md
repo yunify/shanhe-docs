@@ -1,7 +1,6 @@
 ---
 title: "删除私有网络"
 linkTitle: "删除私有网络"
-date: 2021-05-20T10:08:56+09:00
 description:
 draft: false
 weight: 32

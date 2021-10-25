@@ -17,7 +17,7 @@ weight: 20
 
 ### 2.应用修改vpc网络
 
-<img src="../homer/openvpn_dns_push_04.png" width="60%" height="60%">
+点击**应用修改**使配置之生效。
 
 ### 3.添加一条内网dns解析，并应用修改vpc网络
 

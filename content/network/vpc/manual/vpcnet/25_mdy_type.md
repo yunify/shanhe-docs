@@ -14,8 +14,8 @@ weight: 25
 
 - 免费型 VPC 不支持直接升级到其他规格。
 - 若您当前使用的非免费型 VPC 网络绑定了公网 IP 或告警策略，降为免费型 VPC 过程中，将自动进行解绑，且降级后无法恢复。
-- 若您当前使用的非免费型 VPC 网络中运行着弹性容器实例（QCI）、AppCenter 集群、边界路由器等需要访问外网的业务，降为免费型 VPC 后将无法访问外网。
-- 若因误操作导致部署在 VPC 网络中的业务无法访问外网或无法被外网访问，您可以 [提交工单](https://console.qingcloud.com/tickets/) 向青云技术支持寻求帮助。
+- 若您当前使用的非免费型 VPC 网络中运行着弹性容器实例（ECI）、AppCenter 集群、边界路由器等需要访问外网的业务，降为免费型 VPC 后将无法访问外网。
+- 若因误操作导致部署在 VPC 网络中的业务无法访问外网或无法被外网访问，您可以 [提交工单](https://console.shanhe.com/tickets/) 向技术支持寻求帮助。
 
 ## 操作步骤
 
@@ -29,7 +29,7 @@ weight: 25
 
    若修改为免费型 ，将在页面下方显示如下图所示提示信息，请仔细阅读提示信息，谨慎修改。
 
-   <img src="/network/vpc/_images/501025_mdy_type.png" alt="mdy_type" style="zoom:50%;" />
+   <img src="../../../_images/501025_mdy_type.png" alt="mdy_type" style="zoom:50%;" />
 
    
 

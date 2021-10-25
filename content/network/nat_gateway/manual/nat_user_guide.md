@@ -6,55 +6,61 @@ weight: 2
 keyword: NAT网关, NAT
 ---
 
-## 应用场景
+假设2 台云服务器位于私有网络的办公网络中，您可以通过配置实现云服务器共用 NAT 网关的公网 IP 访问互联网。
 
-如果使用 NAT 网关访问公网，则具备更好的转发能力，但 NAT 不支持端口转发，隧道等功能，不方便维护，用户如需使用其他功能则需 NAT 配合 VPC 使用。
+## 创建和配置 NAT 网关
 
-## 操作步骤
+### 创建 NAT 网关
 
-### 步骤1：打通隧道，确保隧道正常
+登录[管理控制台](https://console.shanhe.com/login)，在控制台导航栏中，选择 **VPC 网络** > **NAT 网关**。在 **NAT 网关**页面，点击**创建**按钮。
 
-以 IPSec 隧道为例, IPSec 隧道可参考文档：[隧道配置](/network/vpc/manual/tunnel/ipsec/)  
-本端隧道配置如下：  
-<img src="../_images/ipsec.png" width="800px" height="500px">  
-隧道本地公网 IP 为：139.198.174.112，本地内网网段为：172.16.1.0/24，测试主机 IP 为：172.16.1.2  
-隧道对端公网 IP 为：139.198.6.130，对端内网网段为：192.168.1.0/24，测试主机 IP 为：192.168.1.5  
-双向测试结果如下：  
-<img src="../_images/ping1.png" width="800px" height="500px">  
+<img src="../../_images/create_natgw.png" style="zoom:50%;" />
 
-<img src="../_images/ping2.png" width="800px" height="500px">
+根据性能的需求选择相应规格的 NAT 网关，选择部署方式，并可以在创建时选择需要绑定的公网 IP 和私有网络。
 
-### 步骤2：加入 NAT，通过 NAT 网关具备公网能力
+### 配置 NAT 网关
 
-配置 NAT 网关可参考文档：[配置NAT网关](/network/nat_gateway/manual/nat_user_guide/)
-配置完成后可访问公网，但隧道不通，无法通过 VPC 端口转发能力访问云服务器。  
-<img src="../_images/ping3.png" width="800px" height="500px">  
+创建 NAT 网关后，您还可以右键点击您创建的 NAT 网关，将 NAT 网关绑定到新的公网 IP 和私有网络。
 
-<img src="../_images/vpctest.png" width="800px" height="500px">  
-此现象符合预期，因默认路由均走 NAT 网关，不再走 VPC。
+![](../../_images/modify_natgw.png)
 
-### 步骤3：NAT 配合 VPC 使用
+### 查看 NAT 网关配置
 
-示例背景：  
-NAT 网关公网：139.198.172.235，NAT 网关加入私有网络：vxnet-toqcg3c（172.16.1.0/24）  
-VPC 公网：139.198.174.112，VPC 加入私有网络：vxnet-toqcg3c（172.16.1.0/24）。 
+第一步：点击 NAT 网关详情页面，可以看到 NAT 网关的详细信息。左侧为 NAT 网关的基本信息和网络信息，右侧主要显示与 NAT 网关绑定的私有网络和相关的路由表项，及防火墙信息和监控图表。
 
-路由表可以配置策略路由实现源地址到目标地址的路由策略。
+![](../../_images/details_natgw.png)
 
-示例1、公网走 NAT，隧道走路由器
+第二步：点击**创建和配置路由表或路由规则**，然后点击**添加路由**。对于**下一跳**选择，勾选**NAT网关**，然后点击**提交**。
 
-对端隧道内外 IP 为：192.168.1.0/24，添加策略路由如下：
-<img src="../_images/route1.png" width="800px" height="500px">  
-测试结果如下：  
-<img src="../_images/ping4.png" width="800px" height="500px">  
+<img src="../../_images/add_router_rule.png" style="zoom:50%;" />
 
-<img src="../_images/ping5.png" width="800px" height="500px">
+添加好路由后，需要点击**应用修改**以生效。
 
-示例2、公网走 NAT，指定 IP 走路由器
+![](../../_images/details_natgw_rt.png)
 
-此场景适用于平时维护，如通过 VPC 端口转发登录服务器  
-本机 IP 为：106.84.199.46,添加策略路由如下：  
-<img src="../_images/route2.png" width="800px" height="500px">  
-测试结果如下：  
-<img src="../_images/telnet.png" width="800px" height="500px"> 
+NAT 网关中的配置的私有网络云服务器可以共用 NAT 网关，`路由规则`决定私有网络利用NAT网关可以去访问哪些 IP 地址。
+
+
+
+### 修改 NAT 防火墙
+
+由于 NAT 网关与多个网络连接，所以在各个方向均可以设置单独的安全组，可以对网络流量进行更细粒度的安全管理。
+
+在左下角的**网络**区域，点击![](../../_images/icon.png)，可以修改基础网络和公网安全组：
+
+<img src="../../_images/modify_natgw_fw1.png" style="zoom:50%;" />
+
+
+在**更多操作**中，可以修改 NAT 网关与单个私有网络的安全组：
+
+![](../../_images/modify_natgw_fw2.png)
+
+
+## 配置私有网络和路由规则
+
+在配置完成私有网络以后，需要在私有网路的路由表中添加规则，决定私有网络内的云服务器可以访问哪些 IP 地址。
+
+点击查看[私有网络路由配置详情](../../../vpc/manual/route_table)。
+
+配置路由规则并应用修改后，即可测试云服务器与互联网的连通情况。
 
