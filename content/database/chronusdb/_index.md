@@ -59,9 +59,6 @@ section4:
       children:
         - title: 产品简介
           url: "intro/introduction/"
-        
-        - title: 版本介绍
-          url: "intro/version/"
     
     - title: 进阶
       content: 学习如何创建、管理、使用 ChronusDB 集群

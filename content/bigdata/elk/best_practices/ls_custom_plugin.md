@@ -31,12 +31,12 @@ draft: false
 
 5. 重启 Logstash 节点：在集群列表页面右键点击您的ELK集群，点击重启，选择 Logstash 节点，点击提交，此时 Logstash 节点将会重启。
 
-6. 参考 [Logstash 基本用法](#ls-intro) 发送一条数据：
+6. 参考 **Logstash 基本用法** 发送一条数据：
 
    ```bash
    curl -d "shanhe" $LS_IP:9700
    ```
 
-   参照 [Kibana 基本用法](#kibana-intro) 在浏览器打开 Kibana 并进行必要配置，点击左侧的 Discover 菜单项，显示近期接收到的日志，如图，示例中的 `logstash_filter_abcd` 成功将原消息中的 `shanhe` 替换为了 `Hello World!` ，说明插件配置生效。
+   参照 **Kibana 基本用法** 在浏览器打开 Kibana 并进行必要配置，点击左侧的 Discover 菜单项，显示近期接收到的日志，如图，示例中的 `logstash_filter_abcd` 成功将原消息中的 `shanhe` 替换为了 `Hello World!` ，说明插件配置生效。
 
    ![log_display](../../_images/log_display.png)

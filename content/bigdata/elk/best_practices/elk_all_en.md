@@ -17,7 +17,7 @@ draft: false
 
 ## 操作步骤
 
-1. 在集群详情页面找到任意 Logstash 节点的 IP 地址。参照 [Logstash 基本用法](#ls-intro)，执行如下命令将一条模拟日志发往 Logstash ：
+1. 在集群详情页面找到任意 Logstash 节点的 IP 地址。参照 **Logstash 基本用法**，执行如下命令将一条模拟日志发往 Logstash ：
 
    ```bash
    curl -d "[09-07 15:57:26]: call_es_api [:10105/_cluster/health] Exception [error: [Errno -5] No address associated with hostname], try to sleep 10 second." $LS_IP:9700
@@ -25,6 +25,6 @@ draft: false
 
    
 
-2. 参照 [Kibana 基本用法](#kibana-intro) 在浏览器中访问 Kibana 节点并配置 index pattern：点击左侧的 `Discover` 菜单项，显示近期接收到的日志，在搜索栏中输入 `error` ，点击右侧的“搜索”按钮。如图，`error` 被高亮显示，测试成功。
+2. 参照 **Kibana 基本用法** 在浏览器中访问 Kibana 节点并配置 index pattern：点击左侧的 `Discover` 菜单项，显示近期接收到的日志，在搜索栏中输入 `error` ，点击右侧的“搜索”按钮。如图，`error` 被高亮显示，测试成功。
 
    ![en_search_result](../../_images/en_search_result.png)
