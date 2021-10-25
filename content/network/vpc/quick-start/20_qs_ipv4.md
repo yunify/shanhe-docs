@@ -13,7 +13,7 @@ weight: 20
 ## 前提条件
 
 - 已注册山河计算平台账号并通过实名认证。
-- 确保账户有足够金额。若需要充值，请前往[充值页面](https://console.qingcloud.com/finance/wallet)。
+- 确保账户有足够金额。若需要充值，请前往[充值页面](https://console.shanhe.com/finance/wallet)。
 
 ## 操作步骤
 
@@ -97,11 +97,9 @@ weight: 20
 
 2. 在顶部菜单栏中，选择**产品与服务** > **网络服务** > **公网 IP**，进入**公网 IP**页面。
 
-3. 点击**申请**，弹出提示框。
+3. 点击**申请**，进入**申请公网 IP** 页面。
 
-4. 点击**继续申请公网 IP**，进入**申请公网 IP** 页面。
-
-   <img src="/network/vpc/_images/4020_add_net_ip_1.png" alt="add_net_ip_1" style="zoom:50%;" />
+   <img src="/network/vpc/_images/4020_add_net_ip_1.png" alt="add_net_ip_1"  />
 
 5. 设置公网 IP 参数，点击**提交**。
 
@@ -114,7 +112,6 @@ weight: 20
     - 带宽上限：设置为“10Mbps”。
     - IP组：使用默认值。
     - 绑定方式：选择**外部绑定**。
-    - 备案：选择**不需要**。
     - 数量：设置为“1”。
 
 6. 在**公网 IPv4**管理页面，找到已申请的公网IP“IPv4-test”，右键单击，选择**分配到云服务器**。

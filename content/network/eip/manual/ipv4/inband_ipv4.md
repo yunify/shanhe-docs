@@ -46,7 +46,7 @@ draft: false
 
 1. 右键点击刚刚申请到的的 IPv4公网 IP， 选择**分配到云服务器** ，在弹出的对话框中选择需要绑定的云服务器。
 
-   <img src="../../../_images/already_eip_for_host2.png" alt="绑定公网IP至云服务器" style="zoom:70%;" />
+   <img src="../../../_images/already_eip_for_host2.png" alt="绑定公网IP至云服务器" style="zoom:60%;" />
 
 2. 点击**提交**即可将申请到的公网 IP 绑定给相应云服务器。
 

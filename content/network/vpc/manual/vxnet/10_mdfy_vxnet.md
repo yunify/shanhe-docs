@@ -1,7 +1,6 @@
 ---
 title: "修改私有网络基本信息"
 linkTitle: "修改私有网络基本信息"
-date: 2021-05-19T10:08:56+09:00
 description:
 draft: false
 weight: 10

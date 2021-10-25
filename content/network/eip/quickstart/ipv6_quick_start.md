@@ -101,7 +101,7 @@ IPv4 过渡到 IPv6 的方案，大体分为三类：双栈、隧道和转换。
 
 <img src="../../_images/IPv6_inbind_ip_create.png" style="zoom:70%;" />
 
-手动申请的 IPv6 弹性 IP 的使用与[内部绑定](https://docs.qingcloud.com/product/network/eip#%E4%BD%BF%E7%94%A8%E5%86%85%E9%83%A8%E7%BB%91%E5%AE%9A%E5%85%AC%E7%BD%91-ip)的公网 IP 类似，将 IPv6 分配到云服务器后可以看到云服务器内多出一块还未分配 IP 地址的公网网卡。以镜像 centos75x64b 为例，如下图所示
+手动申请的 IPv6 弹性 IP 的使用与内部绑定的公网 IP 类似，将 IPv6 分配到云服务器后可以看到云服务器内多出一块还未分配 IP 地址的公网网卡。以镜像 centos75x64b 为例，如下图所示
 
 ![IPv6_inbind_nic](../../_images/IPv6_inbind_nic.png)
 

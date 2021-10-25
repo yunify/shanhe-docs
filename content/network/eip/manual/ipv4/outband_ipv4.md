@@ -15,13 +15,13 @@ draft: false
 
 ### 申请外部绑定的 IPv4 公网 IP
 
-1. 登录 WEB 控制台，在顶部菜单栏中点击**产品与服务**，选择 **网络** > **公网 IP** 。
+1. 登录管理控制台，在顶部菜单栏中点击**产品与服务**，选择 **网络** > **公网 IP** 。
 
 2. 在**公网 IPv4** 页面，点击**申请**。
 
 3. 填写公网 IP 信息。
 
-   <img src="../../../_images/create_eip.png" alt="填写申请公网IP信息" style="zoom:60%;" />
+   <img src="../../../_images/create_eip.png" alt="填写申请公网IP信息" />
 
    - 名称：为您申请的 IP 地址取个名字，方便记忆与使用。可选。
    - 模式：计费模式，可以选择**按带宽计费**或**按流量计费**。
@@ -47,7 +47,7 @@ draft: false
 
 1. 右键点击需要分配的公网 IP， 选择**分配到云服务器** ，在弹出的对话框中选择需要绑定的云服务器。
 
-   <img src="../../../_images/already_eip_for_host2.png" alt="绑定公网IP至云服务器" style="zoom:70%;" />
+   <img src="../../../_images/already_eip_for_host2.png" alt="绑定公网IP至云服务器" style="zoom:60%;" />
 
 2. 点击**提交**即可将申请到的公网 IP 绑定给相应云服务器。
 
