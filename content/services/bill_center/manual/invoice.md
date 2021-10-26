@@ -27,7 +27,7 @@ keyword: 账单, 发票, 订单, 充值, 费用
 
    1. 在**发票抬头**区域，点击**管理**，弹出**管理发票抬头**页面。
 
-      <img src="../../_images/apply_invoice.png" alt="管理发票抬头" style="zoom:50%;" />
+      <img src="../../_images/invoice_manage.png" alt="管理发票抬头" style="zoom:50%;" />
 
    2. 根据实际情况，设置发票信息。
 
