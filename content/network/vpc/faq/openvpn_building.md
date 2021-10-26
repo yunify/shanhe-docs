@@ -9,9 +9,11 @@ weight: 20
 
 客户希望自己在办公或者家庭网络能拨入到vpc的私有网络，以实现内网访问云上部署的业务，因为vpn隧道是加密通讯的，安全性比较可靠，另外使用起来比较方便；以下介绍的是如何在windows云服务器部署openvpn客户端。
 
+## 操作步骤
+
 ### 1、下载openvpn客户端windows版本
 
-<a href="https://myftp-server.pek3b.qingstor.com/openvpn-install-2.4.7-I603.exe" target="_blank">点击下载到本地</a>
+
 
 ### 2、安装openvpn步骤
 

@@ -12,7 +12,7 @@ draft: false
 
 ## 前提条件
 
-已创建一个 VPC 网络和关联一个私有网络，操作指导请参见 [VPC 指南](../../../../network/vpc/quick-start/base/)。
+已创建一个 VPC 网络和关联一个私有网络，操作指导请参见 [VPC 指南](/network/vpc/manual/vpcnet/10_create_vpc/)。
 
 ## 操作步骤
 
