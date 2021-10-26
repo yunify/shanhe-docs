@@ -1,8 +1,7 @@
 ---
 title: "数据迁移"
-description: 本小节主要介绍 Redis Cluster 数据迁移。 
+description: 本小节主要介绍云数据库 Redis Cluster的数据迁移。 
 keywords: redis cluster 数据迁移,
-data: 2021-05-14T00:38:25+09:00
 weight: 1
 collapsible: false
 draft: false
@@ -10,9 +9,9 @@ draft: false
 
 
 
-Redis Cluster 支持 Redis Cluster 之间数据迁移，同时支持从 Redis Standalone 迁移数据到 Redis Cluster。
+云数据库 Redis 支持 Redis Cluster 之间数据迁移，同时支持从云数据库 Redis Standalone 迁移数据到云数据库 Redis。
 
-## 从 Redis Standalone 迁移数据到 Redis Cluster
+## 从Redis Standalone 迁移数据到 Redis Cluster
 
  Redis 提供了从 Redis Standalone (包括 2.8.17 版本) 迁移数据到 Redis Cluster　的工具 `redis-trib.rb`。
  

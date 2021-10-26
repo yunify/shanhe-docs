@@ -1,9 +1,8 @@
 ---
 title: "Redis Cluster 数据存储"
-date: 2021-07-31T21:37:25+09:00
 description: Test description
 weight: 50
-draft: false
+draft: true
 enableToc: false
 ---
 ## Redis Cluster 数据存储
@@ -29,9 +28,7 @@ Redis Cluster 数据存储采用分布式存储。自动将数据进行分片，
 #### 一、哈希分布算法
 
 对每个数据进行哈希运算，然后对节点数取余，根据余数来确定保存在那个节点上。
-所以，同样是1~100的数据，哈希算法的结果可能是这样的。
 
-![img](../../_images/redis_cluster_stroage/hash_分片.png)
 
 **特点**
 >配置简单：对数据进行希，然后取余  
