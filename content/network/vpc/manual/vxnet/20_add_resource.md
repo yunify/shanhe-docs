@@ -1,7 +1,6 @@
 ---
 title: "在私有网络中创建资源"
 linkTitle: "在私有网络中创建资源"
-date: 2021-05-20T10:08:56+09:00
 description:
 draft: false
 weight: 20
@@ -27,7 +26,7 @@ weight: 20
 
    支持在私有网络中创建的云资源包括云服务器、共享存储 vSAN 及 NAS。
 
-   <img src="/network/vpc/_images/502020_add_resource.png" alt="add_resource" style="zoom:50%;" />
+   <img src="../../../_images/502020_add_resource.png" alt="add_resource" style="zoom:50%;" />
 
 5. 在资源创建页面，按照页面提示配置资源参数，点击**提交**完成创建。
 

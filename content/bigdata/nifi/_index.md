@@ -1,5 +1,5 @@
 ---
-title: "Nifi 服务"
+title: "大数据服务 Nifi"
 linkTitle: "Nifi"
 weight: 30
 collapsible: true
@@ -7,7 +7,7 @@ type: "product"
 
 section1:
   title: Nifi
-  vice_title: Nifi 是一款用于处理和分发数据的软件服务。
+  vice_title: 大数据服务 Nifi 是一款用于处理和分发数据的软件服务。
 
 Section2:
   title: 用户指南

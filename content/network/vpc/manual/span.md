@@ -17,11 +17,11 @@ weight: 60
 *   IP 地址:接收镜像流量的目标地址。对应的云服务器应该具有流量分析功能，并且能够支持GRE封装，比如镜像市场提供的EZSonar。
 *   密钥:建立GRE隧道时两端共同使用的约定整型数字，比如 12345
 
-![](../_images/create_span.png)
+<img src="../_images/create_span.png" style="zoom:50%;" />
 
-注解
-
-IP 地址只能是基础网络中的一台云服务器的地址，并且在其关联的防火墙中放行GRE流量，如下图:
+> **说明**
+>
+> IP 地址只能是基础网络中的一台云服务器的地址，并且需要在其关联的安全组中放行GRE流量。
 
 ![](../_images/span_sg.png)
 
@@ -29,17 +29,19 @@ IP 地址只能是基础网络中的一台云服务器的地址，并且在其�
 
 加入 SPAN 的成员，就会将这台云服务器的流量发送到配置的SPAN IP。添加完成即开始发送镜像流量。
 
-注解
+> **说明**
+>
+> 由于GRE和虚拟网络会增加额外的包头，为了达到最佳性能，SPAN成员云服务器的 mtu 请设置为1408 (linux命令 ifconfig eth0 mtu 1408)。如果mtu高于1408， 流量镜像仍然工作，超过1408的数据包会自动切片，带来一定性能损失。
 
-由于GRE和虚拟网络会增加额外的包头，为了达到最佳性能，SPAN成员云服务器的 mtu 请设置为1408 (linux命令 ifconfig eth0 mtu 1408)。如果mtu高于1408， 流量镜像仍然工作，超过1408的数据包会自动切片，带来一定性能损失。
+右键单击 SPAN ID，选择**添加 SPAN 成员** > **云服务器**。
 
-![](../_images/span_add_member.png)
+<img src="../_images/span_add_member.png" style="zoom:50%;" />
 
 ## 移除 SPAN成员
 
 加入 SPAN 的成员可以移除，点击对应成员名称右边的关闭按钮即可移除。 移除后就停止对该云服务器的流量做镜像。
 
-![](../_images/span_del_member.png)
+<img src="../_images/span_del_member.png" style="zoom:50%;" />
 
 > **说明**
 >
@@ -49,4 +51,4 @@ IP 地址只能是基础网络中的一台云服务器的地址，并且在其�
 
 已经建立的 SPAN 可以修改其属性，创建时可以指定的项目都可以修改，修改完之后要点击页面上的“应用修改”按钮，以完成配置更新。
 
-![](../_images/span_modify.png)
+<img src="../_images/span_modify.png" style="zoom:50%;" />

@@ -24,7 +24,7 @@ IPv4 过渡到 IPv6 的方案，大体分为三类：双栈、隧道和转换。
 
 您只需要在创建专有网络 VPC 时，在 IPv6 网络地址选择**系统自动分配**即可创建支持 IPv4/IPv6 双栈的 VPC 。创建后可查看 IPv6 管理地址范围的详细信息。专有网络VPC会默认分配掩码为 /56 的IPv6地址段。
 
-<img src="../../_images/log-ipv6-create-vpc.png" style="zoom:70%;" />
+<img src="../../_images/log-ipv6-create-vpc.png" style="zoom:60%;" />
 
 ### 创建启用 IPv6 的私有网络
 
@@ -36,14 +36,14 @@ IPv4 过渡到 IPv6 的方案，大体分为三类：双栈、隧道和转换。
 
 ![](../../_images/log-ipv6-vxnet-detail.png)
 
-### 防火墙开通 IPv6 协议
+### 安全组开通 IPv6 协议
 
-为了保证您的云服务器安全，在云服务器 IPv6 接入公网时自动加载防火墙以保证您的访问安全。因此接入公网之后，您需要在云服务器的防火墙上开通 IPv6
+为了保证您的云服务器安全，在云服务器 IPv6 接入公网时自动加载安全组以保证您的访问安全。因此接入公网之后，您需要在云服务器的安全组上开通 IPv6
 的相关访问协议。
 
 >**说明**：
 >
->在启用 IPv6 后，除 IPv6 ICMP（ping6）需额外配置，其他在您防火墙里的策略规则会同时应用到 IPv6 地址。
+>在启用 IPv6 后，除 IPv6 ICMP（ping6）需额外配置，其他在您安全组策略规则会同时应用到 IPv6 地址。
 >
 >**IP/端口集合**功能同样适用于 IPv6 ，您也可以用此功能实现对 IPv6 地址/端口的批量管理。
 
@@ -80,8 +80,6 @@ IPv4 过渡到 IPv6 的方案，大体分为三类：双栈、隧道和转换。
 >
 > 在选择镜像时，镜像名称后带有**IPv6**标识即表示支持 IPv6 自动化配置。若从其他的镜像启动的云服务器， 则未针对 DHCPv6 进行配置， 该云服务器的网络接口无法自动获取/识别 IPv6 相关网络配置，需手动配置该云服务器，参考[开启云服务器 IPv6 自动化配置 ](../../manual/ipv6_auto_config/)。
 
-![](../../_images/log-ipv6-instance.png)
-
 ## <span id="enable_ipv6_public">开通云服务器 IPv6 公网访问</span>
 
 有以下两种方式可以提供 IPv6 的公网访问，您可以根据自己的网络需求和偏好进行选择。
@@ -103,7 +101,7 @@ IPv4 过渡到 IPv6 的方案，大体分为三类：双栈、隧道和转换。
 
 <img src="../../_images/IPv6_inbind_ip_create.png" style="zoom:70%;" />
 
-手动申请的 IPv6 弹性 IP 的使用与[内部绑定](https://docs.qingcloud.com/product/network/eip#%E4%BD%BF%E7%94%A8%E5%86%85%E9%83%A8%E7%BB%91%E5%AE%9A%E5%85%AC%E7%BD%91-ip)的公网 IP 类似，将 IPv6 分配到云服务器后可以看到云服务器内多出一块还未分配 IP 地址的公网网卡。以镜像 centos75x64b 为例，如下图所示
+手动申请的 IPv6 弹性 IP 的使用与内部绑定的公网 IP 类似，将 IPv6 分配到云服务器后可以看到云服务器内多出一块还未分配 IP 地址的公网网卡。以镜像 centos75x64b 为例，如下图所示
 
 ![IPv6_inbind_nic](../../_images/IPv6_inbind_nic.png)
 

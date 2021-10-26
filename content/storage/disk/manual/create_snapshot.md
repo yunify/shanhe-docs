@@ -4,7 +4,7 @@ description: Test description
 draft: false
 enableToc: false
 weight: 40
-keyword: 青云
+keyword: 山河
 ---
 
 ## 备份须知
@@ -16,9 +16,9 @@ keyword: 青云
 
 ## 操作步骤
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录 [山河 shanhe 管理控制台](https://console.shanhe.com/login)。
 
-2. 在控制台导航栏中，选择**产品与服务** > **存储服务** > **云硬盘**，进入**硬盘**页面。
+2. 在控制台导航栏中，选择**产品与服务** > **存储服务** > **硬盘**，进入**硬盘**页面。
 
 3. 点击硬盘ID号，进入硬盘详情界面，默认显示**备份**页签。
 
@@ -26,21 +26,21 @@ keyword: 青云
 
 4. 若是首次创建备份，则点击**创建备份**。
 
-   ![备份硬盘](/storage/disk/manual/_images/硬盘详情.png)
+   ![备份硬盘](/storage/disk/manual/_images/create_snapshot_1.png)
 
    若是基于备份链再次创建备份，则在备份链结构示意图上，点击![创建备份按钮](/storage/disk/manual/_images/创建备份按钮.png)。
 
-   ![备份链上创建备份](/storage/disk/manual/_images/备份链上创建备份.png)
+   ![备份链上创建备份](/storage/disk/manual/_images/create_snapshot_2.png)
 
 5. 在提示框中，点击**继续**。
 
 6. 输入备份名称，点击**提交**，开始创建。
 
-   ![创建硬盘硬盘](/storage/disk/manual/_images/创建硬盘备份.png)
+   ![创建硬盘硬盘](/storage/disk/manual/_images/create_snapshot_3.png)
 
    创建成功后，生成备份记录，如下图所示。
 
-   ![备份记录](/storage/disk/manual/_images/create_basic_13.png)
+   ![备份记录](/storage/disk/manual/_images/create_snapshot_4.png)
 
 ## 后续管理
 

@@ -1,5 +1,5 @@
 ---
-title: "ELK 服务"
+title: "大数据服务 ELK"
 linkTitle: "ELK"
 weight: 20
 collapsible: true
@@ -7,7 +7,7 @@ type: "product"
 
 section1:
   title: ELK
-  vice_title: ELK 为用户提供实时日志处理、全文搜索和数据分析等基础能力。
+  vice_title: 大数据服务 ELK 为用户提供实时日志处理、全文搜索和数据分析等基础能力。
 
 Section2:
   title: 用户指南

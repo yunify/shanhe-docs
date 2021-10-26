@@ -13,17 +13,11 @@ draft: false
 
 ## 步骤一：选择扩容节点磁盘容量
 
-![clean_binlog_1](/database/mysql/_images/clean_binlog_1.png)
-
-![clean_binlog_2](/database/mysql/_images/clean_binlog_2.png)
-
-注意：当云硬盘为企业级分布式 SAN (NeonSAN)时，扩容云硬盘空间会导致集群重启，请在业务低峰时进行；当云硬盘为非企业级分布式 SAN (NeonSAN)时，可以在线扩容云硬盘空间。
+当云硬盘为企业级分布式 SAN (NeonSAN)时，扩容云硬盘空间会导致集群重启，请在业务低峰时进行；当云硬盘为非企业级分布式 SAN (NeonSAN)时，可以在线扩容云硬盘空间。
 
 ## 步骤二：修改日志过期时间
 
-修改日志过期时间 Expire_logs_days 参数，默认保存7天，可选访问为2~14，可适量减小，比如3天。
-
-![clean_binlog_3](/database/mysql/_images/clean_binlog_3.png)
+修改日志过期时间 **Expire_logs_days** 参数，默认保存7天，可选访问为2~14，可适量减小，比如3天。
 
 ## 步骤三：清理 binlog
 

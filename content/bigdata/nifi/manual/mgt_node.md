@@ -1,6 +1,6 @@
 ---
 title: "节点管理"
-description: 本小节主要介绍如何管理 QingCloud Nifi 集群节点。 
+description: 本小节主要介绍如何管理 Nifi 集群节点。 
 keywords: Nifi 在线伸缩,节点管理
 weight: 15
 collapsible: false
@@ -19,7 +19,7 @@ draft: false
 
 ## 前提条件
 
-- 已获取 QingCloud 管理控制台登录账号和密码，且已获取集群操作权限。
+- 已获取管理控制台登录账号和密码，且已获取集群操作权限。
 - 已创建 Nifi 集群，且集群状态为**活跃**。
 
 ## 纵向伸缩

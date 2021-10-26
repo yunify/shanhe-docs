@@ -33,7 +33,7 @@ draft: false
 
    ```bash
    INDEX=chinese-news # 可根据实际情况调整
-   MAPPING_TYPE=_doc  # ELK 6.8.0 - QingCloud 2.1.0 以前版本请去掉开头的下划线，即：doc
+   MAPPING_TYPE=_doc  
    
    # 创建 $INDEX 索引
    curl -XPUT $ES_IP:9200/$INDEX; echo
@@ -98,6 +98,6 @@ draft: false
 
 4. 查看中文分词结果，结果如下图红色部分所示即为成功。即"中国"、"青云"、"优帆科技"被当做固定的中文分词表示。
 
-   ![chinese_split](../../images/chinese_split.png)
+   ![chinese_split](../../_images/chinese_split.png)
 
 5. 可根据实际需要随时更新用户自定义字典，Elasticsearch 会自动检测 HTTP 响应头中的 Last-Modified 和 ETag 的变化，来进行分词字典的热更新。

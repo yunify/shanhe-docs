@@ -7,9 +7,7 @@ type: "product"
 
 section1:
   title: RadonDB
-  vice_title: RadonDB 是一款基于 MySQL 研发的新一代分布式关系型数据库 (MyNewSQL)。
-  video: "https://pek3b.qingstor.com/yunify-qingcloud-docs/video/qs_qingcloud_create_radondb.mp4"
-  video_img: "/images/video.png"
+  vice_title: 云数据库 RadonDB 是一款基于 MySQL 研发的新一代分布式关系型数据库 (MyNewSQL)。
 
 Section2:
   title: 用户指南     

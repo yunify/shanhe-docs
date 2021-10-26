@@ -5,7 +5,7 @@ description: Test description
 draft: false
 enableToc: false
 weight: 30
-keyword: 青云
+keyword: 山河
 ---
 
 ## 扩展云硬盘容量
@@ -16,15 +16,15 @@ keyword: 青云
 
    ![图片](/storage/disk/quickstart/_images/image-1568774923025.png)
 
-3. 登录控制台，从云服务器上卸载硬盘，直至硬盘状态为可用。
+3. 登录控制台，在硬盘界面，从云服务器上卸载待扩容的硬盘，直至硬盘状态为可用。
 
    ![图片](/storage/disk/quickstart/_images/image-1568774930715.png)
 
 4. 右键点击磁盘 ID 号 ，扩容磁盘容量并提交修改。
 
-   ![图片](/storage/disk/quickstart/_images/image-1568774933959.png)
+   ![图片](/storage/disk/quickstart/_images/expan_win_3.png)
 
-   ![图片](/storage/disk/quickstart/_images/image-1568774937515.png)
+   ![图片](/storage/disk/quickstart/_images/expan_win_4.png)
 
 5. 将扩容后的磁盘加载到云服务器。
 

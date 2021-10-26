@@ -1,6 +1,6 @@
 ---
 title: "功能特性"
-description: 本小节主要介绍 QingCloud Nifi 简要主要功能特性。 
+description: 本小节主要介绍 Nifi 简要主要功能特性。 
 keywords: Nifi 功能特性, 
 weight: 15
 collapsible: false
@@ -9,7 +9,7 @@ draft: false
 
 
 
-基于 Apache NiFi 的 Qing Nifi 服务具备 NiFi 高级功能。
+基于 Apache NiFi 的 大数据服务 Nifi 具备 NiFi 高级功能。
 
 ## 基于Web的用户界面
 

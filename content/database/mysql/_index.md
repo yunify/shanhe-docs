@@ -1,5 +1,5 @@
 ---
-title: "关系型数据库 MySQL Plus"
+title: "云数据库 MySQL Plus"
 linkTitle: "MySQL Plus"
 weight: 01
 collapsible: true
@@ -7,9 +7,7 @@ type: "product"
 
 section1:
   title: MySQL Plus
-  vice_title: QingCloud MySQL Plus 是一款基于 MySQL 提供的数据库服务，支持一主多从高可用架构，集成 InnoDB + TokuDB 双存储引擎，支持自动备份、监控告警、自动扩容等管理功能。
-  video: "https://pek3b.qingstor.com/yunify-qingcloud-docs/video/qs_qingcloud_myqslplus_0720.mp4"
-  video_img: "/images/video.png"
+  vice_title: 云数据库 MySQL Plus 是一款基于 MySQL 提供的数据库服务，支持一主多从高可用架构，集成 InnoDB + TokuDB 双存储引擎，支持自动备份、监控告警、自动扩容等管理功能。
 
 Section2:
   title: 用户指南
@@ -31,7 +29,7 @@ Section2:
       url: "quickstart/create_cluster/"
 
     - title: 操作指南
-      content: 学习上手如何管理 MySQL Plus 集群，以及如何使用 MySQL Plus 提供的相关服务等。
+      content: 学习上手管理 MySQL Plus 集群。
       url: "manual/cluster_lifecycle/cluster_info/"
 
     - title: 最佳实践

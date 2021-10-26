@@ -8,7 +8,7 @@ draft: false
 ---
 
 
-ChronusDB 监控告警是通过 QingCloud 云监控告警服务为集群服务器的资源和服务提供监控管理。当集群监控项超过阈值时触发告警，并通过短信、邮件等形式发送告警通知。
+ChronusDB 监控告警是通过云监控告警服务为集群服务器的资源和服务提供监控管理。当集群监控项超过阈值时触发告警，并通过短信、邮件等形式发送告警通知。
 
 QingCLoud 提供的云监控 CloudSat，可对 ChronusDB 的运行状态进行日常监控。您可以通过 CloudSat 管理控制台，一站式监控和告警 ChronusDB 各类服务、资源指标。您可以在 ChronusDB 集群详情页面，查看主实例监控和查看备实例监控。
 
@@ -18,7 +18,7 @@ QingCLoud 提供的云监控 CloudSat，可对 ChronusDB 的运行状态进行�
 
 ## 前提条件
 
-- 已获取 QingCloud 管理控制台登录账号和密码，且已获取集群查看权限。
+- 已获取管理控制台登录账号和密码，且已获取集群查看权限。
 - 已创建 ChronusDB 集群，集群状态为**活跃**，且服务状态为**正常**。 
   
   > **说明**
@@ -45,20 +45,6 @@ QingCLoud 提供的云监控 CloudSat，可对 ChronusDB 的运行状态进行�
    - 您也可以通过自定义连续7天的起止时间，查看目标时间段内指标状态。
    
      但最多仅能查询近90天内数据。
-   
-   <img src="../../../_images/manual_node_monitor.png" alt="节点监控" style="zoom:50%;" />
-
-**监控指标示例：**
-
-![查询数](../../../_images/queries_monitor.png)
-
-![HTTP连接数](../../../_images/http_connections_monitor.png)
-
-![活跃读锁](../../../_images/active_read_lock_monitor.png)
-
-![CPU利用率](../../../_images/cpu_monitor.png)
-
-![硬盘 IOPS](../../../_images/iops_monitor.png)
 
 ## 查看实时监控
 
@@ -73,14 +59,6 @@ QingCLoud 提供的云监控 CloudSat，可对 ChronusDB 的运行状态进行�
    > **说明**
    >
    > 开启一个服务指标实时监控，默认开启全部服务指标实时监控。
-
-   **实时监控为关闭时**
-
-   <img src="../../../_images/manual_service_monitor.png" style="zoom:50%;" />
-
-   **实时监控为开启时**
-
-   <img src="../../../_images/manual_service_monitor_realtime.png" style="zoom:50%;" />
    
 4. 查看实时资源指标状态。
 
@@ -89,11 +67,3 @@ QingCLoud 提供的云监控 CloudSat，可对 ChronusDB 的运行状态进行�
    > **说明**
    >
    > 每一个资源指标实时监控，需单独开启。
-
-   **实时监控为关闭时**
-
-   <img src="../../../_images/manual_resource_monitor.png" style="zoom:50%;" />
-
-   **实时监控为开启时**
-
-   <img src="../../../_images/manual_resource_monitor_realtime.png" style="zoom:50%;" />

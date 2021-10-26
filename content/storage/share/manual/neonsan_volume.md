@@ -5,7 +5,7 @@ description: Test description
 draft: false
 enableToc: false
 weight: 10
-keyword: 青云
+keyword: 山河
 ---
 
 ## 简介
@@ -14,7 +14,7 @@ keyword: 青云
 
 ## 创建 NeonSAN 硬盘
 
-1. 登录 QingCloud 管理控制台，在顶部导航中选择 **产品与服务** > **存储服务** > **共享存储**，进入如下界面。
+1. 登录山河管理控制台，在顶部导航中选择 **产品与服务** > **存储服务** > **共享存储**，进入如下界面。
 
    ![企业级分布式NeonSAN](/storage/share/manual/_images/shared_stor_page.png)
 
@@ -133,14 +133,6 @@ keyword: 青云
    <img src="../_images/create_NeonSAN_22.png" alt="共享NeonSAN备份" style="zoom:50%;" />
 
 2. 可以选择共享给子账号还是共享给其他账号，选择要共享给的子账号或填写要给共享的其他用户 ID/ 注册邮箱地址，点击**提交** 。鼠标右键双击备份链接入备份属性修改界面，可以看到共享列表，里面有已经添加成功的共享账号列表。
-
-**跨区复制备份**
-
-1. 点击 **跨区复制备份** ，进入如下界面
-
-   <img src="../_images/create_NeonSAN_23.png" alt="快去复制NeonSAN备份" style="zoom:50%;" />
-
-2. 选择要复制到区域，点击 **提交** 。
 
 **备份属性修改**
 

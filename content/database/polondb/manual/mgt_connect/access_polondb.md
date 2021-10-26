@@ -16,7 +16,7 @@ PolonDB 推荐使用内网地址连接数据库，确保数据传输速率的同
 
 ## 前提条件
 
-- 已获取 QingCloud 管理工作台登录账号和密码，且已获取集群操作权限。
+- 已获取管理工作台登录账号和密码，且已获取集群操作权限。
 - 已创建 PolonDB 集群，且集群状态为**活跃**。
 - 已获取数据库、用户和密码信息。
 
@@ -27,8 +27,8 @@ PolonDB 推荐使用内网地址连接数据库，确保数据传输速率的同
 
 ### 获取连接信息
 
-1. 登录 QingCloud 管理控制台。
-2. 选择**产品与服务** > **数据库与缓存** > **分布式数据库 PolonDB**，进入集群管理页面。
+1. 登录管理控制台。
+2. 选择**产品与服务** > **数据库与缓存** > **云数据库 PolonDB**，进入集群管理页面。
 3. 选择目标集群，点击目标集群 ID，进入集群详情页面。
 4. 在**服务端口信息**模块，获取集群服务端口、高性能节点、协调器节点、高性能只读节点等。
 
@@ -44,7 +44,7 @@ $ psql -U <userName> -h <port> -d <serverName>
 
 |<span style="display:inline-block;width:80px">选项</span> |<span style="display:inline-block;width:240px">说明</span>|<span style="display:inline-block;width:280px">示例</span> |
 |:----|:----|:----|
-|-U           |数据库用户账号名。<br>新建数据库默认账号名 `qingcloud`。      | qingcloud |
+|-U           |数据库用户账号名。<br>新建数据库默认账号名 `shanhe`。      | shanhe  |
 |-h          |数据库节点的 IP 或者双节点集群的 VIP。                 |192.168.100.0|
-|-d          |数据库名称。 <br>新建数据库默认名称 `qingcloud`。            | qingcloud |
-|密码          |数据库用户密码。<br>新建数据库默认账号密码`qingcloud1234`              | qingcloud1234 |
+|-d          |数据库名称。 <br>新建数据库默认名称 `shanhe`。            | shanhe  |
+|密码          |数据库用户密码。<br>新建数据库默认账号密码`shanhe1234`              | shanhe1234 |

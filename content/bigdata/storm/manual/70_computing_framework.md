@@ -7,7 +7,7 @@ collapsible: false
 draft: false
 ---
 
-> **注意：**
+> **注意**
 >
 > Storm 支持 Storm Core 和 Storm Trident 两种编程模式。
 
@@ -24,7 +24,7 @@ draft: false
 
 Flink 和 Kafka Stream 目前在生产环境中比较少见，主要针对 Storm 和 Spark Streaming 选型建议如下所示。
 
-**建议使用 Storm 场景**
+## Storm 场景
 
 - 需要很低延迟的，比如实时金融系统，要求纯实时进行金融交易和分析。
 - 要求可靠的事务机制和可靠性机制，即数据的处理完全精准无误的。
@@ -32,22 +32,20 @@ Flink 和 Kafka Stream 目前在生产环境中比较少见，主要针对 Storm
 - 如果一个大数据应用系统，它就是纯粹的实时计算，不需要在中间执行 SQL 交互式查询、复杂的　transformation 算子等，那么用 Storm 是比较好的选择。
 - 分布式 RPC 服务场景。
 
-**建议使用 Kafka Stream 场景**
+## Kafka Stream 场景
 
 输入源为 Kafka,轻量级 ETL 场景
 
-**建议使用 Spark Streaming 场景**
+## Spark Streaming 场景
 
 - 不要求纯实时，不要求强大可靠的事务机制，不需要动态调整并行度，那么可以考虑使用 Spark Streaming。
+
 - 如果一个项目除了实时计算之外，还包括了离线批处理、交互式查询等业务功能，而且实时计算中，可能还会牵扯到高延迟批处理、交互式查询等功能，那么可以选择 Spark 生态，用 Spark Core 开发离线批处理，用 Spark SQL 开发交互式查询，用 Spark Streaming 开发实时计算，三者可以无缝整合，给系统提供非常高的可扩展性。
+
 - 吞吐量很大，海量数据场景。
 
-> **注意：**
+> **注意**
 >
 > 同时建议大数据场景下，使用混合架构可以更好的满足各种业务需求。
 
 在使用过程中如果遇到问题可以通过 `提交工单` 来获取帮助。
-
-## Storm Paas 文档
-
-Storm Paas 文档请访问[这里](https://docs.qingcloud.com/product/big_data/storm.html)。

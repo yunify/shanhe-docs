@@ -79,7 +79,6 @@ draft: false
 * logstash-input-log4j
 * logstash-input-lumberjack
 * logstash-input-pipe
-* ~~logstash-input-qingstor~~ (`ELK 6.8.0 - QingCloud 2.1.0` 版本中已移除)
 * logstash-input-rabbitmq
 * logstash-input-redis
 * logstash-input-s3
@@ -108,7 +107,6 @@ draft: false
 * logstash-output-null
 * logstash-output-pagerduty
 * logstash-output-pipe
-* ~~logstash-output-qingstor~~ (`ELK 6.8.0 - QingCloud 2.1.0` 版本中已移除)
 * logstash-output-rabbitmq
 * logstash-output-redis
 * logstash-output-s3

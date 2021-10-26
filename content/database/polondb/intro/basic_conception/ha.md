@@ -1,6 +1,6 @@
 ---
 title: "高可用性"
-description: 本小节主要介绍 QingCloud PolonDB 高可用性。 
+description: 本小节主要介绍 PolonDB 高可用性。 
 keywords: polondb 高可用性
 weight: 2
 collapsible: false
@@ -18,4 +18,3 @@ draft: false
   设置参数 `synchronous_commit = local` 可以变成异步模式。
 
   > 异步模式的数据安全性比较低，有数据丢失风险
-

@@ -11,9 +11,9 @@ draft: false
 
 > **说明**：
 >
-> 为了方便测试，此选择了 logstash-http-input 插件输入日志数据，在实际应用中用户可以选择多种 Logstash Input 插件从各种数据源获取日志数据，比如文件、log4j、syslog、QingStor 对象存储、Kafka 等。
+> 为了方便测试，此选择了 logstash-http-input 插件输入日志数据，在实际应用中用户可以选择多种 Logstash Input 插件从各种数据源获取日志数据，比如文件、log4j、syslog、对象存储、Kafka 等。
 >
-> 此外，Logstash 默认将日志输出到 Elasticsearch 中，用户可以通过 `output_es_content` 配置项，对这个输出过程进行定制。用户还可以通过 `output_conf_content` 配置项，选择将日志输出到除了 Elasticsearch 之外的其他位置，比如 QingStor 对象存储。
+> 此外，Logstash 默认将日志输出到 Elasticsearch 中，用户可以通过 `output_es_content` 配置项，对这个输出过程进行定制。用户还可以通过 `output_conf_content` 配置项，选择将日志输出到除了 Elasticsearch 之外的其他位置，比如对象存储。
 
 ## 操作步骤
 
@@ -27,4 +27,4 @@ draft: false
 
 2. 参照 [Kibana 基本用法](#kibana-intro) 在浏览器中访问 Kibana 节点并配置 index pattern：点击左侧的 `Discover` 菜单项，显示近期接收到的日志，在搜索栏中输入 `error` ，点击右侧的“搜索”按钮。如图，`error` 被高亮显示，测试成功。
 
-   ![en_search_result](../../images/en_search_result.png)
+   ![en_search_result](../../_images/en_search_result.png)

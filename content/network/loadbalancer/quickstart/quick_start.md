@@ -59,8 +59,6 @@ draft: false
 
 应用修改完成之后，后端服务器会成功被负载均衡器接管， 状态会恢复为 “活跃”。此时通过负载均衡器绑定的IP地址（例如 `http:///` ）就可以正常的访问了。
 
-![](../../manual/_images/http_lb_view.png)
-
 ## 搭建基于HTTPS协议的负载均衡
 
 假设 web server 云服务器还需要提供 HTTPS 协议的访问， 那么同样可以搭建一个 HTTPS 的负载均衡器来对 web server 进行负载均衡。 负载均衡器提供了原生的 HTTPS 协议支持，即后端云服务器只需要支持 HTTP 协议即可。 如果希望由后端云服务器承担 HTTPS 的卸载，那么可以通过 TCP 协议来实现类似的功能。
@@ -126,7 +124,7 @@ draft: false
 
 ”网络” 中选择 “基础网络”， 在 “云服务器” 的下拉菜单中选择已经配置好的 web server，”端口” 输入 “443”，然后点击提交。
 
-![](../../manual/_images/add_http_backend.png)
+![](../../manual/_images/add_https_backend.png)
 
 同理，如果还有其他 HTTPS 云服务器，你可以通过类似的操作依次添加， 注意在添加完成之后，不要忘记点击 “应用修改” 使配置生效。
 

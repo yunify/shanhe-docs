@@ -39,21 +39,13 @@ weight: 20
 
 <img src="../homer/openvpn_building_09.png" width="60%" height="40%">
 
-配置提交以后需要更新vpc才能生效
-
-<img src="../homer/openvpn_building_10.png" width="60%" height="40%">
+配置提交以后需要点击**应用修改**更新 vpc 才能生效。
 
 以上配置完成以后，需要配置安全组的策略，在vpc详情界面找到安全组
-
-<img src="../homer/openvpn_building_11.png" width="60%" height="40%">
-
-<img src="../homer/openvpn_building_12.png" width="60%" height="40%">
 
 添加下行1194端口协议，并更新安全组。
 
 <img src="../homer/openvpn_building_13.png" width="60%" height="40%">
-
-<img src="../homer/openvpn_building_14.png" width="60%" height="40%">
 
 ### 4、配置openvpn客户端
 

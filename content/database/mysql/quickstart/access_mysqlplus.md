@@ -23,7 +23,7 @@ MySQL Plus 支持通过内网地址和外网地址连接数据库，推荐使用
 > 
 > -云服务器和数据库须是同一账号，且在同一个 VPC 内或同在基础网络内。
 > 
-> -对于不同的 VPC 下（包括同账号/不同账号，同地域/不同地域）的云服务器和数据库，通过QingCloud **VPC 网络**的`隧道服务`和 `VPN 服务`，打通云服务器和数据库之间网络。
+> -对于不同的 VPC 下（包括同账号/不同账号，同地域/不同地域）的云服务器和数据库，通过 **VPC 网络**的`隧道服务`和 `VPN 服务`，打通云服务器和数据库之间网络。
 
 - 外网地址连接：无法通过内网连接时，可通过外网地址连接云数据库 MySQL。
   
@@ -58,7 +58,7 @@ MySQL Plus 支持通过内网地址和外网地址连接数据库，推荐使用
    外网连接回显示例：
 
    ```shell
-   $ mysql -h gz-cdb-xx123xx.mysql.qingcloud.link -P <3306> -u test_mysql -p
+   $ mysql -h gz-cdb-xx123xx.mysql.shanhe.link -P <3306> -u test_mysql -p
    Enter password：
    Welcome to the MySQL monitor.   Commands end with ; or \g.
    Your MySQL connection id is 20
@@ -75,7 +75,7 @@ MySQL Plus 支持通过内网地址和外网地址连接数据库，推荐使用
 
 |<span style="display:inline-block;width:80px">选项</span> |<span style="display:inline-block;width:240px">说明</span>|<span style="display:inline-block;width:280px">示例</span> |
 |:----|:----|:----|
-|-h          |数据库内网或外网连接地址。       | <li>192.168.00.00  <li>gz-cdb-xx123xx.mysql.qingcloud.link |
+|-h          |数据库内网或外网连接地址。       | <li>192.168.00.00  <li>gz-cdb-xx123xx.mysql.shanhe.link |
 |-P          |数据库端口号。                 |3306|
 |-u          |用户账号名称。                |test_mysql|
 |-p          |用户账号密码。<li> 为保障密码安全，`-p`一般空密码。在执行命令后输入密码，回车即可。<li>若需填写该参数，`-p`与密码之间不能有空格。            |test_mysql|

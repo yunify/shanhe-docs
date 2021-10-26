@@ -29,19 +29,14 @@ draft: false
 
 1. 获取 FTP 账号和密码。
    
-   1. 登录 QingCloud 管理控制台。
-   2. 选择**产品与服务** > **数据库与缓存** > **分布式数据库 RadonDB**，进入集群管理页面。
+   1. 登录管理控制台。
+   2. 选择**产品与服务** > **数据库与缓存** > **云数据库 RadonDB**，进入集群管理页面。
    3. 选择目标集群，点击目标集群 ID，进入集群详情页面。
    4. 选择**配置参数**页签，获取 `Ftp_user` 和 `Ftp_password` 参数信息。
-   
-   <img src="../../../_images/ftp_user_password.png" alt="FTP 账号和密码" style="zoom:50%;" />
 
 2. 获取 SQL 节点 IP 地址。
    
    选择**节点**页签，获取 SQL 节点 IP 信息。
-   
-   <img src="../../../_images/sql_ip.png" alt="SQL 节点 IP" style="zoom:50%;" />
-
 
 3. 下载日志。
 
@@ -54,5 +49,5 @@ draft: false
 **示例**
 
 ```bash
-wget ftp:// 192.168.0.53/audit --ftp-user=ftpuser --ftp-password=ftppassword
+wget ftp:// 172.168.0.53/audit --ftp-user=ftpuser --ftp-password=ftppassword
 ```

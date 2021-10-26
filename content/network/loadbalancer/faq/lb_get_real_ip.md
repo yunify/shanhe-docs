@@ -7,13 +7,11 @@ enableToc: falshu
 
 ## 方法一
 
-通过 HTTP 的头字段为 X-Forwarded-For，如图
-
-![image-2021051716362309](../../_images/lb_get_real_ip_01.png)
+修改监听器，设置**附加HTTP头字段**为**客户端真实IP，如下图：
 
 ![image-20210517163729044](../../_images/lb_get_real_ip_02.png)
 
-![image-20210517163753374](../../_images/lb_get_real_ip_03.png)
+然后点击**应用修改**。
 
 这个功能没有开启时，通过 access.log 查看到客户端的 IP 地址实际上是负载均衡器节点 IP ，一般为198.19.x.x，如图
 

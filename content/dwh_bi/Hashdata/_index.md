@@ -1,7 +1,7 @@
-<!-- ---
+---
 title: "HashData"
 linkTitle: "HashData"
-weight: 1
+weight: 02
 collapsible: true
 type: "product"
 
@@ -16,10 +16,7 @@ section2:
       content: 产品简介
       url: "intro/hashdata"
 
-
-
-
---- -->
+---
 
 <!-- type: "product" 这个参数表明这是一个产品index页面 -->
 <!-- section1 为产品index页面 主标题 副标题 video  video_img为视频图片  -->

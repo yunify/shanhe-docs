@@ -2,7 +2,7 @@
 title: "常见问题"
 description: 本小节主要介绍 RadonDB 常见问题。 
 keywords: radondb 常见问题,
-weight: 1
+weight: 01
 collapsible: false
 draft: false
 ---

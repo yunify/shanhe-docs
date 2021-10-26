@@ -1,8 +1,7 @@
 ---
 title: "ChronusDB 使用示例"
-description: 本小节主要介绍 QingCloud ChronuDB 创建数据库、创建表、查询数据、删除表等。 
+description: 本小节主要介绍 ChronuDB 创建数据库、创建表、查询数据、删除表等。 
 keywords: chronusdb 创建数据库,创建表,删除表,查询表 
-data: 2021-05-14T00:38:25+09:00
 weight: 1
 collapsible: false
 draft: false

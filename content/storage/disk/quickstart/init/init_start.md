@@ -4,7 +4,7 @@ description: Test description
 draft: false
 enableToc: false
 weight: 100
-keyword: 青云
+keyword: 山河
 ---
 
 硬盘挂载至云服务器后，需要登录云服务器对数据盘进行格式化、分区及创建文件系统等初始化操作，磁盘才可正常使用。

@@ -32,13 +32,13 @@ weight: 2
 - locale/en.json 英文翻译文件；
 - locale/zh-cn.json 中文翻译文件。
 
-config.json 中定义的参数，在青云QingCloud 控制台上由用户设置，控制台支持语言国际化，默认情况下，所有语言都会按配置项中的 label 和 description 展示，如果您想要适应不同的语言，需要在提交的应用中包含一个 locale 文件夹，并添加对应语言的翻译文件，如上所述。
+config.json 中定义的参数，在山河 控制台上由用户设置，控制台支持语言国际化，默认情况下，所有语言都会按配置项中的 label 和 description 展示，如果您想要适应不同的语言，需要在提交的应用中包含一个 locale 文件夹，并添加对应语言的翻译文件，如上所述。
 
 将以上几个文件压缩打包成 TAR，TAR.GZ，ZIP 或 TAR.BZ 格式并上传。
 
 镜像制作请参考：[镜像制作](/appcenter/dev-platform/cluster-developer-guide/image-build/build)
 
-我们提供了从简单到复杂的应用配置文件样例，详情请参看[云应用开发模板规范 - 完整版](/appcenter/dev-platform/cluster-developer-guide/specifications/specifications)，也提供一些[范例](https://github.com/search?q=topic%3Aqingcloud-sample-apps+org%3AQingCloudAppcenter&type=Repositories)供参考。
+我们提供了从简单到复杂的应用配置文件样例，详情请参看[云应用开发模板规范 - 完整版](/appcenter/dev-platform/cluster-developer-guide/specifications/specifications)，也提供一些[范例](https://github.com/search?q=topic%3Ashanhe-sample-apps+org%3AshanheAppcenter&type=Repositories)供参考。
 
 
 ### 测试应用版本
@@ -77,7 +77,7 @@ config.json 中定义的参数，在青云QingCloud 控制台上由用户设置�
 
 ### 下架版本
 
-下架需要工单联系青云管理员，提交下架申请并等待青云管理员审核，下架的应用版本因为还有用户在使用，所以对于这些用户提交的工单开发者依旧要给予及时的响应和服务。当所有版本都下架时该应用也会自动下架。
+下架需要工单联系山河管理员，提交下架申请并等待山河管理员审核，下架的应用版本因为还有用户在使用，所以对于这些用户提交的工单开发者依旧要给予及时的响应和服务。当所有版本都下架时该应用也会自动下架。
 
 ### 版本记录
 

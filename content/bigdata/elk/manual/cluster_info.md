@@ -1,6 +1,6 @@
 ---
 title: "集群信息"
-description: 本小节主要介绍如何查看 QingCloud ELK 集群信息。 
+description: 本小节主要介绍如何查看 ELK 集群信息。 
 keywords: ELK 集群信息
 weight: 10
 collapsible: false
@@ -9,13 +9,13 @@ draft: false
 
 ## 集群状态
 
-当 ELK 创建完成之后，您可以查看每个节点的`节点状态`和`服务状态`。
+当 ELK 创建完成之后，可以查看每个节点的`节点状态`和`服务状态`。
 
 - 当节点状态显示为`活跃`状态，表示该节点启动正常。
 
 - 当每个节点都启动正常后 ELK 集群显示为`活跃`状态，服务状态由`获取中`变为`活跃`状态，表示可正常使用 ELK 服务。
 
-![cluster_detail](../../images/cluster_detail.png)
+![cluster_detail](../../_images/cluster_detail.png)
 
 ## 节点状态
 
@@ -28,7 +28,7 @@ ELK 集群创建成功后，点击集群列表页面相应集群可查看集群�
 
 Elasticsearch 节点可提供远程扩展字典及热更新，Logstash 节点提供用户自定义插件能力，具体使用方法将在下文中详述。
 
-![elk-arch](../../images/elk-arch.png)
+![elk-arch](../../_images/elk-arch.png)
 
 ## 节点使用方法
 
@@ -96,9 +96,9 @@ curl -H "Content-Type: application/json" "$ES_IP:9200/access-log-2019.05.13/_sea
 
 ### Logstash 基本用法
 
-Logstash 可通过服务器端的数据处理流水线（pipeline），对来自多种数据源的数据进行转换后，发送到指定的多种目标（比如 Elasticsearch，QingStor 对象存储等）。
+Logstash 可通过服务器端的数据处理流水线（pipeline），对来自多种数据源的数据进行转换后，发送到指定的多种目标（比如 Elasticsearch，对象存储等）。
 
-![logstash-pipeline](../../images/logstash-pipeline.png)
+![logstash-pipeline](../../_images/logstash-pipeline.png)
 
 本应用默认开启了 HTTP Input 插件（运行在 Logstash 节点的 9700 端口），比如下面的命令通过此插件把数据（字符串）发送到 Logstash（随后经过处理， Logstash 最终把数据发送到 Elasticsearch）：
 
@@ -116,9 +116,9 @@ Kibana 是 Elasticsearch 的可视化工具，可通过浏览器访问。在浏�
 >
 > 如果显示 "Unable to fetch mapping. Do you have indices matching the pattern?"，可参考 [Logstash 基本用法](#ls-intro) 发送一些数据。
 
-![config_index](../../images/config_index.png)
+![config_index](../../_images/config_index.png)
 
-![config_index_2](../../images/config_index_2.png)
+![config_index_2](../../_images/config_index_2.png)
 
 index pattern 创建成功后可点击左侧栏的 `Discover` 菜单查看导入的日志。
 

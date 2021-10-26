@@ -25,8 +25,6 @@ weight: 4
 
 ![应用信息](/appcenter/dev-platform/license-guide/_image/app-info1.png)
 
-![应用信息](/appcenter/dev-platform/license-guide/_image/app-info2.png)
-
 概述：应用的概述会出现在AppCenter首页，字数请勿超过 30 字。
 
 应用描述: 应用的说明会出现在应用展示详情页面。

@@ -15,3 +15,4 @@ weight: 8
 必要时，开发者可以点击用户 ID 查询该用户名下的集群实例列表，或做一些过滤查询。
 
 ![用户详情](/appcenter/dev-platform/cluster-images/app_user.png)
+

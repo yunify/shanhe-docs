@@ -7,7 +7,7 @@ type: "product"
 
 section1:
   title: PolonDB
-  vice_title: PolonDB 是基于 PostgreSQL 和 Citus 构建的一款 HTAP 分布式关系型数据库。
+  vice_title: 云数据库PolonDB 是基于 PostgreSQL 和 Citus 构建的一款 HTAP 分布式关系型数据库。
 
 Section2:
   title: 用户指南

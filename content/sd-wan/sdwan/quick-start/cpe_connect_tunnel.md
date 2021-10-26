@@ -22,7 +22,7 @@ weight: 40
 
 创建 VPC 并配置 GRE 隧道， 配置 GRE 时需要设置 **目标网络** 为第三方网络。
 
-![](../../_images/intranet_router_gre.jpg)
+![](../../_images/intranet_router_gre.png)
 
 第三方网络配置 GRE 时需要配置目的网络为光盒网络，光盒网络即为第四步 “配置光盒” 中的 LAN 网段。
 
@@ -53,8 +53,7 @@ weight: 40
 点击创建好的接入点, 进入详情页即可配置光盒。 
 ![](../../_images/describe_wan_cpe.png)   
 
-通常, 配置 LAN 口, 设置好光盒的 LAN 网段、网关地址并启动 DHCP 即可。 
-![](../../_images/lan_config.png)
+通常, 配置 LAN 口, 设置好光盒的 LAN 网段、网关地址并**启动 DHCP 服务** 即可。 
 
     注意：配置之后需要点击"应用修改"以生效。
 
@@ -69,16 +68,16 @@ weight: 40
 
 点击创建好的边界路由器进入边界路由器详情页，然后点击**绑定 VPC 网络**，选择 即将与第三方网络建立隧道的 VPC 。
 
-![](../../_images/intranet_router_vpc.jpg)
+![](../../_images/intranet_router_vpc.png)
 
-![](../../_images/intranet_router_vpc_detail.jpg)
+![](../../_images/intranet_router_vpc_detail.png)
 
 第七步：配置边界路由器的静态路由。
 
 
 在边界路由器详情页，点击**添加路由**，目标网络指定为第三方网络，下一跳是绑定的 VPC ，提交配置。
 
-![](../../_images/intranet_router_static_route.jpg)
+![](../../_images/intranet_router_static_route.png)
 
     注意：配置之后需要点击"应用修改"以生效。
 

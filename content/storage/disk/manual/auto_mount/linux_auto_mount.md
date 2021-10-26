@@ -5,8 +5,12 @@ description: Test description
 draft: false
 enableToc: false
 weight: 10
-keyword: 青云
+keyword: 山河
 ---
+
+## 初始化待挂载的硬盘
+   
+   请参见[初始化硬盘](/storage/disk/quickstart/init/init_linux)
 
 ## 使用磁盘UUID方式
 
@@ -16,7 +20,8 @@ keyword: 青云
    # blkid /dev/sdb
    /dev/sdb: UUID="70fc59fe-d388-49ba-be56-b06cfbcc01ed" TYPE="ext4"
    ```
-
+   > 说明：
+   > - /dev/vdc：磁盘盘符，需根据实际情况进行修改；
 2. 使用以下命令，备份 fstab 配置文件。
 
    ```
@@ -26,16 +31,20 @@ keyword: 青云
 3. 执行以下命令，将配置内容写入 fstab 文件。
 
    ```
-   # echo "UUID=70fc59fe-d388-49ba-be56-b06cfbcc01ed /mnt  ext4 defaults     0   0" >>/etc/fstab
+   # echo "UUID=70fc59fe-d388-49ba-be56-b06cfbcc01ed /mnt  ext4 defaults  0 0" >>/etc/fstab
    ```
 
-   > 说明：此处请将UUID号“70fc59fe-d388-49ba-be56-b06cfbcc01ed”替换为步骤1中查询到的磁盘UUID号。
+   > 说明：
+   > - UUID：为步骤1查询出的磁盘uuid ，需根据实际情况进行修改；
+   > - /mnt：为磁盘挂载的目录，需根据实际情况进行修改；
+   > - ext4：为文件系统类型。
 
    ![图片](/storage/disk/quickstart/_images/image-1568774988226.png)
 
 4. 使用 `umount` 命令将挂载的磁盘卸载；再使用 mount -a 命令测试一下是否能自动挂载成功。
 
    ```
+   # umount -v /dev/sdb
    # mount -a
    ```
 

@@ -1,6 +1,6 @@
 ---
 title: "找回误操作丢失的数据"
-description: 本小节主要介绍如何使用 QingCloud PolonDB 恢复数据。 
+description: 本小节主要介绍如何使用PolonDB 恢复数据。 
 keywords: polondb 恢复数据
 weight: 15
 collapsible: false

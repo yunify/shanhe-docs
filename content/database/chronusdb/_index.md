@@ -7,7 +7,7 @@ type: "product"
 
 section1:
   title: ChronusDB
-  vice_title: ChronusDB 是一款基于 ClickHouse 定制的时序数据库产品。
+  vice_title: 云数据库ChronusDB 是一款基于 ClickHouse 定制的时序数据库产品。
 
 Section2:
   title: 用户指南

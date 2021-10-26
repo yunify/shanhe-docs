@@ -15,7 +15,7 @@ draft: false
 
 - 协调器节点的 IP 地址为 192.168.8.12。
 - Worker 节点的 IP 地址为 192.168.8.11 和 192.168.8.13。
-- 创建集群时设置的数据库名称、账户、密码分别为 `qingcloud`、`qingcloud` 和 `qingcloud1234`。
+- 创建集群时设置的数据库名称、账户、密码分别为 `shanhe`、`shanhe` 和 `shanhe1234`。
 
 ## 前提条件
 
@@ -26,43 +26,37 @@ draft: false
 使用初始用户密码验证 PolonDB 连接协调器节点和 Worker 节点连通性。
 
 ```shell
-psql -U qingcloud -h 192.168.8.12
+psql -U shanhe -h 192.168.8.12
 ```
 
-输入密码`qingcloud234`，测试连接正常，回显信息如图。
-
-![modify_polondb_passwd_3](../../../_images/modify_polondb_passwd_3.png)
+输入密码`shanhe234`，测试连接正常。
 
 ## 步骤二：修改账户密码
 
 1. 连接协调器节点。
 
    ```shell
-   $ psql -U qingcloud -h 192.168.8.12
+   $ psql -U shanhe -h 192.168.8.12
    ```
 
 2. 修改协调器节点密码。
 
    ```shell
-   $ alter user qingcloud password 'test123';
+   $ alter user shanhe password 'test123';
    ```
 
 3. 修改 Worker 节点密码。
 
    ```shell
-   $ select run_command_on_workers($qc$ alter user qingcloud password 'test123' $qc$); 
+   $ select run_command_on_workers($qc$ alter user shanhe password 'test123' $qc$); 
    ```
-
-   ![modify_polondb_passwd_4](../../../_images/modify_polondb_passwd_4.png)
 
 ## 步骤三：登录验证
 
 使用修改后的密码验证登录。
 
 ```shell
-$ psql -U qingcloud -h 192.168.8.12
+$ psql -U shanhe -h 192.168.8.12
 ```
 
-输入修改后密码 `test123`，测试连接正常，回显信息如图。
-
-![modify_polondb_passwd_5](../../../_images/modify_polondb_passwd_5.png)
+输入修改后密码 `test123`，测试连接正常。

@@ -1,5 +1,5 @@
 ---
-title: "ZooKeeper 服务"
+title: "大数据服务 ZooKeeper"
 linkTitle: "ZooKeeper"
 weight: 50
 collapsible: true
@@ -7,7 +7,7 @@ type: "product"
 
 section1:
   title: ZooKeeper
-  vice_title: ZooKeeper 是一个高可用的分布式数据管理与系统协调软件服务。
+  vice_title: 大数据服务 ZooKeeper 是一个高可用的分布式数据管理与系统协调软件服务。
 
 Section2:
   title: 用户指南
@@ -29,7 +29,7 @@ Section2:
       url: "quickstart/create_cluster/"
 
     - title: 操作指南
-      content: 学习上手管理 ZooKeeper 集群，以及如何使用 ZooKeeper 提供的相关服务等。
+      content: 学习上手管理 ZooKeeper 集群。
       url: "manual/cluster_info/"
 
 section3:

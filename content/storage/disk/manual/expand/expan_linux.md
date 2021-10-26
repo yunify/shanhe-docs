@@ -5,7 +5,7 @@ description: Test description
 draft: false
 enableToc: false
 weight: 20
-keyword: 青云
+keyword: 山河
 ---
 
 ## 扩展云硬盘容量
@@ -13,9 +13,9 @@ keyword: 青云
 1. 登录到云服务器，执行 `umount` 命令将挂载的目录卸载，然后登录到控制台，将主机与硬盘解除绑定，直至硬盘状态为可用。
 
 
-2. 在云硬盘列表右键点击需要扩容的硬盘，选择**扩容**，弹出**扩容硬盘**界面。
+2. 在硬盘列表右键点击需要扩容的硬盘，选择**扩容**，弹出**扩容硬盘**界面。
 
-   <img src="../../_images/create_basic_expansion.png" alt="扩容硬盘" style="zoom:70%;" />
+   <img src="../../_images/expan_linux_1.png" alt="扩容硬盘" style="zoom:70%;" />
 
 3. 拖动容量滑块或直接输入容量值，点击**提交**即可。
 

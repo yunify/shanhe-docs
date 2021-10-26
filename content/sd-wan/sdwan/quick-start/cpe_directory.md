@@ -50,7 +50,7 @@ weight: 60
 
 ![](../../_images/cpe_directory5.png)
 
-![](../../_images/cpe_directory6.jpg)
+![](../../_images/cpe_directory6.png)
 
 点击**确认**，出现目录下所在光盒以及对应的网络。
 
@@ -59,24 +59,16 @@ weight: 60
 
 点击**确认**后，可以看到路由策略已被添加，然后点击右上角的**应用修改**，配置路由策略完成。
 
-![](../../_images/cpe_directory7.jpg)
+<img src="../../_images/cpe_directory7.png" style="zoom:50%;" />
 
 2） 单独添加光盒网络到内网路由策略
 
 进入光盒目录界面，右键点击光盒，点击**添加内网路由策略**。
 
-![](../../_images/cpe_directory8.jpg)
+![](../../_images/cpe_directory8.png)
 
 点击**选择 VPC 网络**，选择可用区下，网关接入点的边界路由器所关联的私有网络，提交内网路由策略。
 
-![](../../_images/cpe_directory9.jpg)
-
-![](../../_images/cpe_directory10.jpg)
-
-![](../../_images/cpe_directory11.jpg)
+<img src="../../_images/cpe_directory9.png" style="zoom:50%;" />
 
 提交成功会提示进入 VPC 页面，点击**前往 VPC 页面**后，点击右上角的**应用修改**，配置路由策略完成。
-
-![](../../_images/cpe_directory12.jpg)
-
-![](../../_images/cpe_directory13.jpg)

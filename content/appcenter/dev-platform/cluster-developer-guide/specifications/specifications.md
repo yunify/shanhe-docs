@@ -24,7 +24,7 @@ weight: 6
   
   类型替换策略
   
-config.json 定义用户在 QingCloud 控制台部署应用时需要填写的表单。控制台支持语言国际化，默认情况下，所有语言都会按配置项中的 label 和 description 展示表单。另外，cluster.json.mustache 文件中的 custom service、监控项等，会使用 key 作为国际化展示。如果您想要适应不同的语言，需要在提交的应用中包含一个 locale 文件夹，并添加对应语言的翻译文件，如：
+config.json 定义用户在 shanhe 控制台部署应用时需要填写的表单。控制台支持语言国际化，默认情况下，所有语言都会按配置项中的 label 和 description 展示表单。另外，cluster.json.mustache 文件中的 custom service、监控项等，会使用 key 作为国际化展示。如果您想要适应不同的语言，需要在提交的应用中包含一个 locale 文件夹，并添加对应语言的翻译文件，如：
   
 * locale/en.json
 
@@ -312,12 +312,12 @@ vxnet|创建应用时所在网络ID
 
 | 参数| 描述 |
 | --- | --- |
-external\_service|此应用依赖外部应用信息，名称可以任意定义，即可以命名为 zk_service 表示依赖 ZooKeeper，用户可以选择在同一 VPC 中满足 limits 限定条件的集群作为此应用依赖的服务。<br>limits 限定条件可以指定应用所依赖服务的 app id 及 app version。<br>`allowed_operations`　定义了在集群创建完成后，用户可对集群依赖进行的操作。<br>`add` 表示用户可以在集群创建后添加外部依赖集群，即使现在仍然有集群，仍然可添加<br>`modify` 表示用户可以对集群中现有的依赖集群进行替换，替换成允许的应用版本的其它集群<br> `delete` 表示用户可以删除集群中现有的依赖集群，如果未定义 `add` 操作，则删除之后不能再添加回来
+external\_service|此应用依赖外部应用信息，名称可以任意定义，即可以命名为 zk_service 表示依赖 大数据服务ZooKeeper，用户可以选择在同一 VPC 中满足 limits 限定条件的集群作为此应用依赖的服务。<br>limits 限定条件可以指定应用所依赖服务的 app id 及 app version。<br>`allowed_operations`　定义了在集群创建完成后，用户可对集群依赖进行的操作。<br>`add` 表示用户可以在集群创建后添加外部依赖集群，即使现在仍然有集群，仍然可添加<br>`modify` 表示用户可以对集群中现有的依赖集群进行替换，替换成允许的应用版本的其它集群<br> `delete` 表示用户可以删除集群中现有的依赖集群，如果未定义 `add` 操作，则删除之后不能再添加回来
 resource\_group|用来说明当前这个集群支持哪些配置组合，必须定义range。<br>在 role 下的 cpu/memory/count/instance_class/volume_size/volume_class/replica 里面可以定义 resource_group,<br>表示每个 resource_group 对应的值。
 
 
 ### cluster.json.mustache
-该文件是在用户创建应用时需要传给青云 API 的参数，这些信息的具体值是来自用户在 UI 上根据 config.json 定义的变量的输入，每个字段的具体描述如下：
+该文件是在用户创建应用时需要传给山河 API 的参数，这些信息的具体值是来自用户在 UI 上根据 config.json 定义的变量的输入，每个字段的具体描述如下：
 
 >注： 右上角带3个星号(*)表示该项有 sibling (兄弟)节点，开发者提交的时候也要去掉这个标记。advanced_actions 的内容可以添加在国际化中，在控制台用户操作时展示。
 
@@ -348,7 +348,7 @@ resource\_group|用来说明当前这个集群支持哪些配置组合，必须�
         "container": {
             "type": "kvm",
             "image": "img-skhdp16m",
-            "zone": "pek3a"
+            "zone": "jn1a"
         },       
         "cpu": {{cluster.role_name.cpu}},
         "cpu_model": {{cluster.role_name.cpu_model}},
@@ -591,7 +591,7 @@ volume、loadbalancer、eip、security_group、snapshot、nic。
 
 #### links
 
-新建应用可能会依赖外部应用，比如 Kafka 依赖 ZooKeeper，依赖名称可以任意命名，不一定是 external\_service，比如命名为 zk\_service；可以依赖多个外部应用，非必填项。
+新建应用可能会依赖外部应用，比如消息队列消息队列Kafka 依赖 大数据服务ZooKeeper，依赖名称可以任意命名，不一定是 external\_service，比如命名为 zk\_service；可以依赖多个外部应用，非必填项。
 
 > 集群创建完成后，可对集群的依赖进行修改。用户可进行的操作在 `config.json` 外部依赖 `allowed_operations` 定义   
 > `add` 表示用户可以在集群创建后添加外部依赖集群，即使现在仍然有集群，仍然可添加   
@@ -648,7 +648,7 @@ zone|镜像制作时所属区域 (如果是 docker 镜像，则无需填写该�
 
 ##### cpu_model
 
-节点的 CPU 体系结构，可选值范围：Westmere、SandyBridge、IvyBridge、Haswell、Broadwell、Skylake、CascadeLake。 [查看对应的 CPU 指令集](https://docs.qingcloud.com/product/computing/cpu_instruction_set)
+节点的 CPU 体系结构，可选值范围：Westmere、SandyBridge、IvyBridge、Haswell、Broadwell、Skylake、CascadeLake。 [查看对应的 CPU 指令集](https://docs.shanhe.com/product/computing/cpu_instruction_set)
 
 ##### memory
 
@@ -661,7 +661,7 @@ zone|镜像制作时所属区域 (如果是 docker 镜像，则无需填写该�
 
 ##### gpu
 
-每个节点 gpu 个数，可选值范围：0, 1, 2, 4, 8。目前仅在 北京3区-A(pek3a)，北京3区(pek3b，pek3c，pek3d) 和 上海1区(sh1a) 可创建带 gpu 的集群, 具体使用方式参考[GPU 云服务器](/compute/vm/manual/gpu_instance/)
+每个节点 gpu 个数，可选值范围：0, 1, 2, 4, 8。目前仅在 济南1区-A(jn1a)，济南1区(jn1b，jn1c，jn1d) 和 上海1区(sh1a) 可创建带 gpu 的集群, 具体使用方式参考[GPU 云服务器](/compute/vm/manual/gpu_instance/)
 
 ##### gpu\_class
 
@@ -681,13 +681,13 @@ size|每个节点数据容量大小，单位 GiB，注：是单个节点总容�
 mount\_point|每个节点数据盘挂载路径，可以是单个数据盘， 也可以有多个数据盘，多个数据盘以数组形式表示，如 "mount\_point": ["/data1","/data2"]。如果image是基于 Linux 操作系统，默认挂载路径为 /data; 如果 image 是基于 Windows 操作系统，默认挂载路径是 d:, 挂载路径是盘符（后面须带冒号，可选的盘符名从 d 开始，z 结束）。目前最大支持3块数据盘挂载到节点上。请注意，如果挂载了多块数据盘，config.json 对应的 volume\_size 部分，最好设置一下 min，step 这 2 个值，以配置创建集群、扩容集群时的范围和步长。例如挂载盘数为3，可以指定 `{min: 30, step: 30}` 。
 mount\_options|描述数据盘的挂接方式，默认值 ext4 是 defaults,noatime，xfs 是 rw,noatime,inode64,allocsize=16m。
 filesystem|数据盘文件系统类型。如果 image 是基于 Linux 操作系统，目前支持 ext4 和 xfs，默认为 ext4; 如果 image 是基于 Windows 操作系统，目前支持 ntfs, 默认为 ntfs。
-class|数据盘类型，支持 0、2、3、5、6、100、200 其中 0 表示性能盘，3 表示超高性能盘，2 表示容量盘，5 表示 NeonSAN，6 表示 NeonSAN 容量盘，100 表示基础型硬盘，200 表示企业性硬盘。可选项，如果不写此项，数据盘类型和云服务器类型一样，即性能云服务器挂载性能硬盘，超高性能云服务器挂载超高性能硬盘，基础型云服务器挂载基础型硬盘，企业型云服务器和专业增强型云服务器挂载企业型硬盘。容量盘、NeonSAN、NeonSAN 容量盘可以挂载在不同类型云服务器上，容量盘是通过网络协议挂载的，所以性能相对来说比较差，通常来说如果不是提供必须基于容量盘的服务，最好去掉这个选项，大容量存储可以考虑 [NeonSAN](https://www.qingcloud.com/products/qingstor-neonsan/) 或者[对象存储 QingStor](/storage/object-storage/intro/object-storage/)。
+class|数据盘类型，支持 0、2、3、5、6、100、200 其中 0 表示性能盘，3 表示超高性能盘，2 表示容量盘，5 表示 NeonSAN，6 表示 NeonSAN 容量盘，100 表示基础型硬盘，200 表示企业性硬盘。可选项，如果不写此项，数据盘类型和云服务器类型一样，即性能云服务器挂载性能硬盘，超高性能云服务器挂载超高性能硬盘，基础型云服务器挂载基础型硬盘，企业型云服务器和专业增强型云服务器挂载企业型硬盘。容量盘、NeonSAN、NeonSAN 容量盘可以挂载在不同类型云服务器上，容量盘是通过网络协议挂载的，所以性能相对来说比较差，通常来说如果不是提供必须基于容量盘的服务，最好去掉这个选项，大容量存储可以考虑 [NeonSAN](https://www.shanhe.com/products/qingstor-neonsan/) 或者[对象存储 对象存储服务OIS](/storage/object-storage/intro/object-storage/)。
 
 > 建议值：100, 200。其中 0, 3 这两种云服务器类型，会逐步做下架处理，故不建议使用。
 
 ##### replica
 
-此类节点每个节点的副本个数，这是给分片式 (即多主多从，如 redis cluster) 分布式系统使用的功能，定义每个分片的 master 有多少个 replica。
+此类节点每个节点的副本个数，这是给分片式 (即多主多从，如 云数据库Redis Cluster) 分布式系统使用的功能，定义每个分片的 master 有多少个 replica。
 这类应用需要指定 role 名称比如 master，副本节点的 role 系统会自动在 master 添加 -replica 后缀，如 master-replica。
 因此开发者在定义节点角色名称时不能定义后缀为 "-replica"，这是一个系统保留命名规则。replica 为非必填项。
 
@@ -717,11 +717,11 @@ class|数据盘类型，支持 0、2、3、5、6、100、200 其中 0 表示性�
 
 ##### passphraseless　
 
-生成密钥信息，即提供此类节点能无密码登录其它节点的可能性，但青云调度系统只负责把此信息注册到 metadata service 中，开发者自行去获取密钥配置云服务器。目前支持 ssh-dsa, ssh-rsa，非必填项。
+生成密钥信息，即提供此类节点能无密码登录其它节点的可能性，但山河调度系统只负责把此信息注册到 metadata service 中，开发者自行去获取密钥配置云服务器。目前支持 ssh-dsa, ssh-rsa，非必填项。
 
 ##### vertical\_scaling\_policy
 
-配置纵向伸缩时的操作策略，目前支持：sequential 和 parallel，默认是 parallel 即并行操作，非必填项。比如 ZooKeeper 在扩容时希望不影响对外服务，可设置该值为 sequential，串行重启。
+配置纵向伸缩时的操作策略，目前支持：sequential 和 parallel，默认是 parallel 即并行操作，非必填项。比如 大数据服务ZooKeeper 在扩容时希望不影响对外服务，可设置该值为 sequential，串行重启。
 
 ##### user_access　
 
@@ -737,11 +737,11 @@ class|数据盘类型，支持 0、2、3、5、6、100、200 其中 0 表示性�
 
 ##### server\_id\_upper\_bound
 
-节点的 index 的上限，从1开始记起，有些服务如 ZooKeeper 要求这个 index (myid) 必须控制在某一个范围内。缺省没有上限，非必填项。
+节点的 index 的上限，从1开始记起，有些服务如 大数据服务ZooKeeper 要求这个 index (myid) 必须控制在某一个范围内。缺省没有上限，非必填项。
 
 ##### services　
 
-应用本身服务的初始化、启停等指令，青云 AppCenter 调度系统会发送这些命令到指定节点执行，非必填项。
+应用本身服务的初始化、启停等指令，山河 AppCenter 调度系统会发送这些命令到指定节点执行，非必填项。
 
 ###### init　
 
@@ -861,7 +861,7 @@ type |custom 表示这个服务是自定义的， 自定义的名字 (即 key，
 
 ##### agent\_installed
 
-如果用户想利用这套框架管理纯云服务器集群，则可以不用装青云提供的 App agent，同时需要指定这个参数为 false，否则系统会提示错误，该参数默认为 true。
+如果用户想利用这套框架管理纯云服务器集群，则可以不用装山河提供的 App agent，同时需要指定这个参数为 false，否则系统会提示错误，该参数默认为 true。
 
 ##### custom\_metadata
 
@@ -874,7 +874,7 @@ type |custom 表示这个服务是自定义的， 自定义的名字 (即 key，
 
 #### env
 
-应用参数配置，比如 ZooKeeper的 zoo.cfg 里的参数配置等。
+应用参数配置，比如 大数据服务ZooKeeper的 zoo.cfg 里的参数配置等。
 
 #### advanced\_actions
 
@@ -887,7 +887,7 @@ type |custom 表示这个服务是自定义的， 自定义的名字 (即 key，
 
 #### endpoints
 
-应用可定义 endpoints 供第三方使用，服务名称可以自定义，但建议使用通用的名称比如 client，manager 等，这样第三方应用使用的时候更方便一些，被第三方应用使用的可能性更大一些。详细的服务信息必须包括 port，但 protocol 非必须项，即可以不提供 protocol 信息。port 除可以是整数端口外，也可以是一个指向 env 的变量，如 "port":"env.port"或 "port":"role_name.env.port"，这样用户在更新这个变量的时候会自动更新其关联的 endpoint 端口。如果您的应用是一个大家熟知的且 enpoint 不会被修改，可以省略这一定义，比如 ZooKeeper，通用端口是 2181，所以可以省略掉。
+应用可定义 endpoints 供第三方使用，服务名称可以自定义，但建议使用通用的名称比如 client，manager 等，这样第三方应用使用的时候更方便一些，被第三方应用使用的可能性更大一些。详细的服务信息必须包括 port，但 protocol 非必须项，即可以不提供 protocol 信息。port 除可以是整数端口外，也可以是一个指向 env 的变量，如 "port":"env.port"或 "port":"role_name.env.port"，这样用户在更新这个变量的时候会自动更新其关联的 endpoint 端口。如果您的应用是一个大家熟知的且 enpoint 不会被修改，可以省略这一定义，比如 大数据服务ZooKeeper，通用端口是 2181，所以可以省略掉。
 
 #### reserved\_ips
 
@@ -1031,7 +1031,7 @@ latest|取监控项在统计区间内采集数据的最新值
 此配置文件可以根据区域的不同，替换用户所能部署的资源情况。
 ```json
 {
-    "pek3b": {
+    "jn1b": {
         "instance_class": [{
             "src": "0",
             "dst": 101
@@ -1056,7 +1056,7 @@ latest|取监控项在统计区间内采集数据的最新值
 }
 ```
 
-上述配置，在 pek3b 部署当前版本的集群时，配置包中 instance_class 为 0 值时，会自动替换为 101 展示和部署。
+上述配置，在 jn1b 部署当前版本的集群时，配置包中 instance_class 为 0 值时，会自动替换为 101 展示和部署。
 > 一般情况无需此文件
 
 ### 数据类型
@@ -1066,7 +1066,7 @@ config.json 文件里对每个变量需要定义其类型、取值范围、默�
 | 参数 | 参数 | 描述 |
 | --- | --- | --- |
 type|\-|变量数据类型，支持：integer、boolean、string、number (浮点数)、array、service、loadbalancer、password、accesskey、vxnet、eip。
-\-|service|新应用可能会依赖外部应用，比如 Kafka 依赖 ZooKeeper，应用使用该类型表示。
+\-|service|新应用可能会依赖外部应用，比如消息队列消息队列Kafka 依赖 大数据服务ZooKeeper，应用使用该类型表示。
 \-|loadbalancer|负载均衡器，可以使用该类型表示，定义时需要同时定义负载均衡器后端服务端口参数：port，比如搭建的 HTTP 的 web server，可以指定 port 为 80。需要使用负载均衡器监听多个 port 时，可将 port 定义为数组，如 port: \[80,443\] 
 \-|password|可在 env 或 service_params 变量中使用，界面会用密码形式显示输入。
 \-|accesskey|可在 env 变量中使用，用户选择当前账号下的 API 密钥 ID，系统会将其对应密钥一并注册到 metadata service，参见[Metadata 服务](/appcenter/dev-platform/cluster-developer-guide/metadata/metadata-service#env)以及[如何使用环境变量里的accesskey类型数据](/appcenter/dev-platform/faq/cluster-faqs#34-如何使用环境变量里的accesskey类型数据)。

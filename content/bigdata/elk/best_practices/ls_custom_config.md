@@ -7,6 +7,7 @@ collapsible: false
 draft: false
 ---
 
+
 本小节主要介绍 Logstash 如何自定义启动配置文件。
 
 ## 操作步骤
@@ -20,10 +21,3 @@ draft: false
 > 如显示 `[=[Restart]=] Can't lock the file.`，则表示其他操作正在执行，请稍后再次尝试重启命令；
 >
 > 如果重启失败，可查看位于 `/data/logstash/logs/logstash-plain.log` 和 `/var/log/syslog` 的日志文件排查原因。
-
-> **说明**：
->
-> `ELK 5.5.1 - QingCloud 1.2.0` 及以前版本请使用如下命令：
->
-> `sudo docker exec -it $(docker ps -q) restart.sh`
-
