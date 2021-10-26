@@ -3,7 +3,7 @@ title: "rabbitmq_management 使用示例"
 description: test
 weight: 12
 draft: false
-keyword:  QingCloud, RabbitMQ, rabbitmq,  消息队列服务, 消息中间件
+keyword:   RabbitMQ, rabbitmq,  消息队列服务, 消息中间件
 ---
 
 ##  创建一个队列
