@@ -14,8 +14,7 @@ draft: false
 > `Redis 5.0.8 - ShanHe 3.0.0` 允许单节点增加至三节点或多节点，最高支持九节点，可以满足您大量读的需求
 
 ![伸缩节点](../../_images/add_node_1.png)
-
-![伸缩节点](../../_images/add_node_2.png)    
+   
 
 ## 删除节点
 
@@ -33,8 +32,5 @@ draft: false
 
 ![伸缩节点](../../_images/delete_node_1.png)
 
-![伸缩节点](../../_images/delete_node_2.png)
-
-![伸缩节点](../../_images/delete_node_3.png)
 
 ![伸缩节点](../../_images/delete_node_stat.png)

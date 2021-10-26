@@ -2,7 +2,6 @@
 title: "快速创建 Redis Standalone 实例"
 description: 本小节主要介绍如何快速创建 Redis Standalone 实例。 
 keywords: redis standalone 实例创建
-data: 2021-05-14T00:38:25+09:00
 weight: 1
 collapsible: false
 draft: false
@@ -27,7 +26,7 @@ draft: false
 
 ### 配置节点
 
-选择节点类型、核数、内存、磁盘大小和数量（后续可以随时调整），单节点集群仅供测试使用，正式环境建议使用三节点保证高可用。
+选择主机类型、核数、内存、磁盘大小和数量（后续可以随时调整），单节点集群仅供测试使用，正式环境建议使用三节点保证高可用。
 
 ![配置节点](../../_images/base_step_2.png) 
 
@@ -53,5 +52,5 @@ draft: false
 
 ### 用户协议确认
 
-阅读并同意 AppCenter 用户协议后，即可马上部署应用。
+阅读并同意 AppCenter 用户协议后，点击**提交**即可马上部署应用。
 
