@@ -10,7 +10,7 @@ weight: 10
 
 如果 VPC 选择 172.30.0.0/16，需要修改 Docker 默认网段，避免冲突。
 
-> ![集群参数](../../_images/cluster_params.png)
+![集群参数](../../_images/cluster_params.png)
 
 | 参数 | 默认值
 | --- | ---
@@ -20,7 +20,7 @@ weight: 10
 
 [安装 KubeSphere] 参数在创建集群后无法修改，请在创建集群前规划好集群用途。
 
-> ![集群参数](../../_images/cluster_params.png)
+![集群参数](../../_images/cluster_params.png)
 
 | 参数 | 默认值
 | --- | ---
@@ -41,23 +41,23 @@ spec:
   # ...
 ```
 
-> 当前集群支持的存储类型可通过 KubeSphere 页面 `http://ks-console-ip:port/infrastructure/storageclasses` 查看。
->
-> ![存储类型](../../_images/sc.png)
+当前集群支持的存储类型可通过 KubeSphere 页面 `http://ks-console-ip:port/infrastructure/storageclasses` 查看。
+
+![存储类型](../../_images/sc.png)
 
 ## 镜像仓库连通性
 
 k8s 上的工作负载需要拉取 Docker 镜像，请确保集群所在私网能够访问相应的镜像仓库。
 
-> 如果使用公网镜像仓库，比如 docker.io，请确保 VPC 绑定了公网 IP。  
+如果使用公网镜像仓库，比如 docker.io，请确保 VPC 绑定了公网 IP。  
 
-> 如果使用私有镜像仓库，比如青云提供的 [Harbor 镜像仓库](https://docs.qingcloud.com/product/container/harbor.html)，请确保 QKE 所有节点可以访问到 Harbor 的负载均衡器地址。注意：如果 Harbor 后端使用的是 QingStor 对象存储，还要确保 QKE 所有节点可以访问到 QingStor 对象存储。
+如果使用私有镜像仓库，比如山河提供的[容器服务镜像仓库](/container/harbor/)，请确保 QKE 所有节点可以访问到 Harbor 的负载均衡器地址。注意：如果 Harbor 后端使用的是 QingStor 对象存储，还要确保 QKE 所有节点可以访问到 QingStor 对象存储。
 
 ## 防火墙
 
 基础网络部署请将集群缺省防火墙开通 6443 和节点端口范围（默认为 30000-32767，请以创建集群时选择的范围为准）。
 
-> ![集群参数](../../_images/cluster_params.png)
+![集群参数](../../_images/cluster_params.png)
 
 | 参数 | 默认值
 | --- | ---
@@ -66,7 +66,9 @@ k8s 上的工作负载需要拉取 Docker 镜像，请确保集群所在私网�
 ## 单节点集群
 
 从 `QKE v2.0.0` 版本起支持创建单节点集群（只创建一个主节点），方便用户快速测试使用。用户可以随时增加工作节点对集群进行扩容（无法增加主节点）。
-> 注意：默认情况下 QKE 执行 KubeSphere 最小化安装（只包含监控组件），如需开启全部组件，需要创建工作节点（云平台挂盘限制，每台云服务器最多挂载 10 块普通硬盘，而完整安装 KubeSphere 共需要 14 块硬盘）。
+> **注意**
+>
+>默认情况下 QKE 执行 KubeSphere 最小化安装（只包含监控组件），如需开启全部组件，需要创建工作节点（云平台挂盘限制，每台云服务器最多挂载 10 块普通硬盘，而完整安装 KubeSphere 共需要 14 块硬盘）。
 
 ## 增删主节点
 
@@ -74,9 +76,13 @@ k8s 上的工作负载需要拉取 Docker 镜像，请确保集群所在私网�
 
 ## 删除工作节点失败
 
-删除工作节点时，QKE 会首先执行命令 `kubectl drain nodes --ignore-daemonsets --timeout=2h` 从而确保工作负载都成功迁移到其他节点，然后再执行删除节点的操作。有时此操作会因为一些原因失败，比如工作负载使用了本地资源（文件系统等），或者其他节点负载较高不足以接纳所有工作负载，此时建议人工执行 `kubectl drain nodes` 命令查看具体失败原因从而可以采取相应的措施。
+删除工作节点时，QKE 会首先执行命令 `kubectl drain nodes --ignore-daemonsets --timeout=2h` 从而确保工作负载都成功迁移到其他节点，然后再执行删除节点的操作。
 
-> **注意**：请不要人工执行 `kubectl delete nodes` 命令以免造成无法恢复的结果。
+有时此操作会因为一些原因失败，比如工作负载使用了本地资源（文件系统等），或者其他节点负载较高不足以接纳所有工作负载，此时建议人工执行 `kubectl drain nodes` 命令查看具体失败原因从而可以采取相应的措施。
+
+> **注意**
+>
+>请不要人工执行 `kubectl delete nodes` 命令以免造成无法恢复的结果。
 
 ## 删除节点后挂载存储卷的容器组迁移失败
 
