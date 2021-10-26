@@ -14,13 +14,13 @@ weight: 5
 
 ## 操作步骤
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，选择**产品与服务** > **网络** > **负载均衡器**，进入 **负载均衡器**页面。
+1. 登录[管理控制台](https://console.shanhe.com/login)，选择**产品与服务** > **网络** > **负载均衡器**，进入 **负载均衡器**页面。
 
 2. 点击**服务器证书**页签，然后点击**创建**。
 
 3. 填写证书信息，点击**提交**。
 
-   <img src="/container/harbor/_images/faq05_create_cert.png" alt="cert" style="zoom:40%;" />
+   <img src="/container/harbor/_images/faq05_create_cert.png" alt="cert" />
 
 4. **可选**：回到**负载均衡器**页面，点击**创建**，创建一个负载均衡器。若已创建，请略过此步骤。
 

@@ -16,14 +16,6 @@ weight: 10
 
 为了保障数据安全， QKE 集群需要运行在受管私有网络中。若还未创建 VPC 和私有网络，可根据页面提示创建一个，也可以参考[创建 VPC](//network/vpc/manual/vpcnet/10_create_vpc/) 提前创建好。
 
-![创建依赖的网络资源](../../_images/create_network.png)
-
-![创建 VPC](../../_images/create_vpc.png)
-
-![创建私有网络](../../_images/create_vxnet.png)
-
-![私有网络加入 VPC](../../_images/join-vpc-vxnet.png)
-
 > **注意**：
 >
 > 受管私有网络需要加入 VPC，并开启 DHCP 服务（默认开启）。如果 VPC 选择的网段是 `172.30.0.0/16`，那需要修改 docker 默认网段，避免冲突。 
@@ -34,7 +26,7 @@ weight: 10
 
 #### API 密钥
 
-存储、网络等插件通过 API 密钥与云平台交互并创建资源，需要通过 [API 密钥管理页面](https://console.qingcloud.com/access_keys/) 预先创建好。
+存储、网络等插件通过 API 密钥与云平台交互并创建资源，需要进入**访问与鉴权** > **API 密钥管理**页面预先创建好。
 
 ![设置 API 密钥](../../_images/create_access_key.png)
 
@@ -42,13 +34,13 @@ weight: 10
 
 请确保至少 230GB、14 块硬盘配额。硬盘的默认类型与 QKE 集群云服务器类型一致。如果配额不足请通过工单申请。
 
-#### 负载均衡器和防火墙
+#### 负载均衡器和安全组
 
-当要创建高可用的集群（三个主节点）时，需要 1 个负载均衡器配额，1 个防火墙配额。
+当要创建高可用的集群（三个主节点）时，需要 1 个负载均衡器配额，1 个安全组配额。
 
-当要通过 EIP 暴露 KubeSphere Console 时，需要 1 个额外的负载均衡器配额，1 个额外的防火墙配额。
+当要通过 EIP 暴露 KubeSphere Console 时，需要 1 个额外的负载均衡器配额，1 个额外的安全组配额。
 
-当两者都满足时，共需要2个负载均衡器配额，2个防火墙配额
+当两者都满足时，共需要2个负载均衡器配额，2个安全组配额
 
 如果配额不足请通过工单申请。
 
@@ -73,7 +65,7 @@ weight: 10
 
 > **说明**：
 >
-> 对于有多种工作节点的集群，部署有挂盘的工作负载时要选择正确的存储类型，请参考 [云服务器类型与存储类型](#instance-storage-class)。
+> 对于有多种工作节点的集群，部署有挂盘的工作负载时要选择正确的存储类型，请参考[云服务器类型与存储类型](../../faq/main/#云服务器类型与存储类型)。
 
 #### 网络设置
 
@@ -87,7 +79,7 @@ weight: 10
 
 ##### etcd 服务
 
-k8s 集群使用 etcd 作为后端存储，建议使用青云提供的 [etcd 服务](https://console.qingcloud.com/apps/app-fdyvu2wk) 单独部署和管理，以获得更好的可用性和容错性。
+k8s 集群使用 etcd 作为后端存储，建议使用 [etcd 服务](/middware/etcd/) 单独部署和管理，以获得更好的可用性和容错性。
 
 > **说明**：
 >
@@ -97,11 +89,11 @@ k8s 集群使用 etcd 作为后端存储，建议使用青云提供的 [etcd 服
 
 > **注意**：
 >
-> 内置 etcd 会占用 QKE 主节点的资源并无法增删节点，生产环境建议独立部署 [etcd 服务](https://console.qingcloud.com/apps/app-fdyvu2wk)。
+> 内置 etcd 会占用 QKE 主节点的资源并无法增删节点，生产环境建议独立部署 [etcd 服务](/middware/etcd/) 。
 
 ##### ELK 服务
 
-QKE 集群的日志组件使用 [Elasticsearch](https://github.com/elastic/elasticsearch) 作为后端存储，建议使用青云提供的 [ELK 服务](https://console.qingcloud.com/apps/app-p6au3oyq) 单独部署和管理，以获得更好的可用性和可维护性。
+QKE 集群的日志组件使用 [Elasticsearch](https://github.com/elastic/elasticsearch) 作为后端存储，建议使用青云提供的 [ELK 服务](/bigdata/elk/)单独部署和管理，以获得更好的可用性和可维护性。
 
 > **说明**：
 >
@@ -111,7 +103,7 @@ QKE 集群的日志组件使用 [Elasticsearch](https://github.com/elastic/elast
 
 > **注意**：
 >
-> 内置 Elasticsearch 会占用 k8s 集群的资源并依赖 k8s 进行管理，在 k8s 集群发生故障期间 Elasticsearch 可能无法正常工作。生产环境建议独立部署 [ELK 服务](https://console.qingcloud.com/apps/app-p6au3oyq) 。
+> 内置 Elasticsearch 会占用 k8s 集群的资源并依赖 k8s 进行管理，在 k8s 集群发生故障期间 Elasticsearch 可能无法正常工作。生产环境建议独立部署 [ELK 服务](/bigdata/elk/)。
 
 #### 服务环境参数设置
 
@@ -122,7 +114,7 @@ QKE 集群的日志组件使用 [Elasticsearch](https://github.com/elastic/elast
  </tr>
  <tr>
    <td>API 密钥</td>
-   <td>QingCloud IaaS API 密钥 (https://console.qingcloud.com/access_keys/)，此密钥将被用来创建云平台的资源，比如负载均衡器、PV 挂盘等</td>
+   <td>此密钥将被用来创建云平台的资源，比如负载均衡器、PV 挂盘等</td>
   </tr>
    <tr>
    <td>安装 KubeSphere</td>
@@ -356,4 +348,4 @@ kubectl get pods --all-namespaces
 
 ## 删除
 
-用户删除集群可以在 APPCenter 集群列表页选中待删除集群，在更多操作中选择删除，可删除 QKE 集群。集群删除后会进入回收站，用户可以到回收站恢复或永久删除集群，回收站中资源保存 2 小时之后会自动永久删除。集群永久删除后用户可手动删除 QKE 集群残留资源，如硬盘、负载均衡器、防火墙。
+用户删除集群可以在 APPCenter 集群列表页选中待删除集群，在更多操作中选择删除，可删除 QKE 集群。集群删除后会进入回收站，用户可以到回收站恢复或永久删除集群，回收站中资源保存 2 小时之后会自动永久删除。集群永久删除后用户可手动删除 QKE 集群残留资源，如硬盘、负载均衡器、安全组。

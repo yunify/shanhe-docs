@@ -1,6 +1,6 @@
 ---
-title: "QKE 服务"
-description: "QKE 服务"
+title: "容器集群服务 QKE"
+description: "容器集群服务 QKE"
 draft: false
 enableToc: false
 keyword: Kubernetes, KubeSphere
@@ -11,14 +11,14 @@ weight: 10
 
 [KubeSphere](https://kubesphere.io/) 是在 Kubernetes 之上构建的企业级分布式多租户容器管理平台，帮助企业轻松应对多租户、工作负载和集群管理、服务与网络管理、应用管理、镜像仓库管理和存储管理等业务场景，是 CNCF 会员，已通过 Kubernetes 一致性验证。
 
-QingCloud KubeSphere Engine (QKE) 服务集成了云平台的云服务器、存储、网络等资源，可以在青云平台一键部署高可用的 KubeSphere 集群，支持集群自动巡检和修复，支持一键升级到新版本，工单 24 小时随时响应，并由 KubeSphere 核心团队提供专业支持和服务。
+容器集群服务 QKE 集成了云平台的云服务器、存储、网络等资源，可以在青云平台一键部署高可用的 KubeSphere 集群，支持集群自动巡检和修复，支持一键升级到新版本，工单 24 小时随时响应，并由 KubeSphere 核心团队提供专业支持和服务。
 
 ## 功能概览
 
 - 集成 [Calico](https://www.projectcalico.org/)、[Flannel](https://github.com/coreos/flannel) 网络插件供用户选择使用
 - 集成 ipvs、iptables 代理模式供用户选择使用
-- 集成 [qingcloud-csi](https://github.com/yunify/qingcloud-csi) 存储插件，可以自动创建存储资源，支持基础型、企业型、容量型、企业分布式 NeonSAN 等云平台硬盘，支持硬盘自动扩容和自动迁移
-- 集成 [qingcloud-cloud-controller-manager](https://github.com/yunify/qingcloud-cloud-controller-manager) 云平台管理插件，可以自动创建负载均衡器、公网 IP，一键直达公网访问
+- 集成 [shanhe-csi](https://github.com/yunify/qingcloud-csi) 存储插件，可以自动创建存储资源，支持基础型、企业型、容量型、企业分布式 NeonSAN 等云平台硬盘，支持硬盘自动扩容和自动迁移
+- 集成 [shanhe-cloud-controller-manager](https://github.com/yunify/qingcloud-cloud-controller-manager) 云平台管理插件，可以自动创建负载均衡器、公网 IP，一键直达公网访问
 - 支持一键增删工作节点
 - `自 QKE 2.0.0 起` 支持一键部署 GPU 节点
 - 可插拔 [OpenPitrix 应用商店](https://kubesphere.com.cn/en/docs/pluggable-components/app-store/)（需通过 [集群参数](/container/qke/admin/main/#服务环境参数设置) 开启），提供应用商店与应用的生命周期管理，支持通过 3 种方式一键部署应用

@@ -16,13 +16,13 @@ weight: 12
 
 ## 在线扩容
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录[管理控制台](https://console.shanhe.com/login)。
 
 2. 在控制台顶部的导航菜单中，选择**产品与服务** > **AppCenter** > **集群管理**，进入**集群管理**页面。
 
 3. 找到您的 Harbor 集群，右键点击，选择**扩容集群**，弹出**扩容集群**页面。
 
-   <img src="/container/harbor/_images/man12_expan.png" alt="expan" style="zoom:50%;" />
+   <img src="/container/harbor/_images/man12_expan.png" alt="expan"  />
 
 5. 勾选（可多选）需要修改配置的节点，然后在下方调整资源配置。
 
@@ -30,7 +30,7 @@ weight: 12
 
 ## 新增节点
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录[管理控制台](https://console.shanhe.com/login)。
 
 2. 在控制台顶部的导航菜单中，选择**产品与服务** > **AppCenter** > **集群管理**，进入**集群管理**页面。
 
@@ -38,7 +38,7 @@ weight: 12
 
 4. 在右侧的**节点**页签，点击**新增节点**，弹出**新增节点**页面。
 
-   <img src="/container/harbor/_images/man12_add_node.png" alt="add_node" style="zoom:50%;" />
+   <img src="/container/harbor/_images/man12_add_node.png" alt="add_node"  />
 
 5. 选择新增节点的类型，输入节点数量及名称，设置节点 IP。
 

@@ -1,5 +1,5 @@
 ---
-title: "什么是 Harbor 镜像仓库"
+title: "什么是容器服务镜像仓库"
 draft: false
 enableToc: false
 keyword: Harbor, 私有镜像仓库，镜像仓库，容器
@@ -10,11 +10,11 @@ weight: 10
 
 [Harbor](https://goharbor.io/) 是一个开源的镜像仓库服务，用于容器镜像、Helm Chart 等符合 OCI 标准的 Artifact 的安全托管及高效分发，能够帮助您跨云原生计算平台（如 Kubernetes 和 Docker）一致且安全地管理 Artifact。
 
-QingCloud Harbor 镜像仓库将 Harbor 制作成了 App，能直接在 AppCenter 进行一键部署，并提供了一个高可用、高安全、高性能的解决方案。
+容器服务镜像仓库将 Harbor 制作成了 App，能直接在 AppCenter 进行一键部署，并提供了一个高可用、高安全、高性能的解决方案。
 
 ## 产品优势
 
-QingCloud Harbor 镜像仓库具有如下特点：
+容器服务镜像仓库具有如下特点：
 
 ### 简单易用
 
