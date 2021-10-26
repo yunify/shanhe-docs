@@ -23,9 +23,9 @@ weight: 6
 * replace_policy.json
   
   类型替换策略
-  
+
 config.json 定义用户在 shanhe 控制台部署应用时需要填写的表单。控制台支持语言国际化，默认情况下，所有语言都会按配置项中的 label 和 description 展示表单。另外，cluster.json.mustache 文件中的 custom service、监控项等，会使用 key 作为国际化展示。如果您想要适应不同的语言，需要在提交的应用中包含一个 locale 文件夹，并添加对应语言的翻译文件，如：
-  
+
 * locale/en.json
 
   英文翻译文件
@@ -648,7 +648,7 @@ zone|镜像制作时所属区域 (如果是 docker 镜像，则无需填写该�
 
 ##### cpu_model
 
-节点的 CPU 体系结构，可选值范围：Westmere、SandyBridge、IvyBridge、Haswell、Broadwell、Skylake、CascadeLake。 [查看对应的 CPU 指令集](https://docs.shanhe.com/product/computing/cpu_instruction_set)
+节点的 CPU 体系结构，可选值范围：Westmere、SandyBridge、IvyBridge、Haswell、Broadwell、Skylake、CascadeLake， [查看对应的 CPU 指令集](/compute/vm/faq/common_operations/server_func/cpu_instruction_set/)。
 
 ##### memory
 
@@ -811,7 +811,7 @@ allow\_force |是否允许强制删除, 默认值为 true 表示允许强制删�
 
 | 参数 | 描述 |
 | --- | --- |
-  | event | 可选值：upgrade, rollback, scale_vertical。表示在定义的生命周期到来时，使用 get_nodes_order 中 cmd 的执行结果作为该生命周期节点的操作顺序。 |
+| event | 可选值：upgrade, rollback, scale_vertical。表示在定义的生命周期到来时，使用 get_nodes_order 中 cmd 的执行结果作为该生命周期节点的操作顺序。 |
 
 ###### rollback
 

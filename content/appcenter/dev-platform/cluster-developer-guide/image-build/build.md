@@ -47,8 +47,7 @@ weight: 3
 
 开发一些必须的模板文件，这些文件会监听山河 metadata service 的变化从而更新自己应用的配置文件。
 这些文件后缀名为 toml 和 tmpl，例如，大数据服务Storm 有两个配置文件 zoo.cfg 和 myid，
-每个配置文件需要一套相应的 toml 和 tmpl 模板对应，
-详情请见[nextcloud](https://github.com/shanheAppcenter/nextcloud/tree/master/nextcloud-nodes/code/conf.d/)。
+每个配置文件需要一套相应的 toml 和 tmpl 模板对应。
 
 #### /etc/confd/conf.d/zoo.cfg.toml
 
