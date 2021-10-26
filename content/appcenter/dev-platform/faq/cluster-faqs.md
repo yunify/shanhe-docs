@@ -10,17 +10,17 @@ weight: 1
 
 ### 1. 作为新手，如何从一个最简单的例子入手？    
 
-我们在 [GitHub](https://github.com/shanheAppcenter/) 上提供了大量的基于 AppCenter 开发的实例代码和配置文件，
-作为新手我们建议从 [大数据服务ZooKeeper](https://github.com/shanheAppcenter/Zookeeper) 或者 
-[云数据库云数据库Redis Cluster](https://github.com/shanheAppcenter/Redis-standalone) 入手。
+作为新手我们建议从 **大数据服务ZooKeeper** 或者 **云数据库云数据库Redis Cluster** 入手。
 
 ### 2. app agent 是什么？如何安装 app agent 程序？   
 
 下载山河提供的 app agent [Linux 版本](/appcenter/dev-platform/cluster-developer-guide/scripts/app-agent-linux-amd64.tar.gz), 
 [Windows 版本](/appcenter/dev-platform/cluster-developer-guide/scripts/app-agent-windows-386.zip)，
 解压后运行 ./install.sh (Windows 下双击 install.bat)。    
+
 此 agent 中包含了自动配置文件程序 confd，该程序是在开源 confd 的基础上修改了一些 bug 并且增加了一些算术功能，
 详情见 [shanhe confd](https://github.com/yunify/confd/)。  
+
 > 具体配置请参考文档 [制作 KVM 镜像](/appcenter/dev-platform/cluster-developer-guide/image-build/build/#制作-kvm-镜像)  
 
 ### 3. 如何创建 toml 和 tmpl 的模板文件？  
@@ -1109,8 +1109,7 @@ curl http://metadata/self/env/access_key/secret_access_key
 当 s3_type 值为 minio 时，s3_access_key 和 s3_secret_key 显示，access_key 不显示
 ![s3_type_minio.png](/appcenter/dev-platform/cluster-images/s3_type_minio.png)
 
-当 s3_type 值为 对象存储服务OIS 时，access_key 显示，s3_access_key 和 s3_secret_key 都不显示
-![s3_type_对象存储服务OIS.png](/appcenter/dev-platform/cluster-images/s3_type_对象存储服务OIS.png)
+当 s3_type 值为 对象存储服务OIS 时，access_key 显示，s3_access_key 和 s3_secret_key 都不显示。
 
 ### 36. 如何定义原地升级方式？
 

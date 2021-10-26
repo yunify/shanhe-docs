@@ -8,8 +8,6 @@ type: "product"
 section1:
   title: 应用市场
   vice_title: AppCenter 应用市场为用户提供为丰富、优秀的应用及服务，应用市场联合众多优秀合作伙伴为用户提供包括数据库与中间件、大数据、安全应用、容器应用、企业应用等各类型的应用服务。
-  video: 
-  video_img: hu
 
 Section2:
   title: 用户指南

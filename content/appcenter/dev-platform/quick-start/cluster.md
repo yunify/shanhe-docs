@@ -17,7 +17,5 @@ weight: 2
 - [完善应用的详细信息](/appcenter/dev-platform/cluster-developer-guide/app/management/#完善应用信息)
 - [提交应用版本审核](/appcenter/dev-platform/cluster-developer-guide/app-version/management/#提交应用版本) 或直接发布到个人应用中心（内部使用的应用）
 
-* 更多山河制作的应用可以在[这里](https://github.com/shanheAppcenter/)找到。
-
 * 常见的问题请参考[常见问题](/appcenter/dev-platform/faq/cluster-faqs)
 
