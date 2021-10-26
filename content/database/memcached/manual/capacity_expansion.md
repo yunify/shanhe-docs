@@ -2,7 +2,6 @@
 title: "扩容集群"
 description: 本小节主要介绍如何扩容 Memcached 集群。 
 keywords: memcached 扩容集群
-data: 2021-05-14T00:38:25+09:00
 weight: 20
 collapsible: false
 draft: false
@@ -14,7 +13,7 @@ draft: false
 
 ## 增加缓存节点
 
-Memcached 缓存服务支持多个缓存节点。当容量或者性能不足时，可以通过增加缓存节点来提升。 
+云数据库 Memcached 支持多个缓存节点。当容量或者性能不足时，可以通过增加缓存节点来提升。 
 
 > 默认的 Memcached 客户端使用简单 Hash 来进行数据分片，当增加或删除节点时可能会造成大量的缓存失效。可以采用支持一致性 Hash 算法的 Memcached 客户端来避免这个问题，例如 [hash_ring](https://pypi.python.org/pypi/hash_ring)  客户端。
 

@@ -1,17 +1,16 @@
 ---
 title: "数据导入和导出"
-description: 本小节主要介绍 QingCloud MongoDB 数据导入和导出应用。 
+description: 本小节主要介绍 云数据库 MongoDB 数据导入和导出应用。 
 keywords: mongodb 数据导入,数据导出 
-data: 2021-05-14T00:38:25+09:00
 weight: 2
 collapsible: false
 draft: false
 ---
 
-QingCloud MongoDB 通过使用 `mongodb-org-tools` 中的工具 [mongodump](https://docs.mongodb.com/manual/reference/program/mongodump/) 和 [mongorestore](https://docs.mongodb.com/manual/reference/program/mongorestore/)，实现 MongoDB 数据的导出和导入。
+云数据库 MongoDB 通过使用 `mongodb-org-tools` 中的工具 [mongodump](https://docs.mongodb.com/manual/reference/program/mongodump/) 和 [mongorestore](https://docs.mongodb.com/manual/reference/program/mongorestore/)，实现 MongoDB 数据的导出和导入。
 
-- 使用 `mongodump` 工具可以将 MongoDB 中的数据导出。
-- 使用 `mongorestore` 工具可以将 `mongodump` 导出的数据导入到 MongoDB 中。
+- 使用 `mongodump` 工具可以将云数据库 MongoDB 中的数据导出。
+- 使用 `mongorestore` 工具可以将 `mongodump` 导出的数据导入到云数据库 MongoDB 中。
 
 ## 在线导入
 

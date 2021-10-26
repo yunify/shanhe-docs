@@ -2,7 +2,6 @@
 title: "集群信息"
 description: 本小节主要介绍 Redis Cluster 集群信息。 
 keywords: redis cluster 集群信息
-data: 2021-05-14T00:38:25+09:00
 weight: 10
 collapsible: false
 draft: false
@@ -10,7 +9,7 @@ draft: false
 
 ## 基本属性
 
-这里显示了集群的基本信息。当 Redis cluster 服务创建完成之后，我们可以查看 Redis cluster 中各节点的运行状态。
+这里显示了集群的基本信息。当 Redis cluster 实例创建完成之后，我们可以查看 Redis cluster 中各节点的运行状态。
 
 ![基本属性](../../_images/overview.png)
 

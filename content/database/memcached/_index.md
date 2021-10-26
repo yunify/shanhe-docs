@@ -1,13 +1,13 @@
 ---
-title: "键值数据库 Memcached"
+title: "云数据库 Memcached"
 linkTitle: "Memcached"
 weight: 09
 collapsible: true
 type: "product"
 
 section1:
-  title: Memcached
-  vice_title: Memcached 是一个开源、分布式的内存缓存系统。Memcached on QingCloud 将 Memcached 制作成 App 能直接在 AppCenter 进行一键部署。
+  title: 云数据库 Memcached
+  vice_title: Memcached 是一个开源、分布式的内存缓存系统。云数据库 Memcached 将 Memcached 制作成 App 能直接在 AppCenter 进行一键部署。
 
 Section2:
   title: 用户指南
@@ -54,7 +54,7 @@ section3:
 section4:
   children:
     - title: 了解
-      content: 什么是 Memcached
+      content: 什么是云数据库 Memcached
       vice_title: 了解的第一步
       children:
         - title: 产品简介
@@ -64,10 +64,10 @@ section4:
       content: 学习如何创建、管理、使用 Memcached 集群
       vice_title: 上手的第一步
       children: 
-        - title: 创建 Memcached
+        - title: 创建 Memcached 集群
           url: "quickstart/quick_start/"
 
-        - title: Memcached 服务功能
+        - title: Memcached 集群服务功能
           url: "manual/service/"
 ---
 

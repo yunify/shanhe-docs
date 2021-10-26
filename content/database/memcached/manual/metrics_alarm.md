@@ -2,18 +2,17 @@
 title: "监控指标和告警"
 description: 本小节主要介绍如何管理 Memcached 监控指标和告警。 
 keywords: memcached 监控指标,监控告警
-data: 2021-05-14T00:38:25+09:00
 weight: 40
 collapsible: false
 draft: false
 ---
 
 
-QingCloud Memcached 提供了强大的监控和告警功能，帮助用户更好的管理和维护运行中的 Memcached 缓存集群。
+云数据库 Memcached 提供了强大的监控和告警功能，帮助用户更好的管理和维护运行中的 Memcached 缓存集群。
 
 ## 监控指标
 
-Memcached 提供了详尽的监控数据，来帮助用户随时了解缓存服务的运行状态和各项指标。每一项监控都提供了历史监控和实时监控，最短时间间隔可以达到10s。Memcached 服务的监控数据是通过 Memcached 的 stats 命令来进行采集的。
+Memcached 服务提供了详尽的监控数据，来帮助用户随时了解缓存服务的运行状态和各项指标。每一项监控都提供了历史监控和实时监控，最短时间间隔可以达到10s。Memcached 的监控数据是通过 Memcached 的 stats 命令来进行采集的。
 
 | 监控项 | <span style="display:inline-block;width:80px">间隔时间</span> | <span style="display:inline-block;width:60px">单位</span> | 说明 |
 |:--- |:--- |:--- |:--- |
@@ -58,22 +57,17 @@ Memcached 提供了详尽的监控数据，来帮助用户随时了解缓存服�
 
 4. 返回**告警**页签，查看配置的独立通知策略。
 
-   ![查看通知策略](../../_images/check_notice.png)   
-
 ### 绑定指标告警策略
 
-Memcached 支持对每个缓存节点配置指标告警策略。当业务发生异常时，会触发用户设定的告警阈值，并发送短信或邮件通知用户。
+云数据库 Memcached 支持对每个缓存节点配置指标告警策略。当业务发生异常时，会触发用户设定的告警阈值，并发送短信或邮件通知用户。
 
 目前支持的指标告警规则有 `CPU 利用率`、`内存使用率`、`磁盘使用量`、`已过期 Key 个数`和`节点服务状态`。
 
 1. 在集群管理页面，点击集群 ID，进入集群详情页面。
 2. 在**告警**页签，选择节点，点击列表上方**绑定指标告警策略**。
-
-    ![告警](../../_images/alarm.png)
-
 3. 在弹出的指标告警策略配置窗口，选择指标告警策略，并点击**提交**。
 
-    > 更多告警策略配置说明，请参见[告警服务](../../../../../monitor_service/cloudsat/manual/alarm_service)
+    > 更多告警策略配置说明，请参见[告警服务](/monitor_service/cloudsat/manual/alarm_service)。
    
    ![配置指标告警策略](../../_images/metrics_alram.png)
 

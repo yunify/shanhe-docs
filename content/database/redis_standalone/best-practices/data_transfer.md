@@ -2,7 +2,6 @@
 title: "数据迁移"
 description: 本小节主要介绍如何在 Redis Standalone 迁移数据。 
 keywords: redis standalone 数据迁移
-data: 2021-05-14T00:38:25+09:00
 weight: 1
 collapsible: false
 draft: false
@@ -10,7 +9,7 @@ draft: false
 
 ## redis-port 迁移方式
 
-针对 Redis 2.6.0 至 5.0.0版本，包括2.6.0版本数据迁移 Redis on QingCloud，可以选择 **redis-port** 迁移方式。
+针对 Redis 2.6.0 至 5.0.0版本，包括 2.6.0 版本数据迁移，可以选择 **redis-port** 迁移方式。
  
 1. 下载 [redis_port](https://github.com/CodisLabs/redis-port/releases)工具。
  
@@ -25,7 +24,7 @@ draft: false
 
 ## 从 RDB 文件恢复数据
 
-Redis 5.0.7 - QingCloud 2.2.0版本，新增了**从 RDB 文件恢复数据**功能。。
+Redis 5.0.7 - ShanHe 2.2.0版本，新增了**从 RDB 文件恢复数据**功能。。
 
 > 注意：
 > - 执行**从 RDB 文件恢复数据**操作前，请先手动备份目标集群数据，因为该操作会完全删除目标集群的所有数据，且不可恢复。

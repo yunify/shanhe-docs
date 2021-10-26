@@ -2,7 +2,6 @@
 title: "集群信息"
 description: 本小节主要介绍 Redis Standalone 集群信息。 
 keywords: redis standalone 集群信息
-data: 2021-05-14T00:38:25+09:00
 weight: 10
 collapsible: false
 draft: false
@@ -17,7 +16,7 @@ draft: false
 
 ## 服务端口信息
 
-**Redis Standalone on QingCloud** 提供一个读写IP，此IP始终指向主节点。当发生主从切换时，此IP将指向新的主节点，无需手动更改主节点IP。
+云数据 Redis Standalone 提供一个读写IP，此IP始终指向主节点。当发生主从切换时，此IP将指向新的主节点，无需手动更改主节点IP。
 
 ## 节点实时角色
 
@@ -38,7 +37,7 @@ draft: false
 
 ## 文件下载
 
-`Redis 5.0.5 - QingCloud 2.0.0` 及其之后的版本在「配置参数」栏添加了 WebConsole 的服务，您可以通过该服务下载日志、RDB 数据文件和 AOF 文件，该服务默认没有密码，建议在使用时配置密码
+`Redis 5.0.5 - ShanHe 2.0.0` 及其之后的版本在「配置参数」栏添加了 WebConsole 的服务，您可以通过该服务下载日志、RDB 数据文件和 AOF 文件，该服务默认没有密码，建议在使用时配置密码
 
 ![](../../_images/copy_file_1.png)
 

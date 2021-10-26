@@ -1,8 +1,7 @@
 ---
 title: "快速访问 MongoDB 集群"
-description: 本小节主要介绍如何快速访问 QingCloud MongoDB 集群实例。 
+description: 本小节主要介绍如何快速访问 MongoDB 集群实例。 
 keywords: mongodb 集群访问,
-data: 2021-05-14T00:38:25+09:00
 weight: 2
 collapsible: false
 draft: false
@@ -14,9 +13,9 @@ draft: false
 
 ## 通过 mongo 客户端连接
 
-MongoDB 创建完成之后可以进行连接测试，下载并安装 [mongodb-org-shell](https://docs.mongodb.com/manual/administration/install-on-linux/ )。
+MongoDB 集群实例创建完成之后可以进行连接测试，下载并安装 [mongodb-org-shell](https://docs.mongodb.com/manual/administration/install-on-linux/ )。
 
-在 MongoDB 同一私有网络或跨网络的客户端上测试。现假设客户端和 MongoDB 在同一私有网络，MongoDB 集群有三个节点，IP 地址分别为`192.168.0.23,192.168.0.24,192.168.0.27`， 创建的用户名为`qc_test`，密码为`Pwd00000`，可以通过如下命令连接 MongoDB。
+在 MongoDB 实例同一私有网络或跨网络的客户端上测试。现假设客户端和 MongoDB 实例在同一私有网络，MongoDB 集群有三个节点，IP 地址分别为`192.168.0.23,192.168.0.24,192.168.0.27`， 创建的用户名为`qc_test`，密码为`Pwd00000`，可以通过如下命令连接 MongoDB。
 
 ```shell
 mongo mongodb://qc_test:Pwd00000@192.168.0.23,192.168.0.24,192.168.0.27/admin?replicaSet=foobar

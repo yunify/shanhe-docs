@@ -2,7 +2,6 @@
 title: "服务功能"
 description: 本小节主要介绍 Redis Cluster 服务功能。 
 keywords: redis cluster 服务功能
-data: 2021-05-14T00:38:25+09:00
 weight: 15
 collapsible: false
 draft: false
@@ -17,7 +16,7 @@ draft: false
 
 ## 文件下载
 
-`Redis 5.0.5 - QingCloud 2.0.0` 在「配置参数」栏添加了 WebConsole 的服务，您可以通过该服务下载日志、RDB 数据文件和 AOF 文件，该服务默认没有密码，建议在使用时配置密码。
+`Redis 5.0.5 - ShanHe 2.0.0` 在「配置参数」栏添加了 WebConsole 的服务，您可以通过该服务下载日志、RDB 数据文件和 AOF 文件，该服务默认没有密码，建议在使用时配置密码。
 
 ![](../../_images/download-files.png)
 
@@ -78,7 +77,7 @@ wget http://[username]:[password]@[ip]/redis/redis-server.log
 - SLAVEOF
 - KEYS
 
-为兼容 Redis 5.0.3 - QingCloud 1.2.1 之前的版本，自 Redis 5.0.3 - QingCloud 1.2.1 起默认开启了如下命令，升级集群的用户依旧保持开启该命令，我们强烈建议新建集群的用户禁用掉该命令，该命令的误操作，会对数据造成不可恢复的丢失：
+为兼容 Redis 5.0.3 - ShanHe 1.2.1 之前的版本，自 Redis 5.0.3 - ShanHe 1.2.1 起默认开启了如下命令，升级集群的用户依旧保持开启该命令，我们强烈建议新建集群的用户禁用掉该命令，该命令的误操作，会对数据造成不可恢复的丢失：
 
 - FLUSHDB
 - FLUSHALL
