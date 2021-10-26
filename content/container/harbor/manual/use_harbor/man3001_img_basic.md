@@ -27,7 +27,7 @@ docker pull Harbor_address/ProjectName/Repsitory[:Tag]
 
 其中：
 
-- `Harbor_address` 表示您的 Harbor 镜像仓库地址，需要与[参数配置页面](/container/harbor/manual/man08_mdy_para/)中的 **Harbor 地址**保持一致。
+- `Harbor_address` 表示您的容器服务镜像仓库地址，需要与[参数配置页面](/container/harbor/manual/man08_mdy_para/)中的 **Harbor 地址**保持一致。
 - `ProjectName` 表示项目名称。
 - `Repsitory` 表示镜像仓库名称。
 - `Tag` 表示镜像标签，通常表示镜像版本。

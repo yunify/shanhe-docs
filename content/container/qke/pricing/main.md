@@ -24,6 +24,7 @@ QKE 页面上的费用预览计费仅包括集群基础资源费用。QKE 创建
 |防火墙|0~2|高可用集群（三个主节点）会自动创建 1 个防火墙；KubeSphere 控制台通过公网 IP 暴露会自动创建 1 个防火墙|
 |依赖服务|0~2|快速创建外接 etcd 会创建 1 个 etcd 集群；快速创建外接 ELK 会创建 1 个 ELK 集群|
 
-## 价格计算
+<!-- ## 价格计算
 
-可以通过 [价格计算器](https://www.qingcloud.com/pricing#/KubeSphere) 获取价格详情。
+可以通过 [价格计算器](https://www.shanhe.com/pricing#/KubeSphere) 获取价格详情。
+ -->

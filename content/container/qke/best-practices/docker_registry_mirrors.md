@@ -1,6 +1,5 @@
 ---
 title: "配置 Docker 镜像加速"
-date: 2021-07-31T21:37:25+09:00
 description: Test description
 weight: 50
 draft: false
@@ -23,7 +22,7 @@ enableToc: false
    }
    ```
 
-常用的加速地址有：**Docker 中国区官方镜像：https://registry.docker-cn.com**；**网易：http://hub-mirror.c.163.com**；**ustc：https://docker.mirrors.ustc.edu.cn**；**中国科技大学：https://docker.mirrors.ustc.edu.cn**
+   常用的加速地址有：**Docker 中国区官方镜像：https://registry.docker-cn.com**；**网易：http://hub-mirror.c.163.com**；**ustc：https://docker.mirrors.ustc.edu.cn**；**中国科技大学：https://docker.mirrors.ustc.edu.cn**
 
 2. 重启 Docker 。 
 

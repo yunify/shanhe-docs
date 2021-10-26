@@ -1,22 +1,22 @@
 ---
-title: "登录 Harbor 镜像仓库"
+title: "登录容器服务镜像仓库"
 draft: false
 enableToc: false
 weight: 18
 
 ---
 
-介绍如何登录到您创建的 Harbor 镜像仓库。
+介绍如何登录到您创建的容器服务镜像仓库。
 
 ## 前提条件
 
-- 已完成 [Harbor 镜像仓库部署](../qs10_deploy_harbor/)。
+- 已完成[容器服务镜像仓库部署](../qs10_deploy_harbor/)。
 
-- 已获取 Harbor 镜像仓库的登录用户名及密码。 
+- 已获取容器服务镜像仓库的登录用户名及密码。 
 
 > **说明**：
 >
-> - Harbor 登录的初始用户名：**admin**，密码：**Harbor12345**。
+> - 镜像仓库登录的初始用户名：**admin**，密码：**Harbor12345**。
 >
 > - 为保障数据安全，请在首次登录后立即修改密码。
 
@@ -26,7 +26,7 @@ weight: 18
 
    > **说明**：
    >
-   > Harbor 地址即在部署 Harbor 镜像仓库时，填写的 Harbor 地址，在Habor 集群详情页面的**配置参数**页签中可查看，请根据您的实际情况输入。
+   > Harbor 地址即在部署 容器服务镜像仓库时，填写的 Harbor 地址，在Habor 集群详情页面的**配置参数**页签中可查看，请根据您的实际情况输入。
 
    <img src="/container/harbor/_images/qs18_harbor_url.png" alt="harbor_url" style="zoom:50%;" />
 
