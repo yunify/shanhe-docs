@@ -12,7 +12,7 @@ draft: false
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| resource_groups.n | String | 资源组ID | Yes |
+| resource_groups.n | String | 资源组 ID | Yes |
 
 [_公共参数_](../../../parameters/)
 
@@ -21,7 +21,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=DeleteResourceGroups
+https://api.shanhe.com/iaas/?action=DeleteResourceGroups
 &resource_groups.1=rg-5ukijwcx
 &COMMON_PARAMS
 ```

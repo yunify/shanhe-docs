@@ -7,9 +7,9 @@ weight: 10
 keyword: 山河，硬盘
 ---
 
-**进入硬盘页面**
+## 进入硬盘页面
 
-1. 登录 [山河 shanhe 管理控制台](https://console.shanhe.com/login)。
+1. 登录 [管理控制台](https://console.shanhe.com/login)。
 2. 在控制台导航栏中，选择**产品与服务** > **存储服务** > **硬盘**，进入**硬盘**页面。
 
 ## 创建硬盘
@@ -71,7 +71,7 @@ keyword: 山河，硬盘
 
    > **说明**：
    >
-   > 若还未创建项目，可参考[项目使用](/operation/project/manual/management/)进行创建。
+   > 若还未创建项目，可参考[项目使用](/operation/resource/manual/project/management/)进行创建。
 
 2. 选择需要添加到的项目，点击**提交**，即可将硬盘添加到该项目。
 

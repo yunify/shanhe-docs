@@ -36,11 +36,11 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeBorderVxnets
+https://api.shanhe.com/iaas/?action=DescribeBorderVxnets
 &border=irt-2zevtm67
 &offset=0
 &limit=100
-&zone=pek3
+&zone=jn1
 &COMMON_PARAMS
 ```
 
@@ -54,7 +54,7 @@ _Example Response_:
             "vxnet_id":"vxnet-gonkgpv",
             "dyn_ip_start":"192.168.0.2",
             "dyn_ipv6_end":"",
-            "console_id":"qingcloud",
+            "console_id":"shanhe",
             "create_time":"2020-11-13T07:47:50Z",
             "owner":"usr-1gIBrASt",
             "dhcp_server_ip":"",
@@ -71,11 +71,11 @@ _Example Response_:
             "transition_status":"",
             "controller":"self",
             "domain_servers":"",
-            "border_zone_id":"pek3b",
+            "border_zone_id":"jn1b",
             "dyn_ipv6_start":"",
             "manager_ipv6":"",
             "vpc_router_id":"rtr-e5m6sr20",
-            "vxnet_zone_id":"pek3",
+            "vxnet_zone_id":"jn1",
             "root_user_id":"usr-1gIBrASt",
             "mode":1
         }

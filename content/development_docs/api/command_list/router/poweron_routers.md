@@ -36,9 +36,9 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=PowerOnRouters
+https://api.shanhe.com/iaas/?action=PowerOnRouters
 &routers.1=rtr-s5nqo8mr
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 

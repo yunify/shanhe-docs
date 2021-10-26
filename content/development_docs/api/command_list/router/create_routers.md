@@ -18,7 +18,7 @@ draft: false
 | --- | --- | --- | --- |
 | router_name | String | 路由器名称 | No |
 | router_type | Integer | 路由器类型: 0 - 中型，1 - 小型，2 - 大型，默认为 1 | No |
-| vpc_network | String | VPC 网络地址范围，目前支持 192.168.0.0/16 或 172.16.0.0/16 。 注：此参数只在北京3区需要且是必填参数。 | No |
+| vpc_network | String | VPC 网络地址范围，目前支持 192.168.0.0/16 或 172.16.0.0/16 。 注：此参数只在济南1区需要且是必填参数。 | No |
 | count | Integer | 创建路由器的数量，默认是1 | No |
 | security_group | String | 需要加载到路由器上的防火墙ID | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
@@ -40,9 +40,9 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=CreateRouters
+https://api.shanhe.com/iaas/?action=CreateRouters
 &router_name=demo
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 

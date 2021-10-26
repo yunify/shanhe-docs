@@ -2,13 +2,13 @@
 title: "多可用区（同城多活）测试"
 description: test
 weight: 29
-draft: false
-keyword:  QingCloud, RabbitMQ, rabbitmq,  消息队列服务, 消息中间件
+draft: true
+keyword: RabbitMQ, rabbitmq,  消息队列服务, 消息中间件
 ---
 
 ## 背景
 
-- [青云QingCloud 升级区域（Region）架构 轻松实现同城多活](https://log.qingcloud.com/archives/3981)
+山河升级区域（Region）架构 轻松实现同城多活
 
 ## 测试结果
 
@@ -38,7 +38,5 @@ keyword:  QingCloud, RabbitMQ, rabbitmq,  消息队列服务, 消息中间件
 ```
 bin/runjava com.rabbitmq.perf.PerfTest -u perf.test.ha -f persistent -X 1 -Y 1 -z 30 -H amqp://192.168.3.3
 ```
-
-至此，`RabbitMQ on QingCloud AppCenter`的介绍到这里就告一个段落了。
 
 在使用过程中如果遇到问题可以通过`提交工单`来获取帮助，我们将竭诚为您服务。

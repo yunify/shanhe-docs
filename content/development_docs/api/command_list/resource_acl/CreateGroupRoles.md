@@ -12,8 +12,8 @@ draft: false
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| role_type | String | 角色类型。当前仅支持 “rule” | Yes |
-| group_role_name | String | 角色名称。 | No |
+| role_type | String | 角色类型，当前仅支持 “rule”。 | Yes |
+| group_role_name | String | 角色名称 | No |
 | description | String | 角色描述 | No |
 | count | Integer | 一次创建的角色数量。 | No |
 
@@ -24,7 +24,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=CreateGroupRoles
+https://api.shanhe.com/iaas/?action=CreateGroupRoles
 &group_role_name=T1
 &COMMON_PARAMS
 ```

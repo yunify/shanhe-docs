@@ -19,5 +19,5 @@ draft: false
 
 绑定告警策略还可对核心事件提供告警服务。
 
-![](../best-practices.assets/20201205155532.png)
+<img src="../best-practices.assets/20201205155532.png" style="zoom:30%;" />
 

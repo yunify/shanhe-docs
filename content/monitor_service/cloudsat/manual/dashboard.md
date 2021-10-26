@@ -10,11 +10,11 @@ Dashboard提供了多资源类型、跨指标类型、跨分区的自定义集�
 
 ## Dashboard操作步骤
 
-点击导航栏“云监控CloudSat”，选择“监控Dashboard”即可进入。
+登录 [山河管理控制台](https://console.shanhe.com/login)，选择**产品与服务** > **监控服务** > **云监控 CloudSat**，进入**云监控**页签。选择**Dashboard**即可进入。
 
 ## 创建监控面板
 
-进入监控Dashborad后，系统默认为用户创建一个面板，用户可直接在该面板上进行监控图表的创建。如下图：
+进入Dashborad后，系统默认为用户创建一个面板，用户可直接在该面板上进行监控图表的创建。如下图：
 
 ![](../_images/create_dashboard.png) 
 

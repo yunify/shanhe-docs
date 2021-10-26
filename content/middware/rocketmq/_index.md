@@ -1,13 +1,14 @@
 ---
-title: "RocketMQ 服务"
-linkTitle: "RocketMQ 服务"
+title: "消息队列 RocketMQ"
+linkTitle: "消息队列 RocketMQ"
 weight: 7
 collapsible: true
 type: "product"
+draft: false
 
 section1:
-  title: "RocketMQ"
-  vice_title: Apache RocketMQ是一个基于Apache2.0协议开源的分布式消息和流数据平台，具有低延时、高吞吐、可审计、可几乎无限水平扩展等优点。
+  title: "消息队列 RocketMQ"
+  vice_title: Apache RocketMQ 是一个基于 Apache2.0 协议开源的分布式消息和流数据平台，具有低延时、高吞吐、可审计、可几乎无限水平扩展等优点。
 
 Section2:
   title: 用户指南
@@ -50,26 +51,26 @@ section3:
 
 section4:
   children:
-    - title: 了解：什么是RocketMQ
-      content: RocketMQ是一个基于Apache2.0协议开源的分布式消息和流数据平台。
+    - title: 了解：什么是消息队列 RocketMQ
+      content: 消息队列 RocketMQ 是一个基于 Apache2.0 协议开源的分布式消息和流数据平台。
       vice_title: 了解的第一步      
       children:
         - title: 产品简介
           url: "/middware/rocketmq/intro/intro"
-    - title: 上手：RocketMQ集群的常见操作
+    - title: 上手：RocketMQ 集群的常见操作
       content: 学习如何创建、管理、使用RocketMQ集群。
       vice_title: 上手的第一步
 
       children: 
-        - title: 创建RocketMQ
+        - title: 创建 RocketMQ 集群
           url: "/middware/rocketmq/quick-start/quick_start"
 
         - title: 集群使用
           url: "/middware/rocketmq/manual/cluster_use"
         
-        - title: RocketMQ Console使用示例
+        - title: RocketMQ Console 使用示例
           url: "/middware/rocketmq/manual/rocketmq_console"
-        - title: RocketMQ CLI命令示例
+        - title: RocketMQ CLI 命令示例
           url: "/middware/rocketmq/manual/rocketmq_cli"
 ---
 

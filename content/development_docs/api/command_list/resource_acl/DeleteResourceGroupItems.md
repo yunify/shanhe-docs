@@ -13,8 +13,8 @@ draft: false
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
 | zone | String | zone ID | Yes |
-| resource_group | String | 资源组ID | Yes |
-| resources.n | String | 资源ID | Yes |
+| resource_group | String | 资源组 ID | Yes |
+| resources.n | String | 资源 ID | Yes |
 
 [_公共参数_](../../../parameters/)
 
@@ -23,7 +23,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=DeleteResourceGroupItems
+https://api.shanhe.com/iaas/?action=DeleteResourceGroupItems
 &resource_group=rg-c7hmvt8u
 &zone=beta
 &resources.1=i-i8wewg3l

@@ -15,7 +15,7 @@ draft: false
 
 ## 测试环境
 
-- 区域：北京3A区
+- 区域：山河计算平台
 - Name Server节点×1:2CPU，4G内存，性能型，Ubuntu Server 16.04.5 LTS 64bit
 - Broker 节点×2（一主一从）：2CPU， 4G内存，50G硬盘，性能型，Ubuntu Server 16.04.5 LTS 64bit
 - 客户端节点×2:4CPU， 8G内存，性能型，Ubuntu Server 16.04.5 LTS 64bit

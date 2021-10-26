@@ -31,8 +31,6 @@ PostgreSQL 可通过 psql 命令行客户端直接连接，还可以使用图形
     >
     > 如未创建 **Proxy 实例**节点，高可用 Proxy IP 将无法连接。
 
-   ![获取高可用 IP 地址](../../_images/check_access_info.png)
-
 2. 访问数据库。
    
    连接方式如下：

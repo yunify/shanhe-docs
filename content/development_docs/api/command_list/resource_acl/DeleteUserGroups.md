@@ -12,7 +12,7 @@ draft: false
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| user_groups.n | String | 要删除的用户组ID。 | Yes |
+| user_groups.n | String | 要删除的用户组 ID。 | Yes |
 
 [_公共参数_](../../../parameters/)
 
@@ -21,7 +21,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=DeletUserGroups
+https://api.shanhe.com/iaas/?action=DeletUserGroups
 &user_groups.1=ug-c7f9gmc6
 &COMMON_PARAMS
 ```

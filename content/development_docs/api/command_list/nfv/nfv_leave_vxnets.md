@@ -31,7 +31,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=NFVLeaveVxnets
+https://api.shanhe.com/iaas/?action=NFVLeaveVxnets
 &nfv=nfv-1234abcd
 &vxnets.1=vxnet-123
 &vxnets.2=vxnet-234

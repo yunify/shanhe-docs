@@ -63,5 +63,3 @@ PostGIS 是关系型数据库 PostgreSQL 的一种插件，PostGIS 提供空间�
    ```sql
    select postgis_full_version();
    ```
-
-![](../../_images/postgis_full_version.png)

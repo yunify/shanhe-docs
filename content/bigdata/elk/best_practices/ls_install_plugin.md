@@ -54,11 +54,10 @@ draft: false
 
 6. 重启 Logstash 节点：在集群列表页面右键点击您的ELK集群，点击重启，选择 Logstash 节点，点击提交，此时 Logstash 节点将会重启。
 
-7. 参考 [Logstash 基本用法](#ls-intro) 发送一条数据：
+7. 参考 **Logstash 基本用法** 发送一条数据：
 
    ```bash
    curl -d "shanhe" $LS_IP:9700
    ```
 
    如成功，则 influxdb 中将新增一条 point ，说明插件配置生效，如发现 influxdb 中没有新增 point ，请查看 logstash 日志，位置为 `/data/logstash/logs/logstash-plain.log`。
-

@@ -32,10 +32,10 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=ChangeS2ServerVxnet
+https://api.shanhe.com/iaas/?action=ChangeS2ServerVxnet
 &s2_servers.1=s2-lxqjtu3l
 &vxnet=vxnet-ln2mtlk
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 

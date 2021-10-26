@@ -12,8 +12,8 @@ draft: false
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| group_role_rules.n | String | 规则ID | No |
-| group_roles.n | String | 角色ID | No |
+| group_role_rules.n | String | 规则 ID | No |
+| group_roles.n | String | 角色 ID | No |
 
 [_公共参数_](../../../parameters/)
 
@@ -22,7 +22,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=DeleteGroupRoleRules
+https://api.shanhe.com/iaas/?action=DeleteGroupRoleRules
 &group_role_rules.1=grr-613v0o2p
 &COMMON_PARAMS
 ```

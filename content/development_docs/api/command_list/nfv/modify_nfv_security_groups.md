@@ -32,7 +32,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=ModifyNFVSecurityGroups
+https://api.shanhe.com/iaas/?action=ModifyNFVSecurityGroups
 &vxnets.1=vxnet-123
 &vxnets.2=vxnet-234
 &security_group=sg-123cdtrt

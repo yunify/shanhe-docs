@@ -31,11 +31,11 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=ModifyS2Server
+https://api.shanhe.com/iaas/?action=ModifyS2Server
 &s2_server=s2-lxqjtu3l
 &name=demo
 &description=demo_descritpion
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 
