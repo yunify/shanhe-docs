@@ -25,13 +25,13 @@ weight: 10
 - 可插拔 [DevOps 系统](https://kubesphere.com.cn/en/docs/pluggable-components/devops/)（需通过 [集群参数](/container/qke/admin/main/#服务环境参数设置) 开启），支持 Binary-to-Image（B2I）、Source-to-Image（S2I）快速制作镜像，提供代码依赖缓存支持，以及代码质量管理与流水线日志等功能
 - 可插拔 [日志系统](https://kubesphere.com.cn/en/docs/pluggable-components/logging/)（需通过 [集群参数](/container/qke/admin/main/#服务环境参数设置) 开启），提供了强大且易用的日志查询、接收与管理功能，支持基于多租户的日志查询
 - 可插拔 [微服务治理](https://kubesphere.com.cn/en/docs/pluggable-components/service-mesh/)（需通过 [集群参数](/container/qke/admin/main/#服务环境参数设置) 开启），无代码侵入实现熔断、蓝绿发布、流量管控、链路追踪等完善的微服务治理功能
-- 可插拔 [通知告警系统](https://kubesphere.com.cn/en/docs/pluggable-components/alerting-notification/)（需通过 [集群参数](/container/qke/admin/main/#服务环境参数设置) 开启），支持灵活的告警策略和告警规则，支持邮件通知，及时处理潜在问题
+- 可插拔 [通知告警系统](https://kubesphere.com.cn/en/docs/pluggable-components/alerting/)（需通过 [集群参数](/container/qke/admin/main/#服务环境参数设置) 开启），支持灵活的告警策略和告警规则，支持邮件通知，及时处理潜在问题
 - 可插拔 [Metrics Server]()（需通过 [集群参数](/container/qke/admin/main/#服务环境参数设置) 开启），支持对 Deployment 设置 [弹性伸缩 (HPA)](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale-walkthrough/)，支持根据集群的监控指标如 CPU 使用率和内存使用量来设置弹性伸缩
 - 可插拔 [网络策略](https://kubesphere.com.cn/en/docs/pluggable-components/network-policy/)（需通过 [集群参数](/container/qke/admin/main/#服务环境参数设置) 开启），通过配置网络策略，允许在同个集群内实现网络的隔离，也就是可以在某些实例（Pod）之间架起防火墙。
 - 可插拔 [审计](https://kubesphere.com.cn/en/docs/pluggable-components/auditing-logs/)（需通过 [集群参数](/container/qke/admin/main/#服务环境参数设置) 开启）。
 - 可插拔 [事件](https://kubesphere.com.cn/en/docs/pluggable-components/events/)（需通过 [集群参数](/container/qke/admin/main/#服务环境参数设置) 开启）。
 - 支持集群节点[自动弹性伸缩](/operation/autoscaling/intro/intro/)，根据资源指标数据的变化，自动完成节点的增减
-- 支持多集群聚合[统一监控面板](/monitor_service/cloudsat/dashboard/intro/intro/)
+- 支持多集群聚合[统一监控面板](/monitor_service/cloudsat/intro/intro/)
 
 ## 组件版本
 

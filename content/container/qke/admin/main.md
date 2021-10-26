@@ -14,7 +14,7 @@ weight: 10
 
 #### 网络
 
-为了保障数据安全， QKE 集群需要运行在受管私有网络中。若还未创建 VPC 和私有网络，可根据页面提示创建一个，也可以参考[创建 VPC](//network/vpc/manual/vpcnet/10_create_vpc/) 提前创建好。
+为了保障数据安全， QKE 集群需要运行在受管私有网络中。若还未创建 VPC 和私有网络，可根据页面提示创建一个，也可以参考[创建 VPC](/network/vpc/manual/vpcnet/10_create_vpc/) 提前创建好。
 
 > **注意**：
 >
@@ -342,7 +342,7 @@ kubectl get pods --all-namespaces
 
 ## 监控
 
-使用 Console 控制台运维工具的 [监控Dashboard](/monitor_service/cloudsat/dashboard/intro/intro/) 功能，创建监控面板和图表，选择指定的 QKE 集群、节点以及指标，
+使用 Console 控制台运维工具的 [监控Dashboard](/monitor_service/cloudsat/manual/dashboard/) 功能，创建监控面板和图表，选择指定的 QKE 集群、节点以及指标，
 
 ![](../../_images/dashboard-monitor.png)
 
