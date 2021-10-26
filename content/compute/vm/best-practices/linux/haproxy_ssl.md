@@ -16,7 +16,7 @@ HAProxy 是一款可实现负载均衡的优秀软件，它可用于 TCP 代理�
 ## 准备事项
 
 * 主机已安装 HAProxy
-* 已申请并签发了 SSL 证书，如没有证书，请[购买SSL证书](https://console.qingcloud.com/ssl_certificates)
+* 已申请并签发了 SSL 证书，如没有证书，请[购买SSL证书](https://console.shanhe.com/ssl_certificates)
 * 申请 SSL 证书时绑定的域名已解析到服务器 IP
 * 后端可正常访问
 
@@ -121,7 +121,7 @@ backend web        ## 后端
 
 ### 方式二( HAProxy 代理 SSL 请求)：
 
-1、后端绑定好 SSL 证书，可参考[Apache配置SSL](https://docsv3.qingcloud.com/compute/vm/best-practices/linux/confighttpdssl/)、[Nginx配置SSL](https://docsv3.qingcloud.com/compute/vm/best-practices/linux/nginx_ssl/)
+1、后端绑定好 SSL 证书。
 
 ```bash
 frontend https_frontend

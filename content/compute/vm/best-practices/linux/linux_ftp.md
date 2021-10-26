@@ -97,8 +97,8 @@ pasv_max_port=<port number>          #设置被动模式下，建立数据传输
 
 ●**安全组也需放行VPC网络端口转发的FTP服务员源端口**
 
- ![ftp_](../../_images/ftp_6.png )
- ![ftp_](../../_images/ftp_7.png )
+ <img src="../../_images/ftp_6.png" alt="ftp_" style="zoom:50%;" />
+ <img src="../../_images/ftp_7.png" alt="ftp_" style="zoom:50%;" />
 
 ## 2.客户端测试
 

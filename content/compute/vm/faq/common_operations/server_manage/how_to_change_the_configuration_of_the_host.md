@@ -15,7 +15,7 @@ enableToc: false
 
 ### 针对按需计费模式的云服务器操作方法
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，选择**产品与服务** > **计算** > **云服务器**，进入域名列表页。
+1. 登录 [管理控制台](https://console.shanhe.com/login)，选择**产品与服务** > **计算** > **云服务器**，进入域名列表页。
 
 2. 右键云服务器的ID，选择 **更多操作** > **更改配置**，在左侧的**计算基础服务**导航栏
 
@@ -51,10 +51,6 @@ enableToc: false
 
    <img src="../../../_images/homer/vm_pic_10.png" width="80%" height="60%">
 
-   <img src="../../../_images/homer/vm_pic_11.png" width="80%" height="60%">
+   当云服务器配置与合约配置一致后，再进行绑定
 
-   <img src="../../../_images/homer/vm_pic_12.png" width="80%" height="60%">
-
-4. 当云服务器配置与合约配置一致后，再进行绑定
-
-   <img src="../../../_images/homer/vm_pic_13.png" width="80%" height="60%">
+   

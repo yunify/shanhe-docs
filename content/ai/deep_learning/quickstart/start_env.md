@@ -24,9 +24,9 @@ MySQL Plus 支持通过内网地址和外网地址连接数据库，推荐使用
 
 - 外网地址连接：无法通过内网连接时，可通过外网地址连接云数据库 MySQL。
   
-  外网地址需[手动申请](../../manual/mgt_connect/enable_external_network)，再在 MySQL Plus **连接信息**模块查看。
+  外网地址需手动申请，再在 MySQL Plus **连接信息**模块查看。
   
-  无需外网地址连接数据库时，可[释放外网地址](../../manual/mgt_connect/mgt_external_network)。
+  无需外网地址连接数据库时，可释放外网地址。
 
 ## 前提条件
 
@@ -75,7 +75,3 @@ MySQL Plus 支持通过内网地址和外网地址连接数据库，推荐使用
 | -p                                                        | 用户账号密码。<li> 为保障密码安全，`-p`一般空密码。在执行命令后输入密码，回车即可。<li>若需填写该参数，`-p`与密码之间不能有空格。 | test_mysql                                                   |
 | -D                                                        | 数据库名称。非必填参数；可不输入`-D` ，仅输入数据库名称。    | mysql                                                        |
 | --ssl-                                                    | 数据库开启 **SSL 传输加密**后，必填连接参数。**注意** SSL 证书文件需上传到服务器，且需放在执行连接命令的路径下。 | --ssl-ca=ca.pem --ssl-cert=client-cert.pem --ssl-key=client-key.pem |
-
-## 后续管理
-
-- [MySQL Plus 数据库连接不上怎么办？](../../faq/access_problems)

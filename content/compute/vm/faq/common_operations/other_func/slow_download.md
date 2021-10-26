@@ -7,7 +7,7 @@ draft: false
 
 
 ## 问题背景
-为了提高用户在青云中的下载体验，对于公网IP的带宽小于 10Mbps 的，下行（出云）带宽等于公网IP带宽，上行（入云）带宽自动提高到 10Mbps; 带宽大于 10Mbps 的，上下行带宽保持和申请带宽相同。
+为了提高用户在山河中的下载体验，对于公网IP的带宽小于 10Mbps 的，下行（出云）带宽等于公网IP带宽，上行（入云）带宽自动提高到 10Mbps; 带宽大于 10Mbps 的，上下行带宽保持和申请带宽相同。
 
 下面我们用实际案例简单说明下：
 ### 案例1 
@@ -22,7 +22,7 @@ draft: false
 
 ### Windows云服务器测试公网IP网速
 
-登陆 Windows 云服务器，打开浏览器输入如下网站URL地址[www.speedtest.cn](www.speedtest.cn)，点击【测试】，等待测速结束即可获取到公网IP的上下行带宽，参考如下截图：
+登陆 Windows 云服务器，打开浏览器输入如下网站URL地址 www.speedtest.cn，点击【测试】，等待测速结束即可获取到公网IP的上下行带宽，参考如下截图：
 
 ![Win测网速](/compute/vm/_images/speetest_of_winOS.png)
 

@@ -114,9 +114,7 @@ service iptables save
 
 #### **方法一（推荐）**
 
-通过VPC网络---管理配置---路由推送---添加云服务器路由，如图所示
-
-<img src="../../_images/homer/gateway_04.png" width="60%" height="60%">
+通过VPC网络---管理配置---路由推送---添加云服务器路由。
 
 #### **方案二**
 

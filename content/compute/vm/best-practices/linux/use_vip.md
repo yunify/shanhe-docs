@@ -2,7 +2,7 @@
 title: "虚拟 VIP 如何使用"
 description: Test description
 weight: 40
-draft: false
+draft: true
 enableToc: false
 ---
 
@@ -14,7 +14,7 @@ enableToc: false
 
 1.在 VPC 的私有网络中申请一个 VIP ，将这个 IP 从该网段中隔离出来，防止其它资源使用这个 IP
 
-![use_vip01](../../_images/use_vip01.jpg)
+![use_vip01](./../_images/use_vip01.jpg)
 
 ![use_vip02](../../_images/use_vip02.png)
 

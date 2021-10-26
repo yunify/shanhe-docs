@@ -15,32 +15,30 @@ enableToc: false
 
 ### 按需计费的云服务器
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，选择**产品与服务** > **计算** > **云服务器**，进入域名列表页。
+1. 登录 [管理控制台](https://console.shanhe.com/login)，选择**产品与服务** > **计算** > **云服务器**，进入域名列表页。
 
 2. 右键云服务器的ID，选择**更多操作** > 更改类型，如下图：
 
-   ![more-types](/compute/vm/_images/more-types.jpg)
+   ![more-types](/compute/vm/_images/more-types.png)
 
 ### 合约计费的云服务器
 
 合约云服务器更改类型需要先在合约界面解绑资源后再进行更改
 
-![change_config](/compute/vm/_images/change_config.png)
+<img src="../../../_images/homer/vm_pic_08.png" width="80%" height="60%">
 
-![unbundling](/compute/vm/_images/unbundling.png)
+<img src="../../../_images/homer/vm_pic_07.png" width="80%" height="60%">
 
 解绑后再对云服务器的类型进行更改，步骤如下：
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，选择**产品与服务** > **计算** > **云服务器**，进入域名列表页。
+1. 登录 [管理控制台](https://console.shanhe.com/login)，选择**产品与服务** > **计算** > **云服务器**，进入域名列表页。
 
 2. 右键云服务器的ID，选择**更多操作** > 更改类型
 
-   ![more-types](/compute/vm/_images/more-types.jpg)
+   ![more-types](/compute/vm/_images/more-types.png)
 
 3. 云服务器配置更改完成后需要对合约配置进行更改
 
-   ![upgrade](/compute/vm/_images/upgrade.png)
+   <img src="../../../_images/homer/vm_pic_09.png" width="80%" height="60%">
 
-4. 当云服务器类型与合约类型一致后，再进行绑定
-
-   ![bunding](/compute/vm/_images/bunding.png)
+   当云服务器类型与合约类型一致后，再进行绑定。

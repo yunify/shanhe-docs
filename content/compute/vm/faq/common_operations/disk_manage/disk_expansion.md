@@ -15,11 +15,9 @@ enableToc: false
 
 ### 控制台扩容
 
-登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，右键硬盘的资源id---扩容，调整业务所需要的容量并提交，此处扩容为100G。
+登录[管理控制台](https://console.shanhe.com/login)，右键硬盘的资源id---扩容，调整业务所需要的容量并提交，此处扩容为100G。
 
 ![](../../../_images/disk_expansion1.png) 
-
-![](../../../_images/disk_expansion2.png) 
 
 ### 云硬盘扩容文件系统
 

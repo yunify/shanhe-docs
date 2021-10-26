@@ -3,7 +3,7 @@ title: "无法安装.NET Framework 3.5"
 date: 2021-04-09T21:37:25+09:00
 description: Test description
 weight: 10
-draft: false
+draft: true
 enableToc: false
 
 ---

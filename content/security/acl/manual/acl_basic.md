@@ -10,11 +10,11 @@ draft: false
 
 您可以点击启用 / 禁用基础网络的隔离。
 
-<img src=".././_images/create_acl_17.png" style="zoom:23%;" />
+<img src="../../_images/create_acl_17.png" style="zoom:23%;" />
 
 启用
 
-<img src="../../_images/create_acl_18.png" style="zoom:33%;" />
+<img src=".././_images/create_acl_18.png" style="zoom:33%;" />
 
 禁用
 

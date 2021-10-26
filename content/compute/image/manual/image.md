@@ -15,8 +15,6 @@ keyword: 镜像, QingCloud
 
 待备份完成之后，在控制台上选择 "存储" - "备份"，找到之前的备份，并右键选择"制作新镜像"。 
 
-![](../../_images/capture-instance-from-snapshot.png)
-
 待完成之后，可以在 "计算" - "镜像" - "自有" 中看到刚才创建的镜像。
 
 ![](/compute/vm/intro/_images/user_defined_image.png)
@@ -41,7 +39,7 @@ keyword: 镜像, QingCloud
 
 
 ### 操作步骤
-示例 1: 将本地的 20G 系统盘的镜像上传到青云环境上。 务必确保本地系统盘上的 /etc/fstab，/etc/network/ 等文件信息正确。
+示例 1: 将本地的 20G 系统盘的镜像上传到山河环境上。 务必确保本地系统盘上的 /etc/fstab，/etc/network/ 等文件信息正确。
 
 1. 云服务器创建新的硬盘，大小也为 20G (和本地系统盘的大小一致；如果系统盘的大小小于 20G，也需要创建 20G 的云硬盘)；
 
@@ -81,8 +79,6 @@ keyword: 镜像, QingCloud
 8. 将云硬盘制作备份；
 
 9. 根据云硬盘备份创建用户自定义镜像。 
-
-![](/compute/vm/intro/_images/capture-image-from-vol-snapshot.png)
 
 创建镜像完成之后，可以在 "计算" - "镜像" - "自有" 中看到刚才创建的镜像。 选择镜像， 并点击 "基于镜像创建云服务器"　可以创建新的云服务器。 
 

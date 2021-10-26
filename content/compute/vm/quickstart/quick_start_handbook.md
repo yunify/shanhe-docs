@@ -1,7 +1,7 @@
 ---
 title: "快速入门指南"
 description: test
-draft: true
+draft: false
 weight: 5
 ---
 
@@ -51,7 +51,7 @@ weight: 5
 2. 在左侧的**计算基础服务**导航栏，选择 **网络服务** > **公网IP** 进入**公网IP控制台**。
 3. 在右边区域点击 **申请公网IP** 按钮，弹出申请表单，填写相应信息后点击 **提交** 即可。如下图所示：  
 
-![公网IP](/compute/vm/_images/create_instance__6.png)  
+<img src="../../_images/create_instance__6.png" alt="公网IP" style="zoom:50%;" />  
 
 * 名称：为您申请的 IP 地址取个名字，方便记忆与使用。可选。 
 * 数量：输入所需要的 IP 个数
@@ -81,11 +81,11 @@ weight: 5
 1. 登录管理控制台，选择**产品与服务** > **计算** > **云服务器**，进入域名列表页。
 2. 在右边主显示区域会列出您名下的全部云服务器， 每台云服务器名称旁边都有一个显示器图标，点击它即可打开山河终端连接至该云服务器，如下图所示：  
 
-![连接云服务器](/compute/vm/_images/create_instance__9.png)
+![连接云服务器](../../_images/create_instance__9.png)
 
 3. 连接至云服务器后，在弹出的操作系统窗口中输入您创建云服务器时设置的账号和密码，即可进入云服务器操作系统。  
 
-![登录账户](/compute/vm/_images/create_instance__10.png)
+![登录账户](../../_images/create_instance__10.png)
 
 方法二：使用 SSH。
 
@@ -93,11 +93,11 @@ weight: 5
 
 1. 在云服务器列表页中点击云服务器 ID 打开该云服务器的详情页， 然后下拉至“绑定资源”项下，可以看到该云服务器正在使用的防火墙，如下图所示：
 
-![SSH登录](/compute/vm/_images/create_instance__11.png)
+![SSH登录](../../_images/create_instance__11.png)
 
 2. 点击**安全组**打开防火墙的配置页，点击 **添加规则** 新建一个下行规则，如下图所示：
 
-![设置防火墙](/compute/vm/_images/create_instance__12.png)
+![设置防火墙](../../_images/create_instance__12.png)
 
 *   方向：下行规则
 *   行为：接受
@@ -108,15 +108,13 @@ weight: 5
 
 4. 点击左边导航条中的 **计算 > SSH 密钥** ， 在右边主显示区域点击 **创建** ，在弹出的对话框中输入一个名称， 指定一个加密方法，点击 **提交** 。 山河会立刻为您创建一对密钥，并要求您立刻下载私钥。
 
-![新建SSH](/compute/vm/_images/create_instance__13.png)
+![新建SSH](../../_images/create_instance__13.png)
 
 ![新建SSH](/compute/vm/_images/create_instance__14.png)
 
 在 SSH 密钥列表页中右键点击刚刚创建的钥匙， 选择 **云服务器->加载** ，在弹出的对话框中选择您第一步中创建的云服务器， 点击 **提交** 即可。 
 
-![加载SSH](/compute/vm/_images/create_instance__15.png)
-
-![加载SSH](/compute/vm/_images/create_instance__16.png)
+![加载SSH](../../_images/create_instance__16.png)
 
 如果您是 Linux 或 Mac ，就可以通过本地 SSH 密钥（如 kp-1234abcd ）直接使用远程命令 SSH 安全地登录云服务器了:
 
@@ -151,13 +149,13 @@ weight: 5
 1. 登录管理控制台，选择**产品与服务** > **计算** > **云服务器**，进入域名列表页。
 2. 在左侧的**计算基础服务**导航栏，点击 **存储 > 硬盘** ， 在右边主显示区域点击 **创建** ， 在弹出的对话框中指定名称、数量、硬盘类型、容量，点击 **提交** 即可。
 
-![加载硬盘至云服务器](/compute/vm/_images/create_instance__19.png)
+![加载硬盘至云服务器](../../_images/create_instance__19.png)
 
 3. 在硬盘列表页中右键点击刚刚创建的硬盘，选择 **加载硬盘到云服务器**， 在弹出的对话框中选择您第一步中创建的云服务器，点击 **提交**。 
 
-![加载硬盘至云服务器](/compute/vm/_images/create_instance__20.png)
+![加载硬盘至云服务器](../../_images/create_instance__20.png)
 
-![加载硬盘至云服务器](/compute/vm/_images/create_instance__21.png)
+![加载硬盘至云服务器](../../_images/create_instance__21.png)
 
 4. 登录到您的云服务器，用 fdisk -l 或 parted -l 之类的工具即可看到新硬盘。 因为是新硬盘，所以首次使用时需要分区、格式化之后才可加载使用。
 

@@ -8,7 +8,7 @@ enableToc: false
 ---
 
 ## 概述
-使用青云平台云服务器安装的MySQL无法远程访问，可通过本文检查处理
+使用山河平台云服务器安装的MySQL无法远程访问，可通过本文检查处理
 
 ### Liunx云服务器排查思路
 
@@ -24,9 +24,9 @@ enableToc: false
 
 ![mysql_problem03](../../../_images/mysql_problem03.png)
 
-四、查看[QingCloud 管理控制台](https://console.qingcloud.com/login)云服务器绑定的安全组中是否放行了3306端口，路径如下：**计算** > **云服务器** >  **i-xxxxxxx**  -> **安全组**
+四、查看[管理控制台](https://console.shanhe.com/login)云服务器绑定的安全组中是否放行了3306端口，路径如下：**计算** > **云服务器** >  **i-xxxxxxx**  -> **安全组**
 
-![mysql_problem04](../../../_images/mysql_problem04.jpg)
+![mysql_problem04](../../../_images/mysql_problem04.png)
 
 五、查看是否在安全组中放行了3306端口，如果没过放行，则通过如下步骤放行：添加规则 ->  提交 ->  应用修改,规则模版如下图
 
@@ -34,7 +34,7 @@ enableToc: false
 
 六、如云服务器是通过VPC网络进行访问，则修改VPC绑定的安全组，并添加端口转发规则，路径如下：**网络** > **VPC网络** > **rtr-xxxxxxx**  >  **管理配置**  > **添加规则** > **提交** > **应用修改**，端口转发规则如下图
 
-![mysql_problem06](../../../_images/mysql_problem06.jpg)
+![mysql_problem06](../../../_images/mysql_problem06.png)
 
 七、使用客户端工具验证登录
 
@@ -58,17 +58,17 @@ netstat -ano | findstr :3306
 
 ![mysql_problem10](../../../_images/mysql_problem10.jpg)
 
-四、查看 [QingCloud 管理控制台](https://console.qingcloud.com/login)云服务器绑定的安全组中是否放行了3306端口，路径如下：计算 -> 云服务器 ->  i-xxxxxxx  - > 安全组
+四、查看 [管理控制台](https://console.shanhe.com/login)云服务器绑定的安全组中是否放行了3306端口，路径如下：计算 -> 云服务器 ->  i-xxxxxxx  - > 安全组
 
-![mysql_problem04](../../../_images/mysql_problem04.jpg)
+![mysql_problem04](../../../_images/mysql_problem04.png)
 
 五、查看是否在安全组中放行了3306端口，如果没过放行，则通过如下步骤放行：添加规则 ->  提交 ->  应用修改,规则模版如下图
 
 ![mysql_problem05](../../../_images/mysql_problem05.png)
 
-六、如主机是通过VPC网络进行访问，则修改VPC绑定的安全组，并添加端口转发规则，路径如下：网络 -> VPC网络 -> rtr-xxxxxxx  ->  管理配置  -> 添加规则 -> 提交 -> 应用修改，端口转发规则如下图
+六、如云服务器是通过VPC网络进行访问，则修改VPC绑定的安全组，并添加端口转发规则，路径如下：网络 -> VPC网络 -> rtr-xxxxxxx  ->  管理配置  -> 添加规则 -> 提交 -> 应用修改，端口转发规则如下图
 
-![mysql_problem06](../../../_images/mysql_problem06.jpg)
+![mysql_problem06](../../../_images/mysql_problem06.png)
 
 七、使用客户端工具验证登录
 
