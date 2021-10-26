@@ -34,7 +34,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.shanhe.com/iaas/?action=CreateSecurityGroup
+https://api.qingcloud.com/iaas/?action=CreateSecurityGroup
 &security_group_name=specify
 &zone=jn1a
 &COMMON_PARAMS

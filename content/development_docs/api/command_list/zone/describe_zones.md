@@ -4,8 +4,6 @@ description:
 draft: false
 ---
 
-
-
 获取可访问的区域列表。
 
 **Request Parameters**
@@ -38,7 +36,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.shanhe.com/iaas/?action=DescribeZones
+https://api.qingcloud.com/iaas/?action=DescribeZones
 &COMMON_PARAMS
 ```
 
