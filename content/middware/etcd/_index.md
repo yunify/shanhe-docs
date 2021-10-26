@@ -1,13 +1,13 @@
 ---
-title: "etcd 服务"
-linkTitle: "etcd 服务"
+title: "存储服务 etcd"
+linkTitle: "存储服务 etcd"
 weight: 10
 collapsible: true
 type: "product"
 
 section1:
-  title: "etcd 服务"
-  vice_title: etcd 是一个为分布式系统设计的高可用键值存储系统，用于共享配置和服务发现。
+  title: "存储服务 etcd"
+  vice_title: 存储服务 etcd 是一个为分布式系统设计的高可用键值存储系统，用于共享配置和服务发现。
 
 section2:
   title: 用户指南
@@ -16,7 +16,7 @@ section2:
     content: etcd 产品动态
     url: "/middware/etcd/news/product_news"
   - title: 产品简介
-    content: 什么是 etcd 集群
+    content: 什么是存储服务 etcd
     url: "/middware/etcd/intro/introduction"
   - title: 计费指南
     content: etcd 集群计费说明
@@ -46,15 +46,15 @@ section3:
 
 section4:
   children:
-    - title: 了解：什么是 etcd？
-      content: etcd 是一个高可用的键值存储系统，用于共享配置和服务发现。
+    - title: 了解：什么是存储服务 etcd？
+      content: 存储服务 etcd 是一个高可用的键值存储系统，用于共享配置和服务发现。
       vice_title: 了解的第一步
       children:
         - title: 产品概述
           url: "/middware/etcd/intro/introduction"
 
     - title: 上手：快速部署 etcd 集群
-      content: etcd 集群应用使用户能够方便快速的创建 etcd 集群，并支持动态伸缩。
+      content: 山河 etcd 集群应用方便用户创建etcd集群，并支持动态伸缩。
       vice_title: 上手的第一步
       children:
         - title: 创建 etcd 集群

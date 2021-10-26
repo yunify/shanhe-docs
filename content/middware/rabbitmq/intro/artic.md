@@ -4,7 +4,7 @@ description:
 draft: false
 weight: 4
 enableToc: false
-keyword:  QingCloud, RabbitMQ, 消息队列服务, 消息中间件
+keyword:  RabbitMQ, 消息队列服务, 消息中间件
 ---
 
 RabbitMQ 服务的部署架构如下图所示。
