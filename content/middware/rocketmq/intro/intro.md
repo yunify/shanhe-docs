@@ -17,5 +17,5 @@ RocketMQ 和其他流行的消息系统之间的对比，请查阅[RocketMQ官�
 - 支持高可用部署，无单点失败
 - 系统自动运维，降低企业使用成本
 - 提供了[监控告警](/monitor_service/cloudsat/)功能更好的管理集群
-- 可通过网页控制台[RocketMQ Console](https://github.com/apache/rocketmq-externals/tree/master/rocketmq-console)对集群进行可视化管理
+- 可通过网页控制台[RocketMQ Console](https://rocketmq-1.gitbook.io/rocketmq-connector/rocketmq-connect/rocketmq-console)对集群进行可视化管理
 - 自`RocketMQ 4.7.1 - ShanHe 1.1.0`版本开始，新增日志自助获取机制，详情请查阅**文末[FAQ](/middware/rocketmq/faq/how_get_log/)部分**
