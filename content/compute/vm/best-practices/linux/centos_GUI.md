@@ -8,8 +8,6 @@ enableToc: false
 
 ---
 
-以CentOS 7.5 64 bit为例
-
 ## 1、首先更新系统
 
 ```
