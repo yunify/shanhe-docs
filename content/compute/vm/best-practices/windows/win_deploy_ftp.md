@@ -7,14 +7,6 @@ draft: false
 enableToc: false
 ---
 
-**ftp server下载地址**
-
-https://yunify.anybox.qingcloud.com/s/g3yXfHGZ9V9ZtZgGIFfLHeXlSSSE2Klf
-
-**ftp_client下载地址**
-
-https://yunify.anybox.qingcloud.com/s/ORyko6fbfylJE5xu8PPjRtw1NN36wneG
-
  1、安装ftp server，按照提示操作即可
 
 ![图片](/compute/vm/_images/image-1568884199091.png)

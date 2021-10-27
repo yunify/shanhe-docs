@@ -5,7 +5,7 @@ weight: 40
 draft: false
 ---
 
-为了让用户快速了解深度学习平台的性能指标以便于选择，我们使用 TensorFlow [性能测试代码](https://github.com/tensorflow/benchmarks)中的 CNN Benchmark ，对常用硬件配置组合进行了测试。
+为了让用户快速了解深度学习平台的性能指标以便于选择，我们使用 TensorFlow 性能测试代码中的 CNN Benchmark ，对常用硬件配置组合进行了测试。
 我们选择 ResNet-50 模型，调用 Python 3.6 + TensorFlow 1.7.0 环境，使用合成数据进行测试。
 
 山河深度学习平台性能测试表
@@ -25,12 +25,8 @@ draft: false
 | CPU (MKL优化) | 16核(Broadwell) | 32G    | 0    | 32        | 训练 | 16.15 (61.92ms)        |
 | CPU (MKL优化) | 16核(Broadwell) | 32G    | 0    | 32        | 推理 | 48.65 (20.55ms)        |
 
-TensorFlow 官方性能测试情况，请参见
-[官方GPU版性能测试](https://www.tensorflow.org/performance/benchmarks)
-[官方CPU版性能测试](https://www.tensorflow.org/performance/performance_guide#optimizing_for_cpu)
-
-> <span style="color:red">为了便于用户对比，我们选择和官方各项测试接近的硬件配置和相同的 BatchSize 。</span>
-
-> <span style="color:red">因为 CPU 无优化版本仅支持 NHWC 数据格式，所以除了 CPU (无优化版)测试，其他测试中使用的数据格式均为 NCHW 。</span>
-
-> <span style="color:red">CPU 版本测试中，使用常用优化方式，设置 intra_op 等于物理核个数， inter_op 为 1， kmp_blocktime 为 30（对本测试用例的 ResNet-50 模型和 BatchSize 32，适用该值，其他任务需要依据实际情况调整）。参考[CPU 优化参考](https://www.tensorflow.org/performance/performance_guide#optimizing_for_cpu)</span>。
+> 为了便于用户对比，我们选择和官方各项测试接近的硬件配置和相同的 BatchSize 。
+>
+> 因为 CPU 无优化版本仅支持 NHWC 数据格式，所以除了 CPU (无优化版)测试，其他测试中使用的数据格式均为 NCHW 。
+>
+> CPU 版本测试中，使用常用优化方式，设置 intra_op 等于物理核个数， inter_op 为 1， kmp_blocktime 为 30（对本测试用例的 ResNet-50 模型和 BatchSize 32，适用该值，其他任务需要依据实际情况调整）。

@@ -1,5 +1,5 @@
 ---
-title: "连接青云远程终端时的默认登录用户名和密码是什么？ "
+title: "连接山河远程终端时的默认登录用户名和密码是什么？ "
 description: Test description
 draft: false
 enableToc: false

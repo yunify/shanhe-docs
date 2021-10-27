@@ -11,7 +11,7 @@ enableToc: false
 
 访问端口失败，telnet端口不通，服务无法连接。
 
-![](/compute/vm/_images/telnet.png)
+![](../../../../_images/telnet.png)
 
 ## 操作步骤
 
@@ -21,11 +21,9 @@ enableToc: false
 
 通过netstat命令进行端口验证，如图：
 
-![](/compute/vm/_images/netstat80no.png)
+![](../../../../_images/netstat80no.png)
 
 ### 未发现80端口处于监听状态，http服务未启动，需先将http服务启动
-
-![](/compute/vm/_images/starthttpd.png)
 
 启动完成后再次通过netstat进行验证
 
@@ -47,17 +45,13 @@ firewall规则查看
 
 ![](/compute/vm/_images/firewall.png)
 
-
-
 系统防火墙iptables和firewall相关服务启停命令及规则添加命令可参考：
 
 https://www.cnblogs.com/zxg-blog/p/9835263.html
 
-
-
 **查看安全组规则是否添加**
 
-登录青云console，选择访问云服务器所属安全组：
+登录山河console，选择访问云服务器所属安全组：
 
 ![](/compute/vm/_images/anquanzu.png)
 
@@ -66,8 +60,6 @@ https://www.cnblogs.com/zxg-blog/p/9835263.html
 ![](/compute/vm/_images/showanquanzu.png)
 
 添加80端口下行规则并提交
-
-
 
 ![](/compute/vm/_images/add80.png)
 

@@ -18,60 +18,50 @@ weight: 39
 
 1. Windows云服务器：i-jsndqhie；云服务器合约：rc-E5aHQ75r
 
-   ![change-promote-os-1](/compute/vm/_images/change-promote-os-1.png)
+   ![change-promote-os-1](../../../_images/change-promote-os-1.png)
 
 2. 将云服务器与合约解绑
 
-   ![change-promote-os-2](/compute/vm/_images/change-promote-os-2.png)
+   ![change-promote-os-2](../../../../_images/change-promote-os-2.png)
 
 3. 升级Windows云服务器合约为Linux云服务器合约，会退还差价
 
-   ![change-promote-os-3](/compute/vm/_images/change-promote-os-3.png)
+   ![change-promote-os-3](../../../../_images/change-promote-os-3.png)
 
-   ![change-promote-os-4](/compute/vm/_images/change-promote-os-4.png)
+   ![change-promote-os-4](../../../../_images/change-promote-os-4.png)
 
-   ![change-promote-os-5](/compute/vm/_images/change-promote-os-5.png)
-
-   ![change-promote-os-19](/compute/vm/_images/change-promote-os-19.png)
+   ![change-promote-os-5](../../../../_images/change-promote-os-5.png)
 
 4. 创建Linux云服务器
 
-   ![change-promote-os-6](/compute/vm/_images/change-promote-os-6.png)
+   ![change-promote-os-6](../../../../_images/change-promote-os-6.png)
 
-   ![change-promote-os-7](/compute/vm/_images/change-promote-os-7.png)
+   <img src="../../../../_images/change-promote-os-7.png" alt="change-promote-os-7" style="zoom:50%;" />
 
-   ![change-promote-os-8](/compute/vm/_images/change-promote-os-8.png)
+   ![change-promote-os-8](../../../../_images/change-promote-os-8.png)
 
 ### Linux云服务器，删除后创建Windows云服务器
 
 1. Linux云服务器：i-ilqtvuh2；云服务器合约：rc-E5aHQ75r
 
-   ![change-promote-os-9](/compute/vm/_images/change-promote-os-9.png)
+   ![change-promote-os-9](../../../../_images/change-promote-os-9.png)
 
 2. 将云服务器与合约解绑
 
-   ![change-promote-os-10](/compute/vm/_images/change-promote-os-10.png)
+   ![change-promote-os-10](../../../../_images/change-promote-os-10.png)
 
 3. 升级Linux云服务器合约为Windows云服务器合约
 
    注意：Linux云服务器合约升级为Windows云服务器合约需要补差价
 
-   ![change-promote-os-11](/compute/vm/_images/change-promote-os-11.png)
+   <img src="../../../../_images/change-promote-os-11.png" alt="change-promote-os-11" style="zoom:50%;" />
 
-   ![change-promote-os-12](/compute/vm/_images/change-promote-os-12.png)
+   ![change-promote-os-12](../../../../_images/change-promote-os-12.png)
 
-   ![change-promote-os-13](/compute/vm/_images/change-promote-os-13.png)
-
-   ![change-promote-os-14](/compute/vm/_images/change-promote-os-14.png)
-
-   ![change-promote-os-15](/compute/vm/_images/change-promote-os-15.png)
+   ![change-promote-os-14](../../../../_images/change-promote-os-14.png)
 
 4. 创建Windows云服务器
 
-   ![change-promote-os-16](/compute/vm/_images/change-promote-os-16.png)
-
-   ![change-promote-os-17](/compute/vm/_images/change-promote-os-17.png)
-
-   ![change-promote-os-18](/compute/vm/_images/change-promote-os-18.png)
+   ![change-promote-os-16](../../../../_images/change-promote-os-16.png)
 
    注意：也可以通过计算-云服务器界面创建与合约配置完全匹配的云服务器，然后手动绑定；直接在合约界面创建云服务器会自动绑定。

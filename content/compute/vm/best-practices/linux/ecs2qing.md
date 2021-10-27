@@ -1,5 +1,5 @@
 ---
-title: "将ECS迁移到青云QingCloud"
+title: "将ECS迁移到山河"
 date: 2021-03-09T10:08:56+09:00
 description: test
 draft: false
@@ -63,11 +63,11 @@ draft: false
 
 
 
-## 镜像导入到QingCloud
+## 镜像导入到山河
 
 ### 第1步：下载镜像
 
-1、我们在青云的虚机里下载该镜像。没有wget需要先下载安装wget工具，并且注意下面命令里面的两个单引号。
+1、我们在山河的虚机里下载该镜像。没有wget需要先下载安装wget工具，并且注意下面命令里面的两个单引号。
 
 `wget ‘下载链接’`
 
@@ -87,9 +87,9 @@ draft: false
 
 ![img](../../_images/ecs2qing.assets/clip_image037.jpg)
 
-### 第2步：制作QingCloud自定义镜像
+### 第2步：制作山河自定义镜像
 
-1、在[QingCloud 管理控制台](https://console.qingcloud.com/login)上创建一个硬盘并挂载到下载镜像的云服务器上，注意硬盘的大小需要和原云服务器的系统盘大小一致。
+1、在[管理控制台](https://console.shanhe.com/login)上创建一个硬盘并挂载到下载镜像的云服务器上，注意硬盘的大小需要和原云服务器的系统盘大小一致。
 
 `fdisk -l`
 
@@ -115,26 +115,12 @@ draft: false
 
 5、按照下图步骤，将云硬盘制作备份；
 
-![img](../../_images/ecs2qing.assets/clip_image047.png)
+<img src="../../_images/ecs2qing.assets/clip_image047.png" alt="img" style="zoom:50%;" />
 
-![img](../../_images/ecs2qing.assets/clip_image049.png)
+<img src="../../_images/ecs2qing.assets/clip_image049.png" alt="img" style="zoom:50%;" />
 
-6、备份界面，鼠标右键点击我们刚才得到的备份，选择制作新镜像，如下图所示：
+6、备份界面，鼠标右键点击我们刚才得到的备份，选择制作新镜像。
 
-![img](../../_images/ecs2qing.assets/clip_image051.png)
+>  注意，需要选择一个系统镜像，我需要导入的镜像是centos7.5版本，所以选择山河对应的centos7.5即可，然后提交。
 
-![img](../../_images/ecs2qing.assets/clip_image053.png)
-
->  注意，需要选择一个系统镜像，我需要导入的镜像是centos7.5版本，所以选择QingCloud对应的centos7.5即可，然后提交。
-
-![img](../../_images/ecs2qing.assets/clip_image055.png)
-
-![img](../../_images/ecs2qing.assets/clip_image057.png)
-
-
-7、镜像创建完成，我们便可以在镜像 - - 自有 界面看到我们刚才创建的镜像，然后基于该镜像在QingCloud上创建虚机即可。
-
-![img](../../_images/ecs2qing.assets/clip_image059.png)
-
-
-![img](../../_images/ecs2qing.assets/clip_image061.png)
+7、镜像创建完成，我们便可以在镜像 - - 自有 界面看到我们刚才创建的镜像，然后基于该镜像在山河上创建虚机即可。

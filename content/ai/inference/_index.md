@@ -26,7 +26,7 @@ Section2:
 
     - title: 操作指南
       content: 学习如何快速部署 Inference Engine 应用。
-      url: "manual/deploy_model/"
+      url: "/ai/inference/manual/depoly_model/"
 
 
 section3:
@@ -46,22 +46,22 @@ section3:
 
 section4:
   children:
-    - title: 了解：什么是深度学习平台
-      content: 深度学习平台 Deep Learning on QingCloud 是基于强劲的 GPU 与 CPU 计算资源，搭载多个主流深度学习框架，可极速搭建深度学习开发环境，全面提速 AI 应用开发。
+    - title: 了解：什么是推理引擎
+      content: 推理引擎 Inference Engine 旨在解决上述问题，给用户提供一站式的模型部署与推理方案，并为以后模型市场的推出打下坚实的基础。
       vice_title: 了解的第一步
       children:
         - title: 产品简介
-          url: "/ai/deep_learning/intro/intro"
-    - title: 上手：深度学习平台的常见操作
-      content: 学习如何创建、管理、使用深度学习平台。
+          url: "/ai/inference/intro/intro"
+    - title: 上手：推理引擎的常见操作
+      content: 学习如何创建、管理、使用推理引擎。
       vice_title: 上手的第一步
 
       children: 
-        - title: 部署 Deep Learning 应用
-          url: "/ai/deep_learning/quickstart/deploy_app/"
+        - title: 部署 推理引擎 应用
+          url: "/ai/inference/quickstart/deploy_app/"
 
-        - title: 集群使用
-          url: "/ai/deep_learning/manual/cluster_use"
+        - title: 用户指南
+          url: "/ai/inference/manual/depoly_model/"
 
     
 ---

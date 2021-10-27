@@ -11,7 +11,7 @@ draft: false
 
 ### 数据集
 
-[ImageNet](http://www.image-net.org/)
+ImageNet
 
 | 名称                                     | 地址                                                         | URL                                                          | 尺寸  |
 | ---------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ----- |
@@ -19,7 +19,7 @@ draft: false
 | ILSVRC2017 Object detection dataset      | [DET dataset](https://appcenter-deeplearning.sh1a.qingstor.com/dataset/imagenet/ILSVRC2017_DET.tar.gz) | https://appcenter-deeplearning.sh1a.qingstor.com/dataset/imagenet/ILSVRC2017_DET.tar.gz | 55GB  |
 | ILSVRC2017 Object detection test dataset | [DET test dataset](https://appcenter-deeplearning.sh1a.qingstor.com/dataset/imagenet/ILSVRC2017_DET_test_new.tar.gz) | https://appcenter-deeplearning.sh1a.qingstor.com/dataset/imagenet/ILSVRC2017_DET_test_new.tar.gz | 428MB |
 
-[COCO](http://cocodataset.org)
+COCO
 
 | 名称                             | 地址                                                         | 数量/尺寸 |
 | -------------------------------- | ------------------------------------------------------------ | --------- |
@@ -32,7 +32,7 @@ draft: false
 | 2017 Testing Image info          | [https://appcenter-deeplearning.sh1a.qingstor.com/dataset/coco/image_info_test2017.zip](https://appcenter-deeplearning.sh1a.qingstor.com/dataset/coco/image_info_test2017.zip) | 1MB       |
 | 2017 Unlabeled Image info        | [https://appcenter-deeplearning.sh1a.qingstor.com/dataset/coco/image_info_unlabeled2017.zip](https://appcenter-deeplearning.sh1a.qingstor.com/dataset/coco/image_info_unlabeled2017.zip) | 4MB       |
 
-[PASCAL VOC](http://host.robots.ox.ac.uk/pascal/VOC)
+PASCAL VOC
 
 | 名称                                           | 地址                                                         | 尺寸   |
 | ---------------------------------------------- | ------------------------------------------------------------ | ------ |
@@ -45,7 +45,7 @@ draft: false
 | VOC2007 development kit code and documentation | [https://appcenter-deeplearning.sh1a.qingstor.com/dataset/voc/2007/VOCdevkit_08-Jun-2007.tar](https://appcenter-deeplearning.sh1a.qingstor.com/dataset/voc/2007/VOCdevkit_08-Jun-2007.tar) | 250KB  |
 | VOC2007 PDF documentation                      | [https://appcenter-deeplearning.sh1a.qingstor.com/dataset/voc/2007/devkit_doc_07-Jun-2007.pdf](https://appcenter-deeplearning.sh1a.qingstor.com/dataset/voc/2007/devkit_doc_07-Jun-2007.pdf) | 175KB  |
 
-[OpenSLR](http://www.openslr.org)
+OpenSLR
 
 | Name                            | Category | Summary                                                      | Files                                                        |
 | ------------------------------- | -------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -55,11 +55,7 @@ draft: false
 | Aishell                         | Speech   | Mandarin data, provided by Beijing Shell Shell Technology Co.,Ltd | [data_aishell.tgz [15G]](https://appcenter-deeplearning.sh1a.qingstor.com/dataset/openslr/Aishell/data_aishell.tgz)<br>[resource_aishell.tgz [1.2M]](https://appcenter-deeplearning.sh1a.qingstor.com/dataset/openslr/Aishell/resource_aishell.tgz) |
 | Free ST Chinese Mandarin Corpus | Speech   | A free Chinese Mandarin corpus by Surfingtech (www.surfing.ai), containing utterances from 855 speakers, 102600 utterances; | [ST-CMDS-20170001_1-OS.tar.gz [8.2G]](https://appcenter-deeplearning.sh1a.qingstor.com/dataset/openslr/Free%20ST%20Chinese%20Mandarin%20Corpus/ST-CMDS-20170001_1-OS.tar.gz) |
 
-[VGGFace2](http://zeus.robots.ox.ac.uk/vgg_face2/)
-
->Q. Cao, L. Shen, W. Xie, O. M. Parkhi, A. Zisserman
->VGGFace2: A dataset for recognising faces across pose and age.
->Arxiv: https://arxiv.org/abs/1710.08092.
+VGGFace2
 
 | 名称                  | 描述                                                         | 地址                                                         | 尺寸  |
 | --------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ----- |
@@ -72,7 +68,7 @@ draft: false
 | BB_Landmark.tar.gz    | The information for bounding boxes and 5 facial landmarks referring to the loosely cropped faces. | [https://appcenter-deeplearning.sh1a.qingstor.com/dataset/vggface2/bb_landmark.tar.gz](https://appcenter-deeplearning.sh1a.qingstor.com/dataset/vggface2/bb_landmark.tar.gz) | 170MB |
 | Dev_kit.tar.gz        | Development kit.                                             | [https://appcenter-deeplearning.sh1a.qingstor.com/dataset/vggface2/dev_kit.tar.gz](https://appcenter-deeplearning.sh1a.qingstor.com/dataset/vggface2/dev_kit.tar.gz) | 3kB   |
 
-[中英文维基百科语料](https://dumps.wikimedia.org/)
+中英文维基百科语料
 
 | 名称                                 | 描述                                  | 地址                                                         | 尺寸   |
 | ------------------------------------ | ------------------------------------- | ------------------------------------------------------------ | ------ |
@@ -81,7 +77,7 @@ draft: false
 
 ### 预训练模型
 
-[TensorFlow-Slim image classification model library](https://github.com/tensorflow/models/tree/master/research/slim)
+TensorFlow-Slim image classification model library
 
 <span style="color:red">下表中 Checkpoint 地址均为山河对象存储地址，可直接下载。</span>
 

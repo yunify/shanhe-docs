@@ -15,7 +15,7 @@ keyword: inference
 
 ## 基本架构
 
-![](../.=./_images/architecture.jpeg)
+![](../../_images/architecture.jpeg)
 
 如上图所示，Inference Engine 推理引擎 由三种角色构成：
 

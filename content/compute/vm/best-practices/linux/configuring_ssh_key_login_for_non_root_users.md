@@ -12,13 +12,13 @@ draft: false
 
 ## 1. 创建用户
 
-通过下列命令，创建一个用户qingcloud，并切换到qingcloud的家目录下。
+通过下列命令，创建一个用户shanhe，并切换到shanhe的家目录下。
 
 ```shell
-useradd -m qingcloud  #创建用户qingcloud,并同时创建用户qingcloud的家目录/home/qingcloud
-passwd qingcloud  #设置用户qingcloud的密码，需键入两次次
-su qingcloud  #切换到用户qingcloud
-cd ~  #切换到用户qingcloud的家目录
+useradd -m shanhe  #创建用户shanhe,并同时创建用户shanhe的家目录/home/shanhe
+passwd shanhe  #设置用户shanhe的密码，需键入两次次
+su shanhe  #切换到用户shanhe
+cd ~  #切换到用户shanhe的家目录
 ```
 
 ## 2. 创建ssh证书
@@ -30,7 +30,7 @@ ssh-keygen -b 2048 -t rsa  #此时会提示密钥保存路径，若无需修改�
 通过ls 命令，可以看到已经生成相应的私钥(id_rsa)和公钥(id_rsa.pub)。
 
 ```shell
-ls /home/qingcloud/.ssh/
+ls /home/shanhe/.ssh/
 ```
 
 ## 3. 添加公钥
@@ -38,10 +38,10 @@ ls /home/qingcloud/.ssh/
 创建authorized_keys文件，将公钥加入至authorized_keys文件，并设置.ssh以及authorized_keys文件的权限。
 
 ```shell
-touch /home/qingcloud/.ssh/authorized_keys
-cat /home/qingcloud/.ssh/id_rsa.pub >> /home/qingcloud/.ssh/authorized_keys
-chmod 700 /home/qingcloud/.ssh
-chmod 600 /home/qingcloud/.ssh/authorized_keys
+touch /home/shanhe/.ssh/authorized_keys
+cat /home/shanhe/.ssh/id_rsa.pub >> /home/shanhe/.ssh/authorized_keys
+chmod 700 /home/shanhe/.ssh
+chmod 600 /home/shanhe/.ssh/authorized_keys
 ```
 
 ## 4. 使用私钥登录
@@ -58,7 +58,7 @@ chmod 600 /home/qingcloud/.ssh/authorized_keys
 
 ![](../../_images/ssh_key_non_root_user/non_root_users2.png)
 
-在Xshell中新建一个会话，填写主机为登录的ip地址，左侧标签中切换到 用户身份验证 (Authentication)，右侧表单中方法(Method)选择 Public Key ，用户名  (Username) 为之前创建的用户(qingcloud)，选择刚才导入的密钥，即可连接主机。
+在Xshell中新建一个会话，填写主机为登录的ip地址，左侧标签中切换到 用户身份验证 (Authentication)，右侧表单中方法(Method)选择 Public Key ，用户名  (Username) 为之前创建的用户(shanhe)，选择刚才导入的密钥，即可连接主机。
 
 ![](../../_images/ssh_key_non_root_user/non_root_users3.png)
 
@@ -69,7 +69,7 @@ chmod 600 /home/qingcloud/.ssh/authorized_keys
 将私钥拷贝至Linux客户端上，通过密钥登录云服务器。
 
 ```shell
-scp root@192.168.0.4:/home/qingcloud/.ssh/id_rsa /root/
-ssh -i id_rsa qingcloud@192.168.0.4
+scp root@192.168.0.4:/home/shanhe/.ssh/id_rsa /root/
+ssh -i id_rsa shanhe@192.168.0.4
 ```
 

@@ -46,7 +46,7 @@ section4:
       vice_title: 上手的第一步
       children:
         - title: 创建CFW安全策略
-          url: "manual/base/#安全策略"
+          url: "quick-start/base"
 
 ---
 

@@ -16,19 +16,13 @@ enableToc: false
 
 1、如果仍然想在后端配置了SSL ，负载均衡器的监听器则需要改成TCP的方式
 
-操作步骤：负载均衡器 -> lb-xxxxxxx，进入负载均衡器后修改监听器，如下图
-
-![modify_lb](../../../_images/modify_lb.jpg)
-
-![lb_tcp](../../../_images/lb_tcp.jpg)
+操作步骤：负载均衡器 -> lb-xxxxxxx，进入负载均衡器后修改监听器。
 
 
 
 2、如果后端采用HTTP，负载均衡器创建HTTPS监听器，HTTPS监听器加载SSL证书，由LB来做SSL证书的加载和卸载
 
-操作步骤：负载均衡器 -> lb-xxxxxxx -> 创建监听器 ，HTTPS模板如下图
-
-![lb_ssl](../../../_images/lb_ssl.png)
+操作步骤：负载均衡器 -> lb-xxxxxxx -> 创建监听器 。
 
 二、仔细检查地址 
 
