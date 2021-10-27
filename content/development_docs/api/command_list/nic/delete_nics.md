@@ -31,9 +31,9 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DeleteNics
+https://api.qingcloudm/iaas/?action=DeleteNics
 &nics.1="52:54:00:00:12:34",
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 

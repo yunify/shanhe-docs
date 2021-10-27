@@ -31,7 +31,7 @@ _Example Request_:
 ```
 https://api.qingcloud.com/iaas/?action=CopySecurityGroupIPSets
 &ipsets.1=sgi-12345678
-&dest_zones.1=pek3a
+&dest_zones.1=jn1a
 &COMMON_PARAMS
 ```
 

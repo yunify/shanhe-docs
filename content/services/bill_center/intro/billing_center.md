@@ -6,11 +6,11 @@ draft: false
 keyword: 账单, 发票, 订单, 充值, 费用
 ---
 
-QingCloud 费用中心为用户提供基于页面的云产品交易和账单管理能力，您可以通过费用中心清晰地了解自己的订单、账单和消费明细等相关信息，您还可以进行续约、退订、发票管理等操作。
+费用中心为用户提供基于页面的云产品交易和账单管理能力，您可以通过费用中心清晰地了解自己的订单、账单和消费明细等相关信息，您还可以进行续约、退订、发票管理等操作。
 
 ## 功能入口
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录[管理控制台](https://console.shanhe.com/login)。
 
 2. 将鼠标移到页面顶部右上方的**费用**选项，显示费用中心相关功能入口，如点击**账户总览**，便可进入到费用中心的**账户总览**页面。
 
@@ -69,9 +69,13 @@ QingCloud 费用中心为用户提供基于页面的云产品交易和账单管�
       <td style="background:#fff;">支持预留合约、包年包月产品的自动及手动续费。</td>
 	</tr>
     <tr >
-	    <td rowspan="2" style="background:#fff;">发票管理</td>
+	    <td rowspan="3" style="background:#fff;">发票与合同</td>
 	    <td style="background:#fff;">发票管理</td>
       <td style="background:#fff;">支持申请开具发票及管理发票抬头。</td>
+	</tr>
+	<tr>
+	    <td style="background:#fff;">合同管理</td>
+      <td style="background:#fff;">支持申请及下载合同。</td>
 	</tr>
 	<tr>
 	    <td style="background:#fff;">邮寄地址管理</td>

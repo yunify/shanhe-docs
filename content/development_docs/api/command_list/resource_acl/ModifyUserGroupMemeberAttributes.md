@@ -12,8 +12,8 @@ draft: false
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| user_group | String | 用户组ID | Yes |
-| user | String | 用户ID | Yes |
+| user_group | String | 用户组 ID | Yes |
+| user | String | 用户 ID | Yes |
 | remarks | String | 备注 | No |
 | status | String | 状态 | No |
 
@@ -24,7 +24,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=ModifyUserGroupMemberAttributes
+https://api.shanhe.com/iaas/?action=ModifyUserGroupMemberAttributes
 &user_group=ug-6zp387ak
 &user=usr-iKf0yJEZ
 &status=disabled

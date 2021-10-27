@@ -12,7 +12,7 @@ draft: false
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| group_role_rule | String | 规则ID | Yes |
+| group_role_rule | String | 规则 ID | Yes |
 | description | String | 描述 | No |
 | policy | String | 策略，参考 AddGroupRoleRules 里的描述。 | No |
 
@@ -23,7 +23,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=ModifyGroupRoleRuleAttributes
+https://api.shanhe.com/iaas/?action=ModifyGroupRoleRuleAttributes
 &group_role_rule=grr-613v0o2p
 &policy=all.describe
 &COMMON_PARAMS

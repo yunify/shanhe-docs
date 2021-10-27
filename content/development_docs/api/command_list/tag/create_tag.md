@@ -34,9 +34,9 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=CreateTag
+https://api.shanhe.com/iaas/?action=CreateTag
 &tag_name=test
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 

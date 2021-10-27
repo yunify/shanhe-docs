@@ -37,7 +37,7 @@ keyword: 山河
 
 2. 关闭操作系统，选择要扩容系统盘的云服务器，在“更多操作”中选择“更改配置”，并按照下图所示，扩展系统磁盘：
 
-   <img src="/storage/disk/quickstart/_images/expan_linux_sys_2.png" alt="扩容硬盘" style="zoom:70%;" />
+   <img src="/storage/disk/quickstart/_images/expan_linux_sys_1.png" alt="扩容硬盘" style="zoom:70%;" />
 
 3. 启动云服务器，并查看更改后的结果：
 

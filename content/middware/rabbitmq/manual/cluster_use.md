@@ -3,7 +3,7 @@ title: "集群使用"
 description: test
 weight: 8
 draft: false
-keyword:  QingCloud, RabbitMQ, rabbitmq,  消息队列服务, 消息中间件
+keyword:  RabbitMQ, rabbitmq,  消息队列服务, 消息中间件
 ---
 
 ## 使用 rabbitmq_management 和 Haproxy web 监控管理工具管理集群
@@ -12,7 +12,7 @@ keyword:  QingCloud, RabbitMQ, rabbitmq,  消息队列服务, 消息中间件
 
   > **注意**
   >
-  > 青云内部创建了一个 **monitor** 用户用于监控集群节点，请勿删除与修改该用户。
+  > 系统内部创建了一个 **monitor** 用户用于监控集群节点，请勿删除与修改该用户。
 
 - Haproxy+Keepalived 节点创建后，监控管理界面默认端口为8100，登录方式：`http://vip:8100` 或 `http://haproxy 节点ip:8100`， 登录帐号：**haproxy**，密码：**haproxy**。您也可以通过**配置参数**修改端口和用户。
 

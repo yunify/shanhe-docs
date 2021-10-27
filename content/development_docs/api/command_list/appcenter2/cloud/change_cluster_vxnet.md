@@ -30,12 +30,12 @@ draft: false
 
 **Example**
 
-以应用[ZooKeeper](https://appcenter.qingcloud.com/apps/app-tg3lbp0a/ZooKeeper%20on%20QingCloud)为例
+以应用[ZooKeeper](https://appcenter.shanhe.com/apps/app-tg3lbp0a/ZooKeeper%20on%20shanhe)为例
 
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=ChangeClusterVxnet
+https://api.shanhe.com/iaas/?action=ChangeClusterVxnet
 &cluster=cl-q1witcdk
 &vxnet=vxnet-iuy3lnd
 &private_ips.1.node_id=cln-nqop00oj
@@ -44,7 +44,7 @@ https://api.qingcloud.com/iaas/?action=ChangeClusterVxnet
 &private_ips.2.private_ip=192.168.1.2
 &private_ips.3.node_id=cln-veb7g8nx
 &private_ips.3.private_ip=192.168.1.3
-&zone=pek3b
+&zone=jn1b
 &COMMON_PARAMS
 ```
 

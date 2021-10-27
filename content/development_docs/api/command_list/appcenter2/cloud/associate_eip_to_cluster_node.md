@@ -30,7 +30,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=AssociateEipToClusterNode
+https://api.shanhe.com/iaas/?action=AssociateEipToClusterNode
 &cluster_node=cln-jmrv7xfv
 &eip=eip-ek3scgap
 &zone=test

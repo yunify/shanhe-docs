@@ -8,15 +8,17 @@ weight: 43
 
 创建或编辑策略时，您可以选择 JSON 选项卡进入 JSON 编辑模式，以便在 JSON 编辑器中键入或粘贴策略。
 
-这种方法一般适用于复制[示例策略](../../faq/json/#策略示例)以方便在您的账户中使用，如果您对下文描述中的 QingCloud IAM 语法元素比较熟悉，也可以直接在 JSON 编辑器中键入自己的 JSON 策略文档。
+这种方法一般适用于复制[示例策略](../../faq/json/#策略示例)以方便在您的账户中使用，如果您对下文描述中的山河 IAM 语法元素比较熟悉，也可以直接在 JSON 编辑器中键入自己的 JSON 策略文档。
 
 ![demo1_JsonEditor](../../_images/demo1_JsonEditor.png)
 
 ## 策略构成
 
-策略**语句（statement）**核心元素：**资源（resource）**、**操作（action）** 和 **效力（effect）**。
+策略语句（statement）核心元素：**资源（resource）**、**操作（action）** 和 **效力（effect）**。
 
-> 注：元素保留字仅支持小写。
+> **说明**
+>
+> 元素保留字仅支持小写。
 
 1. 语句（statement）
 
@@ -59,20 +61,22 @@ weight: 43
     资源是用六段式 qrn 描述，每款产品的资源定义详情会有所区别。具体描述方式请参阅：[资源标识符 QRN](../../faq/qrn) 。
 
     ```json
-    "resource": "qrn:qingcloud:ecm:test:usr-XXXXX:instance/i-123456"
+    "resource": "qrn:shanhe:ecm:test:usr-XXXXX:instance/i-123456"
     ```
 
 4. 效力（effect）
 
     描述策略语句产生的结果是“允许（allow）”还是“拒绝（deny）”，该元素是必填项。
 
-    > 注：若同一个操作被同时赋予两种效力，最终产生的结果为“拒绝”。
-
+    > **说明**
+    >
+    > 若同一个操作被同时赋予两种效力，最终产生的结果为“拒绝”。
+    
     ```json
     "effect": "allow"
     ```
 
-以上便是 QingCloud IAM 的策略文档构成，建议您在参照文档用 JSON 编辑策略时，随时通过切换到可视化编辑器来比较您填写的这些内容。
+以上便是山河 IAM 的策略文档构成，建议您在参照文档用 JSON 编辑策略时，随时通过切换到可视化编辑器来比较您填写的这些内容。
 
 ## 策略示例
 

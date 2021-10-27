@@ -13,5 +13,5 @@ draft: false
 
 ### 解决方案
 
-根据「监控总览」上的资源排序功能，直接查看核心资源重要指标的Top5实时排序列表。
-![](../best-practices.assets/20201104142142.png)
+根据「监控概览」上的资源排序功能，直接查看核心资源重要指标的Top5实时排序列表。
+<img src="../best-practices.assets/20201104142142.png" style="zoom:30%;" />

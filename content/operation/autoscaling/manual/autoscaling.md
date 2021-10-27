@@ -33,9 +33,9 @@ weight: 5
     云服务器要加入的网络，包括基础网络、受管私有网络和自管私有网络。
 *   云服务器登录方式：
     密码登录 或 SSH 密钥登录（推荐 SSH 密钥登录，更安全）
-*   防火墙：
+*   安全组：
     云服务器使用的防火墙
-*   UserData：
+*   用户数据：
     即用户自定义数据，可让用户在创建云服务器时通过上传一些自定义的参数或脚本。更多请见 [User Data 指南](../../../../../compute/vm/manual/userdata/)
 
 ![](../_images/create-launch-configuration.png)
@@ -61,7 +61,7 @@ weight: 5
 *   如果是『所有』关系，则每个告警规则都满足时，才能触发自动伸缩。
 *   如果是『任意』关系，则一旦有一条告警规则满足，就会触发自动伸缩。
 
-这里我们设置若响应延迟时间大于2秒，且请求数和并发数都超出一定值的话， 则触发自动伸缩为负载均衡器增加后端。 (关于监控告警策略的更多介绍可参考 [监控告警](/monitor_service/cloudsat/alarm-service/manual/alarm_service))
+这里我们设置若响应延迟时间大于2秒，且请求数和并发数都超出一定值的话， 则触发自动伸缩为负载均衡器增加后端。 (关于监控告警策略的更多介绍可参考 [监控告警](/monitor_service/cloudsat/manual/alarm_service))
 
 ![](../_images/autoscaling-increase-trigger.png)
 

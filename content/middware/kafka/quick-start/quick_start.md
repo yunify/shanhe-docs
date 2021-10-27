@@ -1,14 +1,14 @@
 ---
-title: "创建Kafka"
+title: "创建 Kafka 集群"
 description: 
 draft: false
 ---
 
-## 创建步骤
+## 前提条件
 
-创建Kafka集群前，您需要先创建一个VPC网络，并在QingCloud AppCenter中创建一个Zookeeper集群，其他地方创建的ZooKeeper集群识别不出来，建议Kafka与ZooKeeper在一个私有网络中。
+创建 Kafka 集群前，您需要先创建一个 VPC 网络，并[创建一个 Zookeeper 集群](/bigdata/zookeeper/quickstart/create_cluster/)，其他地方创建的 ZooKeeper 集群识别不出来，建议 Kafka 与 ZooKeeper 在一个私有网络中。
 
-> 为了保障数据安全，Kafka集群需要运行在受管私有网络中。所以在创建一个Kafka集群之前，需要创建一个VPC和一个受管私有网络，受管私有网络需要加入VPC，并开启DHCP服务（默认开启）。
+> 为了保障数据安全，Kafka 集群需要运行在受管私有网络中。所以在创建一个 Kafka 集群之前，需要创建一个 VPC 和一个受管私有网络，受管私有网络需要加入 VPC，并开启 DHCP 服务（默认开启）。
 
 ### 第一步：基本设置
 
@@ -16,9 +16,9 @@ draft: false
 
 根据实际需求填写**名称**和**描述**，不影响集群的功能，版本一般建议选择最新版本。
 
-**多可用区域**将节点分散部署在不同区，可用性高；**单可用区域**将节点部署在同一个区，网络延迟最低。
+<!-- **多可用区域**将节点分散部署在不同区，可用性高；**单可用区域**将节点部署在同一个区，网络延迟最低。
 
-> **注意**：只有选择部署在『region』为**北京3区**时，才可以选择部署方式。如果您选择『多可用区部署』，则集群所有节点将分散部署在当前region中的所有zone；反之，如果选择『单可用区部署』，则集群所有节点将部署在当前region中的某一个zone 中。
+> **注意**：只有选择部署在『region』为**北京3区**时，才可以选择部署方式。如果您选择『多可用区部署』，则集群所有节点将分散部署在当前region中的所有zone；反之，如果选择『单可用区部署』，则集群所有节点将部署在当前region中的某一个zone 中。 -->
 
 ### 第二步：Kafka 节点设置
 
@@ -43,16 +43,20 @@ CPU、内存、节点数量、节点类型和存储容量根据自己实际需�
 
 选择您所依赖的ZooKeeper集群。
 
-> **提示**：初次使用Kafka，请在上图中点击**快捷创建**创建一个Zookeeper集群。
+> **说明**
+>
+>初次使用 Kafka，请在上图中点击**快捷创建**创建一个 Zookeeper 集群。
 
 ### 第六步：参数设置
 
 ![](../../_images/sevice_parameter.png)
 
-> 注意：offsets.topic.replication.factor参数必须小于或者等于Kafka broker节点数，不能大于Kafka broker节点数，否则就会消费不了消息，直至集群中Kafka broker节点数大于或者等于此参数。
+> **注意**
+>
+>offsets.topic.replication.factor 参数必须小于或者等于 Kafka broker 节点数，不能大于 Kafka broker 节点数，否则就会消费不了消息，直至集群中 Kafka broker 节点数大于或者等于此参数。
 
-按照实际需求配置Kafka参数，同时也可以配置Kafka-manager是否需要登陆，登录帐号与密码和端口参数。
+按照实际需求配置 Kafka 参数，同时也可以配置 Kafka-manager 是否需要登录，登录账户与密码和端口参数。
 
 ### 第七步：用户协议
 
-阅读并同意青云AppCenter用户协议之后，点击**提交**，即可开始部署应用。
+阅读并同意 AppCenter 用户协议之后，点击**提交**，即可开始部署应用。

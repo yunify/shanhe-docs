@@ -12,7 +12,7 @@ draft: false
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| resource_group | String | 资源组ID | Yes |
+| resource_group | String | 资源组 ID | Yes |
 | resource_group_name | String | 资源组名称 | No |
 | description | String | 资源组描述 | No |
 
@@ -23,7 +23,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=ModifyResourceGroupAttributes
+https://api.shanhe.com/iaas/?action=ModifyResourceGroupAttributes
 &resource_group=rg-5ukijwcx
 &resource_group_name=TTTT
 &COMMON_PARAMS

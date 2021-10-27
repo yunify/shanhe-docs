@@ -1,5 +1,5 @@
 ---
-title: "分布式数据库 PolonDB"
+title: "云数据库 PolonDB"
 linkTitle: "PolonDB"
 weight: 04
 collapsible: true

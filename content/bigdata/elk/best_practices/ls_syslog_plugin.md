@@ -11,7 +11,7 @@ Logstash 预置了 logstash-input-syslog 插件，通过此插件可在 Logstash
 
 > **说明**：
 >
-> 更多的预置 Logstash 插件请参见 [Logstash 预置插件列表](#logstash-plugins)。
+> 更多的预置 Logstash 插件请参见 **Logstash 预置插件列表**。
 
 ## 操作步骤
 

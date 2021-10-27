@@ -35,7 +35,7 @@ _Example Request_:
 https://api.qingcloud.com/iaas/?action=DeleteSecurityGroupIPSets
 &security_group_ipsets.1=sgi-inijevna
 &security_group_ipsets.2=sgi-o3msxqpp
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 

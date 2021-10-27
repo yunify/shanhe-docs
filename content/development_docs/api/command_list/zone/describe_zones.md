@@ -4,8 +4,6 @@ description:
 draft: false
 ---
 
-
-
 获取可访问的区域列表。
 
 **Request Parameters**
@@ -51,7 +49,7 @@ _Example Response_:
   "zone_set":[
     {
       "status":"active",
-      "zone_id":pek3a
+      "zone_id":jn1a
     },
     {
       "status":"active",

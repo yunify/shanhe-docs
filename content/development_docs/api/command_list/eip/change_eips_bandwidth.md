@@ -33,10 +33,10 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=ChangeEipsBandwidth
+https://api.shanhe.com/iaas/?action=ChangeEipsBandwidth
 &eips.1=eip-r4jnbhui
 &bandwidth=5
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 

@@ -40,11 +40,11 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=CreateS2Account
+https://api.shanhe.com/iaas/?action=CreateS2Account
 &account_type=NFS
 &account_name=nfstest
 &nfs_ipaddr=192.168.1.10
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 

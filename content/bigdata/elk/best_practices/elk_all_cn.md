@@ -13,7 +13,7 @@ draft: false
 >
 > 已内置用于指定 ik 分词器的模板文件，用户可以直接使用（在 Logstash 节点的 /data/elasticsearch/dicts 目录下）。
 >
-> 如果是以前的版本，需要事先把 [模板文件](logstash.json) 下载到 Logstash 节点的 `/data/elasticserach/dicts/` 目录下再进行后面的操作，否则 Logstash 会因找不到模板文件而无法启动（可以直接登录到节点下载，也可以通过如下命令上传，注意 URL 最后的 `/` 不能省略。
+> 如果是以前的版本，需要事先把 **模板文件** 下载到 Logstash 节点的 `/data/elasticserach/dicts/` 目录下再进行后面的操作，否则 Logstash 会因找不到模板文件而无法启动（可以直接登录到节点下载，也可以通过如下命令上传，注意 URL 最后的 `/` 不能省略。
 
 ## 操作步骤
 
@@ -36,7 +36,7 @@ template => "/data/elasticsearch/dicts/logstash.json"
 curl -d "shanhe123" $LS_IP:9700
 ```
 
-4. 参照 [Kibana 基本用法](#kibana-intro) 在浏览器中访问 Kibana 节点并配置 index pattern，然后点击左侧的 `Discover` 菜单项，显示近期接收到的日志，在搜索栏中输入“中国”，点击右侧的“搜索”按钮。如图，“中国”被高亮显示并且中间没有空格分隔，测试成功。
+1. 参照 **Kibana 基本用法**在浏览器中访问 Kibana 节点并配置 index pattern，然后点击左侧的 `Discover` 菜单项，显示近期接收到的日志，在搜索栏中输入“中国”，点击右侧的“搜索”按钮。如图，“中国”被高亮显示并且中间没有空格分隔，测试成功。
 
  ![search_result](../../_images/search_result.png)
  

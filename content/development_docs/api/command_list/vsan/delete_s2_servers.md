@@ -36,9 +36,9 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DeleteS2Servers
+https://api.shanhe.com/iaas/?action=DeleteS2Servers
 &s2_servers.1=s2-s5nqo8mr
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 

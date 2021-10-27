@@ -10,7 +10,7 @@ draft: false
 
 ## 操作步骤
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，选择**产品与服务** > **安全服务** > **安全组**，进入**安全组**页签。
+1. 登录 [山河管理控制台](https://console.shanhe.com/login)，选择**产品与服务** > **安全服务** > **安全组**，进入**安全组**页签。
 
 3. 进入**安全组规则子集**页面，点击**创建**。
 
@@ -30,6 +30,8 @@ draft: false
 
    ![](../../_images/subset_group3.png)
 
-   > 说明：安全组规则相关内容请参考[添加安全组规则](../../manual/sg_rules/)文档。
+   > **说明**
+   >
+   > 安全组规则相关内容请参考[添加安全组规则](../../manual/sg_rules/)文档。
    
-   ### 
+   

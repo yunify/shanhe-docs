@@ -30,10 +30,10 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DeleteTags
+https://api.shanhem/iaas/?action=DeleteTags
 &tags.1=tag-axbkmf20
 &tags.2=tag-axbkmf21
-&zone=pek3a
+&zone=jn1a
 &COMMON_PARAMS
 ```
 

@@ -27,9 +27,9 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DissociateEipFromClusterNode
+https://api.shanhe.com/iaas/?action=DissociateEipFromClusterNode
 &eips.1=eip-ek3scgap
-&zone=pek3b
+&zone=jn1b
 &COMMON_PARAMS
 ```
 
