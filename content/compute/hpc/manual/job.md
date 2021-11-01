@@ -11,7 +11,7 @@ weight: 3
 
 ## 作业
 
-### 提交作业
+### 页面提交作业
 
 控制台提供了创建作业、停止作业、查看作业状态等功能，您可通过作业页面快速创建作业。
 
@@ -26,6 +26,21 @@ weight: 3
 
 ![](../_images/hpc_job4.png)
 
+### 命令行提交作业
+
+用户可SSH连接登录节点，使用slurm或者天云aip的命令来提交作业
+
+slurm命令可参考文档：[slurm官方文档](https://slurm.schedmd.com/)
+
+天云aip命令可参考：
+
+- ### [天云aip作业管理](../aip/submit_job)
+
+命令行软件管理可module或者spack：
+
+spack命令可参考：
+
+- ### [spack软件管理](../spack/intro)
 
 ### 作业列表
 
