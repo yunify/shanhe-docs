@@ -79,7 +79,7 @@ mysql -u root -p
 2. 登录后需要重置密码，参考命令。
 
 ```mysql
-mysql> ALTER USER 'root'@'localhost' IDENTIFIED BY 'QingCloud1234';
+mysql> ALTER USER 'root'@'localhost' IDENTIFIED BY 'shanhe1234';
 ```
 
 ### 开启远程访问
@@ -93,7 +93,7 @@ mysql> FLUSH PRIVILEGES;
 mysql> SELECT host,user FROM user;
 ```
 
-### 关闭主机内部防火墙
+### 关闭云服务器内部防火墙
 
 关闭防火墙，点击开始---服务器管理器---本地服务器---Windows Defender 防火墙，将防火墙关闭。
 
@@ -101,13 +101,13 @@ mysql> SELECT host,user FROM user;
 
 ### 远程客户端连接测试
 
-远程客户端连接，需要在主机绑定的安全组处添加相应的规则，添加之后点击上方的应用修改。点击主机id进入主机详情页，点击绑定资源的安全组，即可跳转至安全组。
+远程客户端连接，需要在云服务器绑定的安全组处添加相应的规则，添加之后点击上方的应用修改。点击云服务器id进入云服务器详情页，点击绑定资源的安全组，即可跳转至安全组。
 
 ![](../../_images/mysql_install/mysql_install17.png)
 
 点击添加规则，添加端口并提交后，点击应用修改。
 
-![](../../_images/mysql_install/mysql_install18.png)
+![](../../_images/mysql_install/mysql_install2.png)
 
 通过云服务器绑定的公网IPv4进行连接，已正常连接。
 

@@ -11,7 +11,7 @@ draft: false
 
 ![](../../_images/console.png)
 
-下面列举几个常见操作，详情可参见[官方使用文档](https://github.com/apache/rocketmq-externals/blob/master/rocketmq-console/doc/1_0_0/UserGuide_CN.md)。
+下面列举几个常见操作，详情可参见[官方使用文档](https://rocketmq-1.gitbook.io/rocketmq-connector/rocketmq-connect/rocketmq-console)。
 
 > **注意**：通过此控制台可以对集群中的实际数据进行增删改，请谨慎操作。
 

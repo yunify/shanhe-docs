@@ -88,7 +88,7 @@ systemctl disable firewalld.service  #禁用防火墙
 
 点击添加规则，添加端口并提交后，点击应用修改。
 
-![](../../_images/mysql_install/mysql_install2.png)
+<img src="../../_images/mysql_install/mysql_install2.png" style="zoom:50%;" />
 
 通过云服务器绑定的公网ipv4进行连接，已正常连接。
 
@@ -173,11 +173,11 @@ systemctl disable iptables  #禁用iptables
 
 远程客户端连接，需要在主机绑定的安全组处添加相应的规则，添加之后点击上方的应用修改。点击主机id进入主机详情页，点击绑定资源的安全组，即可跳转至安全组。
 
-![](../../_images/mysql_install/mysql_install6.png)
+![](../../_images/mysql_install/mysql_install1.png)
 
 点击添加规则，添加端口并提交后，点击应用修改。本地客户端连接，需要在主机绑定的安全组处添加相应的规则，添加之后点击上方的应用修改。
 
-![](../../_images/mysql_install/mysql_install7.png)
+![](../../_images/mysql_install/mysql_install2.png)
 
 通过主机绑定的公网ipv4进行连接，已正常连接。
 
@@ -208,8 +208,6 @@ port = 3306  #设置端口为3306
 ```
 
 执行win+R，打开运行，使用管理员权限打开cmd。
-
-![](../../_images/mysql_install/mysql_install12.png)
 
 切换至bin目录下。
 
@@ -284,7 +282,7 @@ mysql> SELECT host,user FROM user;
 
 点击添加规则，添加端口并提交后，点击应用修改。
 
-![](../../_images/mysql_install/mysql_install18.png)
+![](../../_images/mysql_install/mysql_install2.png)
 
 通过云服务器绑定的公网IPv4进行连接，已正常连接。
 

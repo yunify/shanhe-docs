@@ -5,7 +5,7 @@ description: test
 draft: false
 ---
 
-青云云平台每个区都有内网DNS Server为云服务器提供域名解析服务，这个DNS地址会在云服务器中自动获取，若有特殊需求需要更改DNS Server，可以参考如下内容：
+山河云平台每个区都有内网DNS Server为云服务器提供域名解析服务，这个DNS地址会在云服务器中自动获取，若有特殊需求需要更改DNS Server，可以参考如下内容：
 
 ## Windows 云服务器修改DNS地址
 
