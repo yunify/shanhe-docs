@@ -11,9 +11,9 @@ weight: 10
 
 通过脚本提交作业，更容易阅读，同类型的作业可以复用脚本，修改关键的几个参数即可
 
-提交作业脚本： run_xhpl.aip.offload
+提交作业脚本： run_xhpl.aip.sh
 
-提交作业方法：csub < run_xhpl.aip.offload
+提交作业方法：csub < run_xhpl.aip.sh
 
 注意：这里有个<符号
 
