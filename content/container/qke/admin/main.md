@@ -8,7 +8,7 @@ weight: 10
 
 ## 创建
 
-在青云上，您可以很方便的创建和管理一个 QKE 集群。支持横向在线伸缩，同时具有自我诊断功能，即当系统发现某节点坏死时在控制台显示状态。 另外我们还提供了监控告警等功能来帮助您更好的管理集群。集群将运行于私有网络内，结合青云提供的硬盘，在保障高性能的同时兼顾您的数据安全。
+在山河计算平台上，您可以很方便的创建和管理一个 QKE 集群。支持横向在线伸缩，同时具有自我诊断功能，即当系统发现某节点坏死时在控制台显示状态。 另外我们还提供了监控告警等功能来帮助您更好的管理集群。集群将运行于私有网络内，结合青云提供的硬盘，在保障高性能的同时兼顾您的数据安全。
 
 ### 准备工作
 
@@ -255,15 +255,13 @@ QKE 默认仅最小化安装 KubeSphere，可通过“选装组件”参数开�
 
 ### 验证
 
-QKE 集群创建完成之后可以进行验证，创建集群一般在 612 分左右（视选装的组件而定）。找到客户端节点，点击 vnc 图标。
+QKE 集群创建完成之后可以进行验证，创建集群一般在 6-12 分左右（视选装的组件而定）。找到客户端节点，点击 vnc 图标。
 
 使用 `root / <cluster id>` 登录。首次登录需要修改密码。登录客户端节点后可以通过 ssh 免密登录其他节点。
 
 > **注意**：
 >
 >  `v2.0.0 - KubeSphere v2.1.1` 及更老版本使用 `root / k8s` 登录。
-
-![](../../_images/client-status.png)
 
 ![](../../_images/login-password.png)
 
@@ -291,25 +289,19 @@ kubectl get pods --all-namespaces
 
 ![](../../_images/add-node-manually1.png)
 
-![](../../_images/add-node-manually2.png)
-
 ### 删除节点
 
 当客户端连接并不多的时候您也可以在 QKE 详情页选中需要删除的节点，然后点“删除”按钮删除节点，以节省资源和费用。此操作要保证 QKE 集群内有足够资源容纳迁移的 Pod。
 
 ![](../../_images/del-node-manually1.png)
 
-![](../../_images/del-node-manually2.png)
-
 ### 自动伸缩
 
-使用 Console 控制台运维工具的[自动伸缩](https://docs.qingcloud.com/product/operation/autoscaling)功能，选择指定的 QKE 集群以及节点类型，操作类型选择“调整应用节点数量”
+使用 Console 控制台运维工具的[自动伸缩](/operation/autoscaling/intro/intro/)功能，选择指定的 QKE 集群以及节点类型，操作类型选择“调整应用节点数量”
 
 ![](../../_images/autoscale-node-qke.png)
 
-配置自动伸缩的阈值及相应的伸缩规则：
-
-![](../../_images/autoscale-node-metric.png)
+然后，点击自动伸缩条目 ID，进入详情页， 配置自动伸缩的阈值及相应的伸缩规则。
 
 配置完成后，当阈值被触发后，相应集群会自动进行节点增删操作，通知列表中的用户会收到通知。
 
@@ -344,7 +336,7 @@ kubectl get pods --all-namespaces
 
 ## 监控
 
-使用 Console 控制台运维工具的 [监控Dashboard](/monitor_service/cloudsat/manual/dashboard/) 功能，创建监控面板和图表，选择指定的 QKE 集群、节点以及指标，
+使用 Console 控制台运维工具的 [监控 Dashboard](/monitor_service/cloudsat/intro/intro/#dashboard) 功能，创建监控面板和图表，选择指定的 QKE 集群、节点以及指标，
 
 ![](../../_images/dashboard-monitor.png)
 
