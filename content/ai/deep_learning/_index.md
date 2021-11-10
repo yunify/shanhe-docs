@@ -6,10 +6,8 @@ collapsible: true
 type: "product"
 
 section1:
-  title: "深度学习平台 Deep Learning on QingCloud "
-  vice_title: 深度学习平台 Deep Learning on QingCloud 基于强劲的 GPU 与 CPU 计算资源，搭载多个主流深度学习框架，可极速搭建深度学习开发环境，全面提速 AI 应用开发。
-  video: "_images/视频样例.mp4"
-  video_img: "/images/video.png"
+  title: "深度学习平台"
+  vice_title: 深度学习平台基于强劲的 GPU 与 CPU 计算资源，搭载多个主流深度学习框架，可极速搭建深度学习开发环境，全面提速 AI 应用开发。
 
 Section2:
   title: 用户指南
@@ -66,8 +64,8 @@ section4:
         - title: 部署 Deep Learning 应用
           url: "/ai/deep_learning/quickstart/deploy_app/"
 
-        - title: 集群使用
-          url: "/ai/deep_learning/manual/cluster_use"
+        - title: 用户指南
+          url: "/ai/deep_learning/manual/caffe"
 
     
 ---

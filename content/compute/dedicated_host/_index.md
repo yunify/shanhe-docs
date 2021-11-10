@@ -14,12 +14,12 @@ Section2:
   children:
     - title: 产品简介
       content: 专属宿主机简介
-      url: "/compute/dedicated/intro/de_host"
+      url: "/compute/dedicated_host/intro/de_host"
 
 
     - title: 操作指南
       content: 专属宿主机操作指南
-      url: "/compute/dedicated/manual/dedicated_host"
+      url: "/compute/dedicated_host/manual/dedicated_host"
 
     
 
@@ -39,7 +39,7 @@ section4:
       vice_title: 了解的第一步
       children:
         - title: 产品概述
-          url: "/compute/dedicated/intro/de_host"
+          url: "/compute/dedicated_host/intro/de_host"
 
 
     - title: 上手：创建专属宿主机
@@ -47,7 +47,7 @@ section4:
       vice_title: 上手的第一步
       children: 
         - title: 创建专属宿主机组
-          url: "/compute/dedicated/manual/dedicated_host"
+          url: "/compute/dedicated_host/manual/dedicated_host"
 
 
 ---

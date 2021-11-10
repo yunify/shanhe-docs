@@ -36,11 +36,11 @@ sudo apt-get update
 
 ## 2.添加网卡
 
-登录控制台申请网卡，并添加到主机
+登录控制台申请网卡，并添加到云服务器。
 
+<img src="../../_images/homer/network_nic_01.png" width="60%" height="60%">
 
-![图片](../../_images/ubuntu20_1.png)
-![图片](../../_images/ubuntu20_2.png)
+<img src="../../_images/homer/network_nic_03.png" width="60%" height="60%">
 
 登录到主机查看网卡 IP 信息，eth1此时没有获取到 IP，需要配置下面网卡信息后才会获取到。
 

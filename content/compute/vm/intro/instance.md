@@ -5,7 +5,7 @@ description: Test description
 draft: false
 enableToc: false
 weight: 1
-keyword: 云服务器, QingCloud, 实例, 虚拟机
+keyword: 云服务器, 实例, 虚拟机
 ---
 
 山河 IaaS 平台所交付的云服务器服务，是云计算的核心业务，也是用户最为关心的计算的核心。
@@ -20,33 +20,9 @@ keyword: 云服务器, QingCloud, 实例, 虚拟机
 
 ## 企业级
 
-- ### [计算型 ec3](../../intro/enterprise/#计算型-ec3)
+- ### [企业型 e2](../../intro/enterprise/#企业型-e2)
 
-- ### [通用型 eg3](../../intro/enterprise/#通用型-eg3)
-
-- ### [内存型 er3](../../intro/enterprise/#内存型-er3)
-
-- ### [网络增强计算型 ec3ne](../../intro/enterprise/#网络增强计算型-ec3ne)
-
-- ### [网络增强通用型 eg3ne](../../intro/enterprise/#网络增强通用型-eg3ne)
-
-- ### [网络增强内存型 er3ne](../../intro/enterprise/#网络增强内存型-er3ne)
-
-- ### [通用型 e2](../../intro/enterprise/#通用型-e2)
-
-- ### [内存型 e2](../../intro/enterprise/#内存型-e2)
-
-- ### [计算型 e2](../../intro/enterprise/#计算型-e2)
-
-- ### [专业增强型 p1](../../intro/enterprise/#专业增强型-p1)
 
 ## 专业级
 
 - ### [GPU云服务器 g2](../../intro/professional/#gpu云服务器-g2)
-
-
-## 其他类型
-
-- ### [性能型](../../intro/other/#性能型)
-
-- ### [超高性能型](../../intro/other/#超高性能型)

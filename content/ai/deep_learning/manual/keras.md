@@ -20,7 +20,7 @@ python mnist.py
 
 ### Keras 训练结果
 
-![Keras 训练结果](../_image/keras_result.png)
+![Keras 训练结果](../_images/keras_result.png)
 
 ##  jupyter notebook
 
@@ -65,11 +65,11 @@ jupyter notebook 默认端口号为 `8888`，启动上述命令后会输出 toke
 
 jupyter notebook 开发环境浏览项目代码
 
-![jupyter notebook 开发环境浏览项目代码](../_images/deeplearning/1.2/jupyter_browse.png)
+![jupyter notebook 开发环境浏览项目代码](../_images/jupyter_browse.png)
 
 jupyter notebook 开发环境运行项目
 
-![jupyter notebook 开发环境运行项目](../_images/deeplearning/1.2/jupyter_train.png)
+![jupyter notebook 开发环境运行项目](../_images/jupyter_train.png)
 
 ### 单任务使用双 GPU 训练
 

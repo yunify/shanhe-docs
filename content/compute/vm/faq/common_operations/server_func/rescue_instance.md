@@ -14,15 +14,11 @@ bcdedit  /store d:\boot\bcd /set {default} device partition=E:
 bcdedit  /store d:\boot\bcd /set {default} osdevice partition=E:
 ```
 
-![rescue-vm-instance01](/compute/vm/_images/rescue-vm-instance01.png)
-
 ## 操作步骤
 
 ### 修改系统密码
 
 1. VNC 进入新云服务器 [rescue-i-xxxxxxxx] (点击云服务器旁边的小图标即可进入 VNC )
-
-   ![rescue-vm-instance02](/compute/vm/_images/rescue-vm-instance02.png)
 
 2. 将被救援云服务器的根盘挂载到目录
 

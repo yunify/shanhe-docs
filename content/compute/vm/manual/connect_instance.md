@@ -23,7 +23,7 @@ draft: false
 
 ![](/compute/vm/manual/_images/web-vnc.png)
 
-如果云服务器不接受您的密码，您可以先关闭云服务器，然后[修改云服务器密码](https://docs.shanhe.com/product/faq/#id7)。
+如果云服务器不接受您的密码，您可以先关闭云服务器，然后修改云服务器密码。
 
 ## Linux云服务器
 如果您使用的是 Windows 操作系统，除了通过 山河 控制台以外，您也可以通过软件连接至 Linux 云服务器，常见的软件有[PuTTY](https://www.putty.org/) ， [Xshell](https://www.netsarang.com/zh/xshell/)。
@@ -37,17 +37,17 @@ draft: false
 
 #### 1. 配置好弹性 IP 和防火墙
 
-首先在连接云服务器之前，请确保您的云服务器已经绑定了弹性公网 IP，[防火墙放行](https://docsv3.山河.com/security/security_group/manual/sg_setting/) TCP 22 端口。
+首先在连接云服务器之前，请确保您的云服务器已经绑定了弹性公网 IP，防火墙放行 TCP 22 端口。
 
 登录管理控制台，选择**产品与服务** > **计算** > **云服务器**，进入域名列表页。
 
 点击云服务器的 ID进入配置界面，在左侧选择**绑定资源** > **安全组** 查看防火墙设置。
 
-![](../../_images/fw-ssh-22.png)
+![](../_images/fw-ssh-22.png)
 
 添加安全组规则，并放行TCP 22 端口。
 
-![](../../_images/fw-ssh-22_1.png)
+![](../_images/fw-ssh-22_1.png)
 
 #### 2. 打开软件，输入 IP 地址
 
@@ -82,7 +82,7 @@ draft: false
 
 也可以给现有云服务器加载密钥,右键点击云服务器 ID，选择**SSH 密钥** > **加载**。
 
-<img src="../../_images/add-instance-key.png" style="zoom:33%;" />
+<img src="../_images/add-instance-key.png" style="zoom:33%;" />
 
 #### 3. 配置好弹性 IP 和防火墙
 

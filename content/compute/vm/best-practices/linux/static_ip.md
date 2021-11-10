@@ -20,10 +20,6 @@ enableToc: false
 
 示例为：Cento 7.5 操作系统
 
- ![ip_](../../_images/ip_1.png )
-
- ![ip_](../../_images/ip_2.png)
-
 
 ## 2.配置静态IP
 
