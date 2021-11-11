@@ -1,7 +1,7 @@
 ---
 title: "基础网络安全策略"
 description: manual
-draft: false
+draft: true
 weight: 50
 draft: false
 ---
@@ -10,7 +10,7 @@ draft: false
 
 您可以点击启用 / 禁用基础网络的隔离。
 
-<img src="../../_images/create_acl_17.png" style="zoom:23%;" />
+<img src=".././_images/create_acl_17.png" style="zoom:23%;" />
 
 启用
 
