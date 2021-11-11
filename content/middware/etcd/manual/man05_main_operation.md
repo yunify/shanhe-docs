@@ -37,7 +37,7 @@ weight: 5
 
 ![etcd-restore](/middware/etcd/images/etcd-restore.png)
 
-如果 etcd 集群已删除，可以通过青云控制台左侧菜单**存储** >**备份**找到并重新创建。
+如果 etcd 集群已删除，可以通过管理控制台左侧菜单**存储** > **备份**找到并重新创建。
 
 ![etcd-restore](/middware/etcd/images/etcd-restore-2.png)
 

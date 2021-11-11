@@ -109,7 +109,7 @@ weight: 10
   >
   > 使用本地存储的用户请跳过以下关于对象存储相关的设置项。
 
-  - **Access_Key_ID** 和 **Secret_Access_Ke**y ：青云提供给用户的授权密钥，可以在 **个人中心** > **API密钥** 中创建，然后点击**下载**，获取 access_key_id 和 secret_access_key。
+  - **Access_Key_ID** 和 **Secret_Access_Ke**y ：山河提供给用户的授权密钥，可以在 **个人中心** > **API密钥** 中创建，然后点击**下载**，获取 access_key_id 和 secret_access_key。
 
   - <b>对象存储区（Region）</b>：QingStor 存储空间 (Bucket) 的所在区域。
   - <b>对象存储桶（Bucket）</b>：Bucket 名称。
