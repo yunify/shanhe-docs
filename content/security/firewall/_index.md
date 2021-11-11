@@ -29,6 +29,10 @@ Section2:
     - title: 操作指南
       content: 操作指南
       url: "manual/checkdata"
+   
+    - title: 常见问题
+      content: 常见问题
+      url: "faq/faq"
 
 section4:
   children:

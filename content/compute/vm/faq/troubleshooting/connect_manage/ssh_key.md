@@ -35,7 +35,7 @@ enableToc: false
 
 2. 转换密钥格式
 
-   启动 puttygen，点击 ``Conversions -> Import key``，选中您在青云中创建并下载的 SSH 密钥，文件名形如``kp-1234abcd``。然后点击 ``Save private key``，您将得到 PuTTY 格式的私钥，如kp-1234abcd.ppk
+   启动 puttygen，点击 ``Conversions -> Import key``，选中您在山河中创建并下载的 SSH 密钥，文件名形如``kp-1234abcd``。然后点击 ``Save private key``，您将得到 PuTTY 格式的私钥，如kp-1234abcd.ppk
 
 3. 配置登录
 
