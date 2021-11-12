@@ -9,7 +9,7 @@ weight: 3
 
 在入侵防御策略中，可以从四个事件集进行策略设置，分别是**Attack（攻击事件集）**、**Application（应用事件集）**、**Common（常规事件集）** 和 **All（最大事件集）**，如下图所示。
 
-![](../_images/attack_setting.png)
+<img src="../_images/attack_setting.png" style="zoom:30%;" />
 
 事件详细介绍请参考下表。
 
