@@ -7,7 +7,7 @@ type: "product"
 
 section1:
   title: 资源管理
-  vice_title: 资源管理包含项目管理、资源共享和配额管理，帮助用户进行资源用量规划和管理。 
+  vice_title: 资源管理包含项目管理和配额管理，帮助用户进行资源用量规划和管理。 
 
 section2:
   title: 用户指南
@@ -17,7 +17,7 @@ section2:
       url: "intro"
 
     - title: 操作指南
-      content: 学习如何创建、查看、应用项目，使用资源共享以及管理配额等。
+      content: 学习如何创建、查看、应用项目以及管理配额等。
       url: "manual"
 
 section3:
