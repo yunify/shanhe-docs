@@ -8,7 +8,7 @@ draft: false
 ---
 
 
-ChronusDB on QingCloud 可选用 Docker 、客户端、curl 等方式连接集群和导入数据。
+ChronusDB 可选用 Docker 、客户端、curl 等方式连接集群和导入数据。
 
 ## 前提条件
 
