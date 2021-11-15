@@ -1,6 +1,6 @@
 ---
 title: "版本介绍"
-description: 本小节主要介绍 QingCloud 云数据库 MongoDB 主要版本功能。 
+description: 本小节主要介绍 云数据库 MongoDB 主要版本功能。 
 keywords: 云数据库 MongoDB 版本介绍, 
 weight: 4
 collapsible: false

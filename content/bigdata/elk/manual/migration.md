@@ -25,14 +25,14 @@ draft: false
 4. 通过如下命令为大数据平台的 Elasticsearch 集群创建 repository。
 
    ```bash
-   curl -XPUT 'http://<大数据平台的 Elasticsearch 集群的某一节点的IP地址>:9200/_snapshot/repo-shanhestor/' -d'
+   curl -XPUT 'http://<大数据平台的 Elasticsearch 集群的某一节点的IP地址>:9200/_snapshot/repo/' -d'
    {
      "type": "s3",
      "settings": {
-       "endpoint": "s3.pek3a.shanhestor.com",
+       "endpoint": "s3.jn1a.<shanhe_stor>.com",
        "access_key": "<YourAccessKey>",
        "secret_key": "<YourSecretKey>",
-       "bucket": "my_shanhestor_bucket"
+       "bucket": "my_bucket"
      }
    }
    '
@@ -43,30 +43,30 @@ draft: false
 | 参数         | 说明                                                         |
 | ------------ | ------------------------------------------------------------ |
 | 集群节点地址 | <大数据平台的 Elasticsearch 集群的某一节点的 IP 地址> 需替换为具体的 IP 地址 |
-| repository   | repo-shanhe stor                                                |
-| endpoint     | s3.pek3a.shanhe stor.com (请就近选择 pek3a, pek3b, sh1a，gd2 中的一个) |
+| repository   | repo                                              |
+| endpoint     | s3.jn1a.< shanhe_stor >.com  |
 | access_key   | 账号关联的 access_key                                    |
 | secret_key   | 账号关联的 secret_key                                    |
-| bucket       | shanhe Stor上 bucket 名称 my_shanhestor_bucket (如果不存在将创建出来) |
+| bucket       | 对象存储上 bucket 名称 my_bucket (如果不存在将创建出来) |
 
-1. 创建了 repository 后，用如下命令即可创建名为 backup-2019.05.13 的快照（该快照将会存放在之前指定的 shanheStor 的 bucket my_shanhestor_bucket 中）：
+1. 创建了 repository 后，用如下命令即可创建名为 backup-2019.05.13 的快照（该快照将会存放在之前指定的对象存储的 bucket my_bucket 中）：
 
    ```bash
    创建包含集群所有 index 的 snapshot
-   curl -XPUT 'http://<大数据平台的 Elasticsearch 集群的某一节点的IP地址>:9200/_snapshot/repo-shanhestor/migration-2019.05.13?wait_for_completion=true'
+   curl -XPUT 'http://<大数据平台的 Elasticsearch 集群的某一节点的IP地址>:9200/_snapshot/repo/migration-2019.05.13?wait_for_completion=true'
    ```
 
 2. 在 ELK 集群上创建和第四步中相同配置的 repository。命令如下：
 
    ```bash
-   curl -H 'Content-Type: application/json' -XPUT 'http://<ELK集群的某一节点的IP地址>:9200/_snapshot/repo-shanhestor/' -d'
+   curl -H 'Content-Type: application/json' -XPUT 'http://<ELK集群的某一节点的IP地址>:9200/_snapshot/repo/' -d'
    {
      "type": "s3",
      "settings": {
-       "endpoint": "s3.pek3a.shanhestor.com",
+       "endpoint": "s3.jn1a.<shanhe_stor>.com",
        "access_key": "<YourAccessKey>",
        "secret_key": "<YourSecretKey>",
-       "bucket": "my_shanhe stor_bucket"
+       "bucket": "my_bucket"
      }
    }
    '
@@ -76,10 +76,10 @@ draft: false
    >
    > 这里只有 IP 地址需变更为 ELK 集群的某一节点的 IP 地址，其他配置应与第四步中的配置完全相同。
 
-3. 通过如下命令恢复存储在 shanheStor 的快照到 ELK 集群，完成数据迁移。
+3. 通过如下命令恢复存储在对象存储的快照到 ELK 集群，完成数据迁移。
 
    ```bash
-   curl -H 'Content-Type: application/json' -XPOST 'http://<ELK集群的某一节点的IP地址>:9200/_snapshot/repo-shanhe stor/migration-2019.05.13/_restore'
+   curl -H 'Content-Type: application/json' -XPOST 'http://<ELK集群的某一节点的IP地址>:9200/_snapshot/repo/migration-2019.05.13/_restore'
    ```
 
 
