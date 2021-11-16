@@ -52,7 +52,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=Describekeypairs
+https://api.shanhe.com/iaas/?action=Describekeypairs
 &verbose=1
 &COMMON_PARAMS
 ```
