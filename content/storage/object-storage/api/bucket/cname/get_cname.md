@@ -69,7 +69,7 @@ Authorization: authorization string
 
 ```http
 HTTP/1.1 200 OK
-Server: QingStor
+Server: shanhe
 Date: Sun, 16 Aug 2015 09:05:02 GMT
 Content-Length: 300
 Connection: close

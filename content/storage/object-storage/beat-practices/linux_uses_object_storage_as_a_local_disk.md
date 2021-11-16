@@ -31,7 +31,7 @@ aws_access_key_id = qy_access_key_id							#API密钥ID
 aws_secret_access_key = qy_secret_access_key					#API密钥密码
 ```
 ```bash
-goofys --endpoint https://s3.<zone>.qingstor.com <bucket_name> <mount_point>
+goofys --endpoint https://s3.<zone>.is.shanhe.com <bucket_name> <mount_point>
 ```
 
 5. `df -Th` 查看结果

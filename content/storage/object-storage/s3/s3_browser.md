@@ -48,7 +48,7 @@ weight: 39
 
 - Account Name: 任意
 - Account Type: 选择S3 compatible Storage
-- Rest Endpoint: s3.<Zone_id>.qingstor.com
+- Rest Endpoint: s3.<Zone_id>.shanhe.com
 - Access Key ID: 前文获取的 API 秘钥的 `qy_acccess_key_id` 的值
 - Secret Access Key: 前文获取的 API 秘钥的 `qy_secret_access_key` 的值
 - Use Secure transfer（SSl/TLS): 勾选

@@ -3,7 +3,7 @@ title: "使用示例"
 ---
 
 
-大多数基于 AWS S3 开发的工具都有其自定义访问地址的方法，下面以一些常用工具为例，说明如何对接 QingStor 对象存储。
+大多数基于 AWS S3 开发的工具都有其自定义访问地址的方法，下面以一些常用工具为例，说明如何对接对象存储。
 
 ### AWS SDK for Python
 
@@ -21,7 +21,7 @@ title: "使用示例"
    conn = boto.connect_s3(
        aws_access_key_id='PLLZOBTTZXGBNOWUFHZZ',
        aws_secret_access_key='MnIjI58zC8AX07xotHXcm6grwFgOXhaJQHkTCX2X',
-       host='s3.pek3a.qingstor.com'
+       host='s3.jn1.is.shanhe.com'
    )
    bucket = conn.get_bucket('mybucket')
    key = bucket.get_key("mykey")
@@ -155,8 +155,8 @@ title: "使用示例"
    access_key = PLLZOBTTZXGBNOWUFHZZ
    secret_key = MnIjI58zC8AX07xotHXcm6grwFgOXhaJQHkTCX2X
    bucket_location = pek3a
-   host_base = s3.pek3a.qingstor.com
-   host_bucket = %(bucket)s.s3.pek3a.qingstor.com
+   host_base = s3.jn1.is.shanhe.com
+   host_bucket = %(bucket)s.s3.jn1.is.shanhe.com
    ```
 
 3. 执行如下命令行，上传文件至山河对象存储:
