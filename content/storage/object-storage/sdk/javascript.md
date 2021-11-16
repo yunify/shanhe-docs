@@ -37,7 +37,7 @@ yarn add qingstor-sdk
 
 ## 快速开始
 
-QingStor SDK 使用 ES6 的语法编写，所以使用前请确保你配置了合适的构建环境。
+SDK 使用 ES6 的语法编写，所以使用前请确保你配置了合适的构建环境。
 
 ### 浏览器环境
 
@@ -282,7 +282,7 @@ listObjects();
 
 ## 请求返回格式说明
 
-QingStor 对象存储的 SDK 使用 [axios](https://github.com/axios/axios) 作为 HTTP 客户端，所有请求的返回都是一个 Promise。axios 的 Response 结构如下:
+对象存储的 SDK 使用 [axios](https://github.com/axios/axios) 作为 HTTP 客户端，所有请求的返回都是一个 Promise。axios 的 Response 结构如下:
 
 ```javascript
 // copied from https://github.com/axios/axios/blob/master/README.md

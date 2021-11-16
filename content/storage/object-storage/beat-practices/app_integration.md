@@ -348,7 +348,7 @@ QS PLLZOBTTZXGBNOWUFHZZ:vIWg/qAxvXlcFRb9uzYmdIM9tiF6EuM6SC3i13yLzH8=
 ```http
 GET /mybucket/music.mp3 HTTP/1.1
 Authorization: QS PLLZOBTTZXGBNOWUFHZZ:vIWg/qAxvXlcFRb9uzYmdIM9tiF6EuM6SC3i13yLzH8=
-Host: jn2.is.qingstor.com
+Host: jn1.is.shanhe.com
 Date: Mon, 14 Nov 2016 14:05:00 GMT
 ```
 
@@ -364,7 +364,7 @@ SDK 参考例子：[Java 使用服务端签名](/storage/object-storage/sdk/java
 
 ```html
     Upload
-    .pek3a.qingstor.com" method="POST" enctype="multipart/form-data">
+    .jn1.is.shanhe.com" method="POST" enctype="multipart/form-data">
 ```
 
 3. 用户通过表单上传文件以及 Signature 给山河对象存储。表单上传的具体方法，请见 [表单上传](/storage/object-storage/api/object/post/)
@@ -375,7 +375,7 @@ SDK 参考例子：[Java 使用服务端签名](/storage/object-storage/sdk/java
 
 ```http
 GET /music.mp3?access_key_id=PLLZOBTTZXGBNOWUFHZZ&expires=1479107162&signature=tuXu/KcggHWPAfEmraUHDwEUdiIPSXVRsO%2BT2rxomBQ%3D HTTP/1.1
-Host: mybucket.pek3a.qingstor.com
+Host: mybucket.jn1.is.shanhe.com
 Date: Mon, 14 Nov 2016 14:05:00 GMT
 ```
 
