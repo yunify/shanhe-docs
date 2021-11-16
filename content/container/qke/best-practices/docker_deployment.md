@@ -166,7 +166,7 @@ vim Dockerfile
 输入以下内容
 ```
 FROM nginx
-RUN echo '<h1>QINGCLOUD</h1>' > /usr/share/nginx/html/index.html
+RUN echo '<h1>Test</h1>' > /usr/share/nginx/html/index.html
 ```
 
 Dockerfile指令介绍如下。以下仅介绍简单指令，如需了解更多，请参见官方网站<a href="https://hub.docker.com/" target="_blank">https://hub.docker.com/</a>
@@ -200,6 +200,4 @@ docker images
 docker run -it -d -p 80:80 --name nginx nginx:v1
 ```
 
-在浏览器输入云服务器所绑定的弹性公网IP，访问测试容器运行情况。出现以下内容表示运行成功。
-
-<img src="../../_images/docker_deployment7.png" width="100%" height="40%">
+在浏览器输入云服务器所绑定的弹性公网IP，访问测试容器运行情况。出现“Test”字样以下内容表示运行成功。
