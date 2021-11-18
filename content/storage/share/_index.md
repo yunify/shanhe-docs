@@ -8,8 +8,7 @@ type: "product"
 section1:
   title: 共享存储
   vice_title: 山河提供两种共享存储：企业级分布式 SAN（NeonSAN）和 Virtual SAN（vSAN）以匹配不同业务场景，实现稳定高效、安全可靠、灵活便捷的存储服务
-  #video: "https://pek3b.qingstor.com/yunify-qingcloud-docs/video/qs_qingcloud_neonsan.mp4"
-  #video_img: "/images/video.png"
+
 
 Section2:
   title: 用户指南
@@ -37,10 +36,3 @@ section4:
         - title: 应用场景
           url: "/storage/share/intro/introduction/#应用场景"
 ---
-
-
-<!-- type: "product" 这个参数表明这是一个产品index页面 -->
-<!-- section1 为产品index页面 主标题 副标题 video  video_img为视频图片  -->
-<!-- section2 为产品index页面 第一个大块的用户文档配置  -->
-<!-- section3 为产品index页面 第二个大块的开发者文档配置  -->
-<!-- section4 为产品index页面 第三个大块的学习路径配置  -->
