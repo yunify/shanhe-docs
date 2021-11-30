@@ -32,17 +32,9 @@ Section2:
       content: 快速入门
       url: "quick-start/base"
 
-    - title: AIP 用户指南
-      content: aip 用户指南
-      url: "aip/submit_job"
-
     - title: 操作指南
       content: 操作指南
       url: "manual/base"
-
-    - title: spack 用户指南
-      content: spack
-      url: "spack/intro"
 
     - title: 最佳实践
       content: 最佳实践
