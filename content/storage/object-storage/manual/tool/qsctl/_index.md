@@ -66,7 +66,7 @@ protocol: 'https'
 
  **说明：**
    - `access_key_id` 与 `secret_access_key` 根据步骤 1 中下载的 API 密钥进行填写。
-   - `host`，`port` 与 `protocol` 参数为待访问的 QingStor 对象存储的域名，端口号及协议类型。公有云维持默认即可，私有云环境需根据实际情况进行填写。
+   - `host`，`port` 与 `protocol` 参数为待访问的对象存储的域名，端口号及协议类型。公有云维持默认即可，私有云环境需根据实际情况进行填写。
    - 配置文件默认使用 HTTPS 访问方式，若需修改为 HTTP 访问方式，可按照如下内容填写：
 
       ```yaml

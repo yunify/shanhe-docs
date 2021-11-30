@@ -66,7 +66,7 @@ PUT 方法上传的 Object 允许最大 5GB；分段上传的 Object 最大可�
 
 ## 如何使根目录对匿名用户显示所有的文件？
 
-从用户的数据安全角度考虑，假如 Bucket 配置了公开访问权限，而山河对象存储默认不允许匿名请求访问 List Objects 接口，也就是说访问 `bucket.zone.qingstor.com` 根路径将返回 Permission Deny。如果用户需要使用 List Objects 这个接口对匿名请求也能返回结果，则需配置如下 Bucket Policy：
+从用户的数据安全角度考虑，假如 Bucket 配置了公开访问权限，而山河对象存储默认不允许匿名请求访问 List Objects 接口，也就是说访问 `bucket.zone.shanhe.com` 根路径将返回 Permission Deny。如果用户需要使用 List Objects 这个接口对匿名请求也能返回结果，则需配置如下 Bucket Policy：
 
 ![](/storage/object-storage/_images/faq-1.png)
 

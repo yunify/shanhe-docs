@@ -30,7 +30,7 @@ title: "兼容公共头"
 | Connection | 兼容 |
 | Date | 兼容 |
 | ETag | 兼容 |
-| Server | 将设置为 QingStor |
+| Server | 将设置为 shanhe |
 | x-amz-delete-marker | 未兼容 |
 | x-amz-id-2 | 将设置与响应头 `x-amz-request-id` 相同 |
 | x-amz-request-id | 将设置与原生响应头 `x-qs-request-id` 相同 |

@@ -6,12 +6,12 @@ collapsible: false
 product:
     - time: 2020-05-24 17:50:47
       title: 支持自定义监控
-      content: 新增自定义监控功能，可满足青云已有用户、非青云用户对基础资源的指标监控需求，可与CloudSAT服务内的其他功能结合使用，形成完整的立体化监控告警服务。
+      content: 新增自定义监控功能，可满足山河已有用户、非山河用户对基础资源的指标监控需求，可与CloudSAT服务内的其他功能结合使用，形成完整的立体化监控告警服务。
       url: /monitor_service/cloudsat/manual/custom_monitor
       tags:
       - 新功能
       - 体验优化
-      zone: 北京三区
+    
 
     - time: 2019-10-24 17:50:47
       title: 支持分组管理功能
@@ -20,7 +20,7 @@ product:
       tags:
       - 新功能
       - 体验优化
-      zone: 北京三区
+     
 
 
 ---

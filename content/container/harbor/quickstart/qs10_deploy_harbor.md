@@ -64,7 +64,7 @@ weight: 10
 
      > **说明**：
      >
-     > * 推荐使用 QingStor 对象存储来保证高可用和无限容量。（QingStor 对象存储是 QingCloud 提供的通用海量非结构化数据存储服务，具有安全可靠、简单易用、高性能、低成本等特点。）
+     > * 推荐使用 QingStor 对象存储来保证高可用和无限容量。（QingStor 对象存储是山河提供的通用海量非结构化数据存储服务，具有安全可靠、简单易用、高性能、低成本等特点。）
      > * 本地存储不支持高可用，且受单磁盘容量限制，仅建议测试使用。
 
      ![basic-info](/container/harbor/_images/harbor-create-basic-setting.png)
@@ -109,7 +109,7 @@ weight: 10
   >
   > 使用本地存储的用户请跳过以下关于对象存储相关的设置项。
 
-  - **Access_Key_ID** 和 **Secret_Access_Ke**y ：青云提供给用户的授权密钥，可以在 **个人中心** > **API密钥** 中创建，然后点击**下载**，获取 access_key_id 和 secret_access_key。
+  - **Access_Key_ID** 和 **Secret_Access_Ke**y ：山河提供给用户的授权密钥，可以在 **个人中心** > **API密钥** 中创建，然后点击**下载**，获取 access_key_id 和 secret_access_key。
 
   - <b>对象存储区（Region）</b>：QingStor 存储空间 (Bucket) 的所在区域。
   - <b>对象存储桶（Bucket）</b>：Bucket 名称。

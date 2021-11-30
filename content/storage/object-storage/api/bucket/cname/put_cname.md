@@ -37,7 +37,7 @@ Authorization: <authorization-string>
 
 | 名称 | 类型 | 说明 | 是否必须 |
 | --- | --- | --- | --- |
-| domain | String | 要绑定给 Bucket 的域名。规则如下：<br>- 该域名必须已完成备案，否则将返回错误 domain_not_recorded。<br>- 该域名到 Bucket 域名的 CNAME 记录必须已于域名服务商处成功注册且生效，否则将返回错误 cname_record_not_added。<br>- 如果该域名已成功绑定给另外一个 Bucket，则返回错误 domain_occupied。<br>- Bucket 域名格式如 `mybucket.pek3a.qingstor.com`。  | 是 |
+| domain | String | 要绑定给 Bucket 的域名。规则如下：<br>- 该域名必须已完成备案，否则将返回错误 domain_not_recorded。<br>- 该域名到 Bucket 域名的 CNAME 记录必须已于域名服务商处成功注册且生效，否则将返回错误 cname_record_not_added。<br>- 如果该域名已成功绑定给另外一个 Bucket，则返回错误 domain_occupied。<br>- Bucket 域名格式如 `mybucket.jn1.is.shanhe.com`。  | 是 |
 | type | String | 绑定的域名的用途。目前支持两种类型，`normal` 表示普通；`website` 表示网站。 | 是 |
 
 ## 响应头

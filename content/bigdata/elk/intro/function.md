@@ -11,9 +11,9 @@ draft: false
 
 - 为 Elasticsearch 提供了更强大的分词功能支持，集成了 [IK Analysis](https://github.com/medcl/elasticsearch-analysis-ik) 中文分词插件，并为该插件提供了 [结巴分词](https://github.com/fxsjy/jieba/blob/master/jieba/dict.txt) 的词库和 IK 自带的搜狗词库，同时还支持用户上传自定义词典。
 
-- Elasticsearch 与 对象存储服务集成。Elasticsearch 集成了官方 [S3 Repository 插件](https://www.elastic.co/guide/en/elasticsearch/plugins/6.7/repository-s3.html)，可通过标准 S3 接口与青云对象存储集成，以便生成 snapshot 并将其存储到到桶中，并可以在必要时从中恢复。
+- Elasticsearch 与 对象存储服务集成。Elasticsearch 集成了官方 [S3 Repository 插件](https://www.elastic.co/guide/en/elasticsearch/plugins/6.7/repository-s3.html)，可通过标准 S3 接口与对象存储集成，以便生成 snapshot 并将其存储到到桶中，并可以在必要时从中恢复。
 
-- Logstash 与 青云对象存储集成，用户可以很方便地从对象存储通过内置的 [官方插件 logstash-input-s3](https://www.elastic.co/guide/en/logstash/6.7/plugins-inputs-s3.html) 输入数据到 Elasticsearch 或者通过 [logstash-output-s3](https://www.elastic.co/guide/en/logstash/6.7/plugins-outputs-s3.html) 插件将输入到 Logstash 的数据导出到青云对象存储。
+- Logstash 与对象存储集成，用户可以很方便地从对象存储通过内置的 [官方插件 logstash-input-s3](https://www.elastic.co/guide/en/logstash/6.7/plugins-inputs-s3.html) 输入数据到 Elasticsearch 或者通过 [logstash-output-s3](https://www.elastic.co/guide/en/logstash/6.7/plugins-outputs-s3.html) 插件将输入到 Logstash 的数据导出到对象存储。
 
 - Logstash 提供自定义插件能力。
 

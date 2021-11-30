@@ -350,15 +350,15 @@ options:
 ```
 
 **说明**
-- `protocol` 用于控制访问 QingStor 对象存储的协议类型。可选值: https, http；默认值: https。
-- `host` 标识访问 QingStor 对象存储的云服务器名。默认值: qingstor.com。
-- `port` 标识访问 QingStor 对象存储的端口号。默认值: 443。
-- `zone` 标识访问 QingStor 对象存储的区域.自动检测，无需手动配置。
-- `bucket_name` 标识操作的 QingStor 对象存储的 Bucket 名称。无默认值，须手动配置。
-- `access_key_id` QingStor 对象存储的 access_key_id。无默认值，须手动配置。
-- `secret_access_key` QingStor 对象存储的 secret_access_key。无默认值，须手动配置。
-- `storage_class` 标识 QingStor 对象存储所使用的存储级别。可选值: STANDARD, STANDARD_IA；默认值: STANDARD。
-- `multipart_boundary_size` 用于控制 QingStor 对象存储何时使用分段上传，单位为 Byte，当文件大于该数值时，将会使用分段上传。可选值: 1 ~ 5368709120 (5G)。默认值: 2147483648 (2G)。
+- `protocol` 用于控制访问对象存储的协议类型。可选值: https, http；默认值: https。
+- `host` 标识访问对象存储的云服务器名。
+- `port` 标识访问对象存储的端口号。默认值: 443。
+- `zone` 标识访问对象存储的区域.自动检测，无需手动配置。
+- `bucket_name` 标识操作的对象存储的 Bucket 名称。无默认值，须手动配置。
+- `access_key_id` 对象存储的 access_key_id。无默认值，须手动配置。
+- `secret_access_key` 对象存储的 secret_access_key。无默认值，须手动配置。
+- `storage_class` 标识对象存储所使用的存储级别。可选值: STANDARD, STANDARD_IA；默认值: STANDARD。
+- `multipart_boundary_size` 用于控制对象存储何时使用分段上传，单位为 Byte，当文件大于该数值时，将会使用分段上传。可选值: 1 ~ 5368709120 (5G)。默认值: 2147483648 (2G)。
 - 综上，除 `bucket_name`，`access_key_id` 与 `secret_access_key` 以外，均有默认值，故除此三个参数外，其他参数均为可选参数。
 
 

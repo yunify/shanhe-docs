@@ -8,9 +8,6 @@ type: "product"
 section1:
   title: ClickHouse
   vice_title: 云数据库ClickHouse 是一款深度定制的云数据库ClickHouse集群应用。
-  # todo add qingstor introduction video
-  # video: "https://jn1.is.shanhe.com/workshop/webhosting%20feb.16%20v3.mp4"
-  # video_img: "/images/video.png"
 
 section2:
   title: 用户指南

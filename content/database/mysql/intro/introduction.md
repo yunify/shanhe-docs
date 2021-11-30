@@ -4,7 +4,7 @@ description: 本小节主要介绍 MySQL Plus 产品简介
 draft: false
 weight: 10
 enableToc: false
-keyword: MySQL Plus, QingCloud, 数据库
+keyword: MySQL Plus,  数据库
 ---
 
 

@@ -10,7 +10,7 @@ weight: 10
 
 ### 通过 VNC 登录
 
-可以直接在青云控制台通过客户端节点的 VNC 窗口免密登录其他节点，客户端节点的用户名密码是 `root / <cluster id>`，初次登录会提示修改密码。建议选用至少 8 位字符的复杂密码增强安全性。
+可以直接在管理控制台通过客户端节点的 VNC 窗口免密登录其他节点，客户端节点的用户名密码是 `root / <cluster id>`，初次登录会提示修改密码。建议选用至少 8 位字符的复杂密码增强安全性。
 
 > **注意** 
 >
@@ -66,8 +66,6 @@ EIP 可以有两种方式与 K8s Apiserver 相连接：VPC 端口转发和通过
 
 对于高可用的 QKE，访问 Kubernetes Apiserver 的私有网络 IP 地址应为 QKE 创建时创建的私有网络负载均衡器的 IP，负载均衡器名为 QKE 集群 ID。
 
-![](../../_images/access-kubernetes-vxnet-ip-ha-lb-ip.png)
-
 VPC 配置转发规则，源端口可以根据用户实际情况配置，内网 IP 为访问 Kubernetes Apiserver 的私有网络 IP 地址，内网端口为 6443。
 
 >**说明**
@@ -93,8 +91,6 @@ VPC 配置转发规则，源端口可以根据用户实际情况配置，内网 
 对于通过负载均衡器访问到 QKE Kubernetes Apiserver 的集群可以采用此方法。
 
 将外部绑定类型 EIP 绑定至负载均衡器。
-
-![](../../_images/access-kubernetes-lb-bind-eip.png)
 
 ### 下载 kubeconfig
 >**说明**
@@ -250,7 +246,7 @@ Service 的 type 设置为 LoadBalancer，然后在 metadata 中增加以下 ann
 - `service.beta.kubernetes.io/qingcloud-load-balancer-type`
   
 > 负载均衡器的承载能力类型，与 [create_loadbalancer](/development_docs/api/command_list/lb/create_loadbalancer/) 接口中的 loadbalancer_type 取值范围相同。
-  
+
 - `service.beta.kubernetes.io/qingcloud-load-balancer-eip-ids`
   
   > 负载均衡器上绑定的 EIP ID，最多支持4个，这个 annotation 表示要创建的是 “公网” 类型的负载均衡器。 EIP 必须是可用的 EIP，系统会自动创建负载均衡器。
