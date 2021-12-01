@@ -104,7 +104,7 @@ http://www.nvidia.com/Download/Find.aspx
 
     点击下载，下载完成为.run后缀的文件
 
-#### 3）执行.run脚本，安装驱动
+#### 3）.run脚本上传到服务器，执行.run脚本，安装驱动
 
 ![](../../_images/run.png)
 
