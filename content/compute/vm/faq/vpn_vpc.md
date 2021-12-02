@@ -44,5 +44,5 @@ enableToc: false
 #### 1）找到VPC网络的内网IP
 ![](../_images/inip.png)
 
-#### 2）试用内网ip+端口测试
+#### 2）使用内网ip+端口测试
 ![](../_images/test.png)
