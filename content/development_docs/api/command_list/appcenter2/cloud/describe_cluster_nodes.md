@@ -33,8 +33,6 @@ draft: false
 
 **Response Item**
 
-https://docs.shanhe.com/appcenter/docs/specifications/specifications.html
-
 | Name | Type | Description |
 | --- | --- | --- |
 | app_id | String | 应用ID |
