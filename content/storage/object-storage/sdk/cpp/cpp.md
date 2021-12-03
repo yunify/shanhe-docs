@@ -30,7 +30,7 @@ title: "Cpp SDK 快速指南"
 ``` c
     // 由入参分别指定 SDK 输出日志的路径、日志级别、 SDK 的 init 过程和 shutdown 过程是否自动初始化和清理 curl 库的全局资源。
     // 其中，有效的日志级别为 None, Fatal, Error, Warning, Info, Debug, Verbose ，默认日志级别为 None ，即不输出日志。
-    // 如果在程序中的另外的模块使用了 curl 库，QingStor SDK 自动初始化和清理 curl 库的全局资源，可能会引起这些模块功能产生异常。
+    // 如果在程序中的另外的模块使用了 curl 库，SDK 自动初始化和清理 curl 库的全局资源，可能会引起这些模块功能产生异常。
     // 这种情况下如果你希望统一管理 curl 全局资源的初始化及清理工作，请将参数设置为 0 ,否则请设置成 1 .
     QingStor::SDKOptions sdkOptions;
     sdkOptions.logLevel = LogLevel::Verbose;

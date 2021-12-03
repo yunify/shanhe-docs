@@ -69,7 +69,7 @@ weight: 4
   "code": "bad_request",
   "message": "Invalid argument(s) or invalid argument value(s)",
   "request_id": "aa08cf7a43f611e5",
-  "url": "http://docs.shanhe.com/api/error_code.html"
+  "url": "http://docsv3.shanhe.com/api/error_code.html"
 }
 ```
 

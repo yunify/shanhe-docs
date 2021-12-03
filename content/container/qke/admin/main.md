@@ -95,7 +95,7 @@ k8s 集群使用 etcd 作为后端存储，建议使用 [etcd 服务](/middware/
 
 ##### ELK 服务
 
-QKE 集群的日志组件使用 [Elasticsearch](https://github.com/elastic/elasticsearch) 作为后端存储，建议使用青云提供的 [ELK 服务](/bigdata/elk/)单独部署和管理，以获得更好的可用性和可维护性。
+QKE 集群的日志组件使用 [Elasticsearch](https://github.com/elastic/elasticsearch) 作为后端存储，建议使用 [ELK 服务](/bigdata/elk/)单独部署和管理，以获得更好的可用性和可维护性。
 
 > **说明**：
 >

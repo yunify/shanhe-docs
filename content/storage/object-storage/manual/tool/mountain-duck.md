@@ -38,7 +38,7 @@ Mountain Duck 是 Windows 平台上用于挂载访问对象存储的第三方客
 
    **说明：**
    - 协议下拉框里，选择 `Amazon S3`，如上图所示。
-   - `服务器名`，填写山河对象存储的域名，格式为：`s3.<zone_id>.qingstor.com`。其中 `zone_id` 须根据实际情况进行修改。公有云环境，可参考 [公有云开放区域](/storage/object-storage/intro/object-storage/#zone)。
+   - `服务器名`，填写山河对象存储的域名，格式为：`s3.<zone_id>.shanhe.com`。其中 `zone_id` 须根据实际情况进行修改。公有云环境，可参考 [公有云开放区域](/storage/object-storage/intro/object-storage/#zone)。
    - `访问密钥 ID` 与 `访问私钥`，即 AK/SK 须根据实际情况进行填写。具体可参考[获取 Access Key](/storage/object-storage/api/practices/signature/#获取-access-key)。
    - `盘符` 即山河对象存储 Bucket 成功挂载至本地后的磁盘盘符。
 

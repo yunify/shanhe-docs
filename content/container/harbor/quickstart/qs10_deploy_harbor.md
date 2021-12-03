@@ -64,7 +64,7 @@ weight: 10
 
      > **说明**：
      >
-     > * 推荐使用 QingStor 对象存储来保证高可用和无限容量。（QingStor 对象存储是 QingCloud 提供的通用海量非结构化数据存储服务，具有安全可靠、简单易用、高性能、低成本等特点。）
+     > * 推荐使用 QingStor 对象存储来保证高可用和无限容量。（QingStor 对象存储是山河提供的通用海量非结构化数据存储服务，具有安全可靠、简单易用、高性能、低成本等特点。）
      > * 本地存储不支持高可用，且受单磁盘容量限制，仅建议测试使用。
 
      ![basic-info](/container/harbor/_images/harbor-create-basic-setting.png)

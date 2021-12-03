@@ -4,7 +4,7 @@ description: Test description
 draft: false
 enableToc: false
 weight: 20
-keyword: 青云，硬盘
+keyword: 硬盘
 
 ---
 
@@ -82,8 +82,6 @@ keyword: 青云，硬盘
      <td>创建硬盘的副本数，可选2～3副本。
 </table>
 
-<!--4. 配置完成后，点击**立即购买**，弹出**确认配置**对话框。
-<!--5. 查看配置信息及配置费用，点击**确认**开始创建硬盘。-->
 4. 配置完成后点击**提交**，开始创建硬盘。
 
 

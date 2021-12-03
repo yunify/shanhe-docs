@@ -117,7 +117,7 @@ spec:
 ...
 ```
 
-- 找到未挂载上的存储卷对应的 PV `pvc-93e24c1d88d711e9`, 到 QingCloud 控制台查看硬盘名为 `pvc-93e24c1d88d711e9` 的硬盘应为可用状态。
+- 找到未挂载上的存储卷对应的 PV `pvc-93e24c1d88d711e9`, 到管理控制台查看硬盘名为 `pvc-93e24c1d88d711e9` 的硬盘应为可用状态。
 ```
 # kubectl get pvc nginx-neonsan-pvc-nginx-perf-7 -n demo-project
 NAME                             STATUS   VOLUME                 CAPACITY   ACCESS MODES   STORAGECLASS   AGE

@@ -9,7 +9,7 @@ weight: 5
 
 ## 使用spack安装软件
 
-### 在加目录下创建.spack目录
+### 在家目录下创建.spack目录
 
 ![img](../_images/spack-root.png)
 
