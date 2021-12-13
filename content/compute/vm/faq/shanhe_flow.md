@@ -83,15 +83,9 @@ https://console.shanhe.com/signup
 
 ### 6. 云服务器访问互联网
 
-#### 1）通过设置http代理
+#### 1）填写申请表，开通互联网的访问
 
-> linux服务器执行如下命令设置网络代理
-
-    export http_proxy=http://10.106.20.3:3128;export https_proxy=http://10.106.20.3:3128
-
-#### 2）填写申请表，开通互联网的访问
-
-> 若上网代理无法满足需求，发送申请外网的邮件到 service@sdas.org
+> 发送申请外网的邮件到 service@sdas.org
 
     邮件内容：
 
