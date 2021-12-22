@@ -20,9 +20,17 @@ keyword: 云服务器, 实例, 虚拟机
 
 ## 企业级
 
-- ### [企业型 e2](../../intro/enterprise/#企业型-e2)
+- ### [通用型 e2](../../intro/enterprise/#通用型-e2)
+
+- ### [内存型 e2](../../intro/enterprise/#内存型-e2)
+
+- ### [计算型 e2](../../intro/enterprise/#计算型-e2)
 
 
 ## 专业级
 
 - ### [GPU云服务器 g2](../../intro/professional/#gpu云服务器-g2)
+
+- ### [弹性裸金属云服务器 bm1](../../intro/professional/#弹性裸金属云服务器-bm1)
+
+- ### [弹性裸金属云服务器 bm3](../../intro/professional/#弹性裸金属云服务器-bm3)
