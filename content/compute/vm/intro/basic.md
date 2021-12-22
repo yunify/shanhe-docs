@@ -30,13 +30,12 @@ keyword: 云服务器, 山河, 实例, 虚拟机
 |:----|:----|:----|:----|
 |s1.small.r1   |1核    |1G    |0.2 Gbps    |
 |s1.small.r2   |1核    |2G    |0.2 Gbps    |
-|s1.small.r4 |1核 |4G |0.2 Gbps |
 |s1.large.r1   |2核    |2G    |0.5 Gbps    |
 |s1.large.r2   |2核    |4G    |0.5 Gbps    |
 |s1.large.r4   |2核    |8G    |0.5 Gbps    |
-|s1.xlarge.r1  |4核    |4G    |0.8 Gbps    |
-|s1.xlarge.r2  |4核    |8G    |0.8 Gbps    |
-|s1.xlarge.r4  |4核    |16G    |0.8 Gbps    |
+|s1.xlarge.r1  |4核    |4G    |<li>0.5 Gbps（山河计算平台）</li><li>0.8 Gbps（齐鲁工大计算平台）</li>    |
+|s1.xlarge.r2  |4核    |8G    |<li>0.5 Gbps（山河计算平台）</li><li>0.8 Gbps（齐鲁工大计算平台）</li>    |
+|s1.xlarge.r4  |4核    |16G    |<li>0.5 Gbps（山河计算平台）</li><li>0.8 Gbps（齐鲁工大计算平台）</li>    |
 |s1.2xlarge.r1 |8核    |8G    |1.2 Gbps    |
 |s1.2xlarge.r2 |8核    |16G    |1.2 Gbps    |
 |s1.2xlarge.r4 |8核    |32G    |1.2 Gbps    |

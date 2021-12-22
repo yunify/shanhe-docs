@@ -1,7 +1,7 @@
 ---
 title: "云服务器快速创建流程"
 description: test
-draft: true
+draft: false
 weight: 10
 ---
 
@@ -18,25 +18,25 @@ weight: 10
 
 ### 选择计费方式
 
-<img src="../../quickstart/_images/billing.png" alt="billing" style="zoom:40%;" />
+<img src="../../quickstart/_images/billing.png" alt="billing" style="zoom:100%;" />
 
 ### 选择区域及可用区
 
-<img src="../../quickstart/_images/area.png" alt="area" style="zoom: 30%;" />
+<img src="../../quickstart/_images/area.png" alt="area" style="zoom: 100%;" />
 
 ## 基础配置信息
 
-### 选择镜像
-
-<img src="../../quickstart/_images/mirror.png" style="zoom:33%;" />
-
 ### 选择配置规格信息
 
-<img src="../../quickstart/_images/type.png" alt="type" style="zoom: 25%;" />  
+<img src="../../quickstart/_images/type.png" alt="type" style="zoom: 100%;" />  
+
+### 选择镜像
+
+<img src="../../quickstart/_images/mirror.png" style="zoom:100%;" />
 
 ### 选择硬盘类型
 
-<img src="../../quickstart/_images/storage.png" alt="storage" style="zoom: 33%;" />
+<img src="../../quickstart/_images/storage.png" alt="storage" style="zoom: 100%;" />
 
 山河平台为云服务器提供硬盘作为块存储设备，支持多种规格和类型，并可弹性扩展，可满足不同场景的业务需求，并且支持对云服务器和硬盘进行备份。
 
@@ -48,23 +48,13 @@ weight: 10
 
 用户可以选择基础网络和VPC网络两种类型的网络。
 
-<img src="../../quickstart/_images/net.png" alt="net" style="zoom:50%;" />
-
-### 选择安全组
-
-<img src="../../quickstart/_images/safety.png" alt="safety" style="zoom:33%;" />
-
-如果用户需要创建一个新的安全组，点击**新建安全组**，进入安全组页面。详情请参考[创建安全组文档](/security/security_group/manual/sg_create/)。
-
-<img src="../../quickstart/_images/safety_1.png" alt="safety" style="zoom:30%;" />
-
-如果需要配置云服务器端口，请参考 [配置安全组文档](/security/security_group/manual/sg_setting/)。
+<img src="../../quickstart/_images/net.png" alt="net" style="zoom:100%;" />
 
 ### 选择弹性公网 IP
 
 a. 绑定已有公网 IP
 
-<img src="../../quickstart/_images/eip.png" alt="eip" style="zoom:33%;" />
+<img src="../../quickstart/_images/eip.png" alt="eip" style="zoom:100%;" />
 
 <span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;">
    <b>说明</b>：当用户为云服务器分配已有弹性公网IP时，不能批量创建云服务器。
@@ -75,15 +65,17 @@ b. 新建公网 IP
 
 当用户需要新建公网IP时，有两种计费方式可以选择，如下表所示。
 
-<img src="../../quickstart/_images/byte.png" alt="byte" style="zoom:33%;" />主机信息
+<img src="../../quickstart/_images/byte.png" alt="byte" style="zoom:100%;" />
 
-系统配置包括主机名称、登录凭证、自动续费等，用于定制云服务器在控制台和操作系统内显示的信息或使用方式。
+## 云服务器信息
 
-<img src="../../quickstart/_images/host.png" alt="host" style="zoom: 33%;" />
+系统配置包括云服务器名称、登录凭证、自动续费等，用于定制云服务器在控制台和操作系统内显示的信息或使用方式。
 
-### 配置主机名称
+<img src="../../quickstart/_images/host.png" alt="host" style="zoom: 100%;" />
 
-创建多台云服务器时，设置有序的云服务器名称和主机名称便于从名称了解云服务器的信息。
+### 配置云服务器名称
+
+创建多台云服务器时，设置有序的云服务器名称便于从名称了解云服务器的信息。
 
 ### 配置登录方式
 
@@ -94,10 +86,21 @@ b. 新建公网 IP
 | SSH密钥                                                      | 新建一个密钥对，并下载私钥，私钥用于远程登录身份认证，为保证云服务器安全， 山河 不会保存用户的私钥。如何使用私钥登录云服务器请参考[密钥文档](/compute/ssh/manual/ssh/)。 |
 | 密码                                                         | 自主设定root密码。                                           |
 
-<span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;">
-   <b>说明</b>：Linux 操作系统建议选择更为安全的 SSH 密钥登录，Windows 操作系统只能选择密码登录。
+> 说明：
+>
+> Linux 操作系统建议选择更为安全的 SSH 密钥登录，Windows 操作系统只能选择密码登录。
 
-</span>
+<img src="../../quickstart/_images/login_type.png" alt="host" style="zoom: 100%;" />
+
+### 选择安全组
+
+<img src="../../quickstart/_images/safety.png" alt="safety" style="zoom:100%;" />
+
+如果用户需要创建一个新的安全组，点击**新建安全组**，进入安全组页面。详情请参考[创建安全组文档](/security/security_group/manual/sg_create/)。
+
+<img src="../../quickstart/_images/safety_1.png" alt="safety" style="zoom:100%;" />
+
+如果需要配置云服务器端口，请参考 [配置安全组文档](/security/security_group/manual/sg_setting/)。
 
 ### 可选：配置自动续费
 
@@ -107,20 +110,20 @@ b. 新建公网 IP
 
 可以选择配置HostName、自定义数据、网卡多队列、备份、标签、项目、安置策略组。
 
-<img src="../../quickstart/_images/senior_host.png" alt="senior_host" style="zoom: 33%;" />
+<img src="../../quickstart/_images/senior_host.png" alt="senior_host" style="zoom: 100%;" />
 
 ## 确认配置（可选）
 
-当计费模式选择预留合约时，点击**立即购买**后会二次确认配置，如下图所示。
+当计费模式选择包年包月时，点击**立即购买**后会二次确认配置，需点击**确认支付**，如下图所示。
 
-<img src="../../quickstart/_images/config.png" alt="config" style="zoom:33%;" />
+<img src="../../quickstart/_images/config.png" alt="config" style="zoom:100%;" />
 
 ## 完成创建
 
 当计费模式选择为按需计费时，则自动创建资源。
 
-<img src="../../quickstart/_images/create.png" alt="create" style="zoom:25%;" />
+<img src="../../quickstart/_images/create.png" alt="create" style="zoom:100%;" />
 
-当计费模式选择为预留合约时，自动创建资源后，点击![tattoo](../../quickstart/_images/tattoo.png)按钮查看预留合约详细内容。
+当计费模式选择为包年包月时，自动创建资源后，点击**查看订单**查看订单列表信息。
 
-<img src="../../quickstart/_images/check_creation.png" alt="create" style="zoom: 25%;" />
+<img src="../../quickstart/_images/check_creation.png" alt="create" style="zoom: 100%;" />
