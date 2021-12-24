@@ -14,7 +14,7 @@ keyword: 云服务器, 实例, 虚拟机
 
 特点：
 
-- 两种GPU类型可选（NVIDIA Tesla P100、GEFORCE RTX 2080 Ti），专门为计算加速场景优化设计，可提供3584个并行计算核心，单精度浮点运算能力达9.3TFLOPS，双精度浮点运算能力达4.7TFLOPS。
+- 两种GPU类型可选（NVIDIA A100、NVIDIA RTX6000、AMD FirePro S7150），专门为计算加速场景优化设计，可提供3584个并行计算核心，单精度浮点运算能力达9.3TFLOPS，双精度浮点运算能力达4.7TFLOPS。
 - CPU采用第二代英特尔®至强®金牌6240处理器，主频：2.6GHz，睿频最高可达3.9GHz
 - 配有全新的 Intel Advanced Vector Extension (AVX-512) 指令集，在深度学习的多种场景性能提升4倍
 - 处理器内存配比1:4
