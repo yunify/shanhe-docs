@@ -18,6 +18,6 @@ sudo nvidia-docker run -it --rm -p host_port:8888 image_id /bin/bash
 	对 host_port 端口再次进行端口映射，该 VPC 网络必须绑定公网 IP:vpc_ip，由于云平台会为该云主机自动添加一个默认的防火墙，用户还需要修改防火墙的下行策略，放行端口 host_port，最后在控制台的 VPC 网络中将 host_port 映射到 VPC 网络路由器的相应端口 vpc_port，在浏览器中输入 vpc_ip:vpc_port 便可以访问。
 
 - 方法2(建议)：
-
-	无需修改防火墙策略，在 VPC 网络中[配置VPN服务](https://docs.qingcloud.com/product/network/vpn)，则可以轻松访问云端私有网络中的主机。
+ 
+	无需修改防火墙策略，在 VPC 网络中配置 VPN 服务，则可以轻松访问云端私有网络中的主机。
 	在浏览器中输入 host_ip:host_port 便可以访问。
