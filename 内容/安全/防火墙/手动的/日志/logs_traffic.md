@@ -1,10 +1,9 @@
 ---
 title: "流量日志"
-linkTitle: "日志审计"
 description: 如何查看流量日志
 draft: false
 weight: 20
-keyword: 云服务器, QingCloud，安全，流量日志
+keyword: 云服务器, 安全，流量日志
 
 
 ---
