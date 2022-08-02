@@ -1,5 +1,5 @@
 ---
-title: "centos vault镜像"
+title: "Centos vault镜像"
 date: "2022-08-02"
 description: Test description
 draft: false
