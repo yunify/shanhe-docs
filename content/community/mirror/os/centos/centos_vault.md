@@ -58,6 +58,3 @@ sudo sed -e "s|^mirrorlist=|#mirrorlist=|g" \
 ```
 yum makecache
 ```
-
-注：配置方法参考自阿里云镜像
-
