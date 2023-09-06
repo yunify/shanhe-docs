@@ -1,5 +1,5 @@
 ---
-title: "步骤一：部署 Deep Learning 应用"
+title: "部署 Deep Learning 应用"
 description: 本小节主要介绍如何快速部署 Deep Learning 应用。 
 keywords: 
 weight: 10
