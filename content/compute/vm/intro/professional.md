@@ -36,16 +36,26 @@ keyword: 云服务器, 实例, 虚拟机
 GPU云服务器 g2 包括的实例规格和性能指标如下：（内网带宽和显存待确定）
 
 | 实例类型               | CPU  | 内存 | GPU                 | 内网带宽  |
-| ---------------------- | ---- | ---- | ------------------- | --------- |
-| g2na100.2xlarge.g1     | 8核  | 60G  | 1*NVIDIA A100       | 2 Gbps    |
-| g2na100.4xlarge.g2     | 16核 | 120G | 2*NVIDIA A100       | 4 Gbps    |
-| g2na100.8xlarge.g4     | 32核 | 240G | 4*NVIDIA A100       | 8 Gbps    |
-| g2na100.16xlarge.g8    | 62核 | 480G | 8*NVIDIA A100       | 20 Gbps   |
-| g2nrtx6000.8xlarge.g1  | 32核 | 240G | 1*NVIDIA RTX6000    | 25 Gbps   |
-| g2nrtx6000.16xlarge.g2 | 62核 | 480G | 2*NVIDIA RTX6000    | 50 Gbps   |
-| g2as7150.4xlarge.g1    | 16核 | 120G | 1*AMD FirePro S7150 | 12.5 Gbps |
-| g2as7150.8xlarge.g2    | 32核 | 240G | 2*AMD FirePro S7150 | 25 Gbps   |
-| g2as7150.16xlarge.g4   | 62核 | 480G | 4*AMD FirePro S7150 | 50 Gbps   |
+| ---------------------- | ---- | ---- | -------------------  | ----------|
+| g2as7150.16xlarge.g4	| 64核  | 192G  | 4*AMD FirePro S7150	| 50 Gbps		|
+| g2as7150.4xlarge.g1		| 16核	| 48G		| 1*AMD FirePro S7150	| 12.5 Gbps	|
+| g2as7150.8xlarge.g2		| 32核	| 96G		| 2*AMD FirePro S7150	| 25 Gbps   |
+| g2na100.4xlarge.g1		| 16核	| 48G 	| 1*NVIDIA A100	    	| 2 Gbps   	|
+| g2ibna100.4xlarge.g1	| 16核 	| 48G		| 1*NVIDIA A100	    	| 12.5 Gbps |
+| g2na100.16xlarge.g4		| 64核 	|	192G	| 4*NVIDIA A100	   		| 8 Gbps   	|
+| g2na100.31xlarge.g8		| 124核 |	432G	| 8*NVIDIA A100	 			| 20 Gbps 	|
+| g2ibna100.16xlarge.g4	| 64核	|	192G	| 4*NVIDIA A100	 			| 50 Gbps   |
+| g2na100.31xlarge.g6		| 120核 |	288G	| 6*NVIDIA A100	 			| 20 Gbps   |
+| g2ibna100.31xlarge.g8	| 124核 |	432G	| 8*NVIDIA A100	  		| 100 Gbps  |
+| g2ibna100.8xlarge.g2	| 32核	| 96G		| 2*NVIDIA A100	  		| 25 Gbps   |
+| g2na100.8xlarge.g2		| 32核	| 96G		| 2*NVIDIA A100	    	| 4 Gbps    |
+| g2nrtx6000.16xlarge.g2| 128核	| 384G	| 2*NVIDIA RTX6000	  | 50 Gbps   |
+| g2nrtx6000.8xlarge.g1	| 64核	| 192G	| 1*NVIDIA RTX6000	  | 25 Gbps   |
+| g2nt4.31xlarge.g6			| 120核	| 288G	| 6*NVIDIA Tesla T4	  | 20 Gbps   |
+| g2nt4.16xlarge.g4			| 64核	| 192G	| 4*NVIDIA Tesla T4		| 8 Gbps 		|
+| g2nt4.31xlarge.g8			| 124核	| 384G	| 8*NVIDIA Tesla T4		| 20 Gbps   |
+| g2nt4.4xlarge.g1			| 16核	| 48G		| 1*NVIDIA Tesla T4		| 2 Gbps   	|
+| g2nt4.8xlarge.g2			| 32核	| 96G 	|	2*NVIDIA Tesla T4		| 4 Gbps   	|
 
 
 
