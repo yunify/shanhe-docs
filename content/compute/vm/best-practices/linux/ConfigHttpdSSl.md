@@ -90,5 +90,5 @@ tcp    LISTEN   0        128         *:443     *:*      users:(("apache2",pid=20
 
 在浏览器中访问证书中的域名<img src="../../_images/https.png" width="100%" height="60%">
 
-`注意:这里由于是自签证书，所浏览器认为是不安全的。正式使用的时候需要到相关机构签发SSL证书。签发网址：https://console.qingcloud.com/ssl_certificates`
+`注意:这里由于是自签证书，所浏览器认为是不安全的。正式使用的时候需要到相关机构签发SSL证书。`
 

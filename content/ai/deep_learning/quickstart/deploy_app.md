@@ -13,7 +13,7 @@ draft: false
 ## 前提条件
 
 - 已获取管理控制台登录账号和密码。
-- 已创建 [VPC 网络](https://docsv3.qingcloud.com/network/vpc/manual/vpcnet/10_create_vpc/)和[私有网络](https://docsv3.qingcloud.com/network/vpc/manual/vxnet/05_create_vxnet/)，且私有网络已加入 VPC 网络。
+- 已创建 [VPC 网络](https://docsv3.shanhe.com//network/vpc/manual/vpcnet/10_create_vpc/)和[私有网络](https://docsv3.shanhe.com/network/vpc/manual/vxnet/05_create_vxnet/)，且私有网络已加入 VPC 网络。
 
 ## 操作步骤
 
